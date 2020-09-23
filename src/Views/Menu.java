@@ -6,21 +6,18 @@
 package Views;
 
 import java.awt.Color;
-import java.awt.Desktop;
-import java.io.File;
-import java.io.IOException;
 import javax.swing.ImageIcon;
 
 /**
  *
  * @author Niko
  */
-public class HomePage extends javax.swing.JFrame {
+public class Menu extends javax.swing.JFrame {
 
     /**
-     * Creates new form HomePage
+     * Creates new form Manu
      */
-    public HomePage() {
+    public Menu() {
         setResizable(false);
         initComponents();
         this.setIconImage(new ImageIcon(getClass().getResource("/Images/Logo_Lambda.png")).getImage());
@@ -35,7 +32,6 @@ public class HomePage extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -45,16 +41,6 @@ public class HomePage extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        Menu1 = new javax.swing.JButton();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -88,7 +74,7 @@ public class HomePage extends javax.swing.JFrame {
             }
         });
         jPanel2.add(Manual);
-        Manual.setBounds(1030, 20, 60, 23);
+        Manual.setBounds(680, 20, 60, 23);
 
         Manual.setOpaque(false);
         Manual.setBackground(new Color(0,0,0,0));
@@ -113,7 +99,7 @@ public class HomePage extends javax.swing.JFrame {
             }
         });
         jPanel2.add(Menu);
-        Menu.setBounds(960, 20, 50, 20);
+        Menu.setBounds(620, 20, 50, 20);
 
         jLabel10.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
         jLabel10.setText("Lisp");
@@ -122,118 +108,62 @@ public class HomePage extends javax.swing.JFrame {
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/gradiente-azul-azul.png"))); // NOI18N
         jPanel2.add(jLabel11);
-        jLabel11.setBounds(0, 0, 1120, 60);
+        jLabel11.setBounds(0, 0, 770, 60);
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setLayout(null);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Logo_Lisp.png"))); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel2.setText("jLabel2");
         jPanel3.add(jLabel2);
-        jLabel2.setBounds(90, 30, 370, 270);
-
-        jLabel3.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
-        jLabel3.setText("    Lisp");
-        jPanel3.add(jLabel3);
-        jLabel3.setBounds(180, 340, 190, 50);
-
-        jLabel4.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
-        jLabel4.setText("101 algoritmos");
-        jPanel3.add(jLabel4);
-        jLabel4.setBounds(130, 300, 290, 50);
-
-        jLabel5.setFont(new java.awt.Font("Sylfaen", 1, 30)); // NOI18N
-        jLabel5.setText("algoritmos");
-        jPanel3.add(jLabel5);
-        jLabel5.setBounds(620, 90, 350, 50);
-
-        jLabel6.setFont(new java.awt.Font("Sylfaen", 1, 30)); // NOI18N
-        jLabel6.setText("Experto en Lisp con 101");
-        jPanel3.add(jLabel6);
-        jLabel6.setBounds(620, 50, 360, 50);
-
-        jLabel7.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel7.setText("<html>En este aplicativo encontrarás todo lo necesario para aprender el lenguaje LISP.  <br><br>A partir de algoritmos que funcionan como ejemplo <br>se explica el fundamento teórico sobre cada uno de <br>los aspectos importantes del lenguaje.<html>");
-        jPanel3.add(jLabel7);
-        jLabel7.setBounds(620, 120, 440, 220);
-
-        Menu1.setBackground(new java.awt.Color(255, 255, 255));
-        Menu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/aprender.png"))); // NOI18N
-        Menu1.setBorder(null);
-        Menu1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                Menu1MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                Menu1MouseExited(evt);
-            }
-        });
-        jPanel3.add(Menu1);
-        Menu1.setBounds(770, 350, 100, 50);
-
-        jPanel4.setLayout(null);
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/marca_UTP.png"))); // NOI18N
-        jPanel4.add(jLabel8);
-        jLabel8.setBounds(860, 0, 234, 113);
-
-        jLabel12.setText("<html> © 2020 - Universidad Tecnológica de Pereira<br>Carrera 27 #10-02 Barrio Alamos - Risaralda - Colombia - AA: 97<br>Código postal: 660003 - CERES - PBX: +57 6 3137300 - Fax: +57 6 3213206<br>Línea gratuita de Quejas y Reclamos: 018000966781 - contactenos@utp.edu.co<html>");
-        jPanel4.add(jLabel12);
-        jLabel12.setBounds(10, 0, 530, 120);
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/gradiente-azul-azul.png"))); // NOI18N
-        jPanel4.add(jLabel9);
-        jLabel9.setBounds(0, 0, 1120, 130);
+        jLabel2.setBounds(0, 0, 620, 350);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 761, Short.MAX_VALUE)
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 425, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE))
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 510, Short.MAX_VALUE))
         );
-
-        jScrollPane1.setViewportView(jPanel1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1106, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void Menu1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Menu1MouseEntered
-        Menu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/aprender2.png")));
-    }//GEN-LAST:event_Menu1MouseEntered
-
-    private void Menu1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Menu1MouseExited
-        Menu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/aprender.png")));
-    }//GEN-LAST:event_Menu1MouseExited
 
     private void ManualMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManualMouseEntered
         Manual.setForeground(Color.gray);
     }//GEN-LAST:event_ManualMouseEntered
 
     private void ManualMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManualMouseExited
-       Manual.setForeground(new Color(255, 255, 255));
+        Manual.setForeground(new Color(255, 255, 255));
     }//GEN-LAST:event_ManualMouseExited
+
+    private void ManualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ManualActionPerformed
+        /*try {
+            File path = new File ("src/View/Manual.pdf");
+            Desktop.getDesktop().open(path);
+        }catch (IOException ex) {
+            ex.printStackTrace();
+        }*/
+    }//GEN-LAST:event_ManualActionPerformed
 
     private void MenuMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MenuMouseEntered
         Menu.setForeground(Color.gray);
@@ -246,15 +176,6 @@ public class HomePage extends javax.swing.JFrame {
     private void MenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_MenuActionPerformed
-
-    private void ManualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ManualActionPerformed
-        /*try {
-            File path = new File ("src/View/Manual.pdf");
-            Desktop.getDesktop().open(path);
-        }catch (IOException ex) {
-             ex.printStackTrace();
-        }*/
-    }//GEN-LAST:event_ManualActionPerformed
 
     /**
      * @param args the command line arguments
@@ -273,20 +194,21 @@ public class HomePage extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(HomePage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(HomePage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(HomePage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(HomePage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new HomePage().setVisible(true);
+                new Menu().setVisible(true);
             }
         });
     }
@@ -294,23 +216,12 @@ public class HomePage extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Manual;
     public javax.swing.JButton Menu;
-    public javax.swing.JButton Menu1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
