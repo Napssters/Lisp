@@ -113,9 +113,9 @@ public class Menu extends javax.swing.JFrame {
         jPanel3.setLayout(null);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel2.setText("jLabel2");
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/menu.png"))); // NOI18N
         jPanel3.add(jLabel2);
-        jLabel2.setBounds(0, 0, 620, 350);
+        jLabel2.setBounds(0, 0, 770, 510);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
