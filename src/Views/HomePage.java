@@ -41,6 +41,7 @@ public class HomePage extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         Manual = new javax.swing.JButton();
         Menu = new javax.swing.JButton();
+        Inicio = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
@@ -88,7 +89,7 @@ public class HomePage extends javax.swing.JFrame {
             }
         });
         jPanel2.add(Manual);
-        Manual.setBounds(1030, 20, 60, 23);
+        Manual.setBounds(790, 20, 60, 23);
 
         Manual.setOpaque(false);
         Manual.setBackground(new Color(0,0,0,0));
@@ -113,7 +114,32 @@ public class HomePage extends javax.swing.JFrame {
             }
         });
         jPanel2.add(Menu);
-        Menu.setBounds(960, 20, 50, 20);
+        Menu.setBounds(720, 20, 50, 20);
+
+        Manual.setOpaque(false);
+        Manual.setBackground(new Color(0,0,0,0));
+        Inicio.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        Inicio.setForeground(new java.awt.Color(255, 255, 255));
+        Inicio.setText("Inicio");
+        Inicio.setBorder(null);
+        Inicio.setContentAreaFilled(false);
+        Inicio.setDefaultCapable(false);
+        Inicio.setFocusPainted(false);
+        Inicio.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                InicioMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                InicioMouseExited(evt);
+            }
+        });
+        Inicio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                InicioActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Inicio);
+        Inicio.setBounds(650, 20, 50, 20);
 
         jLabel10.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
         jLabel10.setText("Lisp");
@@ -122,44 +148,47 @@ public class HomePage extends javax.swing.JFrame {
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/gradiente-azul-azul.png"))); // NOI18N
         jPanel2.add(jLabel11);
-        jLabel11.setBounds(0, 0, 1120, 60);
+        jLabel11.setBounds(0, 0, 880, 60);
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setLayout(null);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Logo_Lisp.png"))); // NOI18N
         jPanel3.add(jLabel2);
-        jLabel2.setBounds(90, 30, 370, 270);
+        jLabel2.setBounds(30, 30, 370, 270);
 
         jLabel3.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
         jLabel3.setText("    Lisp");
         jPanel3.add(jLabel3);
-        jLabel3.setBounds(180, 340, 190, 50);
+        jLabel3.setBounds(120, 340, 190, 50);
 
         jLabel4.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
         jLabel4.setText("101 algoritmos");
         jPanel3.add(jLabel4);
-        jLabel4.setBounds(130, 300, 290, 50);
+        jLabel4.setBounds(70, 300, 290, 50);
 
         jLabel5.setFont(new java.awt.Font("Sylfaen", 1, 30)); // NOI18N
         jLabel5.setText("algoritmos");
         jPanel3.add(jLabel5);
-        jLabel5.setBounds(620, 90, 350, 50);
+        jLabel5.setBounds(460, 90, 350, 50);
 
         jLabel6.setFont(new java.awt.Font("Sylfaen", 1, 30)); // NOI18N
         jLabel6.setText("Experto en Lisp con 101");
         jPanel3.add(jLabel6);
-        jLabel6.setBounds(620, 50, 360, 50);
+        jLabel6.setBounds(460, 50, 360, 50);
 
         jLabel7.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel7.setText("<html>En este aplicativo encontrarás todo lo necesario para aprender el lenguaje LISP.  <br><br>A partir de algoritmos que funcionan como ejemplo <br>se explica el fundamento teórico sobre cada uno de <br>los aspectos importantes del lenguaje.<html>");
         jPanel3.add(jLabel7);
-        jLabel7.setBounds(620, 120, 440, 220);
+        jLabel7.setBounds(460, 120, 440, 220);
 
         Menu1.setBackground(new java.awt.Color(255, 255, 255));
         Menu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/aprender.png"))); // NOI18N
         Menu1.setBorder(null);
+        Menu1.setBorderPainted(false);
+        Menu1.setContentAreaFilled(false);
+        Menu1.setFocusPainted(false);
         Menu1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Menu1MouseEntered(evt);
@@ -169,13 +198,13 @@ public class HomePage extends javax.swing.JFrame {
             }
         });
         jPanel3.add(Menu1);
-        Menu1.setBounds(770, 350, 100, 50);
+        Menu1.setBounds(610, 350, 100, 50);
 
         jPanel4.setLayout(null);
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/marca_UTP.png"))); // NOI18N
         jPanel4.add(jLabel8);
-        jLabel8.setBounds(860, 0, 234, 113);
+        jLabel8.setBounds(620, 10, 234, 113);
 
         jLabel12.setText("<html> © 2020 - Universidad Tecnológica de Pereira<br>Carrera 27 #10-02 Barrio Alamos - Risaralda - Colombia - AA: 97<br>Código postal: 660003 - CERES - PBX: +57 6 3137300 - Fax: +57 6 3213206<br>Línea gratuita de Quejas y Reclamos: 018000966781 - contactenos@utp.edu.co<html>");
         jPanel4.add(jLabel12);
@@ -183,7 +212,7 @@ public class HomePage extends javax.swing.JFrame {
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/gradiente-azul-azul.png"))); // NOI18N
         jPanel4.add(jLabel9);
-        jLabel9.setBounds(0, 0, 1120, 130);
+        jLabel9.setBounds(0, 0, 900, 130);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -209,7 +238,7 @@ public class HomePage extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1106, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 879, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -256,6 +285,18 @@ public class HomePage extends javax.swing.JFrame {
         }*/
     }//GEN-LAST:event_ManualActionPerformed
 
+    private void InicioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InicioMouseEntered
+        Inicio.setForeground(Color.gray);
+    }//GEN-LAST:event_InicioMouseEntered
+
+    private void InicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InicioMouseExited
+        Inicio.setForeground(new Color(255, 255, 255));
+    }//GEN-LAST:event_InicioMouseExited
+
+    private void InicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InicioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_InicioActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -292,6 +333,7 @@ public class HomePage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton Inicio;
     private javax.swing.JButton Manual;
     public javax.swing.JButton Menu;
     public javax.swing.JButton Menu1;

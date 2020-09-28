@@ -37,13 +37,24 @@ public class Menu extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         Manual = new javax.swing.JButton();
         Menu = new javax.swing.JButton();
+        Inicio = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        LispDocs = new javax.swing.JButton();
+        Algoritmos = new javax.swing.JButton();
+        jTextArea1 = new javax.swing.JTextArea();
+        jTextArea2 = new javax.swing.JTextArea();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setResizable(false);
 
         jPanel2.setLayout(null);
 
@@ -74,7 +85,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
         jPanel2.add(Manual);
-        Manual.setBounds(680, 20, 60, 23);
+        Manual.setBounds(790, 20, 60, 23);
 
         Manual.setOpaque(false);
         Manual.setBackground(new Color(0,0,0,0));
@@ -99,7 +110,32 @@ public class Menu extends javax.swing.JFrame {
             }
         });
         jPanel2.add(Menu);
-        Menu.setBounds(620, 20, 50, 20);
+        Menu.setBounds(720, 20, 50, 20);
+
+        Manual.setOpaque(false);
+        Manual.setBackground(new Color(0,0,0,0));
+        Inicio.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        Inicio.setForeground(new java.awt.Color(255, 255, 255));
+        Inicio.setText("Inicio");
+        Inicio.setBorder(null);
+        Inicio.setContentAreaFilled(false);
+        Inicio.setDefaultCapable(false);
+        Inicio.setFocusPainted(false);
+        Inicio.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                InicioMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                InicioMouseExited(evt);
+            }
+        });
+        Inicio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                InicioActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Inicio);
+        Inicio.setBounds(650, 20, 50, 20);
 
         jLabel10.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
         jLabel10.setText("Lisp");
@@ -108,28 +144,121 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/gradiente-azul-azul.png"))); // NOI18N
         jPanel2.add(jLabel11);
-        jLabel11.setBounds(0, 0, 770, 60);
+        jLabel11.setBounds(0, 0, 890, 60);
 
         jPanel3.setLayout(null);
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/menu.png"))); // NOI18N
-        jPanel3.add(jLabel2);
-        jLabel2.setBounds(0, 0, 770, 510);
+        LispDocs.setBackground(new java.awt.Color(255, 255, 255));
+        LispDocs.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/botones/lispDocs.png"))); // NOI18N
+        LispDocs.setBorder(null);
+        LispDocs.setBorderPainted(false);
+        LispDocs.setContentAreaFilled(false);
+        LispDocs.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                LispDocsMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                LispDocsMouseExited(evt);
+            }
+        });
+        LispDocs.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LispDocsActionPerformed(evt);
+            }
+        });
+        jPanel3.add(LispDocs);
+        LispDocs.setBounds(620, 350, 100, 50);
+
+        Algoritmos.setBackground(new java.awt.Color(255, 255, 255));
+        Algoritmos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/botones/Algoritmos.png"))); // NOI18N
+        Algoritmos.setBorder(null);
+        Algoritmos.setBorderPainted(false);
+        Algoritmos.setContentAreaFilled(false);
+        Algoritmos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                AlgoritmosMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                AlgoritmosMouseExited(evt);
+            }
+        });
+        jPanel3.add(Algoritmos);
+        Algoritmos.setBounds(160, 220, 100, 50);
+
+        jTextArea1.setEditable(false);
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jTextArea1.setRows(5);
+        jTextArea1.setText("En esta seccion encontraras 101 algoritmos\ndesarrolados  en   lisp,   con   una  serie  de \nejercicios   que    iran    incrementando  su \ndificultad,   en    los   cuales   se   enseñara \ncomo  programar  en  este  lenguaje");
+        jTextArea1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTextArea1.setFocusable(false);
+        jTextArea1.setOpaque(false);
+        jPanel3.add(jTextArea1);
+        jTextArea1.setBounds(60, 80, 330, 170);
+
+        jTextArea2.setEditable(false);
+        jTextArea2.setColumns(20);
+        jTextArea2.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jTextArea2.setRows(5);
+        jTextArea2.setText("En esta seccion encontraras 101 algoritmos\ndesarrolados  en   lisp,   con   una  sere  de \nejercicios   que    iran    incrementando  su \ndificultad,  con   los   cuales   se   enseñara \ncomo  programar  en  este  lenguaje");
+        jTextArea2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTextArea2.setFocusable(false);
+        jTextArea2.setOpaque(false);
+        jPanel3.add(jTextArea2);
+        jTextArea2.setBounds(520, 210, 330, 170);
+
+        jLabel4.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
+        jLabel4.setText("Lisp");
+        jPanel3.add(jLabel4);
+        jLabel4.setBounds(640, 160, 70, 50);
+
+        jLabel5.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("Documentacion");
+        jPanel3.add(jLabel5);
+        jLabel5.setBounds(530, 120, 290, 50);
+
+        jLabel3.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
+        jLabel3.setText("101 Algoritmos");
+        jPanel3.add(jLabel3);
+        jLabel3.setBounds(90, 20, 270, 50);
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/menus.jpg"))); // NOI18N
+        jPanel3.add(jLabel6);
+        jLabel6.setBounds(0, 0, 880, 460);
+
+        jPanel4.setLayout(null);
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/marca_UTP.png"))); // NOI18N
+        jPanel4.add(jLabel8);
+        jLabel8.setBounds(620, 10, 240, 113);
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel12.setText("<html> © 2020 - Universidad Tecnológica de Pereira<br>Carrera 27 #10-02 Barrio Alamos - Risaralda - Colombia - AA: 97<br>Código postal: 660003 - CERES - PBX: +57 6 3137300 - Fax: +57 6 3213206<br>Línea gratuita de Quejas y Reclamos: 018000966781 - contactenos@utp.edu.co<html>");
+        jPanel4.add(jLabel12);
+        jLabel12.setBounds(10, -10, 530, 130);
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/gradiente-azul-azul.png"))); // NOI18N
+        jPanel4.add(jLabel9);
+        jLabel9.setBounds(0, 0, 910, 130);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 761, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 879, Short.MAX_VALUE)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 425, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 510, Short.MAX_VALUE))
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(1, 1, 1))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -140,9 +269,7 @@ public class Menu extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -176,6 +303,38 @@ public class Menu extends javax.swing.JFrame {
     private void MenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_MenuActionPerformed
+
+    private void AlgoritmosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AlgoritmosMouseEntered
+        Algoritmos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/Algoritmos2.png")));
+    }//GEN-LAST:event_AlgoritmosMouseEntered
+
+    private void AlgoritmosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AlgoritmosMouseExited
+        Algoritmos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/Algoritmos.png")));
+    }//GEN-LAST:event_AlgoritmosMouseExited
+
+    private void LispDocsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LispDocsMouseEntered
+        LispDocs.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/lispDocs2.png")));
+    }//GEN-LAST:event_LispDocsMouseEntered
+
+    private void LispDocsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LispDocsMouseExited
+        LispDocs.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/lispDocs.png")));
+    }//GEN-LAST:event_LispDocsMouseExited
+
+    private void LispDocsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LispDocsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LispDocsActionPerformed
+
+    private void InicioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InicioMouseEntered
+        Inicio.setForeground(Color.gray);
+    }//GEN-LAST:event_InicioMouseEntered
+
+    private void InicioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InicioMouseExited
+        Inicio.setForeground(new Color(255, 255, 255));
+    }//GEN-LAST:event_InicioMouseExited
+
+    private void InicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InicioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_InicioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -214,14 +373,26 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton Algoritmos;
+    public javax.swing.JButton Inicio;
+    public javax.swing.JButton LispDocs;
     private javax.swing.JButton Manual;
     public javax.swing.JButton Menu;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
     // End of variables declaration//GEN-END:variables
 }
