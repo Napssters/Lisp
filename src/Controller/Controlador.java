@@ -59,11 +59,33 @@ public class Controlador {
     public void Algorithms(){
         this.Algot.setTitle("Algoritmos Lisp");
         this.Algot.setLocationRelativeTo(null);
+        this.Algot.Inicio.addActionListener((ActionEvent e) -> {
+            Algot.setVisible(false);
+            home.setVisible(true);
+            this.iniciar();
+        });
+        this.Algot.Menu.addActionListener((ActionEvent e) -> {
+            Algot.setVisible(false);
+            this.menu = new Menu();
+            menu.setVisible(true);
+            this.Menus();
+        });
     }
     
     public void Documentation(){
-        this.Docs.setTitle("Algoritmos Lisp");
+        this.Docs.setTitle("Documentacion Lisp");
         this.Docs.setLocationRelativeTo(null);
+        this.Docs.Inicio.addActionListener((ActionEvent e) -> {
+            Docs.setVisible(false);
+            home.setVisible(true);
+            this.iniciar();
+        });
+        this.Docs.Menu.addActionListener((ActionEvent e) -> {
+            Docs .setVisible(false);
+            this.menu = new Menu();
+            menu.setVisible(true);
+            this.Menus();
+        });
     }
     
     public void iniciar() {

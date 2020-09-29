@@ -223,7 +223,7 @@ public class Menu extends javax.swing.JFrame {
         jPanel3.add(jLabel3);
         jLabel3.setBounds(90, 20, 270, 50);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/menus.jpg"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/menus.png"))); // NOI18N
         jPanel3.add(jLabel6);
         jLabel6.setBounds(0, 0, 880, 460);
 
