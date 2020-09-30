@@ -6,6 +6,7 @@
 package Views;
 
 import java.awt.Color;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -17,7 +18,10 @@ public class Documentatation extends javax.swing.JFrame {
      * Creates new form Exercices
      */
     public Documentatation() {
+        setResizable(false);
         initComponents();
+        this.setIconImage(new ImageIcon(getClass().getResource("/Images/Logo_Lambda.png")).getImage());
+        jScrollPane1.getVerticalScrollBar().setUnitIncrement(16);
     }
 
     /**

@@ -6,6 +6,8 @@
 package Views;
 
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -17,7 +19,10 @@ public class Algoritmos extends javax.swing.JFrame {
      * Creates new form StepByStep
      */
     public Algoritmos() {
+        setResizable(false);
         initComponents();
+        this.setIconImage(new ImageIcon(getClass().getResource("/Images/Logo_Lambda.png")).getImage());
+        jScrollPane1.getVerticalScrollBar().setUnitIncrement(16);
     }
 
     /**
@@ -44,9 +49,113 @@ public class Algoritmos extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        b76 = new javax.swing.JButton();
+        b77 = new javax.swing.JButton();
+        b78 = new javax.swing.JButton();
+        b79 = new javax.swing.JButton();
+        b80 = new javax.swing.JButton();
+        b81 = new javax.swing.JButton();
+        b82 = new javax.swing.JButton();
+        b83 = new javax.swing.JButton();
+        b84 = new javax.swing.JButton();
+        b85 = new javax.swing.JButton();
+        b86 = new javax.swing.JButton();
+        b87 = new javax.swing.JButton();
+        b88 = new javax.swing.JButton();
+        b89 = new javax.swing.JButton();
+        b90 = new javax.swing.JButton();
+        b91 = new javax.swing.JButton();
+        b92 = new javax.swing.JButton();
+        b93 = new javax.swing.JButton();
+        b94 = new javax.swing.JButton();
+        b95 = new javax.swing.JButton();
+        b96 = new javax.swing.JButton();
+        b97 = new javax.swing.JButton();
+        b98 = new javax.swing.JButton();
+        b99 = new javax.swing.JButton();
+        b100 = new javax.swing.JButton();
+        rombo3 = new javax.swing.JLabel();
+        b51 = new javax.swing.JButton();
+        b52 = new javax.swing.JButton();
+        b53 = new javax.swing.JButton();
+        b54 = new javax.swing.JButton();
+        b55 = new javax.swing.JButton();
+        b56 = new javax.swing.JButton();
+        b57 = new javax.swing.JButton();
+        b58 = new javax.swing.JButton();
+        b59 = new javax.swing.JButton();
+        b60 = new javax.swing.JButton();
+        b61 = new javax.swing.JButton();
+        b62 = new javax.swing.JButton();
+        b63 = new javax.swing.JButton();
+        b64 = new javax.swing.JButton();
+        b65 = new javax.swing.JButton();
+        b66 = new javax.swing.JButton();
+        b67 = new javax.swing.JButton();
+        b68 = new javax.swing.JButton();
+        b69 = new javax.swing.JButton();
+        b70 = new javax.swing.JButton();
+        b71 = new javax.swing.JButton();
+        b72 = new javax.swing.JButton();
+        b73 = new javax.swing.JButton();
+        b74 = new javax.swing.JButton();
+        b75 = new javax.swing.JButton();
+        rombo2 = new javax.swing.JLabel();
+        b26 = new javax.swing.JButton();
+        b27 = new javax.swing.JButton();
+        b28 = new javax.swing.JButton();
+        b29 = new javax.swing.JButton();
+        b30 = new javax.swing.JButton();
+        b31 = new javax.swing.JButton();
+        b32 = new javax.swing.JButton();
+        b33 = new javax.swing.JButton();
+        b34 = new javax.swing.JButton();
+        b35 = new javax.swing.JButton();
+        b36 = new javax.swing.JButton();
+        b37 = new javax.swing.JButton();
+        b38 = new javax.swing.JButton();
+        b39 = new javax.swing.JButton();
+        b40 = new javax.swing.JButton();
+        b41 = new javax.swing.JButton();
+        b42 = new javax.swing.JButton();
+        b43 = new javax.swing.JButton();
+        b44 = new javax.swing.JButton();
+        b45 = new javax.swing.JButton();
+        b46 = new javax.swing.JButton();
+        b47 = new javax.swing.JButton();
+        b48 = new javax.swing.JButton();
+        b49 = new javax.swing.JButton();
+        b50 = new javax.swing.JButton();
+        rombo1 = new javax.swing.JLabel();
+        b25 = new javax.swing.JButton();
+        b24 = new javax.swing.JButton();
+        b23 = new javax.swing.JButton();
+        b22 = new javax.swing.JButton();
+        b21 = new javax.swing.JButton();
+        b20 = new javax.swing.JButton();
+        b19 = new javax.swing.JButton();
+        b18 = new javax.swing.JButton();
+        b17 = new javax.swing.JButton();
+        b16 = new javax.swing.JButton();
+        b15 = new javax.swing.JButton();
+        b14 = new javax.swing.JButton();
+        b13 = new javax.swing.JButton();
+        b12 = new javax.swing.JButton();
+        b11 = new javax.swing.JButton();
+        b10 = new javax.swing.JButton();
+        b9 = new javax.swing.JButton();
+        b8 = new javax.swing.JButton();
+        b7 = new javax.swing.JButton();
+        b6 = new javax.swing.JButton();
+        b5 = new javax.swing.JButton();
+        b4 = new javax.swing.JButton();
+        b3 = new javax.swing.JButton();
+        b2 = new javax.swing.JButton();
+        b1 = new javax.swing.JButton();
+        rombo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel2.setLayout(null);
 
@@ -155,9 +264,2321 @@ public class Algoritmos extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setLayout(null);
 
-        jLabel2.setText("las cosas para la documentacion botones y demas");
-        jPanel5.add(jLabel2);
-        jLabel2.setBounds(19, 35, 443, 222);
+        b76.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b76.setForeground(new java.awt.Color(255, 255, 255));
+        b76.setText("76");
+        b76.setBorder(null);
+        b76.setBorderPainted(false);
+        b76.setContentAreaFilled(false);
+        b76.setDefaultCapable(false);
+        b76.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b76MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b76MouseExited(evt);
+            }
+        });
+        b76.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b76ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b76);
+        b76.setBounds(610, 670, 40, 40);
+
+        b77.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b77.setForeground(new java.awt.Color(255, 255, 255));
+        b77.setText(" 77");
+        b77.setBorder(null);
+        b77.setBorderPainted(false);
+        b77.setContentAreaFilled(false);
+        b77.setDefaultCapable(false);
+        b77.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b77MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b77MouseExited(evt);
+            }
+        });
+        b77.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b77ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b77);
+        b77.setBounds(570, 710, 40, 40);
+
+        b78.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b78.setForeground(new java.awt.Color(255, 255, 255));
+        b78.setText(" 78");
+        b78.setBorder(null);
+        b78.setBorderPainted(false);
+        b78.setContentAreaFilled(false);
+        b78.setDefaultCapable(false);
+        b78.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b78MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b78MouseExited(evt);
+            }
+        });
+        b78.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b78ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b78);
+        b78.setBounds(650, 710, 30, 40);
+
+        b79.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b79.setForeground(new java.awt.Color(255, 255, 255));
+        b79.setText("79");
+        b79.setBorder(null);
+        b79.setBorderPainted(false);
+        b79.setContentAreaFilled(false);
+        b79.setDefaultCapable(false);
+        b79.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b79MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b79MouseExited(evt);
+            }
+        });
+        b79.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b79ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b79);
+        b79.setBounds(540, 740, 40, 40);
+
+        b80.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b80.setForeground(new java.awt.Color(255, 255, 255));
+        b80.setText("80");
+        b80.setBorder(null);
+        b80.setBorderPainted(false);
+        b80.setContentAreaFilled(false);
+        b80.setDefaultCapable(false);
+        b80.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b80MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b80MouseExited(evt);
+            }
+        });
+        b80.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b80ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b80);
+        b80.setBounds(610, 750, 40, 30);
+
+        b81.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b81.setForeground(new java.awt.Color(255, 255, 255));
+        b81.setText("81");
+        b81.setBorder(null);
+        b81.setBorderPainted(false);
+        b81.setContentAreaFilled(false);
+        b81.setDefaultCapable(false);
+        b81.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b81MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b81MouseExited(evt);
+            }
+        });
+        b81.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b81ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b81);
+        b81.setBounds(680, 750, 40, 30);
+
+        b82.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b82.setForeground(new java.awt.Color(255, 255, 255));
+        b82.setText("82");
+        b82.setBorder(null);
+        b82.setBorderPainted(false);
+        b82.setContentAreaFilled(false);
+        b82.setDefaultCapable(false);
+        b82.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b82MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b82MouseExited(evt);
+            }
+        });
+        b82.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b82ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b82);
+        b82.setBounds(510, 780, 30, 30);
+
+        b83.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b83.setForeground(new java.awt.Color(255, 255, 255));
+        b83.setText("83");
+        b83.setBorder(null);
+        b83.setBorderPainted(false);
+        b83.setContentAreaFilled(false);
+        b83.setDefaultCapable(false);
+        b83.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b83MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b83MouseExited(evt);
+            }
+        });
+        b83.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b83ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b83);
+        b83.setBounds(580, 780, 30, 30);
+
+        b84.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b84.setForeground(new java.awt.Color(255, 255, 255));
+        b84.setText("84");
+        b84.setBorder(null);
+        b84.setBorderPainted(false);
+        b84.setContentAreaFilled(false);
+        b84.setDefaultCapable(false);
+        b84.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b84MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b84MouseExited(evt);
+            }
+        });
+        b84.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b84ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b84);
+        b84.setBounds(650, 780, 30, 30);
+
+        b85.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b85.setForeground(new java.awt.Color(255, 255, 255));
+        b85.setText(" 85");
+        b85.setBorder(null);
+        b85.setBorderPainted(false);
+        b85.setContentAreaFilled(false);
+        b85.setDefaultCapable(false);
+        b85.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b85MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b85MouseExited(evt);
+            }
+        });
+        b85.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b85ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b85);
+        b85.setBounds(720, 780, 30, 30);
+
+        b86.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b86.setForeground(new java.awt.Color(255, 255, 255));
+        b86.setText("86");
+        b86.setBorder(null);
+        b86.setBorderPainted(false);
+        b86.setContentAreaFilled(false);
+        b86.setDefaultCapable(false);
+        b86.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b86MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b86MouseExited(evt);
+            }
+        });
+        b86.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b86ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b86);
+        b86.setBounds(470, 810, 40, 40);
+
+        b87.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b87.setForeground(new java.awt.Color(255, 255, 255));
+        b87.setText("87");
+        b87.setBorder(null);
+        b87.setBorderPainted(false);
+        b87.setContentAreaFilled(false);
+        b87.setDefaultCapable(false);
+        b87.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b87MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b87MouseExited(evt);
+            }
+        });
+        b87.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b87ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b87);
+        b87.setBounds(540, 810, 40, 40);
+
+        b88.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b88.setForeground(new java.awt.Color(255, 255, 255));
+        b88.setText("88");
+        b88.setBorder(null);
+        b88.setBorderPainted(false);
+        b88.setContentAreaFilled(false);
+        b88.setDefaultCapable(false);
+        b88.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b88MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b88MouseExited(evt);
+            }
+        });
+        b88.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b88ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b88);
+        b88.setBounds(610, 810, 40, 40);
+
+        b89.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b89.setForeground(new java.awt.Color(255, 255, 255));
+        b89.setText("89");
+        b89.setBorder(null);
+        b89.setBorderPainted(false);
+        b89.setContentAreaFilled(false);
+        b89.setDefaultCapable(false);
+        b89.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b89MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b89MouseExited(evt);
+            }
+        });
+        b89.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b89ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b89);
+        b89.setBounds(680, 810, 40, 40);
+
+        b90.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b90.setForeground(new java.awt.Color(255, 255, 255));
+        b90.setText("90");
+        b90.setBorder(null);
+        b90.setBorderPainted(false);
+        b90.setContentAreaFilled(false);
+        b90.setDefaultCapable(false);
+        b90.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b90MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b90MouseExited(evt);
+            }
+        });
+        b90.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b90ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b90);
+        b90.setBounds(750, 810, 50, 40);
+
+        b91.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b91.setForeground(new java.awt.Color(255, 255, 255));
+        b91.setText("91");
+        b91.setBorder(null);
+        b91.setBorderPainted(false);
+        b91.setContentAreaFilled(false);
+        b91.setDefaultCapable(false);
+        b91.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b91MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b91MouseExited(evt);
+            }
+        });
+        b91.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b91ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b91);
+        b91.setBounds(500, 850, 50, 40);
+
+        b92.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b92.setForeground(new java.awt.Color(255, 255, 255));
+        b92.setText("92");
+        b92.setBorder(null);
+        b92.setBorderPainted(false);
+        b92.setContentAreaFilled(false);
+        b92.setDefaultCapable(false);
+        b92.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b92MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b92MouseExited(evt);
+            }
+        });
+        b92.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b92ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b92);
+        b92.setBounds(570, 850, 50, 40);
+
+        b93.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b93.setForeground(new java.awt.Color(255, 255, 255));
+        b93.setText("93");
+        b93.setBorder(null);
+        b93.setBorderPainted(false);
+        b93.setContentAreaFilled(false);
+        b93.setDefaultCapable(false);
+        b93.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b93MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b93MouseExited(evt);
+            }
+        });
+        b93.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b93ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b93);
+        b93.setBounds(640, 850, 50, 40);
+
+        b94.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b94.setForeground(new java.awt.Color(255, 255, 255));
+        b94.setText("94");
+        b94.setBorder(null);
+        b94.setBorderPainted(false);
+        b94.setContentAreaFilled(false);
+        b94.setDefaultCapable(false);
+        b94.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b94MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b94MouseExited(evt);
+            }
+        });
+        b94.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b94ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b94);
+        b94.setBounds(720, 850, 30, 40);
+
+        b95.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b95.setForeground(new java.awt.Color(255, 255, 255));
+        b95.setText(" 95");
+        b95.setBorder(null);
+        b95.setBorderPainted(false);
+        b95.setContentAreaFilled(false);
+        b95.setDefaultCapable(false);
+        b95.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b95MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b95MouseExited(evt);
+            }
+        });
+        b95.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b95ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b95);
+        b95.setBounds(540, 890, 40, 30);
+
+        b96.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b96.setForeground(new java.awt.Color(255, 255, 255));
+        b96.setText("96");
+        b96.setBorder(null);
+        b96.setBorderPainted(false);
+        b96.setContentAreaFilled(false);
+        b96.setDefaultCapable(false);
+        b96.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b96MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b96MouseExited(evt);
+            }
+        });
+        b96.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b96ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b96);
+        b96.setBounds(610, 890, 40, 30);
+
+        b97.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b97.setForeground(new java.awt.Color(255, 255, 255));
+        b97.setText("97");
+        b97.setBorder(null);
+        b97.setBorderPainted(false);
+        b97.setContentAreaFilled(false);
+        b97.setDefaultCapable(false);
+        b97.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b97MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b97MouseExited(evt);
+            }
+        });
+        b97.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b97ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b97);
+        b97.setBounds(680, 890, 40, 30);
+
+        b98.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b98.setForeground(new java.awt.Color(255, 255, 255));
+        b98.setText("89");
+        b98.setBorder(null);
+        b98.setBorderPainted(false);
+        b98.setContentAreaFilled(false);
+        b98.setDefaultCapable(false);
+        b98.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b98MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b98MouseExited(evt);
+            }
+        });
+        b98.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b98ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b98);
+        b98.setBounds(570, 920, 50, 40);
+
+        b99.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b99.setForeground(new java.awt.Color(255, 255, 255));
+        b99.setText("99");
+        b99.setBorder(null);
+        b99.setBorderPainted(false);
+        b99.setContentAreaFilled(false);
+        b99.setDefaultCapable(false);
+        b99.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b99MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b99MouseExited(evt);
+            }
+        });
+        b99.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b99ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b99);
+        b99.setBounds(640, 920, 50, 40);
+
+        b100.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b100.setForeground(new java.awt.Color(255, 255, 255));
+        b100.setText("100");
+        b100.setBorder(null);
+        b100.setBorderPainted(false);
+        b100.setContentAreaFilled(false);
+        b100.setDefaultCapable(false);
+        b100.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b100MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b100MouseExited(evt);
+            }
+        });
+        b100.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b100ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b100);
+        b100.setBounds(610, 960, 40, 30);
+
+        rombo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/rombos.png"))); // NOI18N
+        jPanel5.add(rombo3);
+        rombo3.setBounds(450, 650, 360, 360);
+
+        b51.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b51.setForeground(new java.awt.Color(255, 255, 255));
+        b51.setText(" 51");
+        b51.setBorder(null);
+        b51.setBorderPainted(false);
+        b51.setContentAreaFilled(false);
+        b51.setDefaultCapable(false);
+        b51.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b51MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b51MouseExited(evt);
+            }
+        });
+        b51.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b51ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b51);
+        b51.setBounds(210, 670, 40, 40);
+
+        b52.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b52.setForeground(new java.awt.Color(255, 255, 255));
+        b52.setText(" 52");
+        b52.setBorder(null);
+        b52.setBorderPainted(false);
+        b52.setContentAreaFilled(false);
+        b52.setDefaultCapable(false);
+        b52.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b52MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b52MouseExited(evt);
+            }
+        });
+        b52.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b52ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b52);
+        b52.setBounds(170, 710, 40, 40);
+
+        b53.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b53.setForeground(new java.awt.Color(255, 255, 255));
+        b53.setText(" 53");
+        b53.setBorder(null);
+        b53.setBorderPainted(false);
+        b53.setContentAreaFilled(false);
+        b53.setDefaultCapable(false);
+        b53.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b53MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b53MouseExited(evt);
+            }
+        });
+        b53.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b53ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b53);
+        b53.setBounds(240, 700, 50, 50);
+
+        b54.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b54.setForeground(new java.awt.Color(255, 255, 255));
+        b54.setText("54");
+        b54.setBorder(null);
+        b54.setBorderPainted(false);
+        b54.setContentAreaFilled(false);
+        b54.setDefaultCapable(false);
+        b54.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b54MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b54MouseExited(evt);
+            }
+        });
+        b54.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b54ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b54);
+        b54.setBounds(140, 740, 40, 40);
+
+        b55.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b55.setForeground(new java.awt.Color(255, 255, 255));
+        b55.setText("55");
+        b55.setBorder(null);
+        b55.setBorderPainted(false);
+        b55.setContentAreaFilled(false);
+        b55.setDefaultCapable(false);
+        b55.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b55MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b55MouseExited(evt);
+            }
+        });
+        b55.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b55ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b55);
+        b55.setBounds(210, 750, 40, 30);
+
+        b56.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b56.setForeground(new java.awt.Color(255, 255, 255));
+        b56.setText(" 56");
+        b56.setBorder(null);
+        b56.setBorderPainted(false);
+        b56.setContentAreaFilled(false);
+        b56.setDefaultCapable(false);
+        b56.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b56MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b56MouseExited(evt);
+            }
+        });
+        b56.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b56ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b56);
+        b56.setBounds(280, 750, 40, 30);
+
+        b57.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b57.setForeground(new java.awt.Color(255, 255, 255));
+        b57.setText("57");
+        b57.setBorder(null);
+        b57.setBorderPainted(false);
+        b57.setContentAreaFilled(false);
+        b57.setDefaultCapable(false);
+        b57.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b57MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b57MouseExited(evt);
+            }
+        });
+        b57.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b57ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b57);
+        b57.setBounds(110, 780, 30, 30);
+
+        b58.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b58.setForeground(new java.awt.Color(255, 255, 255));
+        b58.setText("58");
+        b58.setBorder(null);
+        b58.setBorderPainted(false);
+        b58.setContentAreaFilled(false);
+        b58.setDefaultCapable(false);
+        b58.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b58MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b58MouseExited(evt);
+            }
+        });
+        b58.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b58ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b58);
+        b58.setBounds(180, 780, 30, 30);
+
+        b59.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b59.setForeground(new java.awt.Color(255, 255, 255));
+        b59.setText("59");
+        b59.setBorder(null);
+        b59.setBorderPainted(false);
+        b59.setContentAreaFilled(false);
+        b59.setDefaultCapable(false);
+        b59.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b59MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b59MouseExited(evt);
+            }
+        });
+        b59.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b59ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b59);
+        b59.setBounds(250, 780, 30, 30);
+
+        b60.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b60.setForeground(new java.awt.Color(255, 255, 255));
+        b60.setText(" 60");
+        b60.setBorder(null);
+        b60.setBorderPainted(false);
+        b60.setContentAreaFilled(false);
+        b60.setDefaultCapable(false);
+        b60.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b60MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b60MouseExited(evt);
+            }
+        });
+        b60.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b60ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b60);
+        b60.setBounds(320, 780, 30, 30);
+
+        b61.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b61.setForeground(new java.awt.Color(255, 255, 255));
+        b61.setText("61");
+        b61.setBorder(null);
+        b61.setBorderPainted(false);
+        b61.setContentAreaFilled(false);
+        b61.setDefaultCapable(false);
+        b61.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b61MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b61MouseExited(evt);
+            }
+        });
+        b61.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b61ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b61);
+        b61.setBounds(70, 810, 40, 40);
+
+        b62.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b62.setForeground(new java.awt.Color(255, 255, 255));
+        b62.setText("62");
+        b62.setBorder(null);
+        b62.setBorderPainted(false);
+        b62.setContentAreaFilled(false);
+        b62.setDefaultCapable(false);
+        b62.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b62MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b62MouseExited(evt);
+            }
+        });
+        b62.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b62ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b62);
+        b62.setBounds(140, 810, 40, 40);
+
+        b63.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b63.setForeground(new java.awt.Color(255, 255, 255));
+        b63.setText("63");
+        b63.setBorder(null);
+        b63.setBorderPainted(false);
+        b63.setContentAreaFilled(false);
+        b63.setDefaultCapable(false);
+        b63.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b63MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b63MouseExited(evt);
+            }
+        });
+        b63.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b63ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b63);
+        b63.setBounds(210, 810, 40, 40);
+
+        b64.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b64.setForeground(new java.awt.Color(255, 255, 255));
+        b64.setText("64");
+        b64.setBorder(null);
+        b64.setBorderPainted(false);
+        b64.setContentAreaFilled(false);
+        b64.setDefaultCapable(false);
+        b64.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b64MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b64MouseExited(evt);
+            }
+        });
+        b64.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b64ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b64);
+        b64.setBounds(280, 810, 40, 40);
+
+        b65.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b65.setForeground(new java.awt.Color(255, 255, 255));
+        b65.setText("65");
+        b65.setBorder(null);
+        b65.setBorderPainted(false);
+        b65.setContentAreaFilled(false);
+        b65.setDefaultCapable(false);
+        b65.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b65MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b65MouseExited(evt);
+            }
+        });
+        b65.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b65ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b65);
+        b65.setBounds(350, 810, 50, 40);
+
+        b66.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b66.setForeground(new java.awt.Color(255, 255, 255));
+        b66.setText("66");
+        b66.setBorder(null);
+        b66.setBorderPainted(false);
+        b66.setContentAreaFilled(false);
+        b66.setDefaultCapable(false);
+        b66.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b66MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b66MouseExited(evt);
+            }
+        });
+        b66.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b66ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b66);
+        b66.setBounds(100, 850, 50, 40);
+
+        b67.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b67.setForeground(new java.awt.Color(255, 255, 255));
+        b67.setText("67");
+        b67.setBorder(null);
+        b67.setBorderPainted(false);
+        b67.setContentAreaFilled(false);
+        b67.setDefaultCapable(false);
+        b67.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b67MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b67MouseExited(evt);
+            }
+        });
+        b67.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b67ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b67);
+        b67.setBounds(170, 850, 50, 40);
+
+        b68.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b68.setForeground(new java.awt.Color(255, 255, 255));
+        b68.setText("68");
+        b68.setBorder(null);
+        b68.setBorderPainted(false);
+        b68.setContentAreaFilled(false);
+        b68.setDefaultCapable(false);
+        b68.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b68MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b68MouseExited(evt);
+            }
+        });
+        b68.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b68ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b68);
+        b68.setBounds(240, 850, 50, 40);
+
+        b69.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b69.setForeground(new java.awt.Color(255, 255, 255));
+        b69.setText("69");
+        b69.setBorder(null);
+        b69.setBorderPainted(false);
+        b69.setContentAreaFilled(false);
+        b69.setDefaultCapable(false);
+        b69.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b69MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b69MouseExited(evt);
+            }
+        });
+        b69.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b69ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b69);
+        b69.setBounds(320, 850, 30, 40);
+
+        b70.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b70.setForeground(new java.awt.Color(255, 255, 255));
+        b70.setText("70");
+        b70.setBorder(null);
+        b70.setBorderPainted(false);
+        b70.setContentAreaFilled(false);
+        b70.setDefaultCapable(false);
+        b70.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b70MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b70MouseExited(evt);
+            }
+        });
+        b70.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b70ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b70);
+        b70.setBounds(140, 890, 40, 30);
+
+        b71.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b71.setForeground(new java.awt.Color(255, 255, 255));
+        b71.setText(" 71");
+        b71.setBorder(null);
+        b71.setBorderPainted(false);
+        b71.setContentAreaFilled(false);
+        b71.setDefaultCapable(false);
+        b71.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b71MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b71MouseExited(evt);
+            }
+        });
+        b71.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b71ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b71);
+        b71.setBounds(210, 890, 40, 30);
+
+        b72.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b72.setForeground(new java.awt.Color(255, 255, 255));
+        b72.setText(" 72");
+        b72.setBorder(null);
+        b72.setBorderPainted(false);
+        b72.setContentAreaFilled(false);
+        b72.setDefaultCapable(false);
+        b72.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b72MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b72MouseExited(evt);
+            }
+        });
+        b72.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b72ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b72);
+        b72.setBounds(280, 890, 40, 30);
+
+        b73.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b73.setForeground(new java.awt.Color(255, 255, 255));
+        b73.setText("73");
+        b73.setBorder(null);
+        b73.setBorderPainted(false);
+        b73.setContentAreaFilled(false);
+        b73.setDefaultCapable(false);
+        b73.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b73MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b73MouseExited(evt);
+            }
+        });
+        b73.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b73ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b73);
+        b73.setBounds(170, 920, 50, 40);
+
+        b74.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b74.setForeground(new java.awt.Color(255, 255, 255));
+        b74.setText("74");
+        b74.setBorder(null);
+        b74.setBorderPainted(false);
+        b74.setContentAreaFilled(false);
+        b74.setDefaultCapable(false);
+        b74.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b74MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b74MouseExited(evt);
+            }
+        });
+        b74.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b74ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b74);
+        b74.setBounds(240, 920, 50, 40);
+
+        b75.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b75.setForeground(new java.awt.Color(255, 255, 255));
+        b75.setText("75");
+        b75.setBorder(null);
+        b75.setBorderPainted(false);
+        b75.setContentAreaFilled(false);
+        b75.setDefaultCapable(false);
+        b75.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b75MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b75MouseExited(evt);
+            }
+        });
+        b75.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b75ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b75);
+        b75.setBounds(210, 960, 40, 30);
+
+        rombo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/rombos.png"))); // NOI18N
+        jPanel5.add(rombo2);
+        rombo2.setBounds(50, 650, 360, 360);
+
+        b26.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b26.setForeground(new java.awt.Color(255, 255, 255));
+        b26.setText("26");
+        b26.setBorder(null);
+        b26.setBorderPainted(false);
+        b26.setContentAreaFilled(false);
+        b26.setDefaultCapable(false);
+        b26.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b26MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b26MouseExited(evt);
+            }
+        });
+        b26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b26ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b26);
+        b26.setBounds(610, 290, 40, 40);
+
+        b27.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b27.setForeground(new java.awt.Color(255, 255, 255));
+        b27.setText(" 27");
+        b27.setBorder(null);
+        b27.setBorderPainted(false);
+        b27.setContentAreaFilled(false);
+        b27.setDefaultCapable(false);
+        b27.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b27MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b27MouseExited(evt);
+            }
+        });
+        b27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b27ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b27);
+        b27.setBounds(570, 330, 40, 40);
+
+        b28.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b28.setForeground(new java.awt.Color(255, 255, 255));
+        b28.setText(" 28");
+        b28.setBorder(null);
+        b28.setBorderPainted(false);
+        b28.setContentAreaFilled(false);
+        b28.setDefaultCapable(false);
+        b28.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b28MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b28MouseExited(evt);
+            }
+        });
+        b28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b28ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b28);
+        b28.setBounds(640, 320, 50, 50);
+
+        b29.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b29.setForeground(new java.awt.Color(255, 255, 255));
+        b29.setText("29");
+        b29.setBorder(null);
+        b29.setBorderPainted(false);
+        b29.setContentAreaFilled(false);
+        b29.setDefaultCapable(false);
+        b29.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b29MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b29MouseExited(evt);
+            }
+        });
+        b29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b29ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b29);
+        b29.setBounds(540, 360, 40, 40);
+
+        b30.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b30.setForeground(new java.awt.Color(255, 255, 255));
+        b30.setText("30");
+        b30.setBorder(null);
+        b30.setBorderPainted(false);
+        b30.setContentAreaFilled(false);
+        b30.setDefaultCapable(false);
+        b30.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b30MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b30MouseExited(evt);
+            }
+        });
+        b30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b30ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b30);
+        b30.setBounds(610, 370, 40, 30);
+
+        b31.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b31.setForeground(new java.awt.Color(255, 255, 255));
+        b31.setText(" 31");
+        b31.setBorder(null);
+        b31.setBorderPainted(false);
+        b31.setContentAreaFilled(false);
+        b31.setDefaultCapable(false);
+        b31.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b31MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b31MouseExited(evt);
+            }
+        });
+        b31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b31ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b31);
+        b31.setBounds(680, 370, 40, 30);
+
+        b32.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b32.setForeground(new java.awt.Color(255, 255, 255));
+        b32.setText("32");
+        b32.setBorder(null);
+        b32.setBorderPainted(false);
+        b32.setContentAreaFilled(false);
+        b32.setDefaultCapable(false);
+        b32.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b32MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b32MouseExited(evt);
+            }
+        });
+        b32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b32ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b32);
+        b32.setBounds(510, 400, 30, 30);
+
+        b33.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b33.setForeground(new java.awt.Color(255, 255, 255));
+        b33.setText("33");
+        b33.setBorder(null);
+        b33.setBorderPainted(false);
+        b33.setContentAreaFilled(false);
+        b33.setDefaultCapable(false);
+        b33.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b33MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b33MouseExited(evt);
+            }
+        });
+        b33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b33ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b33);
+        b33.setBounds(580, 400, 30, 30);
+
+        b34.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b34.setForeground(new java.awt.Color(255, 255, 255));
+        b34.setText("34");
+        b34.setBorder(null);
+        b34.setBorderPainted(false);
+        b34.setContentAreaFilled(false);
+        b34.setDefaultCapable(false);
+        b34.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b34MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b34MouseExited(evt);
+            }
+        });
+        b34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b34ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b34);
+        b34.setBounds(650, 400, 30, 30);
+
+        b35.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b35.setForeground(new java.awt.Color(255, 255, 255));
+        b35.setText(" 35");
+        b35.setBorder(null);
+        b35.setBorderPainted(false);
+        b35.setContentAreaFilled(false);
+        b35.setDefaultCapable(false);
+        b35.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b35MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b35MouseExited(evt);
+            }
+        });
+        b35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b35ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b35);
+        b35.setBounds(720, 400, 30, 30);
+
+        b36.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b36.setForeground(new java.awt.Color(255, 255, 255));
+        b36.setText("36");
+        b36.setBorder(null);
+        b36.setBorderPainted(false);
+        b36.setContentAreaFilled(false);
+        b36.setDefaultCapable(false);
+        b36.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b36MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b36MouseExited(evt);
+            }
+        });
+        b36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b36ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b36);
+        b36.setBounds(470, 430, 40, 40);
+
+        b37.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b37.setForeground(new java.awt.Color(255, 255, 255));
+        b37.setText("37");
+        b37.setBorder(null);
+        b37.setBorderPainted(false);
+        b37.setContentAreaFilled(false);
+        b37.setDefaultCapable(false);
+        b37.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b37MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b37MouseExited(evt);
+            }
+        });
+        b37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b37ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b37);
+        b37.setBounds(540, 430, 40, 40);
+
+        b38.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b38.setForeground(new java.awt.Color(255, 255, 255));
+        b38.setText("38");
+        b38.setBorder(null);
+        b38.setBorderPainted(false);
+        b38.setContentAreaFilled(false);
+        b38.setDefaultCapable(false);
+        b38.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b38MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b38MouseExited(evt);
+            }
+        });
+        b38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b38ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b38);
+        b38.setBounds(610, 430, 40, 40);
+
+        b39.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b39.setForeground(new java.awt.Color(255, 255, 255));
+        b39.setText("39");
+        b39.setBorder(null);
+        b39.setBorderPainted(false);
+        b39.setContentAreaFilled(false);
+        b39.setDefaultCapable(false);
+        b39.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b39MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b39MouseExited(evt);
+            }
+        });
+        b39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b39ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b39);
+        b39.setBounds(680, 430, 40, 40);
+
+        b40.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b40.setForeground(new java.awt.Color(255, 255, 255));
+        b40.setText("40");
+        b40.setBorder(null);
+        b40.setBorderPainted(false);
+        b40.setContentAreaFilled(false);
+        b40.setDefaultCapable(false);
+        b40.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b40MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b40MouseExited(evt);
+            }
+        });
+        b40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b40ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b40);
+        b40.setBounds(750, 430, 50, 40);
+
+        b41.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b41.setForeground(new java.awt.Color(255, 255, 255));
+        b41.setText("41");
+        b41.setBorder(null);
+        b41.setBorderPainted(false);
+        b41.setContentAreaFilled(false);
+        b41.setDefaultCapable(false);
+        b41.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b41MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b41MouseExited(evt);
+            }
+        });
+        b41.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b41ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b41);
+        b41.setBounds(500, 470, 50, 40);
+
+        b42.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b42.setForeground(new java.awt.Color(255, 255, 255));
+        b42.setText("42");
+        b42.setBorder(null);
+        b42.setBorderPainted(false);
+        b42.setContentAreaFilled(false);
+        b42.setDefaultCapable(false);
+        b42.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b42MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b42MouseExited(evt);
+            }
+        });
+        b42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b42ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b42);
+        b42.setBounds(570, 470, 50, 40);
+
+        b43.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b43.setForeground(new java.awt.Color(255, 255, 255));
+        b43.setText("43");
+        b43.setBorder(null);
+        b43.setBorderPainted(false);
+        b43.setContentAreaFilled(false);
+        b43.setDefaultCapable(false);
+        b43.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b43MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b43MouseExited(evt);
+            }
+        });
+        b43.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b43ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b43);
+        b43.setBounds(640, 470, 50, 40);
+
+        b44.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b44.setForeground(new java.awt.Color(255, 255, 255));
+        b44.setText("44");
+        b44.setBorder(null);
+        b44.setBorderPainted(false);
+        b44.setContentAreaFilled(false);
+        b44.setDefaultCapable(false);
+        b44.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b44MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b44MouseExited(evt);
+            }
+        });
+        b44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b44ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b44);
+        b44.setBounds(720, 470, 30, 40);
+
+        b45.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b45.setForeground(new java.awt.Color(255, 255, 255));
+        b45.setText("45");
+        b45.setBorder(null);
+        b45.setBorderPainted(false);
+        b45.setContentAreaFilled(false);
+        b45.setDefaultCapable(false);
+        b45.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b45MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b45MouseExited(evt);
+            }
+        });
+        b45.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b45ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b45);
+        b45.setBounds(540, 510, 40, 30);
+
+        b46.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b46.setForeground(new java.awt.Color(255, 255, 255));
+        b46.setText("46");
+        b46.setBorder(null);
+        b46.setBorderPainted(false);
+        b46.setContentAreaFilled(false);
+        b46.setDefaultCapable(false);
+        b46.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b46MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b46MouseExited(evt);
+            }
+        });
+        b46.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b46ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b46);
+        b46.setBounds(610, 510, 40, 30);
+
+        b47.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b47.setForeground(new java.awt.Color(255, 255, 255));
+        b47.setText("47");
+        b47.setBorder(null);
+        b47.setBorderPainted(false);
+        b47.setContentAreaFilled(false);
+        b47.setDefaultCapable(false);
+        b47.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b47MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b47MouseExited(evt);
+            }
+        });
+        b47.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b47ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b47);
+        b47.setBounds(680, 510, 40, 30);
+
+        b48.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b48.setForeground(new java.awt.Color(255, 255, 255));
+        b48.setText("48");
+        b48.setBorder(null);
+        b48.setBorderPainted(false);
+        b48.setContentAreaFilled(false);
+        b48.setDefaultCapable(false);
+        b48.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b48MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b48MouseExited(evt);
+            }
+        });
+        b48.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b48ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b48);
+        b48.setBounds(570, 540, 50, 40);
+
+        b49.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b49.setForeground(new java.awt.Color(255, 255, 255));
+        b49.setText("49");
+        b49.setBorder(null);
+        b49.setBorderPainted(false);
+        b49.setContentAreaFilled(false);
+        b49.setDefaultCapable(false);
+        b49.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b49MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b49MouseExited(evt);
+            }
+        });
+        b49.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b49ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b49);
+        b49.setBounds(640, 540, 50, 40);
+
+        b50.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b50.setForeground(new java.awt.Color(255, 255, 255));
+        b50.setText("50");
+        b50.setBorder(null);
+        b50.setBorderPainted(false);
+        b50.setContentAreaFilled(false);
+        b50.setDefaultCapable(false);
+        b50.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b50MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b50MouseExited(evt);
+            }
+        });
+        b50.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b50ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b50);
+        b50.setBounds(610, 580, 40, 30);
+
+        rombo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/rombos.png"))); // NOI18N
+        jPanel5.add(rombo1);
+        rombo1.setBounds(450, 270, 360, 360);
+
+        b25.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b25.setForeground(new java.awt.Color(255, 255, 255));
+        b25.setText("25");
+        b25.setBorder(null);
+        b25.setBorderPainted(false);
+        b25.setContentAreaFilled(false);
+        b25.setDefaultCapable(false);
+        b25.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b25MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b25MouseExited(evt);
+            }
+        });
+        b25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b25ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b25);
+        b25.setBounds(210, 580, 40, 30);
+
+        b24.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b24.setForeground(new java.awt.Color(255, 255, 255));
+        b24.setText("24");
+        b24.setBorder(null);
+        b24.setBorderPainted(false);
+        b24.setContentAreaFilled(false);
+        b24.setDefaultCapable(false);
+        b24.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b24MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b24MouseExited(evt);
+            }
+        });
+        b24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b24ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b24);
+        b24.setBounds(240, 540, 50, 40);
+
+        b23.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b23.setForeground(new java.awt.Color(255, 255, 255));
+        b23.setText("23");
+        b23.setBorder(null);
+        b23.setBorderPainted(false);
+        b23.setContentAreaFilled(false);
+        b23.setDefaultCapable(false);
+        b23.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b23MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b23MouseExited(evt);
+            }
+        });
+        b23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b23ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b23);
+        b23.setBounds(170, 540, 50, 40);
+
+        b22.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b22.setForeground(new java.awt.Color(255, 255, 255));
+        b22.setText(" 22");
+        b22.setBorder(null);
+        b22.setBorderPainted(false);
+        b22.setContentAreaFilled(false);
+        b22.setDefaultCapable(false);
+        b22.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b22MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b22MouseExited(evt);
+            }
+        });
+        b22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b22ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b22);
+        b22.setBounds(280, 510, 40, 30);
+
+        b21.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b21.setForeground(new java.awt.Color(255, 255, 255));
+        b21.setText(" 21");
+        b21.setBorder(null);
+        b21.setBorderPainted(false);
+        b21.setContentAreaFilled(false);
+        b21.setDefaultCapable(false);
+        b21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b21MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b21MouseExited(evt);
+            }
+        });
+        b21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b21ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b21);
+        b21.setBounds(210, 510, 40, 30);
+
+        b20.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b20.setForeground(new java.awt.Color(255, 255, 255));
+        b20.setText("20");
+        b20.setBorder(null);
+        b20.setBorderPainted(false);
+        b20.setContentAreaFilled(false);
+        b20.setDefaultCapable(false);
+        b20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b20MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b20MouseExited(evt);
+            }
+        });
+        b20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b20ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b20);
+        b20.setBounds(140, 510, 40, 30);
+
+        b19.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b19.setForeground(new java.awt.Color(255, 255, 255));
+        b19.setText("19");
+        b19.setBorder(null);
+        b19.setBorderPainted(false);
+        b19.setContentAreaFilled(false);
+        b19.setDefaultCapable(false);
+        b19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b19MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b19MouseExited(evt);
+            }
+        });
+        b19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b19ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b19);
+        b19.setBounds(320, 470, 30, 40);
+
+        b18.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b18.setForeground(new java.awt.Color(255, 255, 255));
+        b18.setText("18");
+        b18.setBorder(null);
+        b18.setBorderPainted(false);
+        b18.setContentAreaFilled(false);
+        b18.setDefaultCapable(false);
+        b18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b18MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b18MouseExited(evt);
+            }
+        });
+        b18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b18ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b18);
+        b18.setBounds(240, 470, 50, 40);
+
+        b17.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b17.setForeground(new java.awt.Color(255, 255, 255));
+        b17.setText("17");
+        b17.setBorder(null);
+        b17.setBorderPainted(false);
+        b17.setContentAreaFilled(false);
+        b17.setDefaultCapable(false);
+        b17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b17MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b17MouseExited(evt);
+            }
+        });
+        b17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b17ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b17);
+        b17.setBounds(170, 470, 50, 40);
+
+        b16.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b16.setForeground(new java.awt.Color(255, 255, 255));
+        b16.setText("16");
+        b16.setBorder(null);
+        b16.setBorderPainted(false);
+        b16.setContentAreaFilled(false);
+        b16.setDefaultCapable(false);
+        b16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b16MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b16MouseExited(evt);
+            }
+        });
+        b16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b16ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b16);
+        b16.setBounds(100, 470, 50, 40);
+
+        b15.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b15.setForeground(new java.awt.Color(255, 255, 255));
+        b15.setText("15");
+        b15.setBorder(null);
+        b15.setBorderPainted(false);
+        b15.setContentAreaFilled(false);
+        b15.setDefaultCapable(false);
+        b15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b15MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b15MouseExited(evt);
+            }
+        });
+        b15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b15ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b15);
+        b15.setBounds(350, 430, 50, 40);
+
+        b14.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b14.setForeground(new java.awt.Color(255, 255, 255));
+        b14.setText("14");
+        b14.setBorder(null);
+        b14.setBorderPainted(false);
+        b14.setContentAreaFilled(false);
+        b14.setDefaultCapable(false);
+        b14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b14MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b14MouseExited(evt);
+            }
+        });
+        b14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b14ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b14);
+        b14.setBounds(280, 430, 40, 40);
+
+        b13.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b13.setForeground(new java.awt.Color(255, 255, 255));
+        b13.setText("13");
+        b13.setBorder(null);
+        b13.setBorderPainted(false);
+        b13.setContentAreaFilled(false);
+        b13.setDefaultCapable(false);
+        b13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b13MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b13MouseExited(evt);
+            }
+        });
+        b13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b13ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b13);
+        b13.setBounds(210, 430, 40, 40);
+
+        b12.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b12.setForeground(new java.awt.Color(255, 255, 255));
+        b12.setText("12");
+        b12.setBorder(null);
+        b12.setBorderPainted(false);
+        b12.setContentAreaFilled(false);
+        b12.setDefaultCapable(false);
+        b12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b12MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b12MouseExited(evt);
+            }
+        });
+        b12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b12ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b12);
+        b12.setBounds(140, 430, 40, 40);
+
+        b11.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b11.setForeground(new java.awt.Color(255, 255, 255));
+        b11.setText("11");
+        b11.setBorder(null);
+        b11.setBorderPainted(false);
+        b11.setContentAreaFilled(false);
+        b11.setDefaultCapable(false);
+        b11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b11MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b11MouseExited(evt);
+            }
+        });
+        b11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b11ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b11);
+        b11.setBounds(70, 430, 40, 40);
+
+        b10.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b10.setForeground(new java.awt.Color(255, 255, 255));
+        b10.setText(" 10");
+        b10.setBorder(null);
+        b10.setBorderPainted(false);
+        b10.setContentAreaFilled(false);
+        b10.setDefaultCapable(false);
+        b10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b10MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b10MouseExited(evt);
+            }
+        });
+        b10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b10ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b10);
+        b10.setBounds(320, 400, 30, 30);
+
+        b9.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b9.setForeground(new java.awt.Color(255, 255, 255));
+        b9.setText("9");
+        b9.setBorder(null);
+        b9.setBorderPainted(false);
+        b9.setContentAreaFilled(false);
+        b9.setDefaultCapable(false);
+        b9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b9MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b9MouseExited(evt);
+            }
+        });
+        b9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b9ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b9);
+        b9.setBounds(250, 400, 30, 30);
+
+        b8.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b8.setForeground(new java.awt.Color(255, 255, 255));
+        b8.setText("8");
+        b8.setBorder(null);
+        b8.setBorderPainted(false);
+        b8.setContentAreaFilled(false);
+        b8.setDefaultCapable(false);
+        b8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b8MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b8MouseExited(evt);
+            }
+        });
+        b8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b8ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b8);
+        b8.setBounds(180, 400, 30, 30);
+
+        b7.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b7.setForeground(new java.awt.Color(255, 255, 255));
+        b7.setText("7");
+        b7.setBorder(null);
+        b7.setBorderPainted(false);
+        b7.setContentAreaFilled(false);
+        b7.setDefaultCapable(false);
+        b7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b7MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b7MouseExited(evt);
+            }
+        });
+        b7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b7ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b7);
+        b7.setBounds(110, 400, 30, 30);
+
+        b6.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b6.setForeground(new java.awt.Color(255, 255, 255));
+        b6.setText(" 6");
+        b6.setBorder(null);
+        b6.setBorderPainted(false);
+        b6.setContentAreaFilled(false);
+        b6.setDefaultCapable(false);
+        b6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b6MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b6MouseExited(evt);
+            }
+        });
+        b6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b6ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b6);
+        b6.setBounds(280, 370, 40, 30);
+
+        b5.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b5.setForeground(new java.awt.Color(255, 255, 255));
+        b5.setText("5");
+        b5.setBorder(null);
+        b5.setBorderPainted(false);
+        b5.setContentAreaFilled(false);
+        b5.setDefaultCapable(false);
+        b5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b5MouseExited(evt);
+            }
+        });
+        b5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b5ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b5);
+        b5.setBounds(210, 370, 40, 30);
+
+        b4.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b4.setForeground(new java.awt.Color(255, 255, 255));
+        b4.setText("4");
+        b4.setBorder(null);
+        b4.setBorderPainted(false);
+        b4.setContentAreaFilled(false);
+        b4.setDefaultCapable(false);
+        b4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b4MouseExited(evt);
+            }
+        });
+        b4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b4ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b4);
+        b4.setBounds(140, 360, 40, 40);
+
+        b3.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b3.setForeground(new java.awt.Color(255, 255, 255));
+        b3.setText(" 3");
+        b3.setBorder(null);
+        b3.setBorderPainted(false);
+        b3.setContentAreaFilled(false);
+        b3.setDefaultCapable(false);
+        b3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b3MouseExited(evt);
+            }
+        });
+        b3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b3ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b3);
+        b3.setBounds(240, 320, 50, 50);
+
+        b2.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b2.setForeground(new java.awt.Color(255, 255, 255));
+        b2.setText(" 2");
+        b2.setBorder(null);
+        b2.setBorderPainted(false);
+        b2.setContentAreaFilled(false);
+        b2.setDefaultCapable(false);
+        b2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b2MouseExited(evt);
+            }
+        });
+        b2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b2ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b2);
+        b2.setBounds(170, 330, 40, 40);
+
+        b1.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        b1.setForeground(new java.awt.Color(255, 255, 255));
+        b1.setText("1");
+        b1.setBorder(null);
+        b1.setBorderPainted(false);
+        b1.setContentAreaFilled(false);
+        b1.setDefaultCapable(false);
+        b1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b1MouseExited(evt);
+            }
+        });
+        b1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b1);
+        b1.setBounds(210, 290, 40, 40);
+
+        rombo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/rombos.png"))); // NOI18N
+        jPanel5.add(rombo);
+        rombo.setBounds(50, 270, 360, 360);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -169,8 +2590,8 @@ public class Algoritmos extends javax.swing.JFrame {
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 597, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 128, Short.MAX_VALUE)
+                .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 1076, Short.MAX_VALUE)
+                .addGap(0, 0, 0)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0))
         );
@@ -231,10 +2652,6 @@ public class Algoritmos extends javax.swing.JFrame {
         Menu.setForeground(new Color(255, 255, 255));
     }//GEN-LAST:event_MenuMouseExited
 
-    private void MenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MenuActionPerformed
-
     private void InicioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InicioMouseEntered
         Inicio.setForeground(Color.gray);
     }//GEN-LAST:event_InicioMouseEntered
@@ -243,9 +2660,1259 @@ public class Algoritmos extends javax.swing.JFrame {
         Inicio.setForeground(new Color(255, 255, 255));
     }//GEN-LAST:event_InicioMouseExited
 
-    private void InicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InicioActionPerformed
+    private void MenuActionPerformed(java.awt.event.ActionEvent evt) {                                     
         // TODO add your handling code here:
-    }//GEN-LAST:event_InicioActionPerformed
+    }
+    
+    private void InicioActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b1ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b2ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+
+    private void b3ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b4ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b5ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b6ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b7ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b8ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b9ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b10ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b11ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b12ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b13ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b14ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b15ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b16ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b17ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b18ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b19ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b20ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b21ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b22ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b23ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b24ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void b25ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+
+    private void b1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b1MouseEntered
+        b1.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b1MouseEntered
+
+    private void b1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b1MouseExited
+        b1.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b1MouseExited
+
+    private void b2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b2MouseExited
+        b2.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b2MouseExited
+
+    private void b2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b2MouseEntered
+        b2.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b2MouseEntered
+
+    private void b3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b3MouseEntered
+        b3.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b3MouseEntered
+
+    private void b3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b3MouseExited
+        b3.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b3MouseExited
+
+    
+
+    private void b4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b4MouseEntered
+        b4.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b4MouseEntered
+
+    private void b4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b4MouseExited
+        b4.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b4MouseExited
+
+    
+
+    private void b5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b5MouseEntered
+        b5.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b5MouseEntered
+
+    private void b5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b5MouseExited
+        b5.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b5MouseExited
+
+    
+
+    private void b6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b6MouseEntered
+        b6.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b6MouseEntered
+
+    private void b6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b6MouseExited
+        b6.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b6MouseExited
+
+    
+
+    private void b7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b7MouseEntered
+        b7.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b7MouseEntered
+
+    private void b7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b7MouseExited
+        b7.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b7MouseExited
+
+    
+
+    private void b8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b8MouseEntered
+        b8.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b8MouseEntered
+
+    private void b8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b8MouseExited
+        b8.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b8MouseExited
+
+    
+
+    private void b9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b9MouseEntered
+        b9.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b9MouseEntered
+
+    private void b9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b9MouseExited
+        b9.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b9MouseExited
+
+    
+
+    private void b10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b10MouseEntered
+        b10.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b10MouseEntered
+
+    private void b10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b10MouseExited
+        b10.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b10MouseExited
+
+    
+
+    private void b11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b11MouseEntered
+        b11.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b11MouseEntered
+
+    private void b11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b11MouseExited
+        b11.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b11MouseExited
+
+    
+
+    private void b12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b12MouseEntered
+        b12.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b12MouseEntered
+
+    private void b12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b12MouseExited
+        b12.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b12MouseExited
+
+    
+
+    private void b13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b13MouseEntered
+        b13.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b13MouseEntered
+
+    private void b13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b13MouseExited
+        b13.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b13MouseExited
+
+    
+
+    private void b14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b14MouseEntered
+        b14.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b14MouseEntered
+
+    private void b14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b14MouseExited
+        b14.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b14MouseExited
+
+    
+
+    private void b15MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b15MouseEntered
+        b15.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b15MouseEntered
+
+    private void b15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b15MouseExited
+        b15.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b15MouseExited
+
+    
+
+    private void b16MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b16MouseEntered
+        b16.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b16MouseEntered
+
+    private void b16MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b16MouseExited
+        b16.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b16MouseExited
+
+    
+
+    private void b17MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b17MouseEntered
+        b17.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b17MouseEntered
+
+    private void b17MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b17MouseExited
+        b17.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b17MouseExited
+
+    
+
+    private void b18MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b18MouseEntered
+        b18.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b18MouseEntered
+
+    private void b18MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b18MouseExited
+        b18.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b18MouseExited
+
+    
+
+    private void b19MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b19MouseEntered
+        b19.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b19MouseEntered
+
+    private void b19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b19MouseExited
+        b19.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b19MouseExited
+
+    
+
+    private void b20MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b20MouseEntered
+        b20.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b20MouseEntered
+
+    private void b20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b20MouseExited
+        b20.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b20MouseExited
+
+    
+
+    private void b21MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b21MouseEntered
+        b21.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b21MouseEntered
+
+    private void b21MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b21MouseExited
+        b21.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b21MouseExited
+
+    
+
+    private void b22MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b22MouseEntered
+        b22.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b22MouseEntered
+
+    private void b22MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b22MouseExited
+        b22.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b22MouseExited
+
+    
+
+    private void b23MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b23MouseEntered
+        b23.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b23MouseEntered
+
+    private void b23MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b23MouseExited
+        b23.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b23MouseExited
+
+    
+
+    private void b24MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b24MouseEntered
+        b24.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b24MouseEntered
+
+    private void b24MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b24MouseExited
+        b24.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b24MouseExited
+
+    
+
+    private void b25MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b25MouseEntered
+        b25.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b25MouseEntered
+
+    private void b25MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b25MouseExited
+        b25.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b25MouseExited
+
+    private void b26MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b26MouseEntered
+        b26.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b26MouseEntered
+
+    private void b26MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b26MouseExited
+        b26.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b26MouseExited
+
+    private void b26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b26ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b26ActionPerformed
+
+    private void b27MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b27MouseEntered
+        b27.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b27MouseEntered
+
+    private void b27MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b27MouseExited
+        b27.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b27MouseExited
+
+    private void b27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b27ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b27ActionPerformed
+
+    private void b28MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b28MouseEntered
+        b28.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b28MouseEntered
+
+    private void b28MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b28MouseExited
+        b28.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b28MouseExited
+
+    private void b28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b28ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b28ActionPerformed
+
+    private void b29MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b29MouseEntered
+        b29.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b29MouseEntered
+
+    private void b29MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b29MouseExited
+        b29.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b29MouseExited
+
+    private void b29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b29ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b29ActionPerformed
+
+    private void b30MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b30MouseEntered
+        b30.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b30MouseEntered
+
+    private void b30MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b30MouseExited
+        b30.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b30MouseExited
+
+    private void b30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b30ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b30ActionPerformed
+
+    private void b31MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b31MouseEntered
+        b31.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b31MouseEntered
+
+    private void b31MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b31MouseExited
+        b31.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b31MouseExited
+
+    private void b31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b31ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b31ActionPerformed
+
+    private void b32MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b32MouseEntered
+        b32.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b32MouseEntered
+
+    private void b32MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b32MouseExited
+        b32.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b32MouseExited
+
+    private void b32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b32ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b32ActionPerformed
+
+    private void b33MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b33MouseEntered
+        b33.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b33MouseEntered
+
+    private void b33MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b33MouseExited
+        b33.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b33MouseExited
+
+    private void b33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b33ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b33ActionPerformed
+
+    private void b34MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b34MouseEntered
+        b34.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b34MouseEntered
+
+    private void b34MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b34MouseExited
+        b34.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b34MouseExited
+
+    private void b34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b34ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b34ActionPerformed
+
+    private void b35MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b35MouseEntered
+        b35.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b35MouseEntered
+
+    private void b35MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b35MouseExited
+        b35.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b35MouseExited
+
+    private void b35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b35ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b35ActionPerformed
+
+    private void b36MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b36MouseEntered
+        b36.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b36MouseEntered
+
+    private void b36MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b36MouseExited
+        b36.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b36MouseExited
+
+    private void b36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b36ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b36ActionPerformed
+
+    private void b37MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b37MouseEntered
+        b37.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b37MouseEntered
+
+    private void b37MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b37MouseExited
+        b37.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b37MouseExited
+
+    private void b37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b37ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b37ActionPerformed
+
+    private void b38MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b38MouseEntered
+        b38.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b38MouseEntered
+
+    private void b38MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b38MouseExited
+        b38.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b38MouseExited
+
+    private void b38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b38ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b38ActionPerformed
+
+    private void b39MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b39MouseEntered
+        b39.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b39MouseEntered
+
+    private void b39MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b39MouseExited
+        b39.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b39MouseExited
+
+    private void b39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b39ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b39ActionPerformed
+
+    private void b40MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b40MouseEntered
+        b40.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b40MouseEntered
+
+    private void b40MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b40MouseExited
+        b40.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b40MouseExited
+
+    private void b40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b40ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b40ActionPerformed
+
+    private void b41MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b41MouseEntered
+        b41.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b41MouseEntered
+
+    private void b41MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b41MouseExited
+        b41.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b41MouseExited
+
+    private void b41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b41ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b41ActionPerformed
+
+    private void b42MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b42MouseEntered
+        b42.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b42MouseEntered
+
+    private void b42MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b42MouseExited
+        b42.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b42MouseExited
+
+    private void b42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b42ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b42ActionPerformed
+
+    private void b43MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b43MouseEntered
+        b43.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b43MouseEntered
+
+    private void b43MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b43MouseExited
+        b43.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b43MouseExited
+
+    private void b43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b43ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b43ActionPerformed
+
+    private void b44MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b44MouseEntered
+        b44.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b44MouseEntered
+
+    private void b44MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b44MouseExited
+        b44.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b44MouseExited
+
+    private void b44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b44ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b44ActionPerformed
+
+    private void b45MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b45MouseEntered
+        b45.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b45MouseEntered
+
+    private void b45MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b45MouseExited
+        b45.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b45MouseExited
+
+    private void b45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b45ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b45ActionPerformed
+
+    private void b46MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b46MouseEntered
+        b46.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b46MouseEntered
+
+    private void b46MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b46MouseExited
+        b46.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b46MouseExited
+
+    private void b46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b46ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b46ActionPerformed
+
+    private void b47MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b47MouseEntered
+        b47.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b47MouseEntered
+
+    private void b47MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b47MouseExited
+        b47.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b47MouseExited
+
+    private void b47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b47ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b47ActionPerformed
+
+    private void b48MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b48MouseEntered
+        b48.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b48MouseEntered
+
+    private void b48MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b48MouseExited
+        b48.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b48MouseExited
+
+    private void b48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b48ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b48ActionPerformed
+
+    private void b49MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b49MouseEntered
+        b49.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b49MouseEntered
+
+    private void b49MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b49MouseExited
+        b49.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b49MouseExited
+
+    private void b49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b49ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b49ActionPerformed
+
+    private void b50MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b50MouseEntered
+        b50.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b50MouseEntered
+
+    private void b50MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b50MouseExited
+        b50.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b50MouseExited
+
+    private void b50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b50ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b50ActionPerformed
+
+    private void b51MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b51MouseEntered
+        b51.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b51MouseEntered
+
+    private void b51MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b51MouseExited
+        b51.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b51MouseExited
+
+    private void b51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b51ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b51ActionPerformed
+
+    private void b52MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b52MouseEntered
+        b52.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b52MouseEntered
+
+    private void b52MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b52MouseExited
+        b52.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b52MouseExited
+
+    private void b52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b52ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b52ActionPerformed
+
+    private void b53MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b53MouseEntered
+        b53.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b53MouseEntered
+
+    private void b53MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b53MouseExited
+        b53.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b53MouseExited
+
+    private void b53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b53ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b53ActionPerformed
+
+    private void b54MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b54MouseEntered
+        b54.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b54MouseEntered
+
+    private void b54MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b54MouseExited
+        b54.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b54MouseExited
+
+    private void b54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b54ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b54ActionPerformed
+
+    private void b55MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b55MouseEntered
+        b55.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b55MouseEntered
+
+    private void b55MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b55MouseExited
+        b55.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b55MouseExited
+
+    private void b55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b55ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b55ActionPerformed
+
+    private void b56MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b56MouseEntered
+        b56.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b56MouseEntered
+
+    private void b56MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b56MouseExited
+        b56.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b56MouseExited
+
+    private void b56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b56ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b56ActionPerformed
+
+    private void b57MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b57MouseEntered
+        b57.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b57MouseEntered
+
+    private void b57MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b57MouseExited
+        b57.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b57MouseExited
+
+    private void b57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b57ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b57ActionPerformed
+
+    private void b58MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b58MouseEntered
+        b58.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b58MouseEntered
+
+    private void b58MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b58MouseExited
+        b58.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b58MouseExited
+
+    private void b58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b58ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b58ActionPerformed
+
+    private void b59MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b59MouseEntered
+        b59.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b59MouseEntered
+
+    private void b59MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b59MouseExited
+        b59.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b59MouseExited
+
+    private void b59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b59ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b59ActionPerformed
+
+    private void b60MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b60MouseEntered
+        b60.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b60MouseEntered
+
+    private void b60MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b60MouseExited
+        b60.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b60MouseExited
+
+    private void b60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b60ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b60ActionPerformed
+
+    private void b61MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b61MouseEntered
+        b61.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b61MouseEntered
+
+    private void b61MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b61MouseExited
+        b61.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b61MouseExited
+
+    private void b61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b61ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b61ActionPerformed
+
+    private void b62MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b62MouseEntered
+        b62.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b62MouseEntered
+
+    private void b62MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b62MouseExited
+        b62.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b62MouseExited
+
+    private void b62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b62ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b62ActionPerformed
+
+    private void b63MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b63MouseEntered
+        b63.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b63MouseEntered
+
+    private void b63MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b63MouseExited
+        b63.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b63MouseExited
+
+    private void b63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b63ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b63ActionPerformed
+
+    private void b64MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b64MouseEntered
+        b64.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b64MouseEntered
+
+    private void b64MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b64MouseExited
+        b64.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b64MouseExited
+
+    private void b64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b64ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b64ActionPerformed
+
+    private void b65MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b65MouseEntered
+        b65.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b65MouseEntered
+
+    private void b65MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b65MouseExited
+        b65.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b65MouseExited
+
+    private void b65ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b65ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b65ActionPerformed
+
+    private void b66MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b66MouseEntered
+        b66.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b66MouseEntered
+
+    private void b66MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b66MouseExited
+        b66.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b66MouseExited
+
+    private void b66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b66ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b66ActionPerformed
+
+    private void b67MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b67MouseEntered
+        b67.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b67MouseEntered
+
+    private void b67MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b67MouseExited
+        b67.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b67MouseExited
+
+    private void b67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b67ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b67ActionPerformed
+
+    private void b68MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b68MouseEntered
+        b68.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b68MouseEntered
+
+    private void b68MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b68MouseExited
+        b68.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b68MouseExited
+
+    private void b68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b68ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b68ActionPerformed
+
+    private void b69MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b69MouseEntered
+        b69.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b69MouseEntered
+
+    private void b69MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b69MouseExited
+        b69.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b69MouseExited
+
+    private void b69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b69ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b69ActionPerformed
+
+    private void b70MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b70MouseEntered
+        b70.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b70MouseEntered
+
+    private void b70MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b70MouseExited
+        b70.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b70MouseExited
+
+    private void b70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b70ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b70ActionPerformed
+
+    private void b71MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b71MouseEntered
+        b71.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b71MouseEntered
+
+    private void b71MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b71MouseExited
+        b71.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b71MouseExited
+
+    private void b71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b71ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b71ActionPerformed
+
+    private void b72MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b72MouseEntered
+        b72.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b72MouseEntered
+
+    private void b72MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b72MouseExited
+        b72.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b72MouseExited
+
+    private void b72ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b72ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b72ActionPerformed
+
+    private void b73MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b73MouseEntered
+        b73.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b73MouseEntered
+
+    private void b73MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b73MouseExited
+        b73.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b73MouseExited
+
+    private void b73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b73ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b73ActionPerformed
+
+    private void b74MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b74MouseEntered
+        b74.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b74MouseEntered
+
+    private void b74MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b74MouseExited
+        b74.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b74MouseExited
+
+    private void b74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b74ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b74ActionPerformed
+
+    private void b75MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b75MouseEntered
+        b75.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b75MouseEntered
+
+    private void b75MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b75MouseExited
+        b75.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b75MouseExited
+
+    private void b75ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b75ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b75ActionPerformed
+
+    private void b76MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b76MouseEntered
+        b76.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b76MouseEntered
+
+    private void b76MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b76MouseExited
+        b76.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b76MouseExited
+
+    private void b76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b76ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b76ActionPerformed
+
+    private void b77MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b77MouseEntered
+        b77.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b77MouseEntered
+
+    private void b77MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b77MouseExited
+        b77.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b77MouseExited
+
+    private void b77ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b77ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b77ActionPerformed
+
+    private void b78MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b78MouseEntered
+        b78.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b78MouseEntered
+
+    private void b78MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b78MouseExited
+        b78.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b78MouseExited
+
+    private void b78ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b78ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b78ActionPerformed
+
+    private void b79MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b79MouseEntered
+        b79.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b79MouseEntered
+
+    private void b79MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b79MouseExited
+        b79.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b79MouseExited
+
+    private void b79ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b79ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b79ActionPerformed
+
+    private void b80MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b80MouseEntered
+        b80.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b80MouseEntered
+
+    private void b80MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b80MouseExited
+        b80.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b80MouseExited
+
+    private void b80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b80ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b80ActionPerformed
+
+    private void b81MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b81MouseEntered
+        b81.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b81MouseEntered
+
+    private void b81MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b81MouseExited
+        b81.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b81MouseExited
+
+    private void b81ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b81ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b81ActionPerformed
+
+    private void b82MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b82MouseEntered
+        b82.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b82MouseEntered
+
+    private void b82MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b82MouseExited
+        b82.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b82MouseExited
+
+    private void b82ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b82ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b82ActionPerformed
+
+    private void b83MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b83MouseEntered
+        b83.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b83MouseEntered
+
+    private void b83MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b83MouseExited
+        b83.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b83MouseExited
+
+    private void b83ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b83ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b83ActionPerformed
+
+    private void b84MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b84MouseEntered
+        b84.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b84MouseEntered
+
+    private void b84MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b84MouseExited
+        b84.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b84MouseExited
+
+    private void b84ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b84ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b84ActionPerformed
+
+    private void b85MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b85MouseEntered
+        b85.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b85MouseEntered
+
+    private void b85MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b85MouseExited
+        b85.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b85MouseExited
+
+    private void b85ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b85ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b85ActionPerformed
+
+    private void b86MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b86MouseEntered
+        b86.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b86MouseEntered
+
+    private void b86MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b86MouseExited
+        b86.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b86MouseExited
+
+    private void b86ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b86ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b86ActionPerformed
+
+    private void b87MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b87MouseEntered
+        b87.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b87MouseEntered
+
+    private void b87MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b87MouseExited
+        b87.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b87MouseExited
+
+    private void b87ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b87ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b87ActionPerformed
+
+    private void b88MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b88MouseEntered
+        b88.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b88MouseEntered
+
+    private void b88MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b88MouseExited
+        b88.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b88MouseExited
+
+    private void b88ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b88ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b88ActionPerformed
+
+    private void b89MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b89MouseEntered
+        b89.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b89MouseEntered
+
+    private void b89MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b89MouseExited
+        b89.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b89MouseExited
+
+    private void b89ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b89ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b89ActionPerformed
+
+    private void b90MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b90MouseEntered
+        b90.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b90MouseEntered
+
+    private void b90MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b90MouseExited
+        b90.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b90MouseExited
+
+    private void b90ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b90ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b90ActionPerformed
+
+    private void b91MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b91MouseEntered
+        b91.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b91MouseEntered
+
+    private void b91MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b91MouseExited
+        b91.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b91MouseExited
+
+    private void b91ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b91ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b91ActionPerformed
+
+    private void b92MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b92MouseEntered
+        b92.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b92MouseEntered
+
+    private void b92MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b92MouseExited
+        b92.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b92MouseExited
+
+    private void b92ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b92ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b92ActionPerformed
+
+    private void b93MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b93MouseEntered
+        b93.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b93MouseEntered
+
+    private void b93MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b93MouseExited
+        b93.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b93MouseExited
+
+    private void b93ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b93ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b93ActionPerformed
+
+    private void b94MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b94MouseEntered
+        b94.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b94MouseEntered
+
+    private void b94MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b94MouseExited
+        b94.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b94MouseExited
+
+    private void b94ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b94ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b94ActionPerformed
+
+    private void b95MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b95MouseEntered
+        b95.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b95MouseEntered
+
+    private void b95MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b95MouseExited
+        b95.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b95MouseExited
+
+    private void b95ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b95ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b95ActionPerformed
+
+    private void b96MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b96MouseEntered
+        b96.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b96MouseEntered
+
+    private void b96MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b96MouseExited
+        b96.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b96MouseExited
+
+    private void b96ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b96ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b96ActionPerformed
+
+    private void b97MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b97MouseEntered
+        b97.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b97MouseEntered
+
+    private void b97MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b97MouseExited
+        b97.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b97MouseExited
+
+    private void b97ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b97ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b97ActionPerformed
+
+    private void b98MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b98MouseEntered
+        b98.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b98MouseEntered
+
+    private void b98MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b98MouseExited
+        b98.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b98MouseExited
+
+    private void b98ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b98ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b98ActionPerformed
+
+    private void b99MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b99MouseEntered
+        b99.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b99MouseEntered
+
+    private void b99MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b99MouseExited
+        b99.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b99MouseExited
+
+    private void b99ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b99ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b99ActionPerformed
+
+    private void b100MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b100MouseEntered
+        b100.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b100MouseEntered
+
+    private void b100MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b100MouseExited
+        b100.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b100MouseExited
+
+    private void b100ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b100ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b100ActionPerformed
+
+    
 
     /**
      * @param args the command line arguments
@@ -287,11 +3954,110 @@ public class Algoritmos extends javax.swing.JFrame {
     public javax.swing.JButton Inicio;
     private javax.swing.JButton Manual;
     public javax.swing.JButton Menu;
+    private javax.swing.JButton b1;
+    private javax.swing.JButton b10;
+    private javax.swing.JButton b100;
+    private javax.swing.JButton b11;
+    private javax.swing.JButton b12;
+    private javax.swing.JButton b13;
+    private javax.swing.JButton b14;
+    private javax.swing.JButton b15;
+    private javax.swing.JButton b16;
+    private javax.swing.JButton b17;
+    private javax.swing.JButton b18;
+    private javax.swing.JButton b19;
+    private javax.swing.JButton b2;
+    private javax.swing.JButton b20;
+    private javax.swing.JButton b21;
+    private javax.swing.JButton b22;
+    private javax.swing.JButton b23;
+    private javax.swing.JButton b24;
+    private javax.swing.JButton b25;
+    private javax.swing.JButton b26;
+    private javax.swing.JButton b27;
+    private javax.swing.JButton b28;
+    private javax.swing.JButton b29;
+    private javax.swing.JButton b3;
+    private javax.swing.JButton b30;
+    private javax.swing.JButton b31;
+    private javax.swing.JButton b32;
+    private javax.swing.JButton b33;
+    private javax.swing.JButton b34;
+    private javax.swing.JButton b35;
+    private javax.swing.JButton b36;
+    private javax.swing.JButton b37;
+    private javax.swing.JButton b38;
+    private javax.swing.JButton b39;
+    private javax.swing.JButton b4;
+    private javax.swing.JButton b40;
+    private javax.swing.JButton b41;
+    private javax.swing.JButton b42;
+    private javax.swing.JButton b43;
+    private javax.swing.JButton b44;
+    private javax.swing.JButton b45;
+    private javax.swing.JButton b46;
+    private javax.swing.JButton b47;
+    private javax.swing.JButton b48;
+    private javax.swing.JButton b49;
+    private javax.swing.JButton b5;
+    private javax.swing.JButton b50;
+    private javax.swing.JButton b51;
+    private javax.swing.JButton b52;
+    private javax.swing.JButton b53;
+    private javax.swing.JButton b54;
+    private javax.swing.JButton b55;
+    private javax.swing.JButton b56;
+    private javax.swing.JButton b57;
+    private javax.swing.JButton b58;
+    private javax.swing.JButton b59;
+    private javax.swing.JButton b6;
+    private javax.swing.JButton b60;
+    private javax.swing.JButton b61;
+    private javax.swing.JButton b62;
+    private javax.swing.JButton b63;
+    private javax.swing.JButton b64;
+    private javax.swing.JButton b65;
+    private javax.swing.JButton b66;
+    private javax.swing.JButton b67;
+    private javax.swing.JButton b68;
+    private javax.swing.JButton b69;
+    private javax.swing.JButton b7;
+    private javax.swing.JButton b70;
+    private javax.swing.JButton b71;
+    private javax.swing.JButton b72;
+    private javax.swing.JButton b73;
+    private javax.swing.JButton b74;
+    private javax.swing.JButton b75;
+    private javax.swing.JButton b76;
+    private javax.swing.JButton b77;
+    private javax.swing.JButton b78;
+    private javax.swing.JButton b79;
+    private javax.swing.JButton b8;
+    private javax.swing.JButton b80;
+    private javax.swing.JButton b81;
+    private javax.swing.JButton b82;
+    private javax.swing.JButton b83;
+    private javax.swing.JButton b84;
+    private javax.swing.JButton b85;
+    private javax.swing.JButton b86;
+    private javax.swing.JButton b87;
+    private javax.swing.JButton b88;
+    private javax.swing.JButton b89;
+    private javax.swing.JButton b9;
+    private javax.swing.JButton b90;
+    private javax.swing.JButton b91;
+    private javax.swing.JButton b92;
+    private javax.swing.JButton b93;
+    private javax.swing.JButton b94;
+    private javax.swing.JButton b95;
+    private javax.swing.JButton b96;
+    private javax.swing.JButton b97;
+    private javax.swing.JButton b98;
+    private javax.swing.JButton b99;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
@@ -300,5 +4066,9 @@ public class Algoritmos extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel rombo;
+    private javax.swing.JLabel rombo1;
+    private javax.swing.JLabel rombo2;
+    private javax.swing.JLabel rombo3;
     // End of variables declaration//GEN-END:variables
 }
