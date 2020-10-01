@@ -49,6 +49,8 @@ public class Algoritmos extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
+        b101 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
         b76 = new javax.swing.JButton();
         b77 = new javax.swing.JButton();
         b78 = new javax.swing.JButton();
@@ -153,6 +155,8 @@ public class Algoritmos extends javax.swing.JFrame {
         b2 = new javax.swing.JButton();
         b1 = new javax.swing.JButton();
         rombo = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jTextArea1 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -263,6 +267,33 @@ public class Algoritmos extends javax.swing.JFrame {
 
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setLayout(null);
+
+        b101.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
+        b101.setForeground(new java.awt.Color(255, 255, 255));
+        b101.setText("101");
+        b101.setBorderPainted(false);
+        b101.setContentAreaFilled(false);
+        b101.setDefaultCapable(false);
+        b101.setFocusPainted(false);
+        b101.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b101MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                b101MouseExited(evt);
+            }
+        });
+        b101.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b101ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(b101);
+        b101.setBounds(380, 582, 100, 110);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/101.png"))); // NOI18N
+        jPanel5.add(jLabel3);
+        jLabel3.setBounds(324, 520, 220, 230);
 
         b76.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
         b76.setForeground(new java.awt.Color(255, 255, 255));
@@ -2580,6 +2611,22 @@ public class Algoritmos extends javax.swing.JFrame {
         jPanel5.add(rombo);
         rombo.setBounds(50, 270, 360, 360);
 
+        jLabel2.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
+        jLabel2.setText("101 Algoritmos");
+        jPanel5.add(jLabel2);
+        jLabel2.setBounds(300, 40, 270, 80);
+
+        jTextArea1.setEditable(false);
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jTextArea1.setRows(5);
+        jTextArea1.setText("En esta sección encontraras 101 algoritmos desarrollados en Lisp,  los  cuales  te ayudaran  a\nadentrarte en el paradigma de la programación funcional. A medida que van aumentando  los\nalgoritmos cada uno de estos se ira tornando mas complejo,  explicando diversos temas  de la\nprogramación, como funciones matemáticas, definición de funciones,   recursividad,   ciclos y\n                                                           condicionales");
+        jTextArea1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTextArea1.setFocusable(false);
+        jTextArea1.setOpaque(false);
+        jPanel5.add(jTextArea1);
+        jTextArea1.setBounds(90, 130, 690, 120);
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -3912,6 +3959,18 @@ public class Algoritmos extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_b100ActionPerformed
 
+    private void b101MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b101MouseEntered
+         b101.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_b101MouseEntered
+
+    private void b101MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b101MouseExited
+         b101.setForeground(new java.awt.Color(255, 255, 255));
+    }//GEN-LAST:event_b101MouseExited
+
+    private void b101ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b101ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b101ActionPerformed
+
     
 
     /**
@@ -3954,110 +4013,113 @@ public class Algoritmos extends javax.swing.JFrame {
     public javax.swing.JButton Inicio;
     private javax.swing.JButton Manual;
     public javax.swing.JButton Menu;
-    private javax.swing.JButton b1;
-    private javax.swing.JButton b10;
-    private javax.swing.JButton b100;
-    private javax.swing.JButton b11;
-    private javax.swing.JButton b12;
-    private javax.swing.JButton b13;
-    private javax.swing.JButton b14;
-    private javax.swing.JButton b15;
-    private javax.swing.JButton b16;
-    private javax.swing.JButton b17;
-    private javax.swing.JButton b18;
-    private javax.swing.JButton b19;
-    private javax.swing.JButton b2;
-    private javax.swing.JButton b20;
-    private javax.swing.JButton b21;
-    private javax.swing.JButton b22;
-    private javax.swing.JButton b23;
-    private javax.swing.JButton b24;
-    private javax.swing.JButton b25;
-    private javax.swing.JButton b26;
-    private javax.swing.JButton b27;
-    private javax.swing.JButton b28;
-    private javax.swing.JButton b29;
-    private javax.swing.JButton b3;
-    private javax.swing.JButton b30;
-    private javax.swing.JButton b31;
-    private javax.swing.JButton b32;
-    private javax.swing.JButton b33;
-    private javax.swing.JButton b34;
-    private javax.swing.JButton b35;
-    private javax.swing.JButton b36;
-    private javax.swing.JButton b37;
-    private javax.swing.JButton b38;
-    private javax.swing.JButton b39;
-    private javax.swing.JButton b4;
-    private javax.swing.JButton b40;
-    private javax.swing.JButton b41;
-    private javax.swing.JButton b42;
-    private javax.swing.JButton b43;
-    private javax.swing.JButton b44;
-    private javax.swing.JButton b45;
-    private javax.swing.JButton b46;
-    private javax.swing.JButton b47;
-    private javax.swing.JButton b48;
-    private javax.swing.JButton b49;
-    private javax.swing.JButton b5;
-    private javax.swing.JButton b50;
-    private javax.swing.JButton b51;
-    private javax.swing.JButton b52;
-    private javax.swing.JButton b53;
-    private javax.swing.JButton b54;
-    private javax.swing.JButton b55;
-    private javax.swing.JButton b56;
-    private javax.swing.JButton b57;
-    private javax.swing.JButton b58;
-    private javax.swing.JButton b59;
-    private javax.swing.JButton b6;
-    private javax.swing.JButton b60;
-    private javax.swing.JButton b61;
-    private javax.swing.JButton b62;
-    private javax.swing.JButton b63;
-    private javax.swing.JButton b64;
-    private javax.swing.JButton b65;
-    private javax.swing.JButton b66;
-    private javax.swing.JButton b67;
-    private javax.swing.JButton b68;
-    private javax.swing.JButton b69;
-    private javax.swing.JButton b7;
-    private javax.swing.JButton b70;
-    private javax.swing.JButton b71;
-    private javax.swing.JButton b72;
-    private javax.swing.JButton b73;
-    private javax.swing.JButton b74;
-    private javax.swing.JButton b75;
-    private javax.swing.JButton b76;
-    private javax.swing.JButton b77;
-    private javax.swing.JButton b78;
-    private javax.swing.JButton b79;
-    private javax.swing.JButton b8;
-    private javax.swing.JButton b80;
-    private javax.swing.JButton b81;
-    private javax.swing.JButton b82;
-    private javax.swing.JButton b83;
-    private javax.swing.JButton b84;
-    private javax.swing.JButton b85;
-    private javax.swing.JButton b86;
-    private javax.swing.JButton b87;
-    private javax.swing.JButton b88;
-    private javax.swing.JButton b89;
-    private javax.swing.JButton b9;
-    private javax.swing.JButton b90;
-    private javax.swing.JButton b91;
-    private javax.swing.JButton b92;
-    private javax.swing.JButton b93;
-    private javax.swing.JButton b94;
-    private javax.swing.JButton b95;
-    private javax.swing.JButton b96;
-    private javax.swing.JButton b97;
-    private javax.swing.JButton b98;
-    private javax.swing.JButton b99;
+    public javax.swing.JButton b1;
+    public javax.swing.JButton b10;
+    public javax.swing.JButton b100;
+    public javax.swing.JButton b101;
+    public javax.swing.JButton b11;
+    public javax.swing.JButton b12;
+    public javax.swing.JButton b13;
+    public javax.swing.JButton b14;
+    public javax.swing.JButton b15;
+    public javax.swing.JButton b16;
+    public javax.swing.JButton b17;
+    public javax.swing.JButton b18;
+    public javax.swing.JButton b19;
+    public javax.swing.JButton b2;
+    public javax.swing.JButton b20;
+    public javax.swing.JButton b21;
+    public javax.swing.JButton b22;
+    public javax.swing.JButton b23;
+    public javax.swing.JButton b24;
+    public javax.swing.JButton b25;
+    public javax.swing.JButton b26;
+    public javax.swing.JButton b27;
+    public javax.swing.JButton b28;
+    public javax.swing.JButton b29;
+    public javax.swing.JButton b3;
+    public javax.swing.JButton b30;
+    public javax.swing.JButton b31;
+    public javax.swing.JButton b32;
+    public javax.swing.JButton b33;
+    public javax.swing.JButton b34;
+    public javax.swing.JButton b35;
+    public javax.swing.JButton b36;
+    public javax.swing.JButton b37;
+    public javax.swing.JButton b38;
+    public javax.swing.JButton b39;
+    public javax.swing.JButton b4;
+    public javax.swing.JButton b40;
+    public javax.swing.JButton b41;
+    public javax.swing.JButton b42;
+    public javax.swing.JButton b43;
+    public javax.swing.JButton b44;
+    public javax.swing.JButton b45;
+    public javax.swing.JButton b46;
+    public javax.swing.JButton b47;
+    public javax.swing.JButton b48;
+    public javax.swing.JButton b49;
+    public javax.swing.JButton b5;
+    public javax.swing.JButton b50;
+    public javax.swing.JButton b51;
+    public javax.swing.JButton b52;
+    public javax.swing.JButton b53;
+    public javax.swing.JButton b54;
+    public javax.swing.JButton b55;
+    public javax.swing.JButton b56;
+    public javax.swing.JButton b57;
+    public javax.swing.JButton b58;
+    public javax.swing.JButton b59;
+    public javax.swing.JButton b6;
+    public javax.swing.JButton b60;
+    public javax.swing.JButton b61;
+    public javax.swing.JButton b62;
+    public javax.swing.JButton b63;
+    public javax.swing.JButton b64;
+    public javax.swing.JButton b65;
+    public javax.swing.JButton b66;
+    public javax.swing.JButton b67;
+    public javax.swing.JButton b68;
+    public javax.swing.JButton b69;
+    public javax.swing.JButton b7;
+    public javax.swing.JButton b70;
+    public javax.swing.JButton b71;
+    public javax.swing.JButton b72;
+    public javax.swing.JButton b73;
+    public javax.swing.JButton b74;
+    public javax.swing.JButton b75;
+    public javax.swing.JButton b76;
+    public javax.swing.JButton b77;
+    public javax.swing.JButton b78;
+    public javax.swing.JButton b79;
+    public javax.swing.JButton b8;
+    public javax.swing.JButton b80;
+    public javax.swing.JButton b81;
+    public javax.swing.JButton b82;
+    public javax.swing.JButton b83;
+    public javax.swing.JButton b84;
+    public javax.swing.JButton b85;
+    public javax.swing.JButton b86;
+    public javax.swing.JButton b87;
+    public javax.swing.JButton b88;
+    public javax.swing.JButton b89;
+    public javax.swing.JButton b9;
+    public javax.swing.JButton b90;
+    public javax.swing.JButton b91;
+    public javax.swing.JButton b92;
+    public javax.swing.JButton b93;
+    public javax.swing.JButton b94;
+    public javax.swing.JButton b95;
+    public javax.swing.JButton b96;
+    public javax.swing.JButton b97;
+    public javax.swing.JButton b98;
+    public javax.swing.JButton b99;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
@@ -4066,6 +4128,7 @@ public class Algoritmos extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel rombo;
     private javax.swing.JLabel rombo1;
     private javax.swing.JLabel rombo2;
