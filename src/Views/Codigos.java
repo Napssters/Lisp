@@ -12,15 +12,16 @@ import javax.swing.ImageIcon;
  *
  * @author nykoo
  */
-public class PseudoCodigo extends javax.swing.JFrame {
+public class Codigos extends javax.swing.JFrame {
 
     /**
-     * Creates new form PseudoCodigo
+     * Creates new form Codigos
      */
-    public PseudoCodigo() {
+    public Codigos() {
         setResizable(false);
         initComponents();
         this.setIconImage(new ImageIcon(getClass().getResource("/Images/Logo_Lambda.png")).getImage());
+        jScrollPane5.getVerticalScrollBar().setUnitIncrement(16);
     }
 
     /**
@@ -41,16 +42,25 @@ public class PseudoCodigo extends javax.swing.JFrame {
         Inicio = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        GoCode = new javax.swing.JButton();
-        PsCode = new javax.swing.JTextArea();
-        Enunciado = new javax.swing.JTextArea();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jPanel15 = new javax.swing.JPanel();
+        jPanel16 = new javax.swing.JPanel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jPanel17 = new javax.swing.JPanel();
+        numero = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        Variables = new javax.swing.JTextArea();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        Explicacion = new javax.swing.JTextArea();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        Salida = new javax.swing.JTextArea();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        CodigoFuente = new javax.swing.JTextArea();
+        Run = new javax.swing.JButton();
+        Siguiente = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -169,87 +179,141 @@ public class PseudoCodigo extends javax.swing.JFrame {
         jPanel2.add(jLabel11);
         jLabel11.setBounds(0, 0, 890, 60);
 
-        jPanel4.setLayout(null);
+        jPanel16.setLayout(null);
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/marca_UTP.png"))); // NOI18N
-        jPanel4.add(jLabel8);
-        jLabel8.setBounds(620, 10, 240, 113);
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/marca_UTP.png"))); // NOI18N
+        jPanel16.add(jLabel22);
+        jLabel22.setBounds(620, 10, 234, 113);
 
-        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel12.setText("<html> © 2020 - Universidad Tecnológica de Pereira<br>Carrera 27 #10-02 Barrio Alamos - Risaralda - Colombia - AA: 97<br>Código postal: 660003 - CERES - PBX: +57 6 3137300 - Fax: +57 6 3213206<br>Línea gratuita de Quejas y Reclamos: 018000966781 - contactenos@utp.edu.co<html>");
-        jPanel4.add(jLabel12);
-        jLabel12.setBounds(10, -10, 530, 130);
+        jLabel23.setText("<html> © 2020 - Universidad Tecnológica de Pereira<br>Carrera 27 #10-02 Barrio Alamos - Risaralda - Colombia - AA: 97<br>Código postal: 660003 - CERES - PBX: +57 6 3137300 - Fax: +57 6 3213206<br>Línea gratuita de Quejas y Reclamos: 018000966781 - contactenos@utp.edu.co<html>");
+        jPanel16.add(jLabel23);
+        jLabel23.setBounds(10, 0, 530, 120);
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/gradiente-azul-azul.png"))); // NOI18N
-        jPanel4.add(jLabel9);
-        jLabel9.setBounds(0, 0, 910, 120);
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/gradiente-azul-azul.png"))); // NOI18N
+        jPanel16.add(jLabel24);
+        jLabel24.setBounds(0, 0, 900, 130);
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel3.setLayout(null);
+        jPanel17.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel17.setLayout(null);
 
-        GoCode.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/botones/GoCode.png"))); // NOI18N
-        GoCode.setBorderPainted(false);
-        GoCode.setContentAreaFilled(false);
-        GoCode.setDefaultCapable(false);
-        GoCode.addMouseListener(new java.awt.event.MouseAdapter() {
+        numero.setFont(new java.awt.Font("Sylfaen", 0, 24)); // NOI18N
+        numero.setText("#");
+        jPanel17.add(numero);
+        numero.setBounds(500, 50, 50, 40);
+
+        jLabel4.setFont(new java.awt.Font("Sylfaen", 0, 24)); // NOI18N
+        jLabel4.setText("Algoritmo:");
+        jPanel17.add(jLabel4);
+        jLabel4.setBounds(380, 50, 120, 40);
+
+        Variables.setEditable(false);
+        Variables.setColumns(20);
+        Variables.setRows(5);
+        Variables.setText("Aqui van los datos que van tomando las\nvariables");
+        Variables.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        Variables.setFocusable(false);
+        jScrollPane1.setViewportView(Variables);
+
+        jPanel17.add(jScrollPane1);
+        jScrollPane1.setBounds(510, 140, 330, 130);
+
+        Explicacion.setEditable(false);
+        Explicacion.setColumns(20);
+        Explicacion.setRows(5);
+        Explicacion.setText("Aqui va la explicacion de las palabras\nreservadas usadas");
+        Explicacion.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        Explicacion.setFocusable(false);
+        jScrollPane2.setViewportView(Explicacion);
+
+        jPanel17.add(jScrollPane2);
+        jScrollPane2.setBounds(510, 290, 330, 130);
+
+        Salida.setEditable(false);
+        Salida.setColumns(20);
+        Salida.setRows(5);
+        Salida.setText("Aqui van las salidas del codigo al \najecutarse");
+        Salida.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        Salida.setFocusable(false);
+        jScrollPane3.setViewportView(Salida);
+
+        jPanel17.add(jScrollPane3);
+        jScrollPane3.setBounds(510, 450, 330, 130);
+
+        CodigoFuente.setEditable(false);
+        CodigoFuente.setColumns(20);
+        CodigoFuente.setRows(5);
+        CodigoFuente.setText("Aqui van los datos que van tomando las\nvariables");
+        CodigoFuente.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        CodigoFuente.setFocusable(false);
+        jScrollPane4.setViewportView(CodigoFuente);
+
+        jPanel17.add(jScrollPane4);
+        jScrollPane4.setBounds(20, 140, 460, 440);
+
+        Run.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/botones/Run.png"))); // NOI18N
+        Run.setBorderPainted(false);
+        Run.setContentAreaFilled(false);
+        Run.setDefaultCapable(false);
+        Run.setFocusPainted(false);
+        Run.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                GoCodeMouseEntered(evt);
+                RunMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                GoCodeMouseExited(evt);
+                RunMouseExited(evt);
             }
         });
-        jPanel3.add(GoCode);
-        GoCode.setBounds(370, 340, 140, 40);
+        jPanel17.add(Run);
+        Run.setBounds(160, 590, 70, 40);
 
-        PsCode.setEditable(false);
-        PsCode.setColumns(20);
-        PsCode.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
-        PsCode.setRows(5);
-        PsCode.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        PsCode.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        PsCode.setFocusable(false);
-        PsCode.setOpaque(false);
-        jPanel3.add(PsCode);
-        PsCode.setBounds(510, 110, 330, 220);
+        Siguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/botones/Explain.png"))); // NOI18N
+        Siguiente.setBorderPainted(false);
+        Siguiente.setContentAreaFilled(false);
+        Siguiente.setDefaultCapable(false);
+        Siguiente.setFocusPainted(false);
+        Siguiente.setOpaque(false);
+        Siguiente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                SiguienteMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                SiguienteMouseExited(evt);
+            }
+        });
+        jPanel17.add(Siguiente);
+        Siguiente.setBounds(240, 590, 120, 40);
 
-        Enunciado.setEditable(false);
-        Enunciado.setColumns(20);
-        Enunciado.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
-        Enunciado.setRows(5);
-        Enunciado.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        Enunciado.setFocusable(false);
-        Enunciado.setOpaque(false);
-        jPanel3.add(Enunciado);
-        Enunciado.setBounds(60, 110, 330, 230);
+        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
+        jPanel15.setLayout(jPanel15Layout);
+        jPanel15Layout.setHorizontalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, 860, Short.MAX_VALUE)
+            .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel15Layout.setVerticalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
+                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
+        );
 
-        jLabel2.setFont(new java.awt.Font("Sylfaen", 0, 24)); // NOI18N
-        jLabel2.setText("Pseudocodigo");
-        jPanel3.add(jLabel2);
-        jLabel2.setBounds(600, 40, 140, 40);
-
-        jLabel3.setFont(new java.awt.Font("Sylfaen", 0, 24)); // NOI18N
-        jLabel3.setText("Enunciado");
-        jPanel3.add(jLabel3);
-        jLabel3.setBounds(150, 50, 160, 40);
+        jScrollPane5.setViewportView(jPanel15);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 879, Short.MAX_VALUE)
-            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jScrollPane5)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 417, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 535, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -267,6 +331,18 @@ public class PseudoCodigo extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void AlgoritmosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AlgoritmosMouseEntered
+        Algoritmos.setForeground(Color.gray);
+    }//GEN-LAST:event_AlgoritmosMouseEntered
+
+    private void AlgoritmosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AlgoritmosMouseExited
+        Algoritmos.setForeground(new Color(255, 255, 255));
+    }//GEN-LAST:event_AlgoritmosMouseExited
+
+    private void AlgoritmosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AlgoritmosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AlgoritmosActionPerformed
 
     private void ManualMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManualMouseEntered
         Manual.setForeground(Color.gray);
@@ -309,25 +385,21 @@ public class PseudoCodigo extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_InicioActionPerformed
 
-    private void AlgoritmosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AlgoritmosMouseEntered
-        Algoritmos.setForeground(Color.gray);
-    }//GEN-LAST:event_AlgoritmosMouseEntered
+    private void RunMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RunMouseEntered
+        Run.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/Run2.png")));
+    }//GEN-LAST:event_RunMouseEntered
 
-    private void AlgoritmosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AlgoritmosMouseExited
-        Algoritmos.setForeground(new Color(255, 255, 255));
-    }//GEN-LAST:event_AlgoritmosMouseExited
+    private void RunMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RunMouseExited
+        Run.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/Run.png")));
+    }//GEN-LAST:event_RunMouseExited
 
-    private void AlgoritmosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AlgoritmosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_AlgoritmosActionPerformed
+    private void SiguienteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SiguienteMouseEntered
+        Siguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/Explain2.png")));
+    }//GEN-LAST:event_SiguienteMouseEntered
 
-    private void GoCodeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_GoCodeMouseEntered
-        GoCode.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/GoCode2.png")));
-    }//GEN-LAST:event_GoCodeMouseEntered
-
-    private void GoCodeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_GoCodeMouseExited
-        GoCode.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/GoCode.png")));
-    }//GEN-LAST:event_GoCodeMouseExited
+    private void SiguienteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SiguienteMouseExited
+        Siguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/Explain.png")));
+    }//GEN-LAST:event_SiguienteMouseExited
 
     /**
      * @param args the command line arguments
@@ -346,43 +418,52 @@ public class PseudoCodigo extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(PseudoCodigo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Codigos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(PseudoCodigo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Codigos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(PseudoCodigo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Codigos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(PseudoCodigo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Codigos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new PseudoCodigo().setVisible(true);
+                new Codigos().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton Algoritmos;
-    public javax.swing.JTextArea Enunciado;
-    public javax.swing.JButton GoCode;
+    public javax.swing.JTextArea CodigoFuente;
+    public javax.swing.JTextArea Explicacion;
     public javax.swing.JButton Inicio;
     private javax.swing.JButton Manual;
     public javax.swing.JButton Menu;
-    public javax.swing.JTextArea PsCode;
+    public javax.swing.JButton Run;
+    public javax.swing.JTextArea Salida;
+    public javax.swing.JButton Siguiente;
+    public javax.swing.JTextArea Variables;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel16;
+    private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    public javax.swing.JLabel numero;
     // End of variables declaration//GEN-END:variables
 }
