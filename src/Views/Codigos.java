@@ -228,12 +228,10 @@ public class Codigos extends javax.swing.JFrame {
         jPanel17.add(jScrollPane1);
         jScrollPane1.setBounds(510, 140, 330, 130);
 
-        Explicacion.setEditable(false);
         Explicacion.setColumns(20);
         Explicacion.setRows(5);
         Explicacion.setText("Aqui va la explicacion de las palabras\nreservadas usadas");
         Explicacion.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        Explicacion.setFocusable(false);
         jScrollPane2.setViewportView(Explicacion);
 
         jPanel17.add(jScrollPane2);

@@ -646,6 +646,7 @@ public class Controlador {
         this.Codes.Siguiente.addActionListener((ActionEvent e) -> {
             setCount();
             if(this.count < tam){
+                System.out.println(this.count);
                 Codes.Explicacion.setText(Enun.getEnunciado(data.getPasos().get(pos).get(0).get(this.count)));
                 Codes.Variables.setText(data.getPasos().get(pos).get(1).get(this.count));
             }

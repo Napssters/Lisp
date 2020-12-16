@@ -99,9 +99,9 @@ public class Data {
         this.pasos.get(4).get(1).add("(defun Costo()");
         this.pasos.get(4).get(1).add("(setq chaqueta (- 32000 (* 32000 0.22)))");
         this.pasos.get(4).get(1).add("(* 32000 0.22)");
-        this.pasos.get(4).get(0).add("(- 32000 (* 32000 0.22))");
-        this.pasos.get(4).get(0).add("(setq sum (+ chaqueta pantalon))");
-        this.pasos.get(4).get(0).add("(print \"El precio total es de: ~d\" sum)");
+        this.pasos.get(4).get(1).add("(- 32000 (* 32000 0.22))");
+        this.pasos.get(4).get(1).add("(setq sum (+ chaqueta pantalon))");
+        this.pasos.get(4).get(1).add("(print \"El precio total es de: ~d\" sum)");
         ////////////////   6    /////////////////
         this.algoritmos.get(5).add("#|\nCrear  un  algoritmo en Lisp que maneje el\ndescuento  sobre  un  precio que el usuario\ningresa, el descuento también lo determina\nel  usuario.\n|#");
         this.algoritmos.get(5).add("Funcion Descuentos\n\timprimir \"Ingrese el precio: \"\n\tinicializar precio = (valor por consola)\n\timprimir \"Ingrese el descuento sin el %: \"\n\tinicializar descuento = (valor por consola)\n\tinicializar finalP = (precio - (precio * (descuento / 100)))\n\nllamar Funcion Descuentos");
@@ -140,7 +140,7 @@ public class Data {
         this.pasos.get(6).get(1).add("(if (eql remainder(var 2) 0)");
         this.pasos.get(6).get(1).add("(print \"El numero es par\")");
         this.pasos.get(6).get(1).add("(print \"El numero es imparpar\")");
-        ////////////////   N    /////////////////
+        ////////////////   8    /////////////////
         this.algoritmos.get(7).add("#|\nCrear un algoritmo en Lisp que capture las\nnotas  de  un  estudiante  y  determine si el\nestudiante  aprobó  la  materia,  se aprueba\ncon  una  nota  mayor  a  3.0,  el  rango de\ncalificación  es  de  0  hasta  5.\n|#");
         this.algoritmos.get(7).add("Funcion NotasEstudiante\n\timprimir \"Ingrese la nota 1: \"\n\tinicializar nota1 = (valor por consola)\n\timprimir \"Ingrese la nota 2: \"\n\tinicializar nota2 = (valor por consola)\n\timprimir \"Ingrese la nota 3: \"\n\tinicializar nota3 = (valor por consola)\n\tsi (nota1 + nota2 + nota3) > 2.9\n\t\timprimir \"Aprobó la materia\"\n\tsino\n\t\timprimir \"Reprobó la materia\"\n\nllamar Funcion NotasEstudiante");
         this.algoritmos.get(7).add("(defun NotasEstudiante()\n\t(print \"Ingrese la nota 1: \")\n\t(setq nota1 (read))\n\t(print \"Ingrese la nota 2: \")\n\t(setq nota2 (read))\n\t(print \"Ingrese la nota 3: \")\n\t(setq nota3 (read))\n\t(if (> (+ nota1 nota2 nota3) 2.9)\n\t\t(print \"Aprobó la materia\")\n\t\t(print \"Reprobó la materia\")\n\t)\n)\n\n(NotasEstudiante)");
@@ -173,9 +173,9 @@ public class Data {
         this.pasos.get(8).get(1).add("(defun mayorde3()");
         this.pasos.get(8).get(1).add("(print \"Ingrese el primer numero: \")");
         this.pasos.get(8).get(1).add("(setq n1 (read))");
-        this.pasos.get(8).get(0).add("(if (> n1 n2)");
-        this.pasos.get(8).get(0).add("(if (> n2 n3)");
-        this.pasos.get(8).get(0).add("(print \"El numero mayor es: ~a\" n2)");
+        this.pasos.get(8).get(1).add("(if (> n1 n2)");
+        this.pasos.get(8).get(1).add("(if (> n2 n3)");
+        this.pasos.get(8).get(1).add("(print \"El numero mayor es: ~a\" n2)");
         /*
         ////////////////   N    /////////////////
         this.algoritmos.get(posn).add("");
