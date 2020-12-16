@@ -5,6 +5,7 @@
  */
 package Controller;
 
+import Model.*;
 import Views.*;
 import java.awt.event.ActionEvent;
 
@@ -19,9 +20,14 @@ public class Controlador {
     private Documentatation Docs;
     private PseudoCodigo Pcode;
     private Codigos Codes;
+    private Data data;
+    //Inicializamos la clase (temporal para pruebas)
+    private Enunciados Enun;
 
     public Controlador(HomePage home) {
         this.home = home;
+        this.Enun = new Enunciados();
+        this.data = new Data();
         this.home.Menu1.addActionListener((ActionEvent e) -> {
             home.setVisible(false);
             this.menu = new Menu();
@@ -583,6 +589,8 @@ public class Controlador {
     public void Pcodes(int vent){
         this.Pcode.setTitle("Enunciado Lisp");
         this.Pcode.setLocationRelativeTo(null);
+        this.Pcode.Enunciado.setText(data.getAlgoritmos().get(vent - 1).get(0));
+        this.Pcode.PsCode.setText(data.getAlgoritmos().get(vent - 1).get(1));
         this.Pcode.Inicio.addActionListener((ActionEvent e) -> {
             Pcode.setVisible(false);
             home.setVisible(true);
@@ -601,13 +609,35 @@ public class Controlador {
         this.Pcode.GoCode.addActionListener((ActionEvent e) -> {
             Pcode.setVisible(false);
             Codes.setVisible(true);
-            this.GoCodigos();
+            this.GoCodigos((vent - 1));
         });
     }
     
-    public void GoCodigos(){
+    public void GoCodigos(int vent){
         this.Codes.setTitle("Codigos Lisp");
         this.Codes.setLocationRelativeTo(null);
+        this.Codes.Inicio.addActionListener((ActionEvent e) -> {
+            Codes.setVisible(false);
+            home.setVisible(true);
+            this.iniciar();
+        });
+        this.Codes.Menu.addActionListener((ActionEvent e) -> {
+            Codes.setVisible(false);
+            menu.setVisible(true);
+            this.Menus();
+        });
+        this.Codes.Algoritmos.addActionListener((ActionEvent e) -> {
+            Codes.setVisible(false);
+            Algot.setVisible(true);
+            this.Algorithms();
+        });
+        this.Codes.Run.addActionListener((ActionEvent e) -> {
+            Codes.Siguiente.setEnabled(true);
+            this.Codes.Explicacion.setText(Enun.getEnunciado("exponente"));
+        });
+        this.Codes.Siguiente.addActionListener((ActionEvent e) -> {
+            //
+        });
     }
     
     public void Documentation(){

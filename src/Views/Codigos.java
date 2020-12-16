@@ -199,9 +199,20 @@ public class Codigos extends javax.swing.JFrame {
         numero.setFont(new java.awt.Font("Sylfaen", 0, 24)); // NOI18N
         numero.setText("#");
         jPanel17.add(numero);
-        numero.setBounds(500, 50, 50, 40);
+        numero.setBounds(500, 50, 200, 40);
 
         jLabel4.setFont(new java.awt.Font("Sylfaen", 0, 24)); // NOI18N
+        jLabel4.setIcon(new javax.swing.JLabel() {
+            public javax.swing.Icon getIcon() {
+                try {
+                    return new javax.swing.ImageIcon(
+                        new java.net.URL("https://www.youtube.com/watch?v=qKTsxuqvvJQ&ab_channel=LaCapital")
+                    );
+                } catch (java.net.MalformedURLException e) {
+                }
+                return null;
+            }
+        }.getIcon());
         jLabel4.setText("Algoritmo:");
         jPanel17.add(jLabel4);
         jLabel4.setBounds(380, 50, 120, 40);
@@ -209,7 +220,7 @@ public class Codigos extends javax.swing.JFrame {
         Variables.setEditable(false);
         Variables.setColumns(20);
         Variables.setRows(5);
-        Variables.setText("Aqui van los datos que van tomando las\nvariables");
+        Variables.setText("Aqui van las lineas de codigo \ncorrespodniente a la linea en \nejecicion");
         Variables.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         Variables.setFocusable(false);
         jScrollPane1.setViewportView(Variables);
@@ -242,7 +253,7 @@ public class Codigos extends javax.swing.JFrame {
         CodigoFuente.setEditable(false);
         CodigoFuente.setColumns(20);
         CodigoFuente.setRows(5);
-        CodigoFuente.setText("Aqui van los datos que van tomando las\nvariables");
+        CodigoFuente.setText("Aqui va el codigo");
         CodigoFuente.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         CodigoFuente.setFocusable(false);
         jScrollPane4.setViewportView(CodigoFuente);
@@ -270,8 +281,8 @@ public class Codigos extends javax.swing.JFrame {
         Siguiente.setBorderPainted(false);
         Siguiente.setContentAreaFilled(false);
         Siguiente.setDefaultCapable(false);
+        Siguiente.setEnabled(false);
         Siguiente.setFocusPainted(false);
-        Siguiente.setOpaque(false);
         Siguiente.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 SiguienteMouseEntered(evt);

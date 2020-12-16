@@ -202,23 +202,19 @@ public class PseudoCodigo extends javax.swing.JFrame {
         jPanel3.add(GoCode);
         GoCode.setBounds(370, 340, 140, 40);
 
-        PsCode.setEditable(false);
         PsCode.setColumns(20);
         PsCode.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
         PsCode.setRows(5);
         PsCode.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         PsCode.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        PsCode.setFocusable(false);
         PsCode.setOpaque(false);
         jPanel3.add(PsCode);
         PsCode.setBounds(510, 110, 330, 220);
 
-        Enunciado.setEditable(false);
         Enunciado.setColumns(20);
         Enunciado.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
         Enunciado.setRows(5);
         Enunciado.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        Enunciado.setFocusable(false);
         Enunciado.setOpaque(false);
         jPanel3.add(Enunciado);
         Enunciado.setBounds(60, 110, 330, 230);
