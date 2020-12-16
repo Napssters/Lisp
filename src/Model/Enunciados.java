@@ -35,7 +35,9 @@ public class Enunciados {
                  break;
             case "Expt" : respuesta = "Se usa la palabra reservada expt para elevar un número \na una potencia determinada.\n\nEjemplo: (expt a b)\n\nDonde a corresponde al valor a elevar y b a el valor del\nexponente\n\n(exponente 2 3)\n\nEl cual hace referencia a eleva    r 2 a la 3"; 
                  break;
-            case "Asignación" : respuesta = "Se usa la palabra reservada setq para crear y asignar valores a una variable local"; 
+            case "Asignación" : respuesta = "Se usa la palabra reservada setq para crear y asignar \nvalores a una variable local"; 
+                 break;
+            case "Defvar" : respuesta = "Se usa la palabra reservada (defvar) para crear y asignar \nvalores a una variable globales"; 
                  break;
             case "Condicional" : respuesta = "asd"; 
                  break;

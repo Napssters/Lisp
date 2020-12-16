@@ -21,6 +21,7 @@ public class Controlador {
     private PseudoCodigo Pcode;
     private Codigos Codes;
     private Data data;
+    private int count;
     //Inicializamos la clase (temporal para pruebas)
     private Enunciados Enun;
 
@@ -28,6 +29,7 @@ public class Controlador {
         this.home = home;
         this.Enun = new Enunciados();
         this.data = new Data();
+        this.count = 0;
         this.home.Menu1.addActionListener((ActionEvent e) -> {
             home.setVisible(false);
             this.menu = new Menu();
@@ -616,6 +618,10 @@ public class Controlador {
     public void GoCodigos(int vent){
         this.Codes.setTitle("Codigos Lisp");
         this.Codes.setLocationRelativeTo(null);
+        int pos = Integer.parseInt(data.getAlgoritmos().get(vent).get(3));
+        int tam = data.getPasos().get(pos).get(1).size();
+        Codes.CodigoFuente.setText(data.getAlgoritmos().get(vent).get(2));
+        Codes.numero.setText((vent+1)+"");
         this.Codes.Inicio.addActionListener((ActionEvent e) -> {
             Codes.setVisible(false);
             home.setVisible(true);
@@ -632,11 +638,17 @@ public class Controlador {
             this.Algorithms();
         });
         this.Codes.Run.addActionListener((ActionEvent e) -> {
+            initCount();
+            Codes.Explicacion.setText(Enun.getEnunciado(data.getPasos().get(pos).get(0).get(this.count)));
+            Codes.Variables.setText(data.getPasos().get(pos).get(1).get(this.count));
             Codes.Siguiente.setEnabled(true);
-            this.Codes.Explicacion.setText(Enun.getEnunciado("exponente"));
         });
         this.Codes.Siguiente.addActionListener((ActionEvent e) -> {
-            //
+            setCount();
+            if(this.count < tam){
+                Codes.Explicacion.setText(Enun.getEnunciado(data.getPasos().get(pos).get(0).get(this.count)));
+                Codes.Variables.setText(data.getPasos().get(pos).get(1).get(this.count));
+            }
         });
     }
     
@@ -653,6 +665,14 @@ public class Controlador {
             menu.setVisible(true);
             this.Menus();
         });
+    }
+    
+    public void initCount(){
+        this.count = 0;
+    }
+    
+    public void setCount(){
+        this.count+=1;
     }
     
     public void iniciar() {

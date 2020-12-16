@@ -27,18 +27,45 @@ public class Data {
             this.algoritmos.add(new ArrayList<>());
             this.pasos.add(new ArrayList<>());
             this.pasos.get(i).add(new ArrayList<>());
+            this.pasos.get(i).add(new ArrayList<>());
         }
         this.algoritmos.get(0).add("#|\nConstruir un algoritmo en Lisp que calcule\nla  suma  de  la  resta  de  (a – b)  y (c -d),\ndonde a, b, c y d son  iguales  a  3, 7, 1, 9.\n|#");
         this.algoritmos.get(0).add("definir a = 3\ndefinir b = 7\ndefinir c = 1\ndefinir d = 9\ndefinir suma = (a - b) + (c - d)\n");
         this.algoritmos.get(0).add("(defvar a 3)(defvar b 7)\n(defvar c 1)(defvar d 9)\n(defvar suma (+ (- a b) (- c d)))");
         this.algoritmos.get(0).add("0");
-        this.pasos.get(0).get(0).add("Asignación");
+        this.pasos.get(0).get(0).add("Defvar");
         this.pasos.get(0).get(0).add("Suma");
         this.pasos.get(0).get(0).add("Resta");
         /////////////////////////////////
-        /*this.pasos.get(0).get(1).add("(defvar a 3)(defvar b 7)");
+        this.pasos.get(0).get(1).add("(defvar a 3)(defvar b 7)");
         this.pasos.get(0).get(1).add("(+ (- a b) (- c d)))");
-        this.pasos.get(0).get(1).add("(- a b)");*/
+        this.pasos.get(0).get(1).add("(- a b)");
+        ////////////////   2    /////////////////
+        this.algoritmos.get(1).add("");
+        this.algoritmos.get(1).add("");
+        this.algoritmos.get(1).add("");
+        this.algoritmos.get(1).add("");
+        this.pasos.get(1).get(0).add("");
+        this.pasos.get(1).get(0).add("");
+        this.pasos.get(1).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(1).get(1).add("");
+        this.pasos.get(1).get(1).add("");
+        this.pasos.get(1).get(1).add("");
+        /*
+        ////////////////   N    /////////////////
+        this.algoritmos.get(posn).add("");
+        this.algoritmos.get(posn).add("");
+        this.algoritmos.get(posn).add("");
+        this.algoritmos.get(posn).add("");
+        this.pasos.get(posn).get(0).add("");
+        this.pasos.get(posn).get(0).add("");
+        this.pasos.get(posn).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(posn).get(1).add("");
+        this.pasos.get(posn).get(1).add("");
+        this.pasos.get(posn).get(1).add("");
+        */
     }
     
     public List<List<String>> getAlgoritmos() {
