@@ -625,28 +625,32 @@ public class Controlador {
         this.Codes.Inicio.addActionListener((ActionEvent e) -> {
             Codes.setVisible(false);
             home.setVisible(true);
+            initCount();
             this.iniciar();
         });
         this.Codes.Menu.addActionListener((ActionEvent e) -> {
             Codes.setVisible(false);
             menu.setVisible(true);
+            initCount();
             this.Menus();
         });
         this.Codes.Algoritmos.addActionListener((ActionEvent e) -> {
             Codes.setVisible(false);
             Algot.setVisible(true);
+            initCount();
             this.Algorithms();
         });
         this.Codes.Run.addActionListener((ActionEvent e) -> {
-            initCount();
+            System.out.println("\n///////////////////");
             Codes.Explicacion.setText(Enun.getEnunciado(data.getPasos().get(pos).get(0).get(this.count)));
             Codes.Variables.setText(data.getPasos().get(pos).get(1).get(this.count));
             Codes.Siguiente.setEnabled(true);
+            System.out.print(this.count + " ");
         });
         this.Codes.Siguiente.addActionListener((ActionEvent e) -> {
             setCount();
             if(this.count < tam){
-                System.out.println(this.count);
+                System.out.print(this.count + " ");
                 Codes.Explicacion.setText(Enun.getEnunciado(data.getPasos().get(pos).get(0).get(this.count)));
                 Codes.Variables.setText(data.getPasos().get(pos).get(1).get(this.count));
             }

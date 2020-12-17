@@ -17,6 +17,9 @@ public class Codigos extends javax.swing.JFrame {
     /**
      * Creates new form Codigos
      */
+    
+    public int count = 0;
+    
     public Codigos() {
         setResizable(false);
         initComponents();
@@ -272,6 +275,11 @@ public class Codigos extends javax.swing.JFrame {
                 RunMouseExited(evt);
             }
         });
+        Run.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RunActionPerformed(evt);
+            }
+        });
         jPanel17.add(Run);
         Run.setBounds(160, 590, 70, 40);
 
@@ -287,6 +295,11 @@ public class Codigos extends javax.swing.JFrame {
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 SiguienteMouseExited(evt);
+            }
+        });
+        Siguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SiguienteActionPerformed(evt);
             }
         });
         jPanel17.add(Siguiente);
@@ -409,6 +422,14 @@ public class Codigos extends javax.swing.JFrame {
     private void SiguienteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SiguienteMouseExited
         Siguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/Explain.png")));
     }//GEN-LAST:event_SiguienteMouseExited
+
+    private void SiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SiguienteActionPerformed
+
+    }//GEN-LAST:event_SiguienteActionPerformed
+
+    private void RunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RunActionPerformed
+
+    }//GEN-LAST:event_RunActionPerformed
 
     /**
      * @param args the command line arguments
