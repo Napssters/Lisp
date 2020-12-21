@@ -48,6 +48,26 @@ public class Documentatation extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jTextArea1 = new javax.swing.JTextArea();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jTextArea3 = new javax.swing.JTextArea();
+        jTextArea4 = new javax.swing.JTextArea();
+        jTextArea5 = new javax.swing.JTextArea();
+        jTextArea6 = new javax.swing.JTextArea();
+        jTextArea7 = new javax.swing.JTextArea();
+        jLabel18 = new javax.swing.JLabel();
+        jTextArea8 = new javax.swing.JTextArea();
+        jLabel19 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -141,6 +161,8 @@ public class Documentatation extends javax.swing.JFrame {
         jPanel2.add(jLabel11);
         jLabel11.setBounds(0, 0, 890, 60);
 
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+
         jPanel4.setLayout(null);
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/marca_UTP.png"))); // NOI18N
@@ -158,6 +180,154 @@ public class Documentatation extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setLayout(null);
 
+        jLabel2.setFont(new java.awt.Font("Sylfaen", 1, 36)); // NOI18N
+        jLabel2.setText("Documentación LISP");
+        jPanel5.add(jLabel2);
+        jLabel2.setBounds(250, 50, 410, 80);
+
+        jTextArea1.setEditable(false);
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jTextArea1.setRows(5);
+        jTextArea1.setText("En  esta  sección  se  encontrará  la  información  requerida para aprender a programar en el \nleguaje Lisp, se explicará de manera concisa el uso y aplicación de las palabras reservadas del \n                     lenguaje, se dará una explicación tanto escrita como ilustrativa.");
+        jTextArea1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTextArea1.setFocusable(false);
+        jTextArea1.setOpaque(false);
+        jPanel5.add(jTextArea1);
+        jTextArea1.setBounds(90, 130, 690, 80);
+
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/101.png"))); // NOI18N
+        jPanel5.add(jLabel3);
+        jLabel3.setBounds(60, 250, 210, 210);
+
+        jLabel4.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("Expresiones Matematicas");
+        jPanel5.add(jLabel4);
+        jLabel4.setBounds(580, 460, 230, 40);
+
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/101.png"))); // NOI18N
+        jPanel5.add(jLabel5);
+        jLabel5.setBounds(590, 250, 210, 210);
+
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/101.png"))); // NOI18N
+        jPanel5.add(jLabel7);
+        jLabel7.setBounds(330, 490, 220, 210);
+
+        jLabel6.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("Lectura y Escritura");
+        jPanel5.add(jLabel6);
+        jLabel6.setBounds(330, 700, 220, 40);
+
+        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/101.png"))); // NOI18N
+        jPanel5.add(jLabel13);
+        jLabel13.setBounds(70, 710, 210, 210);
+
+        jLabel14.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel14.setText("Definición de Funciones");
+        jPanel5.add(jLabel14);
+        jLabel14.setBounds(590, 920, 230, 40);
+
+        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/101.png"))); // NOI18N
+        jPanel5.add(jLabel15);
+        jLabel15.setBounds(600, 710, 210, 210);
+
+        jLabel16.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel16.setText("Estructuras Lógicas");
+        jPanel5.add(jLabel16);
+        jLabel16.setBounds(60, 920, 230, 40);
+
+        jLabel17.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel17.setText("Comentarios");
+        jPanel5.add(jLabel17);
+        jLabel17.setBounds(60, 460, 210, 40);
+
+        jTextArea3.setEditable(false);
+        jTextArea3.setColumns(20);
+        jTextArea3.setFont(new java.awt.Font("Sylfaen", 0, 14)); // NOI18N
+        jTextArea3.setRows(5);
+        jTextArea3.setText("En esta sección encontraras 101 algoritmos desarrollados en Lisp,  los  cuales  te ayudaran  a\nadentrarte en el paradigma de la programación funcional. A medida que van aumentando  los\nalgoritmos cada uno de estos se ira tornando mas complejo,  explicando diversos temas  de la\nprogramación, como funciones matemáticas, definición de funciones,   recursividad,   ciclos y\n                                                           condicionales.");
+        jTextArea3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTextArea3.setFocusable(false);
+        jTextArea3.setOpaque(false);
+        jPanel5.add(jTextArea3);
+        jTextArea3.setBounds(590, 950, 240, 120);
+
+        jTextArea4.setEditable(false);
+        jTextArea4.setColumns(20);
+        jTextArea4.setFont(new java.awt.Font("Sylfaen", 0, 14)); // NOI18N
+        jTextArea4.setRows(5);
+        jTextArea4.setText("En  esta  sección se explicará las funciones\nque permiten realizar diversas operaciones\n                      aritméticas.\n");
+        jTextArea4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTextArea4.setFocusable(false);
+        jTextArea4.setOpaque(false);
+        jPanel5.add(jTextArea4);
+        jTextArea4.setBounds(570, 490, 250, 120);
+
+        jTextArea5.setEditable(false);
+        jTextArea5.setColumns(20);
+        jTextArea5.setFont(new java.awt.Font("Sylfaen", 0, 14)); // NOI18N
+        jTextArea5.setRows(5);
+        jTextArea5.setText("En esta sección se explicará los diferentes\nmétodos  para  crear comentarios en Lisp\n");
+        jTextArea5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTextArea5.setFocusable(false);
+        jTextArea5.setOpaque(false);
+        jPanel5.add(jTextArea5);
+        jTextArea5.setBounds(50, 490, 240, 50);
+
+        jTextArea6.setEditable(false);
+        jTextArea6.setColumns(20);
+        jTextArea6.setFont(new java.awt.Font("Sylfaen", 0, 14)); // NOI18N
+        jTextArea6.setRows(5);
+        jTextArea6.setText("En  esta  sección  se explicará la forma\ncorrecta  y  adecuada de como mostrar\ninformación por pantalla, así mismo de\n   como leer información por teclado\n");
+        jTextArea6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTextArea6.setFocusable(false);
+        jTextArea6.setOpaque(false);
+        jPanel5.add(jTextArea6);
+        jTextArea6.setBounds(330, 730, 230, 120);
+
+        jTextArea7.setEditable(false);
+        jTextArea7.setColumns(20);
+        jTextArea7.setFont(new java.awt.Font("Sylfaen", 0, 14)); // NOI18N
+        jTextArea7.setRows(5);
+        jTextArea7.setText("En esta sección encontraras 101 algoritmos desarrollados en Lisp,  los  cuales  te ayudaran  a\nadentrarte en el paradigma de la programación funcional. A medida que van aumentando  los\nalgoritmos cada uno de estos se ira tornando mas complejo,  explicando diversos temas  de la\nprogramación, como funciones matemáticas, definición de funciones,   recursividad,   ciclos y\n                                                           condicionales.");
+        jTextArea7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTextArea7.setFocusable(false);
+        jTextArea7.setOpaque(false);
+        jPanel5.add(jTextArea7);
+        jTextArea7.setBounds(60, 950, 240, 120);
+
+        jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/101.png"))); // NOI18N
+        jPanel5.add(jLabel18);
+        jLabel18.setBounds(330, 960, 220, 210);
+
+        jTextArea8.setEditable(false);
+        jTextArea8.setColumns(20);
+        jTextArea8.setFont(new java.awt.Font("Sylfaen", 0, 14)); // NOI18N
+        jTextArea8.setRows(5);
+        jTextArea8.setText("En esta sección encontraras 101 algoritmos desarrollados en Lisp,  los  cuales  te ayudaran  a\nadentrarte en el paradigma de la programación funcional. A medida que van aumentando  los\nalgoritmos cada uno de estos se ira tornando mas complejo,  explicando diversos temas  de la\nprogramación, como funciones matemáticas, definición de funciones,   recursividad,   ciclos y\n                                                           condicionales.");
+        jTextArea8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTextArea8.setFocusable(false);
+        jTextArea8.setOpaque(false);
+        jPanel5.add(jTextArea8);
+        jTextArea8.setBounds(330, 1200, 240, 120);
+
+        jLabel19.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
+        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel19.setText("Estructuras de Control");
+        jPanel5.add(jLabel19);
+        jLabel19.setBounds(330, 1170, 220, 40);
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -168,8 +338,8 @@ public class Documentatation extends javax.swing.JFrame {
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 1076, Short.MAX_VALUE)
-                .addGap(0, 0, 0)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 1300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0))
         );
@@ -180,7 +350,7 @@ public class Documentatation extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 879, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jScrollPane1)
         );
         jPanel1Layout.setVerticalGroup(
@@ -290,6 +460,19 @@ public class Documentatation extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
@@ -298,5 +481,12 @@ public class Documentatation extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea3;
+    private javax.swing.JTextArea jTextArea4;
+    private javax.swing.JTextArea jTextArea5;
+    private javax.swing.JTextArea jTextArea6;
+    private javax.swing.JTextArea jTextArea7;
+    private javax.swing.JTextArea jTextArea8;
     // End of variables declaration//GEN-END:variables
 }

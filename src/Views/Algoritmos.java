@@ -2620,7 +2620,7 @@ public class Algoritmos extends javax.swing.JFrame {
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
         jTextArea1.setRows(5);
-        jTextArea1.setText("En esta sección encontraras 101 algoritmos desarrollados en Lisp,  los  cuales  te ayudaran  a\nadentrarte en el paradigma de la programación funcional. A medida que van aumentando  los\nalgoritmos cada uno de estos se ira tornando mas complejo,  explicando diversos temas  de la\nprogramación, como funciones matemáticas, definición de funciones,   recursividad,   ciclos y\n                                                           condicionales");
+        jTextArea1.setText("En esta sección encontraras 101 algoritmos desarrollados en Lisp,  los  cuales  te ayudaran  a\nadentrarte en el paradigma de la programación funcional. A medida que van aumentando  los\nalgoritmos cada uno de estos se ira tornando mas complejo,  explicando diversos temas  de la\nprogramación, como funciones matemáticas, definición de funciones,   recursividad,   ciclos y\n                                                           condicionales.");
         jTextArea1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jTextArea1.setFocusable(false);
         jTextArea1.setOpaque(false);

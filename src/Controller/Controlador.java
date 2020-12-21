@@ -48,6 +48,7 @@ public class Controlador {
         this.menu.setTitle("Menu Lisp");
         this.menu.setLocationRelativeTo(null);
         this.Algot = new Algoritmos();
+        this.Docs = new Documentatation();
         this.menu.Inicio.addActionListener((ActionEvent e) -> {
             menu.setVisible(false);
             home.setVisible(true);
@@ -60,7 +61,6 @@ public class Controlador {
         });
         this.menu.LispDocs.addActionListener((ActionEvent e) -> {
             menu.setVisible(false);
-            this.Docs = new Documentatation();
             Docs.setVisible(true);
             this.Documentation();
         });
@@ -666,7 +666,7 @@ public class Controlador {
             this.iniciar();
         });
         this.Docs.Menu.addActionListener((ActionEvent e) -> {
-            Docs .setVisible(false);
+            Docs.setVisible(false);
             menu.setVisible(true);
             this.Menus();
         });
