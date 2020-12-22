@@ -670,6 +670,34 @@ public class Controlador {
             menu.setVisible(true);
             this.Menus();
         });
+        this.Docs.comentarios.addActionListener((ActionEvent e) -> {
+            
+            
+        });
+        this.Docs.lectura.addActionListener((ActionEvent e) -> {
+            
+            
+        });
+        this.Docs.matematicas.addActionListener((ActionEvent e) -> {
+            
+            
+        });
+        this.Docs.logicas.addActionListener((ActionEvent e) -> {
+            
+            
+        });
+        this.Docs.funciones.addActionListener((ActionEvent e) -> {
+            
+            
+        });
+        this.Docs.control.addActionListener((ActionEvent e) -> {
+            
+            
+        });
+        this.Docs.listas.addActionListener((ActionEvent e) -> {
+            
+            
+        });
     }
     
     public void initCount(){
