@@ -17,6 +17,7 @@ public class Codigos extends javax.swing.JFrame {
     /**
      * Creates new form Codigos
      */
+    NumeroLinea numerolinea;
     
     public int count = 0;
     
@@ -25,6 +26,8 @@ public class Codigos extends javax.swing.JFrame {
         initComponents();
         this.setIconImage(new ImageIcon(getClass().getResource("/Images/Logo_Lambda.png")).getImage());
         jScrollPane5.getVerticalScrollBar().setUnitIncrement(16);
+        numerolinea = new NumeroLinea(CodigoFuente);
+        jScrollPane6.setRowHeaderView(numerolinea);
     }
 
     /**
@@ -60,10 +63,10 @@ public class Codigos extends javax.swing.JFrame {
         Explicacion = new javax.swing.JTextArea();
         jScrollPane3 = new javax.swing.JScrollPane();
         Salida = new javax.swing.JTextArea();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        CodigoFuente = new javax.swing.JTextArea();
         Run = new javax.swing.JButton();
         Siguiente = new javax.swing.JButton();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        CodigoFuente = new javax.swing.JTextPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -202,7 +205,7 @@ public class Codigos extends javax.swing.JFrame {
         numero.setFont(new java.awt.Font("Sylfaen", 0, 24)); // NOI18N
         numero.setText("#");
         jPanel17.add(numero);
-        numero.setBounds(500, 50, 200, 40);
+        numero.setBounds(500, 0, 200, 40);
 
         jLabel4.setFont(new java.awt.Font("Sylfaen", 0, 24)); // NOI18N
         jLabel4.setIcon(new javax.swing.JLabel() {
@@ -218,7 +221,7 @@ public class Codigos extends javax.swing.JFrame {
         }.getIcon());
         jLabel4.setText("Algoritmo:");
         jPanel17.add(jLabel4);
-        jLabel4.setBounds(380, 50, 120, 40);
+        jLabel4.setBounds(380, 0, 120, 40);
 
         Variables.setEditable(false);
         Variables.setColumns(20);
@@ -229,7 +232,7 @@ public class Codigos extends javax.swing.JFrame {
         jScrollPane1.setViewportView(Variables);
 
         jPanel17.add(jScrollPane1);
-        jScrollPane1.setBounds(510, 140, 330, 130);
+        jScrollPane1.setBounds(510, 90, 330, 130);
 
         Explicacion.setColumns(20);
         Explicacion.setRows(5);
@@ -238,7 +241,7 @@ public class Codigos extends javax.swing.JFrame {
         jScrollPane2.setViewportView(Explicacion);
 
         jPanel17.add(jScrollPane2);
-        jScrollPane2.setBounds(510, 290, 330, 130);
+        jScrollPane2.setBounds(510, 240, 330, 130);
 
         Salida.setEditable(false);
         Salida.setColumns(20);
@@ -249,18 +252,7 @@ public class Codigos extends javax.swing.JFrame {
         jScrollPane3.setViewportView(Salida);
 
         jPanel17.add(jScrollPane3);
-        jScrollPane3.setBounds(510, 450, 330, 130);
-
-        CodigoFuente.setEditable(false);
-        CodigoFuente.setColumns(20);
-        CodigoFuente.setRows(5);
-        CodigoFuente.setText("Aqui va el codigo");
-        CodigoFuente.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        CodigoFuente.setFocusable(false);
-        jScrollPane4.setViewportView(CodigoFuente);
-
-        jPanel17.add(jScrollPane4);
-        jScrollPane4.setBounds(20, 140, 460, 440);
+        jScrollPane3.setBounds(510, 400, 330, 130);
 
         Run.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/botones/Run.png"))); // NOI18N
         Run.setBorderPainted(false);
@@ -281,7 +273,7 @@ public class Codigos extends javax.swing.JFrame {
             }
         });
         jPanel17.add(Run);
-        Run.setBounds(160, 590, 70, 40);
+        Run.setBounds(160, 540, 70, 40);
 
         Siguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/botones/Explain.png"))); // NOI18N
         Siguiente.setBorderPainted(false);
@@ -303,7 +295,14 @@ public class Codigos extends javax.swing.JFrame {
             }
         });
         jPanel17.add(Siguiente);
-        Siguiente.setBounds(240, 590, 120, 40);
+        Siguiente.setBounds(240, 540, 120, 40);
+
+        CodigoFuente.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
+        CodigoFuente.setFocusable(false);
+        jScrollPane6.setViewportView(CodigoFuente);
+
+        jPanel17.add(jScrollPane6);
+        jScrollPane6.setBounds(20, 90, 460, 440);
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
@@ -315,8 +314,8 @@ public class Codigos extends javax.swing.JFrame {
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
-                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, 585, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
                 .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0))
         );
@@ -422,14 +421,15 @@ public class Codigos extends javax.swing.JFrame {
     private void SiguienteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SiguienteMouseExited
         Siguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/Explain.png")));
     }//GEN-LAST:event_SiguienteMouseExited
-
-    private void SiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SiguienteActionPerformed
-
-    }//GEN-LAST:event_SiguienteActionPerformed
-
-    private void RunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RunActionPerformed
-
-    }//GEN-LAST:event_RunActionPerformed
+    
+    private void RunActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
+    private void SiguienteActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }
+    
 
     /**
      * @param args the command line arguments
@@ -468,7 +468,7 @@ public class Codigos extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton Algoritmos;
-    public javax.swing.JTextArea CodigoFuente;
+    public javax.swing.JTextPane CodigoFuente;
     public javax.swing.JTextArea Explicacion;
     public javax.swing.JButton Inicio;
     private javax.swing.JButton Manual;
@@ -492,8 +492,8 @@ public class Codigos extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
     public javax.swing.JLabel numero;
     // End of variables declaration//GEN-END:variables
 }

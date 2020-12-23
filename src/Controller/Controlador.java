@@ -1,4 +1,4 @@
-/*
+ /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -7,7 +7,9 @@ package Controller;
 
 import Model.*;
 import Views.*;
+import java.awt.Color;
 import java.awt.event.ActionEvent;
+import javax.swing.JTextPane;
 
 /**
  *
@@ -22,7 +24,7 @@ public class Controlador {
     private Codigos Codes;
     private Data data;
     private int count;
-    //Inicializamos la clase (temporal para pruebas)
+    private CuadroTexto ChangeColor;
     private Enunciados Enun;
 
     public Controlador(HomePage home) {
@@ -610,37 +612,39 @@ public class Controlador {
         });
         this.Pcode.GoCode.addActionListener((ActionEvent e) -> {
             Pcode.setVisible(false);
+            Codes.setVisible(false);
+            this.Codes = new Codigos();
             Codes.setVisible(true);
             this.GoCodigos((vent - 1));
         });
     }
+    
     
     public void GoCodigos(int vent){
         this.Codes.setTitle("Codigos Lisp");
         this.Codes.setLocationRelativeTo(null);
         int pos = Integer.parseInt(data.getAlgoritmos().get(vent).get(3));
         int tam = data.getPasos().get(pos).get(1).size();
-        Codes.CodigoFuente.setText(data.getAlgoritmos().get(vent).get(2));
+        Codes.CodigoFuente.setText("");
+        PonerColor(Codes.CodigoFuente, data.getAlgoritmos().get(vent).get(2));
         Codes.numero.setText((vent+1)+"");
         this.Codes.Inicio.addActionListener((ActionEvent e) -> {
             Codes.setVisible(false);
             home.setVisible(true);
-            initCount();
             this.iniciar();
         });
         this.Codes.Menu.addActionListener((ActionEvent e) -> {
             Codes.setVisible(false);
             menu.setVisible(true);
-            initCount();
             this.Menus();
         });
         this.Codes.Algoritmos.addActionListener((ActionEvent e) -> {
             Codes.setVisible(false);
             Algot.setVisible(true);
-            initCount();
             this.Algorithms();
         });
         this.Codes.Run.addActionListener((ActionEvent e) -> {
+            initCount();
             System.out.println("\n///////////////////");
             Codes.Explicacion.setText(Enun.getEnunciado(data.getPasos().get(pos).get(0).get(this.count)));
             Codes.Variables.setText(data.getPasos().get(pos).get(1).get(this.count));
@@ -698,6 +702,177 @@ public class Controlador {
             
             
         });
+    }
+    
+    public void PonerColor(JTextPane modif, String str){
+        //new Color(153,102,0) color cafe
+        ChangeColor=new CuadroTexto();
+        ChangeColor.setPrueva(modif);
+        String an ="";    
+        int d = 0;
+        while(d < str.length()){
+            if(str.charAt(d) == ';'){
+                for(int i = d; i < str.length();i++){
+                    if(str.charAt(d+1) != '('){
+                        an += str.charAt(d);
+                        d++;
+                    }
+                }
+                ChangeColor.append(new Color(153,102,0), an);
+                an = "";
+            }
+            if(str.charAt(d) == '#'){
+                for(int i = d; i < str.length();i++){
+                    if(str.charAt(d+1) != '('){
+                        an += str.charAt(d);
+                        d++;
+                    }
+                }
+                ChangeColor.append(new Color(153,102,0), an);
+                an = "";
+            }
+           if(str.charAt(d) == '('){
+               ChangeColor.append(new Color(205, 92, 92), Character.toString(str.charAt(d)));
+               d++;
+               for(int i = d; i < str.length();i++){ 
+                   if(d < str.length()){
+                        if(str.charAt(d) == '('){
+                            ChangeColor.append(new Color(205, 92, 92), Character.toString(str.charAt(d)));
+                            d = (d++ < str.length())? d++ : d;
+                            i = (i++ < str.length())? i++ : i;
+                        }
+                        if(str.charAt(d) == '/'){                               
+                                ChangeColor.append(new Color(0, 128, 0), Character.toString(str.charAt(d)));
+                                d = (d++ < str.length())? d++ : d;
+                                i = (i++ < str.length())? i++ : i;
+                        }
+                        if(str.charAt(d) == '+'){                              
+                                ChangeColor.append(new Color(0, 128, 0), Character.toString(str.charAt(d)));
+                                d = (d++ < str.length())? d++ : d;
+                                i = (i++ < str.length())? i++ : i;
+                        }
+                        if(str.charAt(d) == '-'){                                
+                                ChangeColor.append(new Color(0, 128, 0), Character.toString(str.charAt(d)));
+                                d = (d++ < str.length())? d++ : d;
+                                i = (i++ < str.length())? i++ : i;
+                        }
+                        if(str.charAt(d) == '*'){                               
+                                ChangeColor.append(new Color(0, 128, 0), Character.toString(str.charAt(d)));
+                                d = (d++ < str.length())? d++ : d;
+                                i = (i++ < str.length())? i++ : i;
+                        }
+                        if(str.charAt(d) == '~'){                               
+                                ChangeColor.append(new Color(0, 128, 0), Character.toString(str.charAt(d)));
+                                d = (d++ < str.length())? d++ : d;
+                                i = (i++ < str.length())? i++ : i;
+                                if(str.charAt(d) == 'd'){                                      
+                                        ChangeColor.append(new Color(0, 128, 0), Character.toString(str.charAt(d)));
+                                        d = (d++ < str.length())? d++ : d;
+                                        i = (i++ < str.length())? i++ : i;
+                                }
+                                if(str.charAt(d) == 'a'){                                      
+                                        ChangeColor.append(new Color(0, 128, 0), Character.toString(str.charAt(d)));
+                                        d = (d++ < str.length())? d++ : d;
+                                        i = (i++ < str.length())? i++ : i;
+                                }
+                        }
+                        for(int z = 0; z<3;z++){
+                            if(str.charAt(d) == '.'){                               
+                                ChangeColor.append(new Color(0, 128, 0), Character.toString(str.charAt(d)));
+                                d = (d++ < str.length())? d++ : d;
+                                i = (i++ < str.length())? i++ : i;
+                            }
+                            for(int x = 0; x < str.length(); x++){
+                                if(str.charAt(d) == '0'){                               
+                                    ChangeColor.append(new Color(0, 128, 0), Character.toString(str.charAt(d)));
+                                    d = (d++ < str.length())? d++ : d;
+                                    i = (i++ < str.length())? i++ : i;
+                                }
+                            }
+                            for(int x = 0; x < str.length(); x++){
+                                if(str.charAt(d) == '1'){                               
+                                    ChangeColor.append(new Color(0, 128, 0), Character.toString(str.charAt(d)));
+                                    d = (d++ < str.length())? d++ : d;
+                                    i = (i++ < str.length())? i++ : i;
+                                }
+                            }
+                            for(int x = 0; x < str.length(); x++){
+                                if(str.charAt(d) == '2'){                               
+                                    ChangeColor.append(new Color(0, 128, 0), Character.toString(str.charAt(d)));
+                                    d = (d++ < str.length())? d++ : d;
+                                    i = (i++ < str.length())? i++ : i;
+                                }
+                            }
+                            for(int x = 0; x < str.length(); x++){
+                                if(str.charAt(d) == '3'){                               
+                                    ChangeColor.append(new Color(0, 128, 0), Character.toString(str.charAt(d)));
+                                    d = (d++ < str.length())? d++ : d;
+                                    i = (i++ < str.length())? i++ : i;
+                                }
+                            }
+                            for(int x = 0; x < str.length(); x++){
+                                if(str.charAt(d) == '4'){                               
+                                    ChangeColor.append(new Color(0, 128, 0), Character.toString(str.charAt(d)));
+                                    d = (d++ < str.length())? d++ : d;
+                                    i = (i++ < str.length())? i++ : i;
+                                }
+                            }
+                            for(int x = 0; x < str.length(); x++){
+                                if(str.charAt(d) == '5'){                               
+                                    ChangeColor.append(new Color(0, 128, 0), Character.toString(str.charAt(d)));
+                                    d = (d++ < str.length())? d++ : d;
+                                    i = (i++ < str.length())? i++ : i;
+                                }
+                            }
+                            for(int x = 0; x < str.length(); x++){
+                                if(str.charAt(d) == '6'){                               
+                                    ChangeColor.append(new Color(0, 128, 0), Character.toString(str.charAt(d)));
+                                    d = (d++ < str.length())? d++ : d;
+                                    i = (i++ < str.length())? i++ : i;
+                                }
+                            }
+                            for(int x = 0; x < str.length(); x++){
+                                if(str.charAt(d) == '7'){                               
+                                    ChangeColor.append(new Color(0, 128, 0), Character.toString(str.charAt(d)));
+                                    d = (d++ < str.length())? d++ : d;
+                                    i = (i++ < str.length())? i++ : i;
+                                }
+                            }
+                            for(int x = 0; x < str.length(); x++){
+                                if(str.charAt(d) == '8'){                               
+                                    ChangeColor.append(new Color(0, 128, 0), Character.toString(str.charAt(d)));
+                                    d = (d++ < str.length())? d++ : d;
+                                    i = (i++ < str.length())? i++ : i;
+                                }
+                            }
+                            for(int x = 0; x < str.length(); x++){
+                                if(str.charAt(d) == '9'){                               
+                                    ChangeColor.append(new Color(0, 128, 0), Character.toString(str.charAt(d)));
+                                    d = (d++ < str.length())? d++ : d;
+                                    i = (i++ < str.length())? i++ : i;
+                                }
+                            }
+                       }
+                   }
+                   if(d < str.length()){
+                       for(int b = d; b < str.length();b++){
+                            if(str.charAt(d) == ')'){
+                                ChangeColor.append(new Color(205, 92, 92), Character.toString(str.charAt(d)));
+                                d = (d++ < str.length())? d++ : d;
+                                i = (i++ < str.length())? i++ : i;
+                            }
+                        }
+                   }
+                   
+                   if(d < str.length()){
+                       ChangeColor.append(new Color(25, 25, 112), Character.toString(str.charAt(d)));
+                   }
+                   d++;
+                }
+                an = "";
+           }
+           d++;
+        }     
     }
     
     public void initCount(){
