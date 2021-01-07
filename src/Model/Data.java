@@ -14,7 +14,7 @@ import java.util.*;
  */
 public class Data {
     private final List<List<String>> algoritmos;
-    private final List<List<List<String>>> pasos;
+    private final List<List<List<String>>> pasos;  
     
     public Data() {
         this.algoritmos = new ArrayList<>();
@@ -62,11 +62,15 @@ public class Data {
         this.pasos.get(2).get(0).add("Funcion");
         this.pasos.get(2).get(0).add("Impresión");
         this.pasos.get(2).get(0).add("Lectura");
+        this.pasos.get(2).get(0).add("Impresión");
+        this.pasos.get(2).get(0).add("Lectura");
         this.pasos.get(2).get(0).add("Llamado");
         /////////////////////////////////
         this.pasos.get(2).get(1).add("(defun Suma()");
         this.pasos.get(2).get(1).add("(print \"ingrese el valor de a\")");
         this.pasos.get(2).get(1).add("(setq a (read))");
+        this.pasos.get(2).get(1).add("(print \"ingrese el valor de b\")");
+        this.pasos.get(2).get(1).add("(setq b (read))");
         this.pasos.get(2).get(1).add("(Suma)");
         ////////////////   4    /////////////////
         this.algoritmos.get(3).add("#|\nConstruir  un algoritmo en Lisp que dé a\nconocer el precio de la leche que compro\nJulián,  teniendo  como  base que el pagó\n20.000  pesos  por  3  litros de leche y le\ndieron 8.000  pesos de cambio.\n|#");

@@ -9,6 +9,9 @@ import Model.*;
 import Views.*;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
+import java.util.ArrayList;
+import java.util.List;
+import javax.swing.JOptionPane;
 import javax.swing.JTextPane;
 
 /**
@@ -26,6 +29,8 @@ public class Controlador {
     private int count;
     private CuadroTexto ChangeColor;
     private Enunciados Enun;
+    private JavaAlgorithms javaAlg;
+    private List<String> reads;
 
     public Controlador(HomePage home) {
         this.home = home;
@@ -623,6 +628,7 @@ public class Controlador {
     public void GoCodigos(int vent){
         this.Codes.setTitle("Codigos Lisp");
         this.Codes.setLocationRelativeTo(null);
+        this.javaAlg = new JavaAlgorithms();
         int pos = Integer.parseInt(data.getAlgoritmos().get(vent).get(3));
         int tam = data.getPasos().get(pos).get(1).size();
         Codes.CodigoFuente.setText("");
@@ -645,18 +651,22 @@ public class Controlador {
         });
         this.Codes.Run.addActionListener((ActionEvent e) -> {
             initCount();
-            System.out.println("\n///////////////////");
+            this.reads = new ArrayList<>();
             Codes.Explicacion.setText(Enun.getEnunciado(data.getPasos().get(pos).get(0).get(this.count)));
             Codes.Variables.setText(data.getPasos().get(pos).get(1).get(this.count));
             Codes.Siguiente.setEnabled(true);
-            System.out.print(this.count + " ");
         });
         this.Codes.Siguiente.addActionListener((ActionEvent e) -> {
             setCount();
             if(this.count < tam){
-                System.out.print(this.count + " ");
                 Codes.Explicacion.setText(Enun.getEnunciado(data.getPasos().get(pos).get(0).get(this.count)));
                 Codes.Variables.setText(data.getPasos().get(pos).get(1).get(this.count));
+                if(data.getPasos().get(pos).get(0).get(this.count).equals("Lectura")){
+                    this.reads.add((String)JOptionPane.showInputDialog(""));
+                }
+            }
+            if(this.count == tam){
+                Codes.Salida.setText(this.javaAlg.getOut(vent, this.reads));
             }
         });
     }

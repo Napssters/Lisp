@@ -31,7 +31,7 @@ public class Enunciados {
                  break;
             case "Funcion" : respuesta = "asd"; 
                  break;
-            case "Div" : respuesta = "Se usa el simbolo \\\" /  \\\" como operacion para \\nla divicion de dos valores. \\n\\nEjemplo: (/ a b ) \\n\\nDe esta manera se dividen dichas variables."; 
+            case "Div" : respuesta = "Se usa el simbolo \" /  \" como operacion para \nla divicion de dos valores. \n\nEjemplo: (/ a b ) \n\nDe esta manera se dividen dichas variables."; 
                  break;
             case "Expt" : respuesta = "Se usa la palabra reservada expt para elevar un número \na una potencia determinada.\n\nEjemplo: (expt a b)\n\nDonde a corresponde al valor a elevar y b a el valor del\nexponente\n\n(exponente 2 3)\n\nEl cual hace referencia a eleva    r 2 a la 3"; 
                  break;

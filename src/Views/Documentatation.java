@@ -345,6 +345,11 @@ public class Documentatation extends javax.swing.JFrame {
         funciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Menu Documentacion/funciones.png"))); // NOI18N
         funciones.setBorderPainted(false);
         funciones.setContentAreaFilled(false);
+        funciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                funcionesActionPerformed(evt);
+            }
+        });
         jPanel5.add(funciones);
         funciones.setBounds(60, 880, 220, 223);
 
@@ -447,6 +452,10 @@ public class Documentatation extends javax.swing.JFrame {
     private void InicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InicioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_InicioActionPerformed
+
+    private void funcionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_funcionesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_funcionesActionPerformed
 
     /**
      * @param args the command line arguments

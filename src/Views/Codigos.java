@@ -246,7 +246,6 @@ public class Codigos extends javax.swing.JFrame {
         Salida.setEditable(false);
         Salida.setColumns(20);
         Salida.setRows(5);
-        Salida.setText("Aqui van las salidas del codigo al \najecutarse");
         Salida.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         Salida.setFocusable(false);
         jScrollPane3.setViewportView(Salida);
@@ -265,6 +264,13 @@ public class Codigos extends javax.swing.JFrame {
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 RunMouseExited(evt);
+            }
+        });
+        Run.addInputMethodListener(new java.awt.event.InputMethodListener() {
+            public void inputMethodTextChanged(java.awt.event.InputMethodEvent evt) {
+                RunInputMethodTextChanged(evt);
+            }
+            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
             }
         });
         Run.addActionListener(new java.awt.event.ActionListener() {
@@ -333,8 +339,9 @@ public class Codigos extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 535, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 588, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -345,9 +352,7 @@ public class Codigos extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 650, Short.MAX_VALUE)
         );
 
         pack();
@@ -421,9 +426,13 @@ public class Codigos extends javax.swing.JFrame {
     private void SiguienteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SiguienteMouseExited
         Siguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/Explain.png")));
     }//GEN-LAST:event_SiguienteMouseExited
+
+    private void RunInputMethodTextChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_RunInputMethodTextChanged
+        Salida.setText("");
+    }//GEN-LAST:event_RunInputMethodTextChanged
     
     private void RunActionPerformed(java.awt.event.ActionEvent evt) {                                     
-        // TODO add your handling code here:
+        Salida.setText("");
     }
     
     private void SiguienteActionPerformed(java.awt.event.ActionEvent evt) {                                     
