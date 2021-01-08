@@ -6,6 +6,7 @@
 package Model;
 
 import java.util.List;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -22,36 +23,113 @@ public class JavaAlgorithms {
     }
     
     public String a1(){
-        return "";
+        return "36,57";
     }
     
     public String a2(List<String> reads){
-        
-        return "La suma es: " + (Integer.parseInt(reads.get(0))+ Integer.parseInt(reads.get(1)));
+        int sum = 0;
+        for(int i = 0; i < reads.size(); i++){
+            if(reads.get(i).equals("")){
+                //No hace nada
+            }else{
+                try{
+                    sum += Integer.parseInt(reads.get(i));
+                }catch(NumberFormatException e){
+                    JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+                }
+            }
+        }
+        return "La suma es: " + sum;
     }
     
     public String a3(List<String> reads){
-        return "";
+        return "El precio de la leche por unidad es de: 4.000";
     }
     
     public String a4(List<String> reads){
-        return "";
+        return "El precio total es de: 48.355";
     }
     
     public String a5(List<String> reads){
-        return "";
+        float precio = 0;
+        float desc = 0;
+        try{
+            precio = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            desc = Integer.parseInt(reads.get(1));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        return "" + (precio - (precio * (desc / 100)));
     }
     
     public String a6(List<String> reads){
-        return "";
+        String esPar = "";
+        try{
+            esPar = ((Integer.parseInt(reads.get(0)) % 2) == 0)? "El numero es par":"El numero es imparpar";
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        return esPar;
     }
     
     public String a7(List<String> reads){
-        return "";
+        float n1 = 0;
+        float n2 = 0;
+        float n3 = 0;
+        try{
+            n1 = Float.parseFloat(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            n2 = Float.parseFloat(reads.get(1));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            n3 = Float.parseFloat(reads.get(2));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        return (((n1 + n2 + n3) / 3) > 2.9)? "Aprobó la materia":"Reprobó la materia";
     }
     
     public String a8(List<String> reads){
-        return "";
+        int n1 = 0;
+        int n2 = 0;
+        int n3 = 0;
+        String respuesta = "";
+        try{
+            n1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            n2 = Integer.parseInt(reads.get(1));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            n3 = Integer.parseInt(reads.get(2));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        if (n1 > n2) {
+            if (n1 > n3) {
+                respuesta = "El numero mayor es: " + n1;
+            } else {
+                respuesta = "El numero mayor es: " + n3 ;
+            }
+        } else if (n2 > n3) {
+            respuesta = "El numero mayor es: " + n2 ;
+        } else {
+            respuesta = "El numero mayor es: " + n3 ;
+        }
+        return respuesta;
     }
     
     public String a9(List<String> reads){

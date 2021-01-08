@@ -67,6 +67,12 @@ public class Codigos extends javax.swing.JFrame {
         Siguiente = new javax.swing.JButton();
         jScrollPane6 = new javax.swing.JScrollPane();
         CodigoFuente = new javax.swing.JTextPane();
+        input = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -232,7 +238,7 @@ public class Codigos extends javax.swing.JFrame {
         jScrollPane1.setViewportView(Variables);
 
         jPanel17.add(jScrollPane1);
-        jScrollPane1.setBounds(510, 90, 330, 130);
+        jScrollPane1.setBounds(510, 70, 330, 130);
 
         Explicacion.setColumns(20);
         Explicacion.setRows(5);
@@ -267,10 +273,10 @@ public class Codigos extends javax.swing.JFrame {
             }
         });
         Run.addInputMethodListener(new java.awt.event.InputMethodListener() {
+            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
+            }
             public void inputMethodTextChanged(java.awt.event.InputMethodEvent evt) {
                 RunInputMethodTextChanged(evt);
-            }
-            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
             }
         });
         Run.addActionListener(new java.awt.event.ActionListener() {
@@ -304,11 +310,39 @@ public class Codigos extends javax.swing.JFrame {
         Siguiente.setBounds(240, 540, 120, 40);
 
         CodigoFuente.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
-        CodigoFuente.setFocusable(false);
         jScrollPane6.setViewportView(CodigoFuente);
 
         jPanel17.add(jScrollPane6);
-        jScrollPane6.setBounds(20, 90, 460, 440);
+        jScrollPane6.setBounds(20, 70, 460, 400);
+
+        input.setEnabled(false);
+        jPanel17.add(input);
+        input.setBounds(20, 500, 460, 30);
+
+        jLabel2.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
+        jLabel2.setText("Input");
+        jPanel17.add(jLabel2);
+        jLabel2.setBounds(20, 470, 80, 30);
+
+        jLabel3.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
+        jLabel3.setText("Codigo");
+        jPanel17.add(jLabel3);
+        jLabel3.setBounds(240, 50, 80, 20);
+
+        jLabel5.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
+        jLabel5.setText("Paso a Paso");
+        jPanel17.add(jLabel5);
+        jLabel5.setBounds(630, 50, 150, 20);
+
+        jLabel6.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
+        jLabel6.setText("Explicación");
+        jPanel17.add(jLabel6);
+        jLabel6.setBounds(630, 220, 170, 20);
+
+        jLabel7.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
+        jLabel7.setText("Output");
+        jPanel17.add(jLabel7);
+        jLabel7.setBounds(650, 380, 80, 20);
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
@@ -338,10 +372,10 @@ public class Codigos extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
+                .addGap(0, 0, 0)
                 .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 588, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(0, 0, 0))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -352,7 +386,7 @@ public class Codigos extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 650, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -486,13 +520,19 @@ public class Codigos extends javax.swing.JFrame {
     public javax.swing.JTextArea Salida;
     public javax.swing.JButton Siguiente;
     public javax.swing.JTextArea Variables;
+    public javax.swing.JTextField input;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel16;

@@ -47,10 +47,11 @@ public class PseudoCodigo extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         GoCode = new javax.swing.JButton();
-        PsCode = new javax.swing.JTextArea();
         Enunciado = new javax.swing.JTextArea();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        PsCode = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -202,15 +203,6 @@ public class PseudoCodigo extends javax.swing.JFrame {
         jPanel3.add(GoCode);
         GoCode.setBounds(370, 340, 140, 40);
 
-        PsCode.setColumns(20);
-        PsCode.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
-        PsCode.setRows(5);
-        PsCode.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        PsCode.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        PsCode.setOpaque(false);
-        jPanel3.add(PsCode);
-        PsCode.setBounds(510, 110, 330, 220);
-
         Enunciado.setColumns(20);
         Enunciado.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
         Enunciado.setRows(5);
@@ -228,6 +220,20 @@ public class PseudoCodigo extends javax.swing.JFrame {
         jLabel3.setText("Enunciado");
         jPanel3.add(jLabel3);
         jLabel3.setBounds(150, 50, 160, 40);
+
+        jScrollPane1.setBackground(new java.awt.Color(255, 255, 255));
+        jScrollPane1.setBorder(null);
+
+        PsCode.setColumns(20);
+        PsCode.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        PsCode.setRows(5);
+        PsCode.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        PsCode.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        PsCode.setOpaque(false);
+        jScrollPane1.setViewportView(PsCode);
+
+        jPanel3.add(jScrollPane1);
+        jScrollPane1.setBounds(510, 120, 330, 220);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -380,5 +386,6 @@ public class PseudoCodigo extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }

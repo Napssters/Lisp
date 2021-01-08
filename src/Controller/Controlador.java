@@ -11,7 +11,6 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
-import javax.swing.JOptionPane;
 import javax.swing.JTextPane;
 
 /**
@@ -662,10 +661,18 @@ public class Controlador {
                 Codes.Explicacion.setText(Enun.getEnunciado(data.getPasos().get(pos).get(0).get(this.count)));
                 Codes.Variables.setText(data.getPasos().get(pos).get(1).get(this.count));
                 if(data.getPasos().get(pos).get(0).get(this.count).equals("Lectura")){
-                    this.reads.add((String)JOptionPane.showInputDialog(""));
+                    Codes.input.setEnabled(true);
+                }else{
+                    if(Codes.input.getText().equals("")){
+                        //No hace nada
+                    }else{
+                        this.reads.add(Codes.input.getText());
+                        Codes.input.setText("");
+                        Codes.input.setEnabled(false);
+                    }
                 }
             }
-            if(this.count == tam){
+            if(this.count == (tam - 1)){
                 Codes.Salida.setText(this.javaAlg.getOut(vent, this.reads));
             }
         });
