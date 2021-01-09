@@ -223,13 +223,14 @@ public class PseudoCodigo extends javax.swing.JFrame {
 
         jScrollPane1.setBackground(new java.awt.Color(255, 255, 255));
         jScrollPane1.setBorder(null);
+        jScrollPane1.setEnabled(false);
+        jScrollPane1.setOpaque(false);
 
         PsCode.setColumns(20);
         PsCode.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
         PsCode.setRows(5);
         PsCode.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         PsCode.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        PsCode.setOpaque(false);
         jScrollPane1.setViewportView(PsCode);
 
         jPanel3.add(jScrollPane1);

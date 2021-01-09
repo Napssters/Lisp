@@ -192,7 +192,7 @@ public class Data {
         this.algoritmos.get(8).add("Funcion mayorde3\n  imprimir \"Ingrese el primer numero: \"\n  inicializar n1 = (valor por consola)\n  imprimir \"Ingrese el segundo numero: \"\n  inicializar n2 = (valor por consola)\n  imprimir \"Ingrese el tercer numero: \"\n  inicializar n3 = (valor por consola)\n  si n1 > n2\n    imprimir \"El numero mayor es: \", n1\n  sino\n    si n2 > n3\n      imprimir \"El numero mayor es: \", n2\n    sino\n      imprimir \"El numero mayor es: \", n3\n\nllamar Funcion mayorde3");
         this.algoritmos.get(8).add("(defun mayorde3()\n  (print \"Ingrese el primer numero: \")\n  (setq n1 (read))\n  (print \"Ingrese el segundo numero: \")\n  (setq n2 (read))\n  (print \"Ingrese el tercer numero: \")\n  (setq n3 (read))\n  (if (> n1 n2)\n    (print \"El numero mayor es: ~a\" n1)\n    (if (> n2 n3)\n      (print \"El numero mayor es: ~a\" n2)\n      (print \"El numero mayor es: ~a\" n3)\n    )\n  )\n)\n\n(mayorde3)");
         this.algoritmos.get(8).add("8");
-        this.pasos.get(8).get(0).add("Lectura");
+        this.pasos.get(8).get(0).add("Llamado");
         this.pasos.get(8).get(0).add("Funcion");
         this.pasos.get(8).get(0).add("Impresión");
         this.pasos.get(8).get(0).add("Lectura");
@@ -217,6 +217,26 @@ public class Data {
         this.pasos.get(8).get(1).add("(print \"El numero mayor es: ~a\" n1)");
         this.pasos.get(8).get(1).add("(if (> n2 n3)");
         this.pasos.get(8).get(1).add("(print \"El numero mayor es: ~a\" n2)");
+        ////////////////   10    /////////////////
+        this.algoritmos.get(9).add("#|\nCrear  un  algoritmo  en  Lisp  que reciba un \nnúmero dentro del rango1 a 12 y de acuerdo\nal  número  imprima  el mes correspondiente.\n|#");
+        this.algoritmos.get(9).add("Funcion Mes\n    imprimir  \"numero entre el 1 y el 12: \"\n    inicializar mes = (valor por consola)\n    evaluar mes\n       (mes = 1)(imprimir \"mes Enero\"\n       (mes = 2)(imprimir \"mes Febrero\"\n       .\n       .\n       .\n       (mes = 12)(imprimir \"mes Diciembre\"\n        \nllamar Funcion Mes");
+        this.algoritmos.get(9).add("(defun Mes()\n  (print \"Ingrese un numero entre el 1 y el 12: \")\n  (setq mes (read))\n  (cond\n    ((= mes 1)(print \"mes de Enero\"))\n    ((= mes 2)(print \"mes de Febrero\"))\n    ((= mes 3)(print \"mes de Marzo\"))\n    ((= mes 4)(print \"mes de Abril\"))\n    ((= mes 5)(print \"mes de Mayo\"))\n    ((= mes 6)(print \"mes de Junio\"))\n    ((= mes 7)(print \"mes de Julio\"))\n    ((= mes 8)(print \"mes de Agosto\"))\n    ((= mes 9)(print \"mes de Septiembre\"))\n    ((= mes 10)(print \"mes de Octubre\"))\n    ((= mes 11)(print \"mes de Noviembre\"))\n    ((= mes 12)(print \"mes de Diciembre\"))\n  )\n)\n\n(Mes)");
+        this.algoritmos.get(9).add("9");
+        this.pasos.get(9).get(0).add("Llamado");
+        this.pasos.get(9).get(0).add("Funcion");
+        this.pasos.get(9).get(0).add("Impresión");
+        this.pasos.get(9).get(0).add("Lectura");
+        this.pasos.get(9).get(0).add("Cond");
+        this.pasos.get(9).get(0).add("Igual");
+        this.pasos.get(9).get(0).add("Impresión");
+        /////////////////////////////////
+        this.pasos.get(9).get(1).add("(Mes)");
+        this.pasos.get(9).get(1).add("(defun Mes()");
+        this.pasos.get(9).get(1).add("(print \"Ingrese un numero entre el 1 y el 12: \")");
+        this.pasos.get(9).get(1).add("(setq mes (read))");
+        this.pasos.get(9).get(1).add("(cond");
+        this.pasos.get(9).get(1).add("(= mes 1)");
+        this.pasos.get(9).get(1).add("((= mes 1)(print \"mes de Enero\"))");
         /*
         ////////////////   N    /////////////////
         this.algoritmos.get(posn).add("");

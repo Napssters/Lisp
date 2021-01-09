@@ -232,7 +232,6 @@ public class Codigos extends javax.swing.JFrame {
         Variables.setEditable(false);
         Variables.setColumns(20);
         Variables.setRows(5);
-        Variables.setText("Aqui van las lineas de codigo \ncorrespodniente a la linea en \nejecicion");
         Variables.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         Variables.setFocusable(false);
         jScrollPane1.setViewportView(Variables);
@@ -242,7 +241,6 @@ public class Codigos extends javax.swing.JFrame {
 
         Explicacion.setColumns(20);
         Explicacion.setRows(5);
-        Explicacion.setText("Aqui va la explicacion de las palabras\nreservadas usadas");
         Explicacion.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         jScrollPane2.setViewportView(Explicacion);
 

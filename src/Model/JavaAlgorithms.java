@@ -133,7 +133,53 @@ public class JavaAlgorithms {
     }
     
     public String a9(List<String> reads){
-        return "";
+        int opc = 0;
+        String mes = "";
+        try{
+            opc = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        switch(opc){
+            case 1:
+                    mes = "mes de Enero";
+                break;
+            case 2:
+                    mes = "mes de Febrero";
+                break;
+            case 3:
+                    mes = "mes de Marzo";
+                break;
+            case 4:
+                    mes = "mes de Abril";
+                break;
+            case 5:
+                    mes = "mes de Mayo";
+                break;
+            case 6:
+                    mes = "mes de Junio";
+                break;
+            case 7:
+                    mes = "mes de Julio";
+                break;
+            case 8:
+                    mes = "mes de Agosto";
+                break;
+            case 9:
+                    mes = "mes de Septiembre";
+                break;
+            case 0:
+                    mes = "mes de Octubre";
+                break;
+            case 11:
+                    mes = "mes de Noviembre";
+                break;
+            case 12:
+                    mes = "mes de Diciembre";
+                break;
+            default: mes = "";
+        }
+        return mes;
     }
     
     public String a10(List<String> reads){

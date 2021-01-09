@@ -45,6 +45,10 @@ public class Enunciados {
                  break;
             case "Modulo" : respuesta = "La palabra reservada remaider obtiene el módulo o el\nresiduo de una división bien sea 0 o 1\n\nEjemplo:\n(3 modulo 2) Ó (modulo 3 2)\n\nAhora en Lisp tendríamos\nremainder (3 2)"; 
                  break;
+            case "Cond" : respuesta = "La función Cond sirve como condicional, pero este tiene\nla  propiedad  especial  de evaluar una lista de posibles\nopciones  y  dar  a  conocer  cuál es la condición que se\ncumple.\n\nEjemplo\n   (cond \n       [(condicional)(Respuesta_Verdadero)]\n       [(condicion2)(Respuesta_Verdadero)]\n       …\n       [(condición)(Respuesta_Verdadero)]\n       (else (Respuesta_Falso)\n   )\n\nAhora en Lisp tendríamos\n (cond\n        ((< a b) (display \"Es mayor b\"))\n        ((< b a) (display \"Es mayor a\"))\n )"; 
+                 break;
+            case "Igual" : respuesta = "En Lisp a diferencia de otros lenguajes la función \" = \" \nsirve para comparar un dato con otro, devolviendo así\nun verdadero o un falso.\n\nEjemplo:\n( a = b) \n( 1 = 2)  -> Falso\n( 2 = 2)  -> Verdadero\n\nAhora en Lisp tendríamos\n(= a b)\n(= 1 2)  -> Falso\n(= 2 2)  -> Verdadero"; 
+                 break;
             case "otros" : respuesta = "asd"; 
                  break;
         }
