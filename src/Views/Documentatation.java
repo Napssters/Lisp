@@ -170,7 +170,7 @@ public class Documentatation extends javax.swing.JFrame {
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/marca_UTP.png"))); // NOI18N
         jPanel4.add(jLabel8);
-        jLabel8.setBounds(620, 10, 234, 113);
+        jLabel8.setBounds(590, 10, 234, 113);
 
         jLabel12.setText("<html> © 2020 - Universidad Tecnológica de Pereira<br>Carrera 27 #10-02 Barrio Alamos - Risaralda - Colombia - AA: 97<br>Código postal: 660003 - CERES - PBX: +57 6 3137300 - Fax: +57 6 3213206<br>Línea gratuita de Quejas y Reclamos: 018000966781 - contactenos@utp.edu.co<html>");
         jPanel4.add(jLabel12);

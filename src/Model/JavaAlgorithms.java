@@ -133,6 +133,21 @@ public class JavaAlgorithms {
     }
     
     public String a9(List<String> reads){
+        int sum = 0;
+        for(int i = 0; i < 3; i++){ 
+            System.out.println(Integer.parseInt(reads.get(i)));
+            try{
+                if(Integer.parseInt(reads.get(i)) < 0){
+                    sum++;
+                }
+            }catch(NumberFormatException e){
+                JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+            }
+        }
+        return ""+sum;
+    }
+    
+    public String a10(List<String> reads){
         int opc = 0;
         String mes = "";
         try{
@@ -180,10 +195,6 @@ public class JavaAlgorithms {
             default: mes = "";
         }
         return mes;
-    }
-    
-    public String a10(List<String> reads){
-        return "";
     }
     
     public String a11(List<String> reads){

@@ -616,7 +616,7 @@ public class Controlador {
         });
         this.Pcode.GoCode.addActionListener((ActionEvent e) -> {
             Pcode.setVisible(false);
-            Codes.setVisible(false);
+            Codes.dispose();
             this.Codes = new Codigos();
             Codes.setVisible(true);
             this.GoCodigos((vent - 1));
@@ -634,17 +634,17 @@ public class Controlador {
         PonerColor(Codes.CodigoFuente, data.getAlgoritmos().get(vent).get(2));
         Codes.numero.setText((vent+1)+"");
         this.Codes.Inicio.addActionListener((ActionEvent e) -> {
-            Codes.setVisible(false);
+            Codes.dispose();
             home.setVisible(true);
             this.iniciar();
         });
         this.Codes.Menu.addActionListener((ActionEvent e) -> {
-            Codes.setVisible(false);
+            Codes.dispose();
             menu.setVisible(true);
             this.Menus();
         });
         this.Codes.Algoritmos.addActionListener((ActionEvent e) -> {
-            Codes.setVisible(false);
+            Codes.dispose(); 
             Algot.setVisible(true);
             this.Algorithms();
         });

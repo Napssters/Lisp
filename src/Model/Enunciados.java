@@ -49,6 +49,10 @@ public class Enunciados {
                  break;
             case "Igual" : respuesta = "En Lisp a diferencia de otros lenguajes la función \" = \" \nsirve para comparar un dato con otro, devolviendo así\nun verdadero o un falso.\n\nEjemplo:\n( a = b) \n( 1 = 2)  -> Falso\n( 2 = 2)  -> Verdadero\n\nAhora en Lisp tendríamos\n(= a b)\n(= 1 2)  -> Falso\n(= 2 2)  -> Verdadero"; 
                  break;
+            case "Actualizar" : respuesta = "asd"; 
+                 break;
+            case "Vacio" : respuesta = "asd"; 
+                 break;
             case "otros" : respuesta = "asd"; 
                  break;
         }
