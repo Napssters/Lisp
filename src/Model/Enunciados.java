@@ -53,6 +53,10 @@ public class Enunciados {
                  break;
             case "Vacio" : respuesta = "asd"; 
                  break;
+            case "Argumento" : respuesta = "asd"; 
+                 break;
+            case "Menor" : respuesta = "asd"; 
+                 break;
             case "otros" : respuesta = "asd"; 
                  break;
         }
