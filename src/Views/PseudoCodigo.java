@@ -47,6 +47,7 @@ public class PseudoCodigo extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         GoCode = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
         Enunciado = new javax.swing.JTextArea();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -203,13 +204,19 @@ public class PseudoCodigo extends javax.swing.JFrame {
         jPanel3.add(GoCode);
         GoCode.setBounds(370, 340, 140, 40);
 
+        jScrollPane2.setBackground(new java.awt.Color(255, 255, 255));
+        jScrollPane2.setBorder(null);
+        jScrollPane2.setEnabled(false);
+        jScrollPane2.setOpaque(false);
+
         Enunciado.setColumns(20);
         Enunciado.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
         Enunciado.setRows(5);
         Enunciado.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        Enunciado.setOpaque(false);
-        jPanel3.add(Enunciado);
-        Enunciado.setBounds(60, 110, 330, 230);
+        jScrollPane2.setViewportView(Enunciado);
+
+        jPanel3.add(jScrollPane2);
+        jScrollPane2.setBounds(60, 110, 330, 230);
 
         jLabel2.setFont(new java.awt.Font("Sylfaen", 0, 24)); // NOI18N
         jLabel2.setText("Pseudocodigo");
@@ -388,5 +395,6 @@ public class PseudoCodigo extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     // End of variables declaration//GEN-END:variables
 }

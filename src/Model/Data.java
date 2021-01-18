@@ -484,9 +484,9 @@ public class Data {
         this.pasos.get(16).get(1).add("(defun multiplicacion()");
         this.pasos.get(16).get(1).add("(print \"La multiplicacion es: ~d\" (* a b))");
         ////////////////   18    /////////////////
-        this.algoritmos.get(17).add("");
-        this.algoritmos.get(17).add("");
-        this.algoritmos.get(17).add("");
+        this.algoritmos.get(17).add("#|\nEscribir  un  programa  que, dado un número \nentero,  muestre  su  valor  absoluto.\nNota:  para  los  números  positivos  su valor \nabsoluto es igual al número (el valor absoluto\nde   52   es   52),   mientras   que,   para   los \nnegativos,  su  valor  absoluto  es  el  número \nmultiplicado  por -1 (el valor absoluto de -52 \nes 52).\n|#");
+        this.algoritmos.get(17).add("Funcion valorAbsoluto\n    imprimir  \"Ingrese un numero: \"\n    inicializar valor = (valor por consola)\n    evaluar valor\n       (valor < 0)(imprimir \"Valor absoluto: \", (valor * -1))\n       (valor > 0)(imprimir \"Valor absoluto: \", valor)\n        \nllamar Funcion valorAbsoluto");
+        this.algoritmos.get(17).add("(defun valorAbsoluto()\n  (print \"Ingrese un numero: \")\n  (setq valor (read))\n  (cond\n    ((< valor 0)\n       (print \"Valor absoluto: ~d\" (* valor -1)))\n    ((> valor 0)\n       (print \"Valor absoluto: ~d\" valor))\n  )\n)\n(valorAbsoluto)");
         this.algoritmos.get(17).add("17");
         this.pasos.get(17).get(0).add("");
         this.pasos.get(17).get(0).add("");
@@ -495,6 +495,30 @@ public class Data {
         this.pasos.get(17).get(1).add("");
         this.pasos.get(17).get(1).add("");
         this.pasos.get(17).get(1).add("");
+        ////////////////   19    /////////////////
+        this.algoritmos.get(18).add("#|\nCrear un programa que permita al usuario \nelegir  un  candidato  por  el   cual   votar. \nLas  posibilidades  son: candidato A por el \npartido  rojo , candidato  B  por el partido \nverde,  candidato  C  por  el  partido azul. \nSegún  el  candidato elegido (A, B ó C) se \nle  debe  imprimir  el  mensaje  “Usted ha \nvotado    por    el    partido    [color   que \ncorresponda  al  candidato  elegido]”. Si el \nusuario    ingresa   una   opción   que   no \ncorresponde  a  ninguno de los candidatos\ndisponibles,  indicar  “Opción  errónea”.\n|#");
+        this.algoritmos.get(18).add("Funcion Votaciones\n    imprimir  \" 1) A por el partido rojo\"\n    imprimir  \" 2) B por el partido verde\"\n    imprimir  \" 3) C por el partido azul\"\n    imprimir \"Seleccione una opción: \"\n    inicializar opc = (valor por consola)\n    evaluar opc\n       (opc = 1)(imprimir \"Usted ha votado por el partido rojo\")\n       (opc = 2)(imprimir \"Usted ha votado por el partido verde\")\n       (opc = 3)(imprimir \"Usted ha votado por el partido azul\")\n       (sino)(imprimir \"Opción errónea\")\n        \nllamar Funcion Votaciones");
+        this.algoritmos.get(18).add("(defun Votaciones()\n  (print \" 1) A por el partido rojo\")\n  (print \" 2) B por el partido verde\")\n  (print \" 3) C por el partido azul\")\n  (print \"Seleccione una opción: \")\n  (setq opc (read))\n  (cond\n   ((= opc 1)\n    (print \"Usted ha votado por el partido rojo\"))\n   ((= opc 2) \n    (print \"Usted ha votado por el partido verde\"))\n   ((= opc 3) \n    (print \"Usted ha votado por el partido azul\"))\n   (else (print \"Opción errónea\"))\n  )\n)\n\n(Votaciones)");
+        this.algoritmos.get(18).add("18");
+        this.pasos.get(18).get(0).add("");
+        this.pasos.get(18).get(0).add("");
+        this.pasos.get(18).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(18).get(1).add("");
+        this.pasos.get(18).get(1).add("");
+        this.pasos.get(18).get(1).add("");
+        ////////////////   20    /////////////////
+        this.algoritmos.get(19).add("#|\nHacer un programa que permita saber si un\naño es bisiesto. Para que un año sea bisiesto \ndebe  ser  divisible  por  4  y   no   debe  ser\ndivisible  por  100,  excepto que también sea \ndivisible  por  400.\n|#");
+        this.algoritmos.get(19).add("Funcion bisiesto\n    imprimir  \"Ingrese un año: \"\n    inicializar anio = (valor por consola)\n    evaluar valor\n       ((anio modulo 4) = 0)\n             (si ((anio modulo 100) != 0) o ((anio modulo 400) = 0)\n                     imprimir \"Bisiesto\"\n                     sino imprimir \"No Bisiesto\"\n             )\n       ((anio modulo 4) != 0)(imprimir \"No Bisiesto\")\n        \nllamar Funcion bisiesto");
+        this.algoritmos.get(19).add("(defun bisiesto()\n   (print \"Ingrese un año: \")\n   (setq anio (read))\n   (cond\n     ((= remainder(anio 4) 0) \n       (if ((!= remainder(anio 100)) or \n           (= remainder(anio 400)))\n	      (print \"Bisiesto\")\n	      (print \"No Bisiesto\")\n        )\n    ((!= remainder(anio 4) 0)\n       (print \"No Bisiesto\"))\n    )\n)\n(bisiesto)");
+        this.algoritmos.get(19).add("19");
+        this.pasos.get(19).get(0).add("");
+        this.pasos.get(19).get(0).add("");
+        this.pasos.get(19).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(19).get(1).add("");
+        this.pasos.get(19).get(1).add("");
+        this.pasos.get(19).get(1).add("");
         /*
         ////////////////   N    /////////////////
         this.algoritmos.get(posn).add("");
