@@ -484,41 +484,1049 @@ public class Data {
         this.pasos.get(16).get(1).add("(defun multiplicacion()");
         this.pasos.get(16).get(1).add("(print \"La multiplicacion es: ~d\" (* a b))");
         ////////////////   18    /////////////////
-        this.algoritmos.get(17).add("#|\nEscribir  un  programa  que, dado un número \nentero,  muestre  su  valor  absoluto.\nNota:  para  los  números  positivos  su valor \nabsoluto es igual al número (el valor absoluto\nde   52   es   52),   mientras   que,   para   los \nnegativos,  su  valor  absoluto  es  el  número \nmultiplicado  por -1 (el valor absoluto de -52 \nes 52).\n|#");
+        this.algoritmos.get(17).add("#|\nEscribir   un   programa   que,   dado   un\nnúmero entero, muestre su valor absoluto.\nNota: para los números positivos  su valor\nabsoluto   es   igual   al  número  (el  valor\nabsoluto de   52   es   52),   mientras  que,\npara  los negativos,  su valor  absoluto  es\nel  número  multiplicado   por  -1 (el valor \nabsoluto  de  -52  es  52).\n|#");
         this.algoritmos.get(17).add("Funcion valorAbsoluto\n    imprimir  \"Ingrese un numero: \"\n    inicializar valor = (valor por consola)\n    evaluar valor\n       (valor < 0)(imprimir \"Valor absoluto: \", (valor * -1))\n       (valor > 0)(imprimir \"Valor absoluto: \", valor)\n        \nllamar Funcion valorAbsoluto");
         this.algoritmos.get(17).add("(defun valorAbsoluto()\n  (print \"Ingrese un numero: \")\n  (setq valor (read))\n  (cond\n    ((< valor 0)\n       (print \"Valor absoluto: ~d\" (* valor -1)))\n    ((> valor 0)\n       (print \"Valor absoluto: ~d\" valor))\n  )\n)\n(valorAbsoluto)");
         this.algoritmos.get(17).add("17");
-        this.pasos.get(17).get(0).add("");
-        this.pasos.get(17).get(0).add("");
-        this.pasos.get(17).get(0).add("");
+        this.pasos.get(17).get(0).add("Llamado");
+        this.pasos.get(17).get(0).add("Funcion");
+        this.pasos.get(17).get(0).add("Impresión");
+        this.pasos.get(17).get(0).add("Lectura");
+        this.pasos.get(17).get(0).add("Cond");
+        this.pasos.get(17).get(0).add("Menor");
+        this.pasos.get(17).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(17).get(1).add("");
-        this.pasos.get(17).get(1).add("");
-        this.pasos.get(17).get(1).add("");
+        this.pasos.get(17).get(1).add("(valorAbsoluto)");
+        this.pasos.get(17).get(1).add("(defun valorAbsoluto()");
+        this.pasos.get(17).get(1).add("(print \"Ingrese un numero: \")");
+        this.pasos.get(17).get(1).add("(setq valor (read))");
+        this.pasos.get(17).get(1).add("(cond");
+        this.pasos.get(17).get(1).add("((< valor 0)");
+        this.pasos.get(17).get(1).add("(print \"Valor absoluto: ~d\" (* valor -1)))");
         ////////////////   19    /////////////////
         this.algoritmos.get(18).add("#|\nCrear un programa que permita al usuario \nelegir  un  candidato  por  el   cual   votar. \nLas  posibilidades  son: candidato A por el \npartido  rojo , candidato  B  por el partido \nverde,  candidato  C  por  el  partido azul. \nSegún  el  candidato elegido (A, B ó C) se \nle  debe  imprimir  el  mensaje  “Usted ha \nvotado    por    el    partido    [color   que \ncorresponda  al  candidato  elegido]”. Si el \nusuario    ingresa   una   opción   que   no \ncorresponde  a  ninguno de los candidatos\ndisponibles,  indicar  “Opción  errónea”.\n|#");
         this.algoritmos.get(18).add("Funcion Votaciones\n    imprimir  \" 1) A por el partido rojo\"\n    imprimir  \" 2) B por el partido verde\"\n    imprimir  \" 3) C por el partido azul\"\n    imprimir \"Seleccione una opción: \"\n    inicializar opc = (valor por consola)\n    evaluar opc\n       (opc = 1)(imprimir \"Usted ha votado por el partido rojo\")\n       (opc = 2)(imprimir \"Usted ha votado por el partido verde\")\n       (opc = 3)(imprimir \"Usted ha votado por el partido azul\")\n       (sino)(imprimir \"Opción errónea\")\n        \nllamar Funcion Votaciones");
         this.algoritmos.get(18).add("(defun Votaciones()\n  (print \" 1) A por el partido rojo\")\n  (print \" 2) B por el partido verde\")\n  (print \" 3) C por el partido azul\")\n  (print \"Seleccione una opción: \")\n  (setq opc (read))\n  (cond\n   ((= opc 1)\n    (print \"Usted ha votado por el partido rojo\"))\n   ((= opc 2) \n    (print \"Usted ha votado por el partido verde\"))\n   ((= opc 3) \n    (print \"Usted ha votado por el partido azul\"))\n   (else (print \"Opción errónea\"))\n  )\n)\n\n(Votaciones)");
         this.algoritmos.get(18).add("18");
-        this.pasos.get(18).get(0).add("");
-        this.pasos.get(18).get(0).add("");
-        this.pasos.get(18).get(0).add("");
+        this.pasos.get(18).get(0).add("Llamado");
+        this.pasos.get(18).get(0).add("Funcion");
+        this.pasos.get(18).get(0).add("Impresión");
+        this.pasos.get(18).get(0).add("Impresión");
+        this.pasos.get(18).get(0).add("Impresión");
+        this.pasos.get(18).get(0).add("Impresión");
+        this.pasos.get(18).get(0).add("Lectura");
+        this.pasos.get(18).get(0).add("Cond");
+        this.pasos.get(18).get(0).add("Igual");
+        this.pasos.get(18).get(0).add("Impresión");
+        this.pasos.get(18).get(0).add("Else");
         /////////////////////////////////
-        this.pasos.get(18).get(1).add("");
-        this.pasos.get(18).get(1).add("");
-        this.pasos.get(18).get(1).add("");
+        this.pasos.get(18).get(1).add("(Votaciones)");
+        this.pasos.get(18).get(1).add("(defun Votaciones()");
+        this.pasos.get(18).get(1).add("(print \" 1) A por el partido rojo\")");
+        this.pasos.get(18).get(1).add("(print \" 2) B por el partido verde\")");
+        this.pasos.get(18).get(1).add("(print \" 3) C por el partido azul\")");
+        this.pasos.get(18).get(1).add("(print \"Seleccione una opción: \")");
+        this.pasos.get(18).get(1).add("(setq opc (read))");
+        this.pasos.get(18).get(1).add("(cond");
+        this.pasos.get(18).get(1).add("((= opc 2) ");
+        this.pasos.get(18).get(1).add("(print \"Usted ha votado por el partido verde\"))");
+        this.pasos.get(18).get(1).add("(else (print \"Opción errónea\"))");
         ////////////////   20    /////////////////
         this.algoritmos.get(19).add("#|\nHacer un programa que permita saber si un\naño es bisiesto. Para que un año sea bisiesto \ndebe  ser  divisible  por  4  y   no   debe  ser\ndivisible  por  100,  excepto que también sea \ndivisible  por  400.\n|#");
         this.algoritmos.get(19).add("Funcion bisiesto\n    imprimir  \"Ingrese un año: \"\n    inicializar anio = (valor por consola)\n    evaluar valor\n       ((anio modulo 4) = 0)\n             (si ((anio modulo 100) != 0) o ((anio modulo 400) = 0)\n                     imprimir \"Bisiesto\"\n                     sino imprimir \"No Bisiesto\"\n             )\n       ((anio modulo 4) != 0)(imprimir \"No Bisiesto\")\n        \nllamar Funcion bisiesto");
-        this.algoritmos.get(19).add("(defun bisiesto()\n   (print \"Ingrese un año: \")\n   (setq anio (read))\n   (cond\n     ((= remainder(anio 4) 0) \n       (if ((!= remainder(anio 100)) or \n           (= remainder(anio 400)))\n	      (print \"Bisiesto\")\n	      (print \"No Bisiesto\")\n        )\n    ((!= remainder(anio 4) 0)\n       (print \"No Bisiesto\"))\n    )\n)\n(bisiesto)");
+        this.algoritmos.get(19).add("(defun bisiesto()\n   (print \"Ingrese un año: \")\n   (setq anio (read))\n   (cond\n     ((= remainder(anio 4) 0) \n       (if ((!= remainder(anio 100) 0) or \n           (= remainder(anio 400) 0))\n	      (print \"Bisiesto\")\n	      (print \"No Bisiesto\")\n        )\n    ((!= remainder(anio 4) 0)\n       (print \"No Bisiesto\"))\n    )\n)\n(bisiesto)");
         this.algoritmos.get(19).add("19");
-        this.pasos.get(19).get(0).add("");
-        this.pasos.get(19).get(0).add("");
-        this.pasos.get(19).get(0).add("");
+        this.pasos.get(19).get(0).add("Llamado");
+        this.pasos.get(19).get(0).add("Funcion");
+        this.pasos.get(19).get(0).add("Impresión");
+        this.pasos.get(19).get(0).add("Lectura");
+        this.pasos.get(19).get(0).add("Cond");
+        this.pasos.get(19).get(0).add("Modulo");
+        this.pasos.get(19).get(0).add("Condicional");
+        this.pasos.get(19).get(0).add("Modulo");
+        this.pasos.get(19).get(0).add("Impresión");
+        this.pasos.get(19).get(0).add("Diferente");
+        this.pasos.get(19).get(0).add("Modulo");
+        this.pasos.get(19).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(19).get(1).add("");
-        this.pasos.get(19).get(1).add("");
-        this.pasos.get(19).get(1).add("");
+        this.pasos.get(19).get(1).add("(bisiesto)");
+        this.pasos.get(19).get(1).add("(defun bisiesto()");
+        this.pasos.get(19).get(1).add("(print \"Ingrese un año: \")");
+        this.pasos.get(19).get(1).add("(setq anio (read))");
+        this.pasos.get(19).get(1).add("(cond");
+        this.pasos.get(19).get(1).add("(= remainder(anio 4) 0)");
+        this.pasos.get(19).get(1).add("(if ((!= remainder(anio 100))");
+        this.pasos.get(19).get(1).add("(= remainder(anio 400) 0)");
+        this.pasos.get(19).get(1).add("(print \"Bisiesto\")");
+        this.pasos.get(19).get(1).add("!= ");
+        this.pasos.get(19).get(1).add("(!= remainder(anio 4) 0)");
+        this.pasos.get(19).get(1).add("(print \"No Bisiesto\"))");
+        ////////////////   21    /////////////////
+        this.algoritmos.get(20).add("#|\nCrear un algoritmo en Lisp que realice una \nmultiplicación  a  partir  de  sumas.\n|#");
+        this.algoritmos.get(20).add("Funcion Multiplicacion_Sumas\n    imprimir  \"Ingrese el primer numero: \"\n    inicializar num1 = (valor por consola)\n    imprimir \"Ingrese el segundo numero: \"\n    inicializar num2 = (valor por consola)\n    inicializar resultado 0\n    desde i = 1 hasta num2 hacer:\n          resultado = (resultado + num1)\n    imprimir \"El resultado es: \", resultado\n\nllamar Funcion Multiplicacion_Sumas");
+        this.algoritmos.get(20).add("(defun Multiplicacion_Sumas()\n   (print \"Ingrese el primer numero: \")\n   (setq num1 (read))\n   (print \"Ingrese el segundo numero: \")\n   (setq num2 (read))\n   (setq resultado 0)\n   (loop for i from 1 to num2\n      do(\n	 (set resultado (+ resultado num1))\n        )\n   )\n   (print \"El resultado es: ~a\" resultado)\n)\n\n(Multiplicacion_Sumas)");
+        this.algoritmos.get(20).add("20");
+        this.pasos.get(20).get(0).add("");
+        this.pasos.get(20).get(0).add("");
+        this.pasos.get(20).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(20).get(1).add("");
+        this.pasos.get(20).get(1).add("");
+        this.pasos.get(20).get(1).add("");
+        ////////////////   22    /////////////////
+        this.algoritmos.get(21).add("#|\nCrear un algoritmo en Lisp que imprima un \ntriángulo  de  asteriscos,  la  base  de  dicho \ntriangulo  será  6.\n|#");
+        this.algoritmos.get(21).add("Funcion triangulo\n    inicializar base = 6\n    inicializar aux = base\n    inicializar i = 1\n    desde q = 1 hasta aux hacer:\n        desde a = 0 hasta base hacer:\n             imprimir \" \"\n        desde b = 0 hasta i hacer:\n             imprimir \"*\"\n         salto de linea\n         base = ( base -1)\n         i = i + 1\n        \nllamar Funcion triangulo");
+        this.algoritmos.get(21).add("(defun triangulo()\n   (setq base 6)\n   (setq aux base)\n   (setq i 1)\n   (loop for q from 1 to aux\n     do(loop for a from 0 to base\n	do (print \" \")\n     )\n     do(loop for b from 0 to i\n	do (print \"+\")\n     )\n     do(terpri)\n     do(set base (- base 1))\n     do(set i (+ i 1))\n   )\n)\n\n(triangulo)");
+        this.algoritmos.get(21).add("21");
+        this.pasos.get(21).get(0).add("");
+        this.pasos.get(21).get(0).add("");
+        this.pasos.get(21).get(0).add("21");
+        /////////////////////////////////
+        this.pasos.get(21).get(1).add("");
+        this.pasos.get(21).get(1).add("");
+        this.pasos.get(21).get(1).add("");
+        ////////////////   23    /////////////////
+        this.algoritmos.get(22).add("#|\nConstruir  un  algoritmo  en   Lisp   que \nimprima  un  cuadrado  de  lado   N,   el \ncuadrado está construido a partir de una \nsecuencia desde el número uno  hasta  el \nnúmero  N  ingresado  por  el  usuario.\n\nEjemplo: N=2\nComo N es igual a 2, se realiza un \ncuadrado 2x2:\n                            1 2\n                            1 2\n|#");
+        this.algoritmos.get(22).add("Funcion Cuadrado\n    imprimir \"Ingrese el tamaño: \"\n    inicializar tam = (valor por consola)\n    desde i = 1 hasta tam hacer:\n        desde j = 1 hasta tam hacer:\n             imprimir j\n             imprimir \" \"\n        salto de linea\n        \nllamar Funcion Cuadrado");
+        this.algoritmos.get(22).add("(defun Cuadrado()\n   (print \"Ingrese el tamaño: \")\n   (setq tam (read))\n   (loop for i from 1 to tam\n      do(loop for j from 1 to tam\n	 do(princ j)\n	 do(princ \" \")\n      )\n      do(terpri)\n   )\n)\n\n(Cuadrado)");
+        this.algoritmos.get(22).add("22");
+        this.pasos.get(22).get(0).add("");
+        this.pasos.get(22).get(0).add("");
+        this.pasos.get(22).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(22).get(1).add("");
+        this.pasos.get(22).get(1).add("");
+        this.pasos.get(22).get(1).add("");
+        ////////////////   24    /////////////////
+        this.algoritmos.get(23).add("#|\nConstruir un algoritmo el Lisp que calcule  el\nfactorial de un numero ingresado por consola\n(n!)\n|#");
+        this.algoritmos.get(23).add("Funcion factorial\n    imprimir  \"Ingrese un numero: \"\n    inicializar n = (valor por consola)\n    inicializar fact = 1\n    desde i = 1 hasta n hacer:\n        fact = fact * i\n            imprimir \"El resultado es: \", fact\n\nllamar Funcion factorial");
+        this.algoritmos.get(23).add("(defun factorial()\n   (print \"ingrese un numero: \")\n   (setq n (read))\n   (setq fact 1)\n   (loop for i from 1 to n\n     do(\n        (set fact (* fact i))\n     )\n   )\n)\n\n(factorial)");
+        this.algoritmos.get(23).add("23");
+        this.pasos.get(23).get(0).add("");
+        this.pasos.get(23).get(0).add("");
+        this.pasos.get(23).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(23).get(1).add("");
+        this.pasos.get(23).get(1).add("");
+        this.pasos.get(23).get(1).add("");
+        ////////////////   25    /////////////////
+        this.algoritmos.get(24).add("#|\nConstruir un algoritmo el Lisp que muestre \nla   tabla  de  multiplicar   de   un    numero\ningresado   por   consola\n|#");
+        this.algoritmos.get(24).add("Funcion TablaMultiplicar\n    imprimir  \"Ingrese un numero: \"\n    inicializar num = (valor por consola)\n    desde i = 1 hasta num hacer:\n        imprimir = num, \" * \", i, \" = \", (num*i)\n    \nllamar Funcion TablaMultiplicar");
+        this.algoritmos.get(24).add("(defun TablaMultiplicar()\n   (print \"ingrese un numero: \")\n   (setq num (read))\n   (loop for i from 1 to num\n     do(\n         (print \"~d * ~d = ~d\" num i (* num i))\n     )\n   )\n)\n\n(TablaMultiplicar)");
+        this.algoritmos.get(24).add("24");
+        this.pasos.get(24).get(0).add("");
+        this.pasos.get(24).get(0).add("");
+        this.pasos.get(24).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(24).get(1).add("");
+        this.pasos.get(24).get(1).add("");
+        this.pasos.get(24).get(1).add("");
+        
+        
+        ////////////////   26    /////////////////
+        this.algoritmos.get(25).add("");
+        this.algoritmos.get(25).add("");
+        this.algoritmos.get(25).add("");
+        this.algoritmos.get(25).add("25");
+        this.pasos.get(25).get(0).add("");
+        this.pasos.get(25).get(0).add("");
+        this.pasos.get(25).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(25).get(1).add("");
+        this.pasos.get(25).get(1).add("");
+        this.pasos.get(25).get(1).add("")
+        ;////////////////   27    /////////////////
+        this.algoritmos.get(26).add("");
+        this.algoritmos.get(26).add("");
+        this.algoritmos.get(26).add("");
+        this.algoritmos.get(26).add("26");
+        this.pasos.get(26).get(0).add("");
+        this.pasos.get(26).get(0).add("");
+        this.pasos.get(26).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(26).get(1).add("");
+        this.pasos.get(26).get(1).add("");
+        this.pasos.get(26).get(1).add("")
+        ;////////////////   28    /////////////////
+        this.algoritmos.get(27).add("");
+        this.algoritmos.get(27).add("");
+        this.algoritmos.get(27).add("");
+        this.algoritmos.get(27).add("27");
+        this.pasos.get(27).get(0).add("");
+        this.pasos.get(27).get(0).add("");
+        this.pasos.get(27).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(27).get(1).add("");
+        this.pasos.get(27).get(1).add("");
+        this.pasos.get(27).get(1).add("")
+        ;////////////////   29    /////////////////
+        this.algoritmos.get(28).add("");
+        this.algoritmos.get(28).add("");
+        this.algoritmos.get(28).add("");
+        this.algoritmos.get(28).add("28");
+        this.pasos.get(28).get(0).add("");
+        this.pasos.get(28).get(0).add("");
+        this.pasos.get(28).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(28).get(1).add("");
+        this.pasos.get(28).get(1).add("");
+        this.pasos.get(28).get(1).add("")
+        ;////////////////   30    /////////////////
+        this.algoritmos.get(29).add("");
+        this.algoritmos.get(29).add("");
+        this.algoritmos.get(29).add("");
+        this.algoritmos.get(29).add("");
+        this.pasos.get(29).get(0).add("");
+        this.pasos.get(29).get(0).add("");
+        this.pasos.get(29).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(29).get(1).add("");
+        this.pasos.get(29).get(1).add("");
+        this.pasos.get(29).get(1).add("")
+        ;////////////////   31    /////////////////
+        this.algoritmos.get(30).add("");
+        this.algoritmos.get(30).add("");
+        this.algoritmos.get(30).add("");
+        this.algoritmos.get(30).add("30");
+        this.pasos.get(30).get(0).add("");
+        this.pasos.get(30).get(0).add("");
+        this.pasos.get(30).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(30).get(1).add("");
+        this.pasos.get(30).get(1).add("");
+        this.pasos.get(30).get(1).add("")
+        ;////////////////   32    /////////////////
+        this.algoritmos.get(31).add("");
+        this.algoritmos.get(31).add("");
+        this.algoritmos.get(31).add("");
+        this.algoritmos.get(31).add("31");
+        this.pasos.get(31).get(0).add("");
+        this.pasos.get(31).get(0).add("");
+        this.pasos.get(31).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(31).get(1).add("");
+        this.pasos.get(31).get(1).add("");
+        this.pasos.get(31).get(1).add("")
+        ;////////////////   33    /////////////////
+        this.algoritmos.get(32).add("");
+        this.algoritmos.get(32).add("");
+        this.algoritmos.get(32).add("");
+        this.algoritmos.get(32).add("32");
+        this.pasos.get(32).get(0).add("");
+        this.pasos.get(32).get(0).add("");
+        this.pasos.get(32).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(32).get(1).add("");
+        this.pasos.get(32).get(1).add("");
+        this.pasos.get(32).get(1).add("")
+        ;////////////////   34    /////////////////
+        this.algoritmos.get(33).add("");
+        this.algoritmos.get(33).add("");
+        this.algoritmos.get(33).add("");
+        this.algoritmos.get(33).add("33");
+        this.pasos.get(33).get(0).add("");
+        this.pasos.get(33).get(0).add("");
+        this.pasos.get(33).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(33).get(1).add("");
+        this.pasos.get(33).get(1).add("");
+        this.pasos.get(33).get(1).add("")
+        ;////////////////   35    /////////////////
+        this.algoritmos.get(34).add("");
+        this.algoritmos.get(34).add("");
+        this.algoritmos.get(34).add("");
+        this.algoritmos.get(34).add("34");
+        this.pasos.get(34).get(0).add("");
+        this.pasos.get(34).get(0).add("");
+        this.pasos.get(34).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(34).get(1).add("");
+        this.pasos.get(34).get(1).add("");
+        this.pasos.get(34).get(1).add("")
+        ;////////////////   36    /////////////////
+        this.algoritmos.get(35).add("");
+        this.algoritmos.get(35).add("");
+        this.algoritmos.get(35).add("");
+        this.algoritmos.get(35).add("35");
+        this.pasos.get(35).get(0).add("");
+        this.pasos.get(35).get(0).add("");
+        this.pasos.get(35).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(35).get(1).add("");
+        this.pasos.get(35).get(1).add("");
+        this.pasos.get(35).get(1).add("")
+        ;////////////////   37    /////////////////
+        this.algoritmos.get(36).add("");
+        this.algoritmos.get(36).add("");
+        this.algoritmos.get(36).add("");
+        this.algoritmos.get(36).add("36");
+        this.pasos.get(36).get(0).add("");
+        this.pasos.get(36).get(0).add("");
+        this.pasos.get(36).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(36).get(1).add("");
+        this.pasos.get(36).get(1).add("");
+        this.pasos.get(36).get(1).add("")
+        ;////////////////   38    /////////////////
+        this.algoritmos.get(37).add("");
+        this.algoritmos.get(37).add("");
+        this.algoritmos.get(37).add("");
+        this.algoritmos.get(37).add("37");
+        this.pasos.get(37).get(0).add("");
+        this.pasos.get(37).get(0).add("");
+        this.pasos.get(37).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(37).get(1).add("");
+        this.pasos.get(37).get(1).add("");
+        this.pasos.get(37).get(1).add("")
+        ;////////////////   39    /////////////////
+        this.algoritmos.get(38).add("");
+        this.algoritmos.get(38).add("");
+        this.algoritmos.get(38).add("");
+        this.algoritmos.get(38).add("38");
+        this.pasos.get(38).get(0).add("");
+        this.pasos.get(38).get(0).add("");
+        this.pasos.get(38).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(38).get(1).add("");
+        this.pasos.get(38).get(1).add("");
+        this.pasos.get(38).get(1).add("")
+        ;////////////////   40    /////////////////
+        this.algoritmos.get(39).add("");
+        this.algoritmos.get(39).add("");
+        this.algoritmos.get(39).add("");
+        this.algoritmos.get(39).add("39");
+        this.pasos.get(39).get(0).add("");
+        this.pasos.get(39).get(0).add("");
+        this.pasos.get(39).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(39).get(1).add("");
+        this.pasos.get(39).get(1).add("");
+        this.pasos.get(39).get(1).add("")
+        ;////////////////   41    /////////////////
+        this.algoritmos.get(40).add("");
+        this.algoritmos.get(40).add("");
+        this.algoritmos.get(40).add("");
+        this.algoritmos.get(40).add("40");
+        this.pasos.get(40).get(0).add("");
+        this.pasos.get(40).get(0).add("");
+        this.pasos.get(40).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(40).get(1).add("");
+        this.pasos.get(40).get(1).add("");
+        this.pasos.get(40).get(1).add("")
+        ;////////////////   42    /////////////////
+        this.algoritmos.get(41).add("");
+        this.algoritmos.get(41).add("");
+        this.algoritmos.get(41).add("");
+        this.algoritmos.get(41).add("41");
+        this.pasos.get(41).get(0).add("");
+        this.pasos.get(41).get(0).add("");
+        this.pasos.get(41).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(41).get(1).add("");
+        this.pasos.get(41).get(1).add("");
+        this.pasos.get(41).get(1).add("")
+        ;////////////////   43    /////////////////
+        this.algoritmos.get(42).add("");
+        this.algoritmos.get(42).add("");
+        this.algoritmos.get(42).add("");
+        this.algoritmos.get(42).add("42");
+        this.pasos.get(42).get(0).add("");
+        this.pasos.get(42).get(0).add("");
+        this.pasos.get(42).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(42).get(1).add("");
+        this.pasos.get(42).get(1).add("");
+        this.pasos.get(42).get(1).add("")
+        ;////////////////   44    /////////////////
+        this.algoritmos.get(43).add("");
+        this.algoritmos.get(43).add("");
+        this.algoritmos.get(43).add("");
+        this.algoritmos.get(43).add("43");
+        this.pasos.get(43).get(0).add("");
+        this.pasos.get(43).get(0).add("");
+        this.pasos.get(43).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(43).get(1).add("");
+        this.pasos.get(43).get(1).add("");
+        this.pasos.get(43).get(1).add("")
+        ;////////////////   45    /////////////////
+        this.algoritmos.get(44).add("");
+        this.algoritmos.get(44).add("");
+        this.algoritmos.get(44).add("");
+        this.algoritmos.get(44).add("44");
+        this.pasos.get(44).get(0).add("");
+        this.pasos.get(44).get(0).add("");
+        this.pasos.get(44).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(44).get(1).add("");
+        this.pasos.get(44).get(1).add("");
+        this.pasos.get(44).get(1).add("")
+        ;////////////////   46    /////////////////
+        this.algoritmos.get(45).add("");
+        this.algoritmos.get(45).add("");
+        this.algoritmos.get(45).add("");
+        this.algoritmos.get(45).add("45");
+        this.pasos.get(45).get(0).add("");
+        this.pasos.get(45).get(0).add("");
+        this.pasos.get(45).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(45).get(1).add("");
+        this.pasos.get(45).get(1).add("");
+        this.pasos.get(45).get(1).add("")
+        ;////////////////   47    /////////////////
+        this.algoritmos.get(46).add("");
+        this.algoritmos.get(46).add("");
+        this.algoritmos.get(46).add("");
+        this.algoritmos.get(46).add("46");
+        this.pasos.get(46).get(0).add("");
+        this.pasos.get(46).get(0).add("");
+        this.pasos.get(46).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(46).get(1).add("");
+        this.pasos.get(46).get(1).add("");
+        this.pasos.get(46).get(1).add("")
+        ;////////////////   48    /////////////////
+        this.algoritmos.get(47).add("");
+        this.algoritmos.get(47).add("");
+        this.algoritmos.get(47).add("");
+        this.algoritmos.get(47).add("47");
+        this.pasos.get(47).get(0).add("");
+        this.pasos.get(47).get(0).add("");
+        this.pasos.get(47).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(47).get(1).add("");
+        this.pasos.get(47).get(1).add("");
+        this.pasos.get(47).get(1).add("")
+        ;////////////////   49    /////////////////
+        this.algoritmos.get(48).add("");
+        this.algoritmos.get(48).add("");
+        this.algoritmos.get(48).add("");
+        this.algoritmos.get(48).add("48");
+        this.pasos.get(48).get(0).add("");
+        this.pasos.get(48).get(0).add("");
+        this.pasos.get(48).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(48).get(1).add("");
+        this.pasos.get(48).get(1).add("");
+        this.pasos.get(48).get(1).add("")
+        ;////////////////   50    /////////////////
+        this.algoritmos.get(49).add("");
+        this.algoritmos.get(49).add("");
+        this.algoritmos.get(49).add("");
+        this.algoritmos.get(49).add("49");
+        this.pasos.get(49).get(0).add("");
+        this.pasos.get(49).get(0).add("");
+        this.pasos.get(49).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(49).get(1).add("");
+        this.pasos.get(49).get(1).add("");
+        this.pasos.get(49).get(1).add("");
+        
+        
+        ////////////////   51    /////////////////
+        this.algoritmos.get(50).add("");
+        this.algoritmos.get(50).add("");
+        this.algoritmos.get(50).add("");
+        this.algoritmos.get(50).add("50");
+        this.pasos.get(50).get(0).add("");
+        this.pasos.get(50).get(0).add("");
+        this.pasos.get(50).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(50).get(1).add("");
+        this.pasos.get(50).get(1).add("");
+        this.pasos.get(50).get(1).add("")
+        ;////////////////   52    /////////////////
+        this.algoritmos.get(51).add("");
+        this.algoritmos.get(51).add("");
+        this.algoritmos.get(51).add("");
+        this.algoritmos.get(51).add("51");
+        this.pasos.get(51).get(0).add("");
+        this.pasos.get(51).get(0).add("");
+        this.pasos.get(51).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(51).get(1).add("");
+        this.pasos.get(51).get(1).add("");
+        this.pasos.get(51).get(1).add("")
+        ;////////////////   53    /////////////////
+        this.algoritmos.get(52).add("");
+        this.algoritmos.get(52).add("");
+        this.algoritmos.get(52).add("");
+        this.algoritmos.get(52).add("52");
+        this.pasos.get(52).get(0).add("");
+        this.pasos.get(52).get(0).add("");
+        this.pasos.get(52).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(52).get(1).add("");
+        this.pasos.get(52).get(1).add("");
+        this.pasos.get(52).get(1).add("")
+        ;////////////////   54    /////////////////
+        this.algoritmos.get(53).add("");
+        this.algoritmos.get(53).add("");
+        this.algoritmos.get(53).add("");
+        this.algoritmos.get(53).add("53");
+        this.pasos.get(53).get(0).add("");
+        this.pasos.get(53).get(0).add("");
+        this.pasos.get(53).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(53).get(1).add("");
+        this.pasos.get(53).get(1).add("");
+        this.pasos.get(53).get(1).add("")
+        ;////////////////   55    /////////////////
+        this.algoritmos.get(54).add("");
+        this.algoritmos.get(54).add("");
+        this.algoritmos.get(54).add("");
+        this.algoritmos.get(54).add("54");
+        this.pasos.get(54).get(0).add("");
+        this.pasos.get(54).get(0).add("");
+        this.pasos.get(54).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(54).get(1).add("");
+        this.pasos.get(54).get(1).add("");
+        this.pasos.get(54).get(1).add("")
+        ;////////////////   56    /////////////////
+        this.algoritmos.get(55).add("");
+        this.algoritmos.get(55).add("");
+        this.algoritmos.get(55).add("");
+        this.algoritmos.get(55).add("55");
+        this.pasos.get(55).get(0).add("");
+        this.pasos.get(55).get(0).add("");
+        this.pasos.get(55).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(55).get(1).add("");
+        this.pasos.get(55).get(1).add("");
+        this.pasos.get(55).get(1).add("")
+        ;////////////////   57    /////////////////
+        this.algoritmos.get(56).add("");
+        this.algoritmos.get(56).add("");
+        this.algoritmos.get(56).add("");
+        this.algoritmos.get(56).add("56");
+        this.pasos.get(56).get(0).add("");
+        this.pasos.get(56).get(0).add("");
+        this.pasos.get(56).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(56).get(1).add("");
+        this.pasos.get(56).get(1).add("");
+        this.pasos.get(56).get(1).add("")
+        ;////////////////   58    /////////////////
+        this.algoritmos.get(57).add("");
+        this.algoritmos.get(57).add("");
+        this.algoritmos.get(57).add("");
+        this.algoritmos.get(57).add("57");
+        this.pasos.get(57).get(0).add("");
+        this.pasos.get(57).get(0).add("");
+        this.pasos.get(57).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(57).get(1).add("");
+        this.pasos.get(57).get(1).add("");
+        this.pasos.get(57).get(1).add("")
+        ;////////////////   59    /////////////////
+        this.algoritmos.get(58).add("");
+        this.algoritmos.get(58).add("");
+        this.algoritmos.get(58).add("");
+        this.algoritmos.get(58).add("58");
+        this.pasos.get(58).get(0).add("");
+        this.pasos.get(58).get(0).add("");
+        this.pasos.get(58).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(58).get(1).add("");
+        this.pasos.get(58).get(1).add("");
+        this.pasos.get(58).get(1).add("")
+        ;////////////////   60    /////////////////
+        this.algoritmos.get(59).add("");
+        this.algoritmos.get(59).add("");
+        this.algoritmos.get(59).add("");
+        this.algoritmos.get(59).add("59");
+        this.pasos.get(59).get(0).add("");
+        this.pasos.get(59).get(0).add("");
+        this.pasos.get(59).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(59).get(1).add("");
+        this.pasos.get(59).get(1).add("");
+        this.pasos.get(59).get(1).add("")
+        ;////////////////   61    /////////////////
+        this.algoritmos.get(60).add("");
+        this.algoritmos.get(60).add("");
+        this.algoritmos.get(60).add("");
+        this.algoritmos.get(60).add("60");
+        this.pasos.get(60).get(0).add("");
+        this.pasos.get(60).get(0).add("");
+        this.pasos.get(60).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(60).get(1).add("");
+        this.pasos.get(60).get(1).add("");
+        this.pasos.get(60).get(1).add("")
+        ;////////////////   62    /////////////////
+        this.algoritmos.get(61).add("");
+        this.algoritmos.get(61).add("");
+        this.algoritmos.get(61).add("");
+        this.algoritmos.get(61).add("61");
+        this.pasos.get(61).get(0).add("");
+        this.pasos.get(61).get(0).add("");
+        this.pasos.get(61).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(61).get(1).add("");
+        this.pasos.get(61).get(1).add("");
+        this.pasos.get(61).get(1).add("")
+        ;////////////////   63    /////////////////
+        this.algoritmos.get(62).add("");
+        this.algoritmos.get(62).add("");
+        this.algoritmos.get(62).add("");
+        this.algoritmos.get(62).add("62");
+        this.pasos.get(62).get(0).add("");
+        this.pasos.get(62).get(0).add("");
+        this.pasos.get(62).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(62).get(1).add("");
+        this.pasos.get(62).get(1).add("");
+        this.pasos.get(62).get(1).add("")
+        ;////////////////   64    /////////////////
+        this.algoritmos.get(63).add("");
+        this.algoritmos.get(63).add("");
+        this.algoritmos.get(63).add("");
+        this.algoritmos.get(63).add("63");
+        this.pasos.get(63).get(0).add("");
+        this.pasos.get(63).get(0).add("");
+        this.pasos.get(63).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(63).get(1).add("");
+        this.pasos.get(63).get(1).add("");
+        this.pasos.get(63).get(1).add("")
+        ;////////////////   65    /////////////////
+        this.algoritmos.get(64).add("");
+        this.algoritmos.get(64).add("");
+        this.algoritmos.get(64).add("");
+        this.algoritmos.get(64).add("64");
+        this.pasos.get(64).get(0).add("");
+        this.pasos.get(64).get(0).add("");
+        this.pasos.get(64).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(64).get(1).add("");
+        this.pasos.get(64).get(1).add("");
+        this.pasos.get(64).get(1).add("")
+        ;////////////////   66    /////////////////
+        this.algoritmos.get(65).add("");
+        this.algoritmos.get(65).add("");
+        this.algoritmos.get(65).add("");
+        this.algoritmos.get(65).add("65");
+        this.pasos.get(65).get(0).add("");
+        this.pasos.get(65).get(0).add("");
+        this.pasos.get(65).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(65).get(1).add("");
+        this.pasos.get(65).get(1).add("");
+        this.pasos.get(65).get(1).add("")
+        ;////////////////   67    /////////////////
+        this.algoritmos.get(66).add("");
+        this.algoritmos.get(66).add("");
+        this.algoritmos.get(66).add("");
+        this.algoritmos.get(66).add("66");
+        this.pasos.get(66).get(0).add("");
+        this.pasos.get(66).get(0).add("");
+        this.pasos.get(66).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(66).get(1).add("");
+        this.pasos.get(66).get(1).add("");
+        this.pasos.get(66).get(1).add("")
+        ;////////////////   68    /////////////////
+        this.algoritmos.get(67).add("");
+        this.algoritmos.get(67).add("");
+        this.algoritmos.get(67).add("");
+        this.algoritmos.get(67).add("67");
+        this.pasos.get(67).get(0).add("");
+        this.pasos.get(67).get(0).add("");
+        this.pasos.get(67).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(67).get(1).add("");
+        this.pasos.get(67).get(1).add("");
+        this.pasos.get(67).get(1).add("")
+        ;////////////////   69    /////////////////
+        this.algoritmos.get(68).add("");
+        this.algoritmos.get(68).add("");
+        this.algoritmos.get(68).add("");
+        this.algoritmos.get(68).add("68");
+        this.pasos.get(68).get(0).add("");
+        this.pasos.get(68).get(0).add("");
+        this.pasos.get(68).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(68).get(1).add("");
+        this.pasos.get(68).get(1).add("");
+        this.pasos.get(68).get(1).add("")
+        ;////////////////   70    /////////////////
+        this.algoritmos.get(69).add("");
+        this.algoritmos.get(69).add("");
+        this.algoritmos.get(69).add("");
+        this.algoritmos.get(69).add("69");
+        this.pasos.get(69).get(0).add("");
+        this.pasos.get(69).get(0).add("");
+        this.pasos.get(69).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(69).get(1).add("");
+        this.pasos.get(69).get(1).add("");
+        this.pasos.get(69).get(1).add("")
+        ;////////////////   71    /////////////////
+        this.algoritmos.get(70).add("");
+        this.algoritmos.get(70).add("");
+        this.algoritmos.get(70).add("");
+        this.algoritmos.get(70).add("70");
+        this.pasos.get(70).get(0).add("");
+        this.pasos.get(70).get(0).add("");
+        this.pasos.get(70).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(70).get(1).add("");
+        this.pasos.get(70).get(1).add("");
+        this.pasos.get(70).get(1).add("")
+        ;////////////////   72    /////////////////
+        this.algoritmos.get(71).add("");
+        this.algoritmos.get(71).add("");
+        this.algoritmos.get(71).add("");
+        this.algoritmos.get(71).add("71");
+        this.pasos.get(71).get(0).add("");
+        this.pasos.get(71).get(0).add("");
+        this.pasos.get(71).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(71).get(1).add("");
+        this.pasos.get(71).get(1).add("");
+        this.pasos.get(71).get(1).add("")
+        ;////////////////   73    /////////////////
+        this.algoritmos.get(72).add("");
+        this.algoritmos.get(72).add("");
+        this.algoritmos.get(72).add("");
+        this.algoritmos.get(72).add("72");
+        this.pasos.get(72).get(0).add("");
+        this.pasos.get(72).get(0).add("");
+        this.pasos.get(72).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(72).get(1).add("");
+        this.pasos.get(72).get(1).add("");
+        this.pasos.get(72).get(1).add("")
+        ;////////////////   74    /////////////////
+        this.algoritmos.get(73).add("");
+        this.algoritmos.get(73).add("");
+        this.algoritmos.get(73).add("");
+        this.algoritmos.get(73).add("73");
+        this.pasos.get(73).get(0).add("");
+        this.pasos.get(73).get(0).add("");
+        this.pasos.get(73).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(73).get(1).add("");
+        this.pasos.get(73).get(1).add("");
+        this.pasos.get(73).get(1).add("")
+        ;////////////////   75    /////////////////
+        this.algoritmos.get(74).add("");
+        this.algoritmos.get(74).add("");
+        this.algoritmos.get(74).add("");
+        this.algoritmos.get(74).add("74");
+        this.pasos.get(74).get(0).add("");
+        this.pasos.get(74).get(0).add("");
+        this.pasos.get(74).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(74).get(1).add("");
+        this.pasos.get(74).get(1).add("");
+        this.pasos.get(74).get(1).add("");
+        
+        
+        ////////////////   76    /////////////////
+        this.algoritmos.get(75).add("");
+        this.algoritmos.get(75).add("");
+        this.algoritmos.get(75).add("");
+        this.algoritmos.get(75).add("75");
+        this.pasos.get(75).get(0).add("");
+        this.pasos.get(75).get(0).add("");
+        this.pasos.get(75).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(75).get(1).add("");
+        this.pasos.get(75).get(1).add("");
+        this.pasos.get(75).get(1).add("")
+        ;////////////////   77    /////////////////
+        this.algoritmos.get(76).add("");
+        this.algoritmos.get(76).add("");
+        this.algoritmos.get(76).add("");
+        this.algoritmos.get(76).add("76");
+        this.pasos.get(76).get(0).add("");
+        this.pasos.get(76).get(0).add("");
+        this.pasos.get(76).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(76).get(1).add("");
+        this.pasos.get(76).get(1).add("");
+        this.pasos.get(76).get(1).add("")
+        ;////////////////   78    /////////////////
+        this.algoritmos.get(77).add("");
+        this.algoritmos.get(77).add("");
+        this.algoritmos.get(77).add("");
+        this.algoritmos.get(77).add("77");
+        this.pasos.get(77).get(0).add("");
+        this.pasos.get(77).get(0).add("");
+        this.pasos.get(77).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(77).get(1).add("");
+        this.pasos.get(77).get(1).add("");
+        this.pasos.get(77).get(1).add("")
+        ;////////////////   79    /////////////////
+        this.algoritmos.get(78).add("");
+        this.algoritmos.get(78).add("");
+        this.algoritmos.get(78).add("");
+        this.algoritmos.get(78).add("78");
+        this.pasos.get(78).get(0).add("");
+        this.pasos.get(78).get(0).add("");
+        this.pasos.get(78).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(78).get(1).add("");
+        this.pasos.get(78).get(1).add("");
+        this.pasos.get(78).get(1).add("")
+        ;////////////////   80    /////////////////
+        this.algoritmos.get(79).add("");
+        this.algoritmos.get(79).add("");
+        this.algoritmos.get(79).add("");
+        this.algoritmos.get(79).add("79");
+        this.pasos.get(79).get(0).add("");
+        this.pasos.get(79).get(0).add("");
+        this.pasos.get(79).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(79).get(1).add("");
+        this.pasos.get(79).get(1).add("");
+        this.pasos.get(79).get(1).add("")
+        ;////////////////   81    /////////////////
+        this.algoritmos.get(80).add("");
+        this.algoritmos.get(80).add("");
+        this.algoritmos.get(80).add("");
+        this.algoritmos.get(80).add("80");
+        this.pasos.get(80).get(0).add("");
+        this.pasos.get(80).get(0).add("");
+        this.pasos.get(80).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(80).get(1).add("");
+        this.pasos.get(80).get(1).add("");
+        this.pasos.get(80).get(1).add("")
+        ;////////////////   82    /////////////////
+        this.algoritmos.get(81).add("");
+        this.algoritmos.get(81).add("");
+        this.algoritmos.get(81).add("");
+        this.algoritmos.get(81).add("81");
+        this.pasos.get(81).get(0).add("");
+        this.pasos.get(81).get(0).add("");
+        this.pasos.get(81).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(81).get(1).add("");
+        this.pasos.get(81).get(1).add("");
+        this.pasos.get(81).get(1).add("")
+        ;////////////////   83    /////////////////
+        this.algoritmos.get(82).add("");
+        this.algoritmos.get(82).add("");
+        this.algoritmos.get(82).add("");
+        this.algoritmos.get(82).add("82");
+        this.pasos.get(82).get(0).add("");
+        this.pasos.get(82).get(0).add("");
+        this.pasos.get(82).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(82).get(1).add("");
+        this.pasos.get(82).get(1).add("");
+        this.pasos.get(82).get(1).add("")
+        ;////////////////   84    /////////////////
+        this.algoritmos.get(83).add("");
+        this.algoritmos.get(83).add("");
+        this.algoritmos.get(83).add("");
+        this.algoritmos.get(83).add("83");
+        this.pasos.get(83).get(0).add("");
+        this.pasos.get(83).get(0).add("");
+        this.pasos.get(83).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(83).get(1).add("");
+        this.pasos.get(83).get(1).add("");
+        this.pasos.get(83).get(1).add("")
+        ;////////////////   85    /////////////////
+        this.algoritmos.get(84).add("");
+        this.algoritmos.get(84).add("");
+        this.algoritmos.get(84).add("");
+        this.algoritmos.get(84).add("84");
+        this.pasos.get(84).get(0).add("");
+        this.pasos.get(84).get(0).add("");
+        this.pasos.get(84).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(84).get(1).add("");
+        this.pasos.get(84).get(1).add("");
+        this.pasos.get(84).get(1).add("")
+        ;////////////////   86    /////////////////
+        this.algoritmos.get(85).add("");
+        this.algoritmos.get(85).add("");
+        this.algoritmos.get(85).add("");
+        this.algoritmos.get(85).add("85");
+        this.pasos.get(85).get(0).add("");
+        this.pasos.get(85).get(0).add("");
+        this.pasos.get(85).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(85).get(1).add("");
+        this.pasos.get(85).get(1).add("");
+        this.pasos.get(85).get(1).add("")
+        ;////////////////   87    /////////////////
+        this.algoritmos.get(86).add("");
+        this.algoritmos.get(86).add("");
+        this.algoritmos.get(86).add("");
+        this.algoritmos.get(86).add("86");
+        this.pasos.get(86).get(0).add("");
+        this.pasos.get(86).get(0).add("");
+        this.pasos.get(86).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(86).get(1).add("");
+        this.pasos.get(86).get(1).add("");
+        this.pasos.get(86).get(1).add("")
+        ;////////////////   88    /////////////////
+        this.algoritmos.get(87).add("");
+        this.algoritmos.get(87).add("");
+        this.algoritmos.get(87).add("");
+        this.algoritmos.get(87).add("87");
+        this.pasos.get(87).get(0).add("");
+        this.pasos.get(87).get(0).add("");
+        this.pasos.get(87).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(87).get(1).add("");
+        this.pasos.get(87).get(1).add("");
+        this.pasos.get(87).get(1).add("")
+        ;////////////////   89    /////////////////
+        this.algoritmos.get(88).add("");
+        this.algoritmos.get(88).add("");
+        this.algoritmos.get(88).add("");
+        this.algoritmos.get(88).add("88");
+        this.pasos.get(88).get(0).add("");
+        this.pasos.get(88).get(0).add("");
+        this.pasos.get(88).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(88).get(1).add("");
+        this.pasos.get(88).get(1).add("");
+        this.pasos.get(88).get(1).add("")
+        ;////////////////   90    /////////////////
+        this.algoritmos.get(89).add("");
+        this.algoritmos.get(89).add("");
+        this.algoritmos.get(89).add("");
+        this.algoritmos.get(89).add("89");
+        this.pasos.get(89).get(0).add("");
+        this.pasos.get(89).get(0).add("");
+        this.pasos.get(89).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(89).get(1).add("");
+        this.pasos.get(89).get(1).add("");
+        this.pasos.get(89).get(1).add("")
+        ;////////////////   91    /////////////////
+        this.algoritmos.get(90).add("");
+        this.algoritmos.get(90).add("");
+        this.algoritmos.get(90).add("");
+        this.algoritmos.get(90).add("90");
+        this.pasos.get(90).get(0).add("");
+        this.pasos.get(90).get(0).add("");
+        this.pasos.get(90).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(90).get(1).add("");
+        this.pasos.get(90).get(1).add("");
+        this.pasos.get(90).get(1).add("")
+        ;////////////////   92    /////////////////
+        this.algoritmos.get(91).add("");
+        this.algoritmos.get(91).add("");
+        this.algoritmos.get(91).add("");
+        this.algoritmos.get(91).add("91");
+        this.pasos.get(91).get(0).add("");
+        this.pasos.get(91).get(0).add("");
+        this.pasos.get(91).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(91).get(1).add("");
+        this.pasos.get(91).get(1).add("");
+        this.pasos.get(91).get(1).add("")
+        ;////////////////   93    /////////////////
+        this.algoritmos.get(92).add("");
+        this.algoritmos.get(92).add("");
+        this.algoritmos.get(92).add("");
+        this.algoritmos.get(92).add("92");
+        this.pasos.get(92).get(0).add("");
+        this.pasos.get(92).get(0).add("");
+        this.pasos.get(92).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(92).get(1).add("");
+        this.pasos.get(92).get(1).add("");
+        this.pasos.get(92).get(1).add("")
+        ;////////////////   94    /////////////////
+        this.algoritmos.get(93).add("");
+        this.algoritmos.get(93).add("");
+        this.algoritmos.get(93).add("");
+        this.algoritmos.get(93).add("93");
+        this.pasos.get(93).get(0).add("");
+        this.pasos.get(93).get(0).add("");
+        this.pasos.get(93).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(93).get(1).add("");
+        this.pasos.get(93).get(1).add("");
+        this.pasos.get(93).get(1).add("")
+        ;////////////////   95    /////////////////
+        this.algoritmos.get(94).add("");
+        this.algoritmos.get(94).add("");
+        this.algoritmos.get(94).add("");
+        this.algoritmos.get(94).add("94");
+        this.pasos.get(94).get(0).add("");
+        this.pasos.get(94).get(0).add("");
+        this.pasos.get(94).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(94).get(1).add("");
+        this.pasos.get(94).get(1).add("");
+        this.pasos.get(94).get(1).add("")
+        ;////////////////   96    /////////////////
+        this.algoritmos.get(95).add("");
+        this.algoritmos.get(95).add("");
+        this.algoritmos.get(95).add("");
+        this.algoritmos.get(95).add("95");
+        this.pasos.get(95).get(0).add("");
+        this.pasos.get(95).get(0).add("");
+        this.pasos.get(95).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(95).get(1).add("");
+        this.pasos.get(95).get(1).add("");
+        this.pasos.get(95).get(1).add("")
+        ;////////////////   97    /////////////////
+        this.algoritmos.get(96).add("");
+        this.algoritmos.get(96).add("");
+        this.algoritmos.get(96).add("");
+        this.algoritmos.get(96).add("96");
+        this.pasos.get(96).get(0).add("");
+        this.pasos.get(96).get(0).add("");
+        this.pasos.get(96).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(96).get(1).add("");
+        this.pasos.get(96).get(1).add("");
+        this.pasos.get(96).get(1).add("")
+        ;////////////////   98    /////////////////
+        this.algoritmos.get(97).add("");
+        this.algoritmos.get(97).add("");
+        this.algoritmos.get(97).add("");
+        this.algoritmos.get(97).add("97");
+        this.pasos.get(97).get(0).add("");
+        this.pasos.get(97).get(0).add("");
+        this.pasos.get(97).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(97).get(1).add("");
+        this.pasos.get(97).get(1).add("");
+        this.pasos.get(97).get(1).add("")
+        ;////////////////   99    /////////////////
+        this.algoritmos.get(98).add("");
+        this.algoritmos.get(98).add("");
+        this.algoritmos.get(98).add("");
+        this.algoritmos.get(98).add("98");
+        this.pasos.get(98).get(0).add("");
+        this.pasos.get(98).get(0).add("");
+        this.pasos.get(98).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(98).get(1).add("");
+        this.pasos.get(98).get(1).add("");
+        this.pasos.get(98).get(1).add("")
+        ;////////////////   100    /////////////////
+        this.algoritmos.get(99).add("");
+        this.algoritmos.get(99).add("");
+        this.algoritmos.get(99).add("");
+        this.algoritmos.get(99).add("99");
+        this.pasos.get(99).get(0).add("");
+        this.pasos.get(99).get(0).add("");
+        this.pasos.get(99).get(0).add("");
+        /////////////////////////////////
+        this.pasos.get(99).get(1).add("");
+        this.pasos.get(99).get(1).add("");
+        this.pasos.get(99).get(1).add("");
         /*
         ////////////////   N    /////////////////
         this.algoritmos.get(posn).add("");

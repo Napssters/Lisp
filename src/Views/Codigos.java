@@ -247,11 +247,9 @@ public class Codigos extends javax.swing.JFrame {
         jPanel17.add(jScrollPane2);
         jScrollPane2.setBounds(510, 240, 330, 130);
 
-        Salida.setEditable(false);
         Salida.setColumns(20);
         Salida.setRows(5);
         Salida.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        Salida.setFocusable(false);
         jScrollPane3.setViewportView(Salida);
 
         jPanel17.add(jScrollPane3);

@@ -57,6 +57,10 @@ public class Enunciados {
                  break;
             case "Menor" : respuesta = "asd"; 
                  break;
+            case "Else" : respuesta = "asd"; 
+                 break;
+            case "Diferente" : respuesta = "asd"; 
+                 break;
             case "otros" : respuesta = "asd"; 
                  break;
         }

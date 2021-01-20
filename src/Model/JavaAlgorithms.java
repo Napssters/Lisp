@@ -238,7 +238,7 @@ public class JavaAlgorithms {
     }
     
     public String a21(List<String> reads){
-        return "";
+        return "      +\n     ++\n    +++\n  +++++\n ++++++";
     }
     
     public String a22(List<String> reads){
