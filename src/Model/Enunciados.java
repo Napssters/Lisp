@@ -67,7 +67,30 @@ public class Enunciados {
                  break;
             case "saltolinea" : respuesta = "asd"; 
                  break;
-                 
+            case "ciclo" : respuesta = "asd"; 
+                 break;
+            case "mientras" : respuesta = "asd"; 
+                 break;
+            case "agrupacion" : respuesta = "asd"; 
+                 break;
+            case "char=" : respuesta = "asd"; 
+                 break;
+            case "invertir" : respuesta = "asd"; 
+                 break;
+            case "concatenar" : respuesta = "asd"; 
+                 break;
+            case "mayuscula" : respuesta = "asd"; 
+                 break;
+            case "mayusculach" : respuesta = "asd"; 
+                 break;
+            case "asignarcad" : respuesta = "asd"; 
+                 break;
+            case "eliminarletra" : respuesta = "asd"; 
+                 break;
+            case "hacercadena" : respuesta = "asd"; 
+                 break;
+            case "tamaño" : respuesta = "asd"; 
+                 break;
             case "otros" : respuesta = "asd"; 
                  break;
         }

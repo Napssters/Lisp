@@ -841,40 +841,40 @@ public class JavaAlgorithms {
         opc = Integer.parseInt(mes);
         switch(opc){
             case 1:
-                    mes = dia + " de Enero de" + anio;
+                    mes = dia + " de Enero de " + anio;
                 break;
             case 2:
-                    mes = dia + " de Febrero de" + anio;
+                    mes = dia + " de Febrero de " + anio;
                 break;
             case 3:
-                    mes = dia + " de Marzo de" + anio;
+                    mes = dia + " de Marzo de " + anio;
                 break;
             case 4:
-                    mes = dia + " de Abril de" + anio;
+                    mes = dia + " de Abril de " + anio;
                 break;
             case 5:
-                    mes = dia + " de Mayo de" + anio;
+                    mes = dia + " de Mayo de " + anio;
                 break;
             case 6:
-                    mes = dia + " de Junio de" + anio;
+                    mes = dia + " de Junio de " + anio;
                 break;
             case 7:
-                    mes = dia + " de Julio de" + anio;
+                    mes = dia + " de Julio de " + anio;
                 break;
             case 8:
-                    mes = dia + " de Agosto de" + anio;
+                    mes = dia + " de Agosto de " + anio;
                 break;
             case 9:
-                    mes = dia + " de Septiembre de" + anio;
+                    mes = dia + " de Septiembre de " + anio;
                 break;
             case 0:
-                    mes = dia + " de Octubre de" + anio;
+                    mes = dia + " de Octubre de " + anio;
                 break;
             case 11:
-                    mes = dia + " de Noviembre de" + anio;
+                    mes = dia + " de Noviembre de " + anio;
                 break;
             case 12:
-                    mes = dia + " de Diciembre de" + anio;
+                    mes = dia + " de Diciembre de " + anio;
                 break;
             default: mes = "";
         }
