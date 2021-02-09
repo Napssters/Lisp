@@ -61,6 +61,13 @@ public class Enunciados {
                  break;
             case "Diferente" : respuesta = "asd"; 
                  break;
+            case "for" : respuesta = "asd"; 
+                 break;
+            case "do" : respuesta = "asd"; 
+                 break;
+            case "saltolinea" : respuesta = "asd"; 
+                 break;
+                 
             case "otros" : respuesta = "asd"; 
                  break;
         }

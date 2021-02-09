@@ -198,43 +198,210 @@ public class JavaAlgorithms {
     }
     
     public String a11(List<String> reads){
-        return "";
+        String letra = "";
+        try{
+            letra = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        switch(letra){
+            case "a":
+                    letra = "La vocal esta en la posicion 1";
+                break;
+            case "e":
+                    letra = "La vocal esta en la posicion 2";
+                break;
+            case "i":
+                    letra = "La vocal esta en la posicion 3";
+                break;
+            case "o":
+                    letra = "La vocal esta en la posicion 4";
+                break;
+            case "u":
+                    letra = "La vocal esta en la posicion 5";
+                break;
+            default: letra = "";
+        }
+        return letra;
     }
     
     public String a12(List<String> reads){
-        return "";
+        int opc = 0;
+        String opcion = "";
+        try{
+            opc = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        switch(opc){
+            case 1:
+                    opcion = "La opcion seleccionada es la: 1";
+                break;
+            case 2:
+                    opcion = "La opcion seleccionada es la: 2";
+                break;
+            case 3:
+                    opcion = "La opcion seleccionada es la: 3";
+                break;
+            default: opcion = "";
+        }
+        return opcion;
     }
     
     public String a13(List<String> reads){
-        return "";
+        int n1 = 0;
+        int n2 = 0;
+        int n3 = 0;
+        try{
+            n1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            n2 = Integer.parseInt(reads.get(1));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        n3 = n1 + n2;
+        String opcion = "";
+        if(n3 > 10){
+                opcion = "Es mayor a 10: " +  n3;
+        }
+        if(n3 < 10){
+                opcion = "Es menor a 10: " +  n3;
+        }
+        if(n3 == 10){
+                opcion = "Es igual a 10: " +  n3;
+        }
+        return opcion;
     }
     
     public String a14(List<String> reads){
-        return "";
+        int n1 = 0;
+        for(int i = 0; i < 11; i++){
+            n1 = n1+i;
+        }
+        String opcion = "El promedio es: " + (n1 / 10);
+        return opcion;
     }
     
     public String a15(List<String> reads){
-        return "";
+        int opc = 0;
+        String opcion = "";
+        try{
+            opc = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        switch(opc){
+            case 1:
+                    opcion = "funcion de suma";
+                break;
+            case 2:
+                    opcion = "funcion de resta";
+                break;
+            default: opcion = "";
+        }
+        return opcion;
     }
     
     public String a16(List<String> reads){
-        return "";
+        int n1 = 0;
+        int n2 = 0;
+        int n3 = 0;
+        String respuesta = "";
+        try{
+            n1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            n2 = Integer.parseInt(reads.get(1));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            n3 = Integer.parseInt(reads.get(2));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        for(int i = n1; i < n2; i++){
+            if(n3 == i){
+                respuesta = "Numero existente";
+            }
+        }
+        return respuesta;
     }
     
     public String a17(List<String> reads){
-        return "";
+        int n1 = 0;
+        try{
+            n1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        String opcion = "";
+        if(n1 > 0){
+                opcion = "Valor absoluto: " +  (n1 + -1);
+        }
+        if(n1 < 0){
+                opcion = "Es menor a 10: " +  n1;
+        }
+        return opcion;
     }
     
     public String a18(List<String> reads){
-        return "";
+        int n1 = 0;
+        String respuesta = "";
+        try{
+            n1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        switch(n1){
+            case 1:
+                    respuesta = "Usted ha votado por el partido rojo";
+                break;
+            case 2:
+                    respuesta = "Usted ha votado por el partido verde" ;
+                break;
+            case 3:
+                    respuesta = "Usted ha votado por el partido azul";
+                break;
+            default: respuesta = "Opción errónea";
+        }
+        return respuesta;
     }
     
     public String a19(List<String> reads){
-        return "";
+        int anio = 0;
+        String dato = "";
+        try{
+            anio = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        if ((anio % 4 == 0) && ((anio % 100 != 0) || (anio % 400 == 0)))
+            dato = "Bisiesto";
+        else
+            dato = "No Bisiesto";
+        return dato;
     }
     
     public String a20(List<String> reads){
-        return "";
+        int n1 = 0;
+        int n2 = 0;
+        try{
+            n1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            n2 = Integer.parseInt(reads.get(1));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        return "" + (n1 * n2);
     }
     
     public String a21(List<String> reads){
@@ -242,115 +409,476 @@ public class JavaAlgorithms {
     }
     
     public String a22(List<String> reads){
-        return "";
+        int n1 = 0;
+        String dato = "";
+        try{
+            n1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        for(int i = 0; i < n1; i++){
+            for(int j = 0; j < n1; j++){
+                dato = dato + " " + i;
+            }
+            dato = dato + "\n";
+        }
+        return dato;
     }
     
     public String a23(List<String> reads){
-        return "";
+        int n1 = 0;
+        int dato = 0;
+        try{
+            n1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        for(int i = 0; i < n1; i++){
+           dato = dato * i;
+        }
+        return ""+dato;
     }
     
     public String a24(List<String> reads){
-        return "";
+        int n1 = 0;
+        String dato = "";
+        try{
+            n1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        for(int i = 0; i < 11; i++){
+           dato = dato + n1 + " * " + i + " = "+(n1 * i)+"\n";
+        }
+        return dato;
     }
     
     public String a25(List<String> reads){
-        return "";
+        int dato = 0;
+        for(int i = 0; i < 11; i++){
+           dato = dato + 2;
+        }
+        return ""+dato;
     }
     
     public String a26(List<String> reads){
-        return "";
+        int tot = 0;
+        for(int i = 0; i < 11; i++){
+           if((i % 2) == 0){
+               tot = tot + i;
+           }
+        }
+        return ""+tot;
     }
     
     public String a27(List<String> reads){
-        return "";
+        int serie = 10, num1 = 0, num2 = 1, suma = 1;
+        String data = "";
+        data = ""+num1;
+        for (int i = 1; i < serie; i++) {
+            data = data + " " + suma;
+            suma = num1 + num2;
+            num1 = num2;
+            num2 = suma;
+        }
+        return data;
     }
     
     public String a28(List<String> reads){
-        return "";
+        int n1 = 0;
+        int n2 = 0;
+        try{
+            n1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            n2 = Integer.parseInt(reads.get(1));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        return "El numero a la potencia es: " + Math.pow(n1, n2);
     }
     
     public String a29(List<String> reads){
-        return "";
+        int n1 = 0;
+        int n2 = 0;
+        int n3 = 0;
+        int tope = 0, inicio = 0;
+        String respuesta = "";
+        try{
+            n1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            n2 = Integer.parseInt(reads.get(1));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            n3 = Integer.parseInt(reads.get(2));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        if(n1 < n2){
+            inicio = n1;
+            tope = n2;
+        }else{
+            inicio = n2;
+            tope = n1;
+        }
+        for(int i = inicio; i <= tope; i++){
+            if(n3 == i){
+                respuesta = "Numero existente";
+            }
+        }
+        return respuesta;
     }
     
     public String a30(List<String> reads){
-        return "";
+        return "1\n2\n3\n4\n5\n6\n7\n8\n9\n10";
     }
     
     public String a31(List<String> reads){
-        return "";
+        return "\n2\n4\n6\n8\n10";
     }
     
     public String a32(List<String> reads){
-        return "";
+        return "30";
     }
     
     public String a33(List<String> reads){
-        return "";
+        int n1 = 0;
+        int n2 = 0;
+        int tope = 0, inicio = 0, suma = 0;
+        try{
+            n1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            n2 = Integer.parseInt(reads.get(1));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        if(n1 < n2){
+            inicio = n1;
+            tope = n2;
+        }else{
+            inicio = n2;
+            tope = n1;
+        }
+        for(int i = inicio; i <= tope; i++){
+            if((i%2) == 0){
+                suma = suma + i;
+            }
+        }
+        return "" + suma;
     }
     
     public String a34(List<String> reads){
-        return "";
+        String letra = "";
+        try{
+            letra = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        switch(letra.charAt(0)){
+            case 'a':
+                    letra = "inicia por vocal";
+                break;
+            case 'e':
+                    letra = "inicia por vocal";
+                break;
+            case 'i':
+                    letra = "inicia por vocal";
+                break;
+            case 'o':
+                    letra = "inicia por vocal";
+                break;
+            case 'u':
+                    letra = "inicia por vocal";
+                break;
+            default: letra = "";
+        }
+        return letra;
     }
     
     public String a35(List<String> reads){
-        return "";
+        String letra = "";
+        try{
+            letra = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        String reverso = "La palabra es: " + letra + "\n";
+        for(int i = (letra.length()-1); i >= 0; i--){
+            reverso += letra.charAt(i);
+        }
+        return reverso;
     }
     
     public String a36(List<String> reads){
-        return "";
+        String p1 = "",p2 = "",p3 = "";
+        try{
+            p1 = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            p2 = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+
+        try{
+            p3 = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        return "La palabra es: " + p1 + "\n" + "La palabra nueva es: "+ p2+p1+p3;
     }
     
     public String a37(List<String> reads){
-        return "";
+        String letra = "";
+        try{
+            letra = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        return "La palabra es: " + letra + "\n" + "La palabra en maysucula es: " + letra.toUpperCase();
     }
     
     public String a38(List<String> reads){
-        return "";
+        String letra = "";
+        try{
+            letra = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        String letra2 = Character.toUpperCase(letra.charAt(0)) + letra.substring(1);
+        return "La palabra es: " + letra + "\n" + "La palabra nueva es: " + letra2;
     }
     
     public String a39(List<String> reads){
-        return "";
+        String letra = "";
+        try{
+            letra = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        String letra2 = letra.replaceAll("[^o]", "");
+        return "La palabra es: " + letra + "\n" + "La palabra nueva es: " + letra2;
     }
     
     public String a40(List<String> reads){
-        return "";
+        String letra = "";
+        try{
+            letra = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        String letra2 = letra.replaceAll("[^\\s]", "");
+        return "La frase es: " + letra + "\n" + "La frase nueva es: " + letra2;
     }
     
     public String a41(List<String> reads){
-        return "";
+        String letra = "";
+        String letra2 = "";
+        String dato = "";
+        try{
+            letra = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            letra2 = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        if(letra.equals(letra2)){
+            dato = "Son iguales " + letra + " = " + letra2;
+        }else{
+            dato = "No son iguales " + letra + " != " + letra2;
+        }
+        return dato;
     }
     
     public String a42(List<String> reads){
-        return "";
+        String letra = "";
+        String letra2 = "";
+        String dato = "";
+        try{
+            letra = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            letra2 = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        if(letra.equals(letra2)){
+            dato = "Son iguales " + letra + letra2;
+        }else{
+            dato = "No son iguales " + letra.charAt(0) + " != " + letra2.charAt(letra2.length()-1);
+        }
+        return dato;
     }
     
     public String a43(List<String> reads){
-        return "";
+        String letra = "";
+        try{
+            letra = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        String reverso = "La palabra invertida es: ";
+        for(int i = (letra.length()-1); i >= 0; i--){
+            reverso += letra.charAt(i);
+        }
+        return reverso;
     }
     
     public String a44(List<String> reads){
-        return "";
+        String letra = "";
+        String data = "";
+        try{
+            letra = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        String reverso = "";
+        for(int i = (letra.length()-1); i >= 0; i--){
+            reverso += letra.charAt(i);
+        }
+        if(letra.equals(reverso)){
+            data = "Es palindormo";
+        }else{ data = "No es palindormo"; }
+        return data;
     }
     
     public String a45(List<String> reads){
-        return "";
+        String letra = "";
+        String letra2 = "";
+        String dato = "El caracter no se encuentra en el nombre";
+        try{
+            letra = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            letra2 = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        for(int i = 0; i < letra.length(); i++){
+            if(letra.charAt(i) == letra2.charAt(0)){
+                dato = "El caracter se encuentra en el nombre";
+            }
+        }
+        return dato;
     }
     
     public String a46(List<String> reads){
-        return "";
+        String letra = "";
+        try{
+            letra = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        String letra2 = letra.replaceAll("[^\\s]", "_   ");
+        return "La palabra es: " + letra + "\n" + "La palabra nueva es: " + letra2;
     }
     
     public String a47(List<String> reads){
-        return "";
+        String letra = "";
+        String data = "";
+        int contador = 0;
+        try{
+            letra = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        for(int i = 0; i < letra.length(); i++){
+            for(int j = 0; j < letra.length(); j++){
+                if(letra.charAt(i) == letra.charAt(j)){
+                    contador++;
+                }
+            }
+            data += letra.charAt(i) + " = " +  contador + "\n";
+            contador = 0;
+        }
+        return data;
     }
     
     public String a48(List<String> reads){
-        return "";
+        String letra = "";
+        try{
+            letra = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        String reverso = "";
+        for(int i = (letra.length()-1); i >= 0; i--){
+            reverso += letra.charAt(i);
+        }
+        return "Traducción: " + reverso;
     }
     
     public String a49(List<String> reads){
-        return "";
+        int opc = 0;
+        String fecha = "";
+        try{
+            fecha = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        String mes = fecha.substring(3, 5);
+        String dia = fecha.substring(0, 2);
+        String anio = fecha.substring(6, 10);
+        opc = Integer.parseInt(mes);
+        switch(opc){
+            case 1:
+                    mes = dia + " de Enero de" + anio;
+                break;
+            case 2:
+                    mes = dia + " de Febrero de" + anio;
+                break;
+            case 3:
+                    mes = dia + " de Marzo de" + anio;
+                break;
+            case 4:
+                    mes = dia + " de Abril de" + anio;
+                break;
+            case 5:
+                    mes = dia + " de Mayo de" + anio;
+                break;
+            case 6:
+                    mes = dia + " de Junio de" + anio;
+                break;
+            case 7:
+                    mes = dia + " de Julio de" + anio;
+                break;
+            case 8:
+                    mes = dia + " de Agosto de" + anio;
+                break;
+            case 9:
+                    mes = dia + " de Septiembre de" + anio;
+                break;
+            case 0:
+                    mes = dia + " de Octubre de" + anio;
+                break;
+            case 11:
+                    mes = dia + " de Noviembre de" + anio;
+                break;
+            case 12:
+                    mes = dia + " de Diciembre de" + anio;
+                break;
+            default: mes = "";
+        }
+        return mes;
     }
     
     public String a50(List<String> reads){
