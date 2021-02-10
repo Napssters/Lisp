@@ -1263,8 +1263,8 @@ public class Data {
         this.pasos.get(35).get(1).add("(setq palabra (read))");
         this.pasos.get(35).get(1).add("(print \"La palabra es: ~c\" palabra)");
         this.pasos.get(35).get(1).add("(print \"La palabra al reverso es: ~c\" ");
-        this.pasos.get(35).get(1).add("(reverse palabra))")
-        ;////////////////   37    /////////////////
+        this.pasos.get(35).get(1).add("(reverse palabra))");
+        ////////////////   37    /////////////////
         this.algoritmos.get(36).add("#|\nConstruir un algoritmo en Lisp que lea una \npalabra por consola y dos caracteres, luego \nimprimir la palabra con el caracter al inicio\ny al final de la palabra.\n|#");
         this.algoritmos.get(36).add("Funcion AgregarCaracter\n    imprimir  \"Ingrese una palabra: \"\n    inicializar palabra = (valor por consola)\n    imprimir  \"Ingrese un caracter: \"\n    inicializar c1 = (valor por consola)\n    imprimir  \"Ingrese un segundo caracter: \"\n    inicializar c2 = (valor por consola)\n    imprimir  \"La palabra es: \" palabra\n    imprimir \"La palabra al reverso es: \", (concatenar c1, palabra, c2)\n        \nllamar Funcion AgregarCaracter");
         this.algoritmos.get(36).add("(defun AgregarCaracter()\n    (print \"Ingrese una palabra: \")\n    (setq palabra (read))\n    (print \"Ingrese un caracter: \")\n    (setq c1 (read))\n    (print \"Ingrese un segundo caracter: \")\n    (setq c2 (read))\n    (print \"La palabra es: ~c\" palabra)\n    (print \"La palabra nueva es: ~c\" \n    (concat c1 palabra c2))\n)\n\n(AgregarCaracter)");
@@ -1291,8 +1291,8 @@ public class Data {
         this.pasos.get(36).get(1).add("(setq c2 (read))");
         this.pasos.get(36).get(1).add("(print \"La palabra es: ~c\" palabra)");
         this.pasos.get(36).get(1).add("(print \"La palabra nueva es: ~c\" ");
-        this.pasos.get(36).get(1).add("(concat c1 palabra c2))")
-        ;////////////////   38    /////////////////
+        this.pasos.get(36).get(1).add("(concat c1 palabra c2))");
+        ////////////////   38    /////////////////
         this.algoritmos.get(37).add("#|\nConstruir un algoritmo en Lisp que lea una \npalabra  por consola y ponga la palabra en \nmaysucula.\n|#");
         this.algoritmos.get(37).add("Funcion ConvertirMayuscula\n    imprimir  \"Ingrese una palabra: \"\n    inicializar palabra = (valor por consola)\n    imprimir  \"La palabra es: \" palabra\n	imprimir \"La palabra en maysucula es: \", (mayuscula palabra)\n        \nllamar Funcion ConvertirMayuscula");
         this.algoritmos.get(37).add("(defun ConvertirMayuscula()\n    (print \"Ingrese una palabra: \")\n    (setq palabra (read))\n    (print \"La palabra es: ~c\" palabra)\n    (print \"La palabra en maysucula es: ~c\"\n    (string-upcase palabra))\n)\n\n(ConvertirMayuscula)");
@@ -1311,8 +1311,8 @@ public class Data {
         this.pasos.get(37).get(1).add("(setq palabra (read))");
         this.pasos.get(37).get(1).add("(print \"La palabra es: ~c\" palabra)");
         this.pasos.get(37).get(1).add("(print \"La palabra en maysucula es: ~c\"");
-        this.pasos.get(37).get(1).add("(string-upcase palabra))")
-        ;////////////////   39    /////////////////
+        this.pasos.get(37).get(1).add("(string-upcase palabra))");
+        ////////////////   39    /////////////////
         this.algoritmos.get(38).add("#|\nConstruir un algoritmo en Lisp que lea una\npalabra   por  consola  y  ponga  el  primer \ncaracter de la palabra en maysucula.\n|#");
         this.algoritmos.get(38).add("Funcion CaracterMayuscula\n    imprimir  \"Ingrese una palabra: \"\n    inicializar palabra = (valor por consola)\n    inicializar palabra2 = palabra = palabra[1] -> A maysucula\n    imprimir  \"La palabra es: \" palabra\n    imprimir \"La palabra al reverso es: \", palabra2\n        \nllamar Funcion CaracterMayuscula");
         this.algoritmos.get(38).add("(defun CaracterMayuscula()\n    (print \"Ingrese una palabra: \")\n    (setq palabra (read))\n    (setf palabra2 (char palabra 1) \n    (char-upcase (char palabra 1))) \n    (print \"La palabra es: ~c\" palabra)\n    (print \"La palabra nueva es: ~c\" palabra2)\n)\n\n(CaracterMayuscula)");
@@ -1333,8 +1333,8 @@ public class Data {
         this.pasos.get(38).get(1).add("(setf palabra2 (char palabra 1) ");
         this.pasos.get(38).get(1).add("(char-upcase (char palabra 1)))");
         this.pasos.get(38).get(1).add("(print \"La palabra es: ~c\" palabra)");
-        this.pasos.get(38).get(1).add("(print \"La palabra nueva es: ~c\" palabra2)")
-        ;////////////////   40    /////////////////
+        this.pasos.get(38).get(1).add("(print \"La palabra nueva es: ~c\" palabra2)");
+        ////////////////   40    /////////////////
         this.algoritmos.get(39).add("#|\nConstruir un algoritmo en Lisp que lea una \npalabra por  consola  y  elimine  la  letra  o \ndentro de la palabra.\n|#");
         this.algoritmos.get(39).add("Funcion EliminarLetra\n    imprimir  \"Ingrese una palabra: \"\n    inicializar palabra = (valor por consola)\n    imprimir  \"La palabra es: \", palabra\n    imprimir \"La palabra nueva es: \", (eliminar-cadena palabra \"o\")\n        \nllamar Funcion EliminarLetra");
         this.algoritmos.get(39).add("(defun EliminarLetra()\n    (print \"Ingrese una palabra: \")\n    (setq palabra (read))\n    (print \"La palabra es: ~c\" palabra)\n    (print \"La palabra nueva es: ~c\" \n    (split-string palabra \"o\"))\n)\n\n(EliminarLetra)");
@@ -1353,8 +1353,8 @@ public class Data {
         this.pasos.get(39).get(1).add("(setq palabra (read))");
         this.pasos.get(39).get(1).add("(print \"La palabra es: ~c\" palabra)");
         this.pasos.get(39).get(1).add("(print \"La palabra nueva es: ~c\" ");
-        this.pasos.get(39).get(1).add("(split-string palabra \"o\"))")
-        ;////////////////   41    /////////////////
+        this.pasos.get(39).get(1).add("(split-string palabra \"o\"))");
+        ////////////////   41    /////////////////
         this.algoritmos.get(40).add("#|\nConstruir un algoritmo en Lisp que lea una \nfrase por consola y elimine los espacios que \ncontiene la frase.\n|#");
         this.algoritmos.get(40).add("EliminarEspacios\n    imprimir  \"Ingrese una frase: \"\n    inicializar frase = (valor por consola)\n    imprimir  \"La frase es: \", frase\n    imprimir \"La frase nueva es: \", (eliminar-cadena frase \" \")\n        \nllamar EliminarEspacios");
         this.algoritmos.get(40).add("(defun EliminarEspacios()\n    (print \"Ingrese una frase: \")\n    (setq frase (read))\n    (print \"La frase es: ~c\" frase)\n    (print \"La frase nueva es: ~c\" \n    (split-string frase \" \"))\n)\n\n(EliminarEspacios)");
@@ -1373,8 +1373,8 @@ public class Data {
         this.pasos.get(40).get(1).add("(setq frase (read))");
         this.pasos.get(40).get(1).add("(print \"La frase es: ~c\" frase)");
         this.pasos.get(40).get(1).add("(print \"La frase nueva es: ~c\" ");
-        this.pasos.get(40).get(1).add("(split-string frase \" \"))")
-        ;////////////////   42    /////////////////
+        this.pasos.get(40).get(1).add("(split-string frase \" \"))");
+        ////////////////   42    /////////////////
         this.algoritmos.get(41).add("#|\nConstruir un algoritmo en  Lisp que  lea dos \npalabras y las compare, si ambas son iguales \nmostrar las cadenas, de lo contrario mostrar \npor pantalla que no son iguales. \n|#");
         this.algoritmos.get(41).add("Funcion CadenasIguales\n    imprimir  \"Ingrese una palabra: \"\n    inicializar palabra1 = (valor por consola)\n    imprimir  \"Ingrese otra palabra: \"\n    inicializar palabra2 = (valor por consola)\n    si (palabra1 = palabra2):\n        imprimir  \"Son iguales\", palabra1 \" = \", palabra2\n        imprimir  \"No son iguales\", palabra1 \" != \", palabra2\n        \nllamar Funcion CadenasIguales");
         this.algoritmos.get(41).add("(defun CadenasIguales()\n    (print \"Ingrese una palabra: \")\n    (setq palabra1 (read))\n    (print \"Ingrese otra palabra: \")\n    (setq palabra2 (read))\n    (if (string= palabra1 palabra2)\n        (print \"Son iguales ~c = ~c\" \n         palabra1 palabra2)\n        (print \"No son iguales ~c != ~c\" \n         palabra1 palabra2)\n    )\n)\n\n(CadenasIguales)");
@@ -1398,7 +1398,7 @@ public class Data {
         this.pasos.get(41).get(1).add("(if (string= palabra1 palabra2)");
         this.pasos.get(41).get(1).add("(print \"Son iguales ~c = ~c\" ");
         this.pasos.get(41).get(1).add("(print \"No son iguales ~c != ~c\" ");
-        ;////////////////   43    /////////////////
+        ////////////////   43    /////////////////
         this.algoritmos.get(42).add("#|\nConstruir  un  algoritmo  en Lisp que lea dos\npalabras y las compare,  si ambas son iguales\nconcatenar las palabras y luego mostrarla, si\nlas    palabras   son   diferentes   mostrar  el\nprimero  carácter  de  la primer palabra y el \nultimo carácter de la segunda palabra.\n|#");
         this.algoritmos.get(42).add("Funcion Concatenar\n    imprimir  \"Ingrese una palabra: \"\n    inicializar palabra1 = (valor por consola)\n    imprimir  \"Ingrese otra palabra: \"\n    inicializar palabra2 = (valor por consola)\n    inicializar pos = tamaño(palabra)\n    si (palabra1 = palabra2):\n        imprimir  \"Son iguales \", concatenar(palabra1, palabra2)\n        imprimir  \"No son iguales\", palabra1[1] \" != \", palabra2[pos]\n        \nllamar Funcion Concatenar");
         this.algoritmos.get(42).add("(defun Concatenar()\n    (print \"Ingrese una palabra: \")\n    (setq palabra1 (read))\n    (print \"Ingrese otra palabra: \")\n    (setq palabra2 (read))\n    (setq pos (length palabra2))\n    (if (string= palabra1 palabra2)\n        (print \"Son iguales ~c\"\n        (concat palabra1 palabra2))\n        (print \"No son iguales ~c != ~c\" \n        (char palabra1 1)(char palabra2 pos))\n    )\n)\n\n(Concatenar)");
@@ -1425,8 +1425,8 @@ public class Data {
         this.pasos.get(42).get(1).add("(if (string= palabra1 palabra2)");
         this.pasos.get(42).get(1).add("(print \"Son iguales ~c\"");
         this.pasos.get(42).get(1).add("(concat palabra1 palabra2))");
-        this.pasos.get(42).get(1).add("(print \"No son iguales ~c != ~c\" ")
-        ;////////////////   44    /////////////////
+        this.pasos.get(42).get(1).add("(print \"No son iguales ~c != ~c\" ");
+        ////////////////   44    /////////////////
         this.algoritmos.get(43).add("#|\nConstruir un algoritmo en  Lisp que lea  una\npalabra por consola y la invierta mediante el\nuso del ciclo for.\n|#");
         this.algoritmos.get(43).add("Funcion InviertirPalabra\n    imprimir  \"Ingrese una palabra: \"\n    inicializar palabra = (valor por consola)\n    inicializar pos = tamaño(palabra)\n    hacer-cadena palabra2 = palabra\n    desde i = 1 hasta pos hacer:\n        actualizar palabra2[i] = palabra[pos - i] \n    imprimir \"La palabra invertida es: \", palabra2\n    \nllamar Funcion InviertirPalabra");
         this.algoritmos.get(43).add("(defun InviertirPalabra()\n    (print \"Ingrese una palabra: \")\n    (setq palabra (read))\n    (setq pos (length palabra))\n    (make-string palabra2 palabra)\n    (loop for i from 0 to pos\n      do(\n           (setf palabra2 (char palabra i) \n           (char palabra (- pos i)))\n      )\n    )\n    (print \"La palabra invertida es: ~c\" palabra2)\n)\n\n(InviertirPalabra)");
@@ -1510,7 +1510,7 @@ public class Data {
         this.pasos.get(44).get(1).add("(if (string= palabra palabra2)");
         this.pasos.get(44).get(1).add("(print \"Es palindormo\")");
         this.pasos.get(44).get(1).add("(print \"No es palindormo\")");
-        ;////////////////   46    /////////////////
+        ////////////////   46    /////////////////
         this.algoritmos.get(45).add("#|\nConstruir  un  algoritmo en Lisp que lea el \nnombre  de  una  persona  y un carácter  y\ncomprobar  si  dicho  carácter  está  en  su \nnombre. \n|#");
         this.algoritmos.get(45).add("Funcion ComprobarCaracter\n    imprimir  \"Ingrese un nombre: \"\n    inicializar nombre = (valor por consola)\n    imprimir  \"Ingrese un caracter: \"\n    inicializar caracter = (valor por consola)\n    inicializar contador = 0\n    desde i = 1 hasta tamaño(nombre) hacer:\n        si (caracter = nombre[i]):\n            actualizar contador = contador + 1\n    imprimir \"La palabra invertida es: \", palabra2\n    si (contador > 1):\n        imprimir  \"El caracter se encuentra en el nombre\"\n        imprimir  \"El caracter no se encuentra en el nombre\"\n    \nllamar Funcion ComprobarCaracter");
         this.algoritmos.get(45).add("(defun ComprobarCaracter()\n    (print \"Ingrese un nombre: \")\n    (setq nombre (read))\n    (print \"Ingrese un caracter: \")\n    (setq caracter (read))\n    (setq contador 0)\n    (loop for i from 0 to (length nombre)\n        do(\n            (if (char= (char nombre i) caracter)\n                (set contador (+ contador 1))\n                (void)\n            )\n        )\n    )\n(if (> contador 1)\n (print \"El caracter se encuentra en el nombre\")\n (print \"El caracter no se encuentra en el nombre\")\n)\n)\n\n(ComprobarCaracter)");
@@ -1593,8 +1593,8 @@ public class Data {
         this.pasos.get(46).get(1).add("(if (char= (char palabra i) #\\0)");
         this.pasos.get(46).get(1).add("(setf palabra (char palabra i) #\\_");
         this.pasos.get(46).get(1).add("(void)");
-        this.pasos.get(46).get(1).add("(print \"La palabra nueva es: ~c\" palabra)")
-        ;////////////////   48    /////////////////
+        this.pasos.get(46).get(1).add("(print \"La palabra nueva es: ~c\" palabra)");
+        ////////////////   48    /////////////////
         this.algoritmos.get(47).add("#|\nConstruir  un  algoritmo  en Lisp que lea una\npalabra por consola y nos diga cuantas veces\nse repiten cada letra dentro de la cadena .\n|#");
         this.algoritmos.get(47).add("Funcion LetraRepetida\n    imprimir  \"Ingrese una palabra: \"\n    inicializar palabra = (valor por consola)\n    imprimir \"La palabra es: \", palabra\n    inicializar rep = 0\n    desde i = 1 hasta tamaño(palabra) hacer:\n        desde j = 1 hasta tamaño(palabra) hacer:\n            si (palabra[i] = palabra[j]):\n                actualizar rep = rep + 1\n        imprimir palabra[i], \" = \" rep, \n        actualizar rep = 0\n     imprimir \"La palabra nueva es: \", palabra\n    \nllamar Funcion LetraRepetida");
         this.algoritmos.get(47).add("(defun LetraRepetida()\n    (print \"Ingrese una palabra: \")\n    (setq palabra (read))\n    (setq rep 0)\n    (loop for i from 0 to (length palabra)\n        do(loop for j from 0 to (length palabra)\n            do(\n                (if (char= (char palabra i) \n                    (char palabra j))\n                    (set rep (+ rep 1))\n                )\n            )\n        )\n        do(print \"~c = ~d\" (char palabra i) rep)\n        do(terpri)\n        do(set rep 0)\n    )\n)\n\n(LetraRepetida)");
@@ -1679,8 +1679,8 @@ public class Data {
         this.pasos.get(48).get(1).add("(loop for i from 0 to pos");
         this.pasos.get(48).get(1).add("do(");
         this.pasos.get(48).get(1).add("(setf frase2 (char frase i) ");
-        this.pasos.get(48).get(1).add("(print \"Traducción: ~c\" frase2)")
-        ;////////////////   50    /////////////////
+        this.pasos.get(48).get(1).add("(print \"Traducción: ~c\" frase2)");
+        ////////////////   50    /////////////////
         this.algoritmos.get(49).add("#|\nCrear   un  programa  que  reciba  desde el \nteclado  una  fecha introducida  en formato\nnumérico   (25-12-2010)  y  la  muestre en\npantalla en formato texto  (25 de diciembre \nde 2010).\n|#");
         this.algoritmos.get(49).add("Funcion Fechatexto\n    imprimir  \"Ingrese una fecha: (dd-mm-aaaa)\"\n    hacer-cadena fecha = (valor por consola)\n    inicializar dia = fecha[0:2]\n    inicializar mes = fecha[2:5]\n    inicializar anio = fecha[5:10]\n\n    evaluar mes\n       (mes = 1)(imprimir  dia, \" de Enero de \", anio)\n       (mes = 2)(imprimir  dia, \" de Febrero de \", anio)\n       .\n       .\n       .\n       (mes = 12)(imprimir  dia, \" de Diciembre de \", anio)\n        \nllamar Funcion Fechatexto");
         this.algoritmos.get(49).add("(defun lenguajeFormal()\n    (print \"Ingrese una fecha: (dd-mm-aaaa)\")\n    (make-string fecha (read))\n    (setf dia (subseq fecha 0 2))\n    (setf mes (subseq fecha 2 5))\n    (setf anio (subseq fecha 5 10))\n    (cond\n      ((= mes 1)\n	(print \"~c de Enero de ~c\" dia anio))\n      ((= mes 2)\n 	(print \"~c de Febrero de ~c\" dia anio))\n      ((= mes 3)\n	(print \"~c de Marzo de ~c\" dia anio))\n      ((= mes 4)\n	(print \"~c de Abril de ~c\" dia anio))\n      ((= mes 5)\n	(print \"~c de Mayo de ~c\" dia anio))\n      ((= mes 6)\n	(print \"~c de Junio de ~c\" dia anio))\n      ((= mes 7)\n	(print \"~c de Julio de ~c\" dia anio))\n      ((= mes 8)\n  	(print \"~c de Agosto de ~c\" dia anio))\n      ((= mes 9)\n        (print \"~c de Septiembre de ~c\" dia anio))\n      ((= mes 10)\n	(print \"~c de Octubre de ~c\" dia anio))\n      ((= mes 11)\n	(print \"~c de Noviembre de ~c\" dia anio))\n      ((= mes 12)\n	(print \"~c de Diciembre de ~c\" dia anio))\n    )\n)\n\n(lenguajeFormal)");
@@ -1721,122 +1721,278 @@ public class Data {
         this.algoritmos.get(50).add("Funcion ContarTamanio\n    inicializar lista {1,2,3,4,5,6,7,8,9,10}\n    inicializar tamanio = tamaño(lista)\n    imprimir \"El tamaño de la lista es: \", tamanio\n\nllamar Funcion ContarTamanio");
         this.algoritmos.get(50).add("(defun ContarTamanio()\n    (setq lista (list 1 2 3 4 5 6 7 8 9 10))\n    (setq tamanio (length lista))\n    (print \"El tamaño de la lista es: ~c\" tamanio)\n)\n\n(ContarTamanio)");
         this.algoritmos.get(50).add("50");
-        this.pasos.get(50).get(0).add("");
-        this.pasos.get(50).get(0).add("");
-        this.pasos.get(50).get(0).add("");
+        this.pasos.get(50).get(0).add("Llamado");
+        this.pasos.get(50).get(0).add("Funcion");
+        this.pasos.get(50).get(0).add("Asignación");
+        this.pasos.get(50).get(0).add("lista");
+        this.pasos.get(50).get(0).add("Asignación");
+        this.pasos.get(50).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(50).get(1).add("");
-        this.pasos.get(50).get(1).add("");
-        this.pasos.get(50).get(1).add("")
-        ;////////////////   52    /////////////////
+        this.pasos.get(50).get(1).add("(ContarTamanio)");
+        this.pasos.get(50).get(1).add("(defun ContarTamanio()");
+        this.pasos.get(50).get(1).add("(setq lista (list 1 2 3 4 5 6 7 8 9 10))");
+        this.pasos.get(50).get(1).add("(list 1 2 3 4 5 6 7 8 9 10)");
+        this.pasos.get(50).get(1).add("(setq tamanio (length lista))");
+        this.pasos.get(50).get(1).add("(print \"El tamaño de la lista es: ~c\" tamanio)");
+        ////////////////   52    /////////////////
         this.algoritmos.get(51).add("#|\nConstruir un algoritmo en Lisp que muestre \ny cuente los elementos que hay en la lista.\n|#");
         this.algoritmos.get(51).add("Funcion ContarElementos\n    inicializar lista {\n       \"juan\",23,\"alonso\",\"jimena\",23,\"Salome\"\n    }\n    inicializar tamanio = tamaño(lista)\n    desde i = 1 hasta tamanio hacer:\n        imprimir i, \": \", lista[i]\n	\nllamar Funcion ContarElementos");
         this.algoritmos.get(51).add("(defun ContarElementos()\n (setq lista \n    (list \"juan\" 23 \"alonso\" \"jimena\" 23 \"Salome\")\n  )\n  (setq tamanio (length lista))\n  (loop for i from 0 to tamanio\n     do(\n         (print \"~c: ~c\" i (list-ref lista i))\n     )\n   )\n)\n\n(ContarElementos)");
         this.algoritmos.get(51).add("51");
-        this.pasos.get(51).get(0).add("");
-        this.pasos.get(51).get(0).add("");
-        this.pasos.get(51).get(0).add("");
+        this.pasos.get(51).get(0).add("Llamado");
+        this.pasos.get(51).get(0).add("Funcion");
+        this.pasos.get(51).get(0).add("Asignación");
+        this.pasos.get(51).get(0).add("lista");
+        this.pasos.get(51).get(0).add("Asignación");
+        this.pasos.get(51).get(0).add("for");
+        this.pasos.get(51).get(0).add("do");
+        this.pasos.get(51).get(0).add("Impresión");
+        this.pasos.get(51).get(0).add("for");
+        this.pasos.get(51).get(0).add("do");
+        this.pasos.get(51).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(51).get(1).add("");
-        this.pasos.get(51).get(1).add("");
-        this.pasos.get(51).get(1).add("")
-        ;////////////////   53    /////////////////
+        this.pasos.get(51).get(1).add("(ContarElementos)");
+        this.pasos.get(51).get(1).add("(defun ContarElementos()");
+        this.pasos.get(51).get(1).add("(setq lista ");
+        this.pasos.get(51).get(1).add("(list \"juan\" 23 \"alonso\" \"jimena\" 23 \"Salome\")");
+        this.pasos.get(51).get(1).add("(setq tamanio (length lista))");
+        this.pasos.get(51).get(1).add("(loop for i from 0 to tamanio");
+        this.pasos.get(51).get(1).add("do(");
+        this.pasos.get(51).get(1).add("(print \"~c: ~c\" i (list-ref lista i))");
+        this.pasos.get(51).get(1).add("(loop for i from 0 to tamanio");
+        this.pasos.get(51).get(1).add("do(");
+        this.pasos.get(51).get(1).add("(print \"~c: ~c\" i (list-ref lista i))");
+        ////////////////   53    /////////////////
         this.algoritmos.get(52).add("#|\nConstruir un algoritmo en Lisp que muestre \nla suma de los elementos de una lista.\n|#");
         this.algoritmos.get(52).add("Funcion SumaElementos\n    inicializar lista {2,23,5,23,79}\n    inicializar tamanio = tamaño(lista)\n    inicializar suma = 0\n    desde i = 1 hasta tamanio hacer:\n        suma = suma + lista[i]\n    imprimir \"la suma de los elementos es: \", suma\n	\nllamar Funcion SumaElementos");
         this.algoritmos.get(52).add("(defun SumaElementos()\n    (setq lista (list 2 23 5 23 79))\n    (setq tamanio (length lista))\n    (setq suma 0)\n    (loop for i from 0 to tamanio\n        do(\n            (set suma (+  suma (list-ref lista i)))\n        )\n    )\n    (print \"la suma de los elementos es: ~c\" suma)\n)\n\n(SumaElementos)");
         this.algoritmos.get(52).add("52");
-        this.pasos.get(52).get(0).add("");
-        this.pasos.get(52).get(0).add("");
-        this.pasos.get(52).get(0).add("");
+        this.pasos.get(52).get(0).add("Llamado");
+        this.pasos.get(52).get(0).add("Funcion");
+        this.pasos.get(52).get(0).add("Asignación");
+        this.pasos.get(52).get(0).add("Asignación");
+        this.pasos.get(52).get(0).add("Asignación");
+        this.pasos.get(52).get(0).add("for");
+        this.pasos.get(52).get(0).add("do");
+        this.pasos.get(52).get(0).add("Actualizar");
+        this.pasos.get(52).get(0).add("for");
+        this.pasos.get(52).get(0).add("do");
+        this.pasos.get(52).get(0).add("Actualizar");
+        this.pasos.get(52).get(0).add("for");
+        this.pasos.get(52).get(0).add("do");
+        this.pasos.get(52).get(0).add("Actualizar");
+        this.pasos.get(52).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(52).get(1).add("");
-        this.pasos.get(52).get(1).add("");
-        this.pasos.get(52).get(1).add("")
-        ;////////////////   54    /////////////////
+        this.pasos.get(52).get(1).add("(SumaElementos)");
+        this.pasos.get(52).get(1).add("(defun SumaElementos()");
+        this.pasos.get(52).get(1).add("(setq lista (list 2 23 5 23 79))");
+        this.pasos.get(52).get(1).add("(setq tamanio (length lista))");
+        this.pasos.get(52).get(1).add("(setq suma 0)");
+        this.pasos.get(52).get(1).add("(loop for i from 0 to tamanio");
+        this.pasos.get(52).get(1).add("do(");
+        this.pasos.get(52).get(1).add("(set suma (+  suma (list-ref lista i)))");
+        this.pasos.get(52).get(1).add("(loop for i from 0 to tamanio");
+        this.pasos.get(52).get(1).add("do(");
+        this.pasos.get(52).get(1).add("(set suma (+  suma (list-ref lista i)))");
+        this.pasos.get(52).get(1).add("(loop for i from 0 to tamanio");
+        this.pasos.get(52).get(1).add("do(");
+        this.pasos.get(52).get(1).add("(set suma (+  suma (list-ref lista i)))");
+        this.pasos.get(52).get(1).add("(print \"la suma de los elementos es: ~c\" suma)");
+        ////////////////   54    /////////////////
         this.algoritmos.get(53).add("#|\nConstruir  un  algoritmo en Lisp que reciba\nuna lista de 3 posiciones y un dato a buscar.\nSe  debe  devolver  la  posición en la que se\nencuentra el dato.\n|#");
         this.algoritmos.get(53).add("Funcion BuscarElementos\n    imprimir \"Ingrese datos para una lista: \"\n    inicializar lista {\n        (valor por consola),\n        (valor por consola),\n        (valor por consola)\n    }\n    imprimir \"Ingrese dato a buscar: \"\n    inicializar dato = (valor por consola)\n    inicializar tamanio = tamaño(lista)\n    inicializar pos = 0\n    desde i = 1 hasta tamanio hacer:\n        si (lista[i] =  dato)\n            imprimir \"El dato esta en la posicion: \" pos\n            pos = pos + 1\n	\nllamar Funcion BuscarElementos");
         this.algoritmos.get(53).add("(defun BuscarElementos()\n  (print \"Ingrese datos para una lista: \")\n  (setq lista (list (read) (read) (read)))\n  (print \"Ingrese dato a buscar: \")\n  (setq dato (read))\n  (setq pos 0)\n  (setq tamanio (length lista))\n  (loop for i from 0 to tamanio\n     do(if (= (list-ref lista) dato)\n      (print \"El dato esta en la posicion: ~c\" pos)\n      (set pos (+ pos 1))\n     )\n   )\n)\n\n(BuscarElementos)");
         this.algoritmos.get(53).add("53");
-        this.pasos.get(53).get(0).add("");
-        this.pasos.get(53).get(0).add("");
-        this.pasos.get(53).get(0).add("");
+        this.pasos.get(53).get(0).add("Llamado");
+        this.pasos.get(53).get(0).add("Funcion");
+        this.pasos.get(53).get(0).add("Impresión");
+        this.pasos.get(53).get(0).add("Lectura");
+        this.pasos.get(53).get(0).add("Lectura");
+        this.pasos.get(53).get(0).add("Lectura");
+        this.pasos.get(53).get(0).add("Impresión");
+        this.pasos.get(53).get(0).add("Lectura");
+        this.pasos.get(53).get(0).add("Asignación");
+        this.pasos.get(53).get(0).add("Asignación");
+        this.pasos.get(53).get(0).add("for");
+        this.pasos.get(53).get(0).add("Condicional");
+        this.pasos.get(53).get(0).add("Impresión");
+        this.pasos.get(53).get(0).add("Actualizar");
         /////////////////////////////////
-        this.pasos.get(53).get(1).add("");
-        this.pasos.get(53).get(1).add("");
-        this.pasos.get(53).get(1).add("")
-        ;////////////////   55    /////////////////
+        this.pasos.get(53).get(1).add("(BuscarElementos)");
+        this.pasos.get(53).get(1).add("(defun BuscarElementos()");
+        this.pasos.get(53).get(1).add("(print \"Ingrese datos para una lista: \")");
+        this.pasos.get(53).get(1).add("(list (read)");
+        this.pasos.get(53).get(1).add("(list (read) (read)");
+        this.pasos.get(53).get(1).add("(list (read) (read) (read))");
+        this.pasos.get(53).get(1).add("(print \"Ingrese dato a buscar: \")");
+        this.pasos.get(53).get(1).add("(setq dato (read))");
+        this.pasos.get(53).get(1).add("(setq pos 0)");
+        this.pasos.get(53).get(1).add("(setq tamanio (length lista))");
+        this.pasos.get(53).get(1).add("(loop for i from 0 to tamanio");
+        this.pasos.get(53).get(1).add("do(if (= (list-ref lista) dato)");
+        this.pasos.get(53).get(1).add("(print \"El dato esta en la posicion: ~c\" pos");
+        this.pasos.get(53).get(1).add("(set pos (+ pos 1))");
+        ////////////////   55    /////////////////
         this.algoritmos.get(54).add("#|\nConstruir  un  algoritmo  en Lisp  que reciba\nuna  lista  de  3  posiciones    de   enteros   y \ndevuelva el mayor valor contenido en la lista.\n|#");
         this.algoritmos.get(54).add("Funcion MayorElementos\n    imprimir \"Ingrese datos para una lista: \"\n    inicializar lista {\n        (valor por consola),\n        (valor por consola),\n        (valor por consola)\n    }\n    hacer-lista lista2 = Ordenar(lista)\n    imprimir \"El mayor elemento de la lista es: \"\n    lista2[0]\n\nllamar Funcion MayorElementos");
         this.algoritmos.get(54).add("(defun MayorElementos()\n    (print \"Ingrese datos para una lista: \")\n    (setq lista \n        (list (read) (read) (read))\n    )\n    (list lista2 (vl-sort lista '>))\n    (print \"El mayor elemento de la lista es: ~d\" \n    (first lista2))\n)\n\n(MayorElementos)");
         this.algoritmos.get(54).add("54");
-        this.pasos.get(54).get(0).add("");
-        this.pasos.get(54).get(0).add("");
-        this.pasos.get(54).get(0).add("");
+        this.pasos.get(54).get(0).add("Llamado");
+        this.pasos.get(54).get(0).add("Funcion");
+        this.pasos.get(54).get(0).add("Impresión");
+        this.pasos.get(54).get(0).add("Lectura");
+        this.pasos.get(54).get(0).add("Lectura");
+        this.pasos.get(54).get(0).add("Lectura");
+        this.pasos.get(54).get(0).add("lista");
+        this.pasos.get(54).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(54).get(1).add("");
-        this.pasos.get(54).get(1).add("");
-        this.pasos.get(54).get(1).add("")
-        ;////////////////   56    /////////////////
+        this.pasos.get(54).get(1).add("(MayorElementos)");
+        this.pasos.get(54).get(1).add("(defun MayorElementos()");
+        this.pasos.get(54).get(1).add("(print \"Ingrese datos para una lista: \")");
+        this.pasos.get(54).get(1).add("(list (read)");
+        this.pasos.get(54).get(1).add("(list (read) (read)");
+        this.pasos.get(54).get(1).add("(list (read) (read) (read))");
+        this.pasos.get(54).get(1).add("(list lista2 (vl-sort lista '>))");
+        this.pasos.get(54).get(1).add("(print \"El mayor elemento de la lista es: ~d\"");
+        ////////////////   56    /////////////////
         this.algoritmos.get(55).add("#|\nConstruir  un  algoritmo en Lisp que reciba\nuna lista de enteros y la ordene de mayor a \nmenor.\n|#");
         this.algoritmos.get(55).add("Funcion ListaOrdenada\n    imprimir \"Ingrese datos para una lista: \"\n    inicializar lista {\n        (valor por consola),\n        (valor por consola),\n        (valor por consola)\n    }\n    hacer-lista lista2 = Ordenar(lista)\n    imprimir \"La lista ordenada es: \"\n    lista2\n\nllamar Funcion ListaOrdenada");
         this.algoritmos.get(55).add("(defun ListaOrdenada()\n    (print \"Ingrese datos para una lista: \")\n    (setq lista \n        (list (read) (read) (read))\n    )\n    (list lista2 (vl-sort lista '>))\n    (print \"La lista ordenada es: ~d\" \n    (lista2))\n)\n\n(ListaOrdenada)");
         this.algoritmos.get(55).add("55");
-        this.pasos.get(55).get(0).add("");
-        this.pasos.get(55).get(0).add("");
-        this.pasos.get(55).get(0).add("");
+        this.pasos.get(55).get(0).add("Llamado");
+        this.pasos.get(55).get(0).add("Funcion");
+        this.pasos.get(55).get(0).add("Impresión");
+        this.pasos.get(55).get(0).add("Lectura");
+        this.pasos.get(55).get(0).add("Lectura");
+        this.pasos.get(55).get(0).add("Lectura");
+        this.pasos.get(55).get(0).add("lista");
+        this.pasos.get(55).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(55).get(1).add("");
-        this.pasos.get(55).get(1).add("");
-        this.pasos.get(55).get(1).add("")
-        ;////////////////   57    /////////////////
+        this.pasos.get(55).get(1).add("(ListaOrdenada)");
+        this.pasos.get(55).get(1).add("(defun ListaOrdenada()");
+        this.pasos.get(54).get(1).add("(print \"Ingrese datos para una lista: \")");
+        this.pasos.get(54).get(1).add("(list (read)");
+        this.pasos.get(54).get(1).add("(list (read) (read)");
+        this.pasos.get(54).get(1).add("(list (read) (read) (read))");
+        this.pasos.get(54).get(1).add("(list lista2 (vl-sort lista '>))");
+        this.pasos.get(54).get(1).add("(print \"La lista ordenada es: ~d\"");
+        ////////////////   57    /////////////////
         this.algoritmos.get(56).add("#|\nConstruir un algoritmo en  Lisp  que  reciba \nuna lista y devuelva otra con los datos de la \nprimera invertida. \n|#");
         this.algoritmos.get(56).add("Funcion ListaInvertida\n    imprimir \"Ingrese datos para una lista: \"\n    inicializar lista {\n        (valor por consola),\n        (valor por consola),\n        (valor por consola)\n    }\n    hacer-lista lista2 = invertir(lista)\n    imprimir \"La lista invertida es: \"\n    lista2\n\nllamar Funcion ListaInvertida");
         this.algoritmos.get(56).add("(defun ListaInvertida()\n    (print \"Ingrese datos para una lista: \")\n    (setq lista \n        (list (read) (read) (read))\n    )\n    (list lista2 (reverse lista))\n    (print \"La lista invertida es: ~d\" \n    (lista2))\n)\n\n(ListaOrdenada)");
         this.algoritmos.get(56).add("56");
-        this.pasos.get(56).get(0).add("");
-        this.pasos.get(56).get(0).add("");
-        this.pasos.get(56).get(0).add("");
+        this.pasos.get(56).get(0).add("Llamado");
+        this.pasos.get(56).get(0).add("Funcion");
+        this.pasos.get(56).get(0).add("Impresión");
+        this.pasos.get(56).get(0).add("Lectura");
+        this.pasos.get(56).get(0).add("Lectura");
+        this.pasos.get(56).get(0).add("Lectura");
+        this.pasos.get(56).get(0).add("lista");
+        this.pasos.get(56).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(56).get(1).add("");
-        this.pasos.get(56).get(1).add("");
-        this.pasos.get(56).get(1).add("")
-        ;////////////////   58    /////////////////
+        this.pasos.get(56).get(1).add("(ListaOrdenada)");
+        this.pasos.get(56).get(1).add("(defun ListaInvertida()");
+        this.pasos.get(54).get(1).add("(print \"Ingrese datos para una lista: \")");
+        this.pasos.get(54).get(1).add("(list (read)");
+        this.pasos.get(54).get(1).add("(list (read) (read)");
+        this.pasos.get(54).get(1).add("(list (read) (read) (read))");
+        this.pasos.get(54).get(1).add("(list lista2 (reverse lista))");
+        this.pasos.get(54).get(1).add("(print \"La lista invertida es: ~d\"");
+        ////////////////   58    /////////////////
         this.algoritmos.get(57).add("#|\nConstruir un algoritmo en Lisp que reciba\nuna lista de números y un número. Si este\nnúmero   no   se   encuentra   en   la  lista,\ningresarlo  a  ella  en  la  parte  final.\n|#");
         this.algoritmos.get(57).add("Funcion BuscarDato\n    imprimir \"Ingrese numeros para una lista: \"\n    inicializar lista {\n        (valor por consola),\n        (valor por consola),\n        (valor por consola)\n    }\n    inicializar contador = 0\n    imprimir \"Ingrese un numero a buscar: \"\n    inicializar numero = (valor por consola)\n    desde i = 1 hasta tamaño(lista) hacer:\n        si (lista[i] =  numero)\n            contador = contador + 1\n    si (contador = 0)\n        añadir numero -> lista\n    imprimir \"La lista es: \"\n    lista\n\nllamar Funcion BuscarDato");
         this.algoritmos.get(57).add("(defun BuscarDato()\n    (print \"Ingrese numeros para una lista: \")\n    (setq lista \n        (list (read) (read) (read))\n    )\n    (setq contador 0)\n    (print \"Ingrese un numero a buscar: \")\n    (setq numero (read))\n    (loop for i from 0 to (length lista)\n        do(\n            (if (= (list-ref lista) numero)\n                (set contador (+ contador 1))\n                (void)\n            )\n        )\n    )\n    (if (= contador 0)\n        (append lista numero)\n    )\n    (print \"La lista es: ~d\" \n    (lista))\n)\n\n(BuscarDato)");
         this.algoritmos.get(57).add("57");
-        this.pasos.get(57).get(0).add("");
-        this.pasos.get(57).get(0).add("");
-        this.pasos.get(57).get(0).add("");
+        this.pasos.get(57).get(0).add("Llamado");
+        this.pasos.get(57).get(0).add("Funcion");
+        this.pasos.get(57).get(0).add("Impresión");
+        this.pasos.get(57).get(0).add("Lectura");
+        this.pasos.get(57).get(0).add("Lectura");
+        this.pasos.get(57).get(0).add("Lectura");
+        this.pasos.get(57).get(0).add("Asignación");
+        this.pasos.get(57).get(0).add("Impresión");
+        this.pasos.get(57).get(0).add("Lectura");
+        this.pasos.get(57).get(0).add("for");
+        this.pasos.get(57).get(0).add("do");
+        this.pasos.get(57).get(0).add("Condicional");
+        this.pasos.get(57).get(0).add("Actualizar");
+        this.pasos.get(57).get(0).add("Vacio");
+        this.pasos.get(57).get(0).add("for");
+        this.pasos.get(57).get(0).add("do");
+        this.pasos.get(57).get(0).add("Condicional");
+        this.pasos.get(57).get(0).add("Actualizar");
+        this.pasos.get(57).get(0).add("Vacio");
+        this.pasos.get(57).get(0).add("Condicional");
+        this.pasos.get(57).get(0).add("añadir");
+        this.pasos.get(57).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(57).get(1).add("");
-        this.pasos.get(57).get(1).add("");
-        this.pasos.get(57).get(1).add("")
-        ;////////////////   59    /////////////////
+        this.pasos.get(57).get(1).add("(BuscarDato)");
+        this.pasos.get(57).get(1).add("(defun BuscarDato()");
+        this.pasos.get(57).get(1).add("(print \"Ingrese numeros para una lista: \")");
+        this.pasos.get(57).get(1).add("(list (read)");
+        this.pasos.get(57).get(1).add("(list (read) (read)");
+        this.pasos.get(57).get(1).add("(list (read) (read) (read))");
+        this.pasos.get(57).get(1).add("(setq contador 0)");
+        this.pasos.get(57).get(1).add("(print \"Ingrese un numero a buscar: \")");
+        this.pasos.get(57).get(1).add("(setq numero (read))");
+        this.pasos.get(57).get(1).add("(loop for i from 0 to (length lista)");
+        this.pasos.get(57).get(1).add("do(");
+        this.pasos.get(57).get(1).add("(if (= (list-ref lista) numero)");
+        this.pasos.get(57).get(1).add("(set contador (+ contador 1))");
+        this.pasos.get(57).get(1).add("(void)");
+        this.pasos.get(57).get(1).add("(loop for i from 0 to (length lista)");
+        this.pasos.get(57).get(1).add("do(");
+        this.pasos.get(57).get(1).add("(if (= (list-ref lista) numero)");
+        this.pasos.get(57).get(1).add("(set contador (+ contador 1))");
+        this.pasos.get(57).get(1).add("(void)");
+        this.pasos.get(57).get(1).add("(if (= contador 0)");
+        this.pasos.get(57).get(1).add("(append lista numero)");
+        this.pasos.get(57).get(1).add("(print \"La lista es: ~d\" ");
+        ////////////////   59    /////////////////
         this.algoritmos.get(58).add("#|\nConstruir un algoritmo en Lisp que inicialice\nuna lista con 5 valores aleatorios (del 1 al 10\ny  posteriormente  muestre  en pantalla cada\nelemento de la lista junto con su cuadrado.\n|#");
         this.algoritmos.get(58).add("Funcion ListaRandom\n    imprimir \"Ingrese datos para una lista: \"\n    hacer-lista lista 5, aleatorio(10)\n    imprimir \"Elementos de la lista: \", lista\n    imprimir \"Elementos al cuadrado: \"\n    desde i = 1 hasta tamaño(lista) hacer:\n        imprimir potencia(lista[i], 2)\n	\nllamar Funcion ListaRandom");
         this.algoritmos.get(58).add("(defun ListaRandom()\n    (print \"Ingrese numeros para una lista: \")\n    (setq lista (make-list 5 (random 10)))\n    (print \"Elementos de la lista: ~d\" lista)\n    (print \"Elementos al cuadrado: \")\n    (loop for i from 0 to (length lista)\n        do(print (expt (list-ref lista i)) 2)\n    )\n)\n\n(ListaRandom)");
         this.algoritmos.get(58).add("58");
-        this.pasos.get(58).get(0).add("");
-        this.pasos.get(58).get(0).add("");
-        this.pasos.get(58).get(0).add("");
+        this.pasos.get(58).get(0).add("Llamado");
+        this.pasos.get(58).get(0).add("Funcion");
+        this.pasos.get(58).get(0).add("Impresión");
+        this.pasos.get(58).get(0).add("Asignación");
+        this.pasos.get(58).get(0).add("Impresión");
+        this.pasos.get(58).get(0).add("Impresión");
+        this.pasos.get(58).get(0).add("for");
+        this.pasos.get(58).get(0).add("do");
+        this.pasos.get(58).get(0).add("for");
+        this.pasos.get(58).get(0).add("do");
         /////////////////////////////////
-        this.pasos.get(58).get(1).add("");
-        this.pasos.get(58).get(1).add("");
-        this.pasos.get(58).get(1).add("")
-        ;////////////////   60    /////////////////
+        this.pasos.get(58).get(1).add("(ListaRandom)");
+        this.pasos.get(58).get(1).add("(defun ListaRandom()");
+        this.pasos.get(58).get(1).add("(print \"Ingrese numeros para una lista: \")");
+        this.pasos.get(58).get(1).add("(setq lista (make-list 5 (random 10)))");
+        this.pasos.get(58).get(1).add("(print \"Elementos de la lista: ~d\" lista)");
+        this.pasos.get(58).get(1).add("(print \"Elementos al cuadrado: \")");
+        this.pasos.get(58).get(1).add("(loop for i from 0 to (length lista)");
+        this.pasos.get(58).get(1).add("do(print (expt (list-ref lista i)) 2)");
+        this.pasos.get(58).get(1).add("(loop for i from 0 to (length lista)");
+        this.pasos.get(58).get(1).add("do(print (expt (list-ref lista i)) 2)");
+        ////////////////   60    /////////////////
         this.algoritmos.get(59).add("#|\nConstruir un algoritmo en Lisp que inicialice\nuna  lista  de números con valores aleatorios\n(5 valores), y posterior ordene los elementos\nde menor a mayor.\n|#");
         this.algoritmos.get(59).add("Funcion OrdenarRandom\n    hacer-lista lista 5, aleatorio(10)\n    imprimir \"Elementos de la lista: \", lista\n    hacer-lista lista2 = Ordenar(lista)\n    imprimir \"lista ordenados: \", lista2\n	\nllamar Funcion OrdenarRandom");
         this.algoritmos.get(59).add("(defun OrdenarRandom()\n    (setq lista (make-list 5 (random 10)))\n    (print \"Elementos de la lista: ~d\" lista)\n    (list lista2 (vl-sort lista '<))\n    (print \"lista ordenados: ~d\" lista2)\n)\n\n(OrdenarRandom) ");
         this.algoritmos.get(59).add("59");
-        this.pasos.get(59).get(0).add("");
-        this.pasos.get(59).get(0).add("");
-        this.pasos.get(59).get(0).add("");
+        this.pasos.get(59).get(0).add("Llamado");
+        this.pasos.get(59).get(0).add("Funcion");
+        this.pasos.get(59).get(0).add("Asignación");
+        this.pasos.get(59).get(0).add("Impresión");
+        this.pasos.get(59).get(0).add("lista");
+        this.pasos.get(59).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(59).get(1).add("");
-        this.pasos.get(59).get(1).add("");
-        this.pasos.get(59).get(1).add("")
-        ;////////////////   61    /////////////////
+        this.pasos.get(59).get(1).add("(OrdenarRandom)");
+        this.pasos.get(59).get(1).add("(defun OrdenarRandom()");
+        this.pasos.get(59).get(1).add("(setq lista (make-list 5 (random 10)))");
+        this.pasos.get(59).get(1).add("(print \"Elementos de la lista: ~d\" lista)");
+        this.pasos.get(59).get(1).add("(list lista2 (vl-sort lista '<))");
+        this.pasos.get(59).get(1).add("(print \"lista ordenados: ~d\" lista2)");/*
+        ////////////////   61    /////////////////
         this.algoritmos.get(60).add("");
         this.algoritmos.get(60).add("");
         this.algoritmos.get(60).add("");

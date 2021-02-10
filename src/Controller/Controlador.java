@@ -6,6 +6,7 @@
 package Controller;
 
 import Model.*;
+import Model.Data;
 import Views.*;
 import java.awt.Color;
 import java.awt.event.ActionEvent;

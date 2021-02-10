@@ -627,13 +627,13 @@ public class JavaAlgorithms {
             JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
         }
         try{
-            p2 = reads.get(0);
+            p2 = reads.get(1);
         }catch(NumberFormatException e){
             JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
         }
 
         try{
-            p3 = reads.get(0);
+            p3 = reads.get(2);
         }catch(NumberFormatException e){
             JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
         }
@@ -693,7 +693,7 @@ public class JavaAlgorithms {
             JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
         }
         try{
-            letra2 = reads.get(0);
+            letra2 = reads.get(1);
         }catch(NumberFormatException e){
             JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
         }
@@ -715,7 +715,7 @@ public class JavaAlgorithms {
             JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
         }
         try{
-            letra2 = reads.get(0);
+            letra2 = reads.get(1);
         }catch(NumberFormatException e){
             JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
         }
@@ -769,7 +769,7 @@ public class JavaAlgorithms {
             JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
         }
         try{
-            letra2 = reads.get(0);
+            letra2 = reads.get(1);
         }catch(NumberFormatException e){
             JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
         }
@@ -882,43 +882,227 @@ public class JavaAlgorithms {
     }
     
     public String a50(List<String> reads){
-        return "";
+        return "10";
     }
     
     public String a51(List<String> reads){
-        return "";
+        return "1: juan\n2: 23\n3: alonso\n4: jimena\n5: 23\n6: Salome";
     }
     
     public String a52(List<String> reads){
-        return "";
+        return "132";
     }
     
     public String a53(List<String> reads){
-        return "";
+        String p1 = "",p2 = "",p3 = "", p4 = "";
+        String respuesta = "";
+        try{
+            p1 = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            p2 = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+
+        try{
+            p3 = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            p4 = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        if(p1.equals(p4)){
+            respuesta = "El dato esta en la posicion: 1";
+        }
+        if(p2.equals(p4)){
+            respuesta = "El dato esta en la posicion: 2";
+        }
+        if(p3.equals(p4)){
+            respuesta = "El dato esta en la posicion: 3";
+        }
+        return respuesta;
     }
     
     public String a54(List<String> reads){
-        return "";
+        int p1 = 0, p2 = 0, p3 = 0;
+        String respuesta = "";
+        try{
+            p1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            p2 = Integer.parseInt(reads.get(1));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+
+        try{
+            p3 = Integer.parseInt(reads.get(2));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        if((p1 > p2) && (p1 > p3)){
+            respuesta = "El mayor elemento de la lista es: "+p1;
+        }
+        if((p2 > p1) && (p2 > p3)){
+            respuesta = "El mayor elemento de la lista es: "+p2;
+        }
+        if((p3 > p2) && (p3 > p1)){
+            respuesta = "El mayor elemento de la lista es: "+p3;
+        }
+        return respuesta;
     }
     
     public String a55(List<String> reads){
-        return "";
+        int p1 = 0, p2 = 0, p3 = 0;
+        String respuesta = "";
+        try{
+            p1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            p2 = Integer.parseInt(reads.get(1));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            p3 = Integer.parseInt(reads.get(2));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        if((p1 > p2)){
+            if((p1 > p3)){
+                if((p2 > p3)){
+                    respuesta = "La lista ordenada es: "+p1+" "+p2+" "+p3;
+                }else{
+                    respuesta = "La lista ordenada es: "+p1+" "+p3+" "+p2;
+                }
+            }else{
+                if(p2 > p3){
+                    respuesta = "La lista ordenada es: "+p2+" "+p3+" "+p1;
+                }else{
+                    respuesta = "La lista ordenada es: "+p3+" "+p2+" "+p1;
+                }
+            }
+        }else{
+            if(p2 > p3){
+                if(p1 > p3){
+                    respuesta = "La lista ordenada es: "+p2+" "+p1+" "+p3;
+                }else{
+                    respuesta = "La lista ordenada es: "+p2+" "+p3+" "+p1;
+                }
+            }else{
+                respuesta = "La lista ordenada es: "+p3+" "+p2+" "+p1;
+            }
+        }
+        return respuesta;
     }
     
     public String a56(List<String> reads){
-        return "";
+        int p1 = 0, p2 = 0, p3 = 0;
+        try{
+            p1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            p2 = Integer.parseInt(reads.get(1));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            p3 = Integer.parseInt(reads.get(2));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        return p3+" "+p2+" "+p1;
     }
     
     public String a57(List<String> reads){
-        return "";
+       String p1 = "",p2 = "",p3 = "", p4 = "";
+        String respuesta = "";
+        int cont = 0;
+        try{
+            p1 = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            p2 = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            p3 = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            p4 = reads.get(0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        if(p1.equals(p4)){
+            respuesta = "La lista es: "+p1+" "+p2+" "+p3;
+        }else{cont++;}
+        if(p2.equals(p4)){
+            respuesta = "La lista es: "+p1+" "+p2+" "+p3;
+        }else{cont++;}
+        if(p3.equals(p4)){
+            respuesta = "La lista es: "+p1+" "+p2+" "+p3;
+        }else{cont++;}
+        if(cont == 3){
+            respuesta = "La lista es: "+p1+" "+p2+" "+p3+" "+p4;
+        }
+        return respuesta;
     }
     
     public String a58(List<String> reads){
-        return "";
+        String datos = "";
+        int rand = (int) Math.floor(Math.random()*11);
+        int rand2 = (int) Math.floor(Math.random()*11);
+        int rand3 = (int) Math.floor(Math.random()*11);
+        int rand4 = (int) Math.floor(Math.random()*11);
+        int rand5 = (int) Math.floor(Math.random()*11);
+        datos = "Elementos de la lista: "+rand+" "+rand2+" "+rand3+" "+rand4+" "+rand5;
+        datos += "Elementos al cuadrado: \n"+Math.pow(rand, 2)+" "+Math.pow(rand2, 2)+" "+Math.pow(rand3, 2)+" "+Math.pow(rand4, 2)+" "+Math.pow(rand5, 2);
+        return datos;
     }
     
     public String a59(List<String> reads){
-        return "";
+        String datos = "", auxi = "";
+        int[] A = new int[5];
+        int i, j, aux;
+        for(int z = 0; z<5; z++){
+             A[z]= (int) Math.floor(Math.random()*11);
+        }
+        for(int z = 0; z<5; z++){
+            auxi += " "+A[z];
+        }
+        datos = "Elementos de la lista: "+ auxi;
+        for (i = 0; i < A.length - 1; i++) {
+            for (j = 0; j < A.length - i - 1; j++) {
+                if (A[j + 1] < A[j]) {
+                    aux = A[j + 1];
+                    A[j + 1] = A[j];
+                    A[j] = aux;
+                }
+            }
+        }
+        auxi = "";
+        for(int z = 0; z<5; z++){
+            auxi += " "+A[z];
+        }
+        datos += "\n\nlista ordenados: "+auxi;
+        return datos;
     }
     
     public String a60(List<String> reads){

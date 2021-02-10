@@ -91,6 +91,10 @@ public class Enunciados {
                  break;
             case "tamaño" : respuesta = "asd"; 
                  break;
+            case "lista" : respuesta = "asd"; 
+                 break;
+            case "añadir" : respuesta = "asd"; 
+                 break;
             case "otros" : respuesta = "asd"; 
                  break;
         }
