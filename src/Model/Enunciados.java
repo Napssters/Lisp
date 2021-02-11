@@ -95,6 +95,12 @@ public class Enunciados {
                  break;
             case "añadir" : respuesta = "asd"; 
                  break;
+            case "vector" : respuesta = "asd"; 
+                 break;
+            case "Actualizarvector" : respuesta = "asd"; 
+                 break;
+            case "hacervector" : respuesta = "asd"; 
+                 break;
             case "otros" : respuesta = "asd"; 
                  break;
         }

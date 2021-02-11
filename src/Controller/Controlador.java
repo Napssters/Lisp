@@ -26,6 +26,7 @@ public class Controlador {
     private PseudoCodigo Pcode;
     private Codigos Codes;
     private Data data;
+    private Coments Comentario;
     private int count;
     private CuadroTexto ChangeColor;
     private Enunciados Enun;
@@ -36,6 +37,7 @@ public class Controlador {
         this.home = home;
         this.Enun = new Enunciados();
         this.data = new Data();
+        this.Comentario = new Coments();
         this.count = 0;
         this.home.Menu1.addActionListener((ActionEvent e) -> {
             home.setVisible(false);
@@ -624,13 +626,23 @@ public class Controlador {
         });
     }
     
-    
+    int opc = 0;
+    int pos = 0;
+    int counter = 0;
     public void GoCodigos(int vent){
         this.Codes.setTitle("Codigos Lisp");
         this.Codes.setLocationRelativeTo(null);
         this.javaAlg = new JavaAlgorithms();
-        int pos = Integer.parseInt(data.getAlgoritmos().get(vent).get(3));
-        int tam = data.getPasos().get(pos).get(1).size();
+        int pos2 = Integer.parseInt(data.getAlgoritmos().get(vent).get(3));
+        pos = pos2;
+        if(pos > 74){
+            pos = pos - 74;
+            opc = 1;
+        }else{
+            opc = 0;
+            pos = pos2;
+        }
+        int tam = data.getPasos(opc).get(pos).get(1).size();
         Codes.CodigoFuente.setText("");
         PonerColor(Codes.CodigoFuente, data.getAlgoritmos().get(vent).get(2));
         Codes.numero.setText((vent+1)+"");
@@ -652,16 +664,16 @@ public class Controlador {
         this.Codes.Run.addActionListener((ActionEvent e) -> {
             initCount();
             this.reads = new ArrayList<>();
-            Codes.Explicacion.setText(Enun.getEnunciado(data.getPasos().get(pos).get(0).get(this.count)));
-            Codes.Variables.setText(data.getPasos().get(pos).get(1).get(this.count));
+            Codes.Explicacion.setText(Enun.getEnunciado(data.getPasos(opc).get(pos).get(0).get(this.count)));
+            Codes.Variables.setText(data.getPasos(opc).get(pos).get(1).get(this.count));
             Codes.Siguiente.setEnabled(true);
         });
         this.Codes.Siguiente.addActionListener((ActionEvent e) -> {
             setCount();
             if(this.count < tam){
-                Codes.Explicacion.setText(Enun.getEnunciado(data.getPasos().get(pos).get(0).get(this.count)));
-                Codes.Variables.setText(data.getPasos().get(pos).get(1).get(this.count));
-                if(data.getPasos().get(pos).get(0).get(this.count).equals("Lectura")){
+                Codes.Explicacion.setText(Enun.getEnunciado(data.getPasos(opc).get(pos).get(0).get(this.count)));
+                Codes.Variables.setText(data.getPasos(opc).get(pos).get(1).get(this.count));
+                if(data.getPasos(opc).get(pos).get(0).get(this.count).equals("Lectura")){
                     Codes.input.setEnabled(true);
                 }else{
                     if(Codes.input.getText().equals("")){
@@ -693,8 +705,9 @@ public class Controlador {
             this.Menus();
         });
         this.Docs.comentarios.addActionListener((ActionEvent e) -> {
-            
-            
+            Docs.setVisible(false);
+            Comentario.setVisible(true);
+            this.Comentarios();
         });
         this.Docs.lectura.addActionListener((ActionEvent e) -> {
             
@@ -719,6 +732,21 @@ public class Controlador {
         this.Docs.listas.addActionListener((ActionEvent e) -> {
             
             
+        });
+    }
+    
+    public void Comentarios(){
+        this.Comentario.setTitle("Comentarios Lisp");
+        this.Comentario.setLocationRelativeTo(null);
+        this.Comentario.Inicio.addActionListener((ActionEvent e) -> {
+            Comentario.setVisible(false);
+            home.setVisible(true);
+            this.iniciar();
+        });
+        this.Comentario.Menu.addActionListener((ActionEvent e) -> {
+            Comentario.setVisible(false);
+            menu.setVisible(true);
+            this.Menus();
         });
     }
     

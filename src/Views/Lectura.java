@@ -12,16 +12,15 @@ import javax.swing.ImageIcon;
  *
  * @author Nico
  */
-public class Coments extends javax.swing.JFrame {
+public class Lectura extends javax.swing.JFrame {
 
     /**
-     * Creates new form LispDocs
+     * Creates new form Lectura
      */
-    public Coments() {
+    public Lectura() {
         setResizable(false);
         initComponents();
         this.setIconImage(new ImageIcon(getClass().getResource("/Images/Logo_Lambda.png")).getImage());
-        jScrollPane5.getVerticalScrollBar().setUnitIncrement(16);
     }
 
     /**
@@ -33,6 +32,7 @@ public class Coments extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jFrame1 = new javax.swing.JFrame();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         Manual = new javax.swing.JButton();
@@ -54,8 +54,21 @@ public class Coments extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jTextArea3 = new javax.swing.JTextArea();
         jLabel5 = new javax.swing.JLabel();
+        jTextArea4 = new javax.swing.JTextArea();
+
+        jFrame1.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
+        jFrame1.getContentPane().setLayout(jFrame1Layout);
+        jFrame1Layout.setHorizontalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        );
+        jFrame1Layout.setVerticalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
 
         jPanel2.setLayout(null);
 
@@ -167,7 +180,7 @@ public class Coments extends javax.swing.JFrame {
         jPanel17.setLayout(null);
 
         jLabel2.setFont(new java.awt.Font("Sylfaen", 1, 17)); // NOI18N
-        jLabel2.setText("Comentarios de una sola linea");
+        jLabel2.setText("Funciones de Lectura");
         jPanel17.add(jLabel2);
         jLabel2.setBounds(70, 450, 270, 30);
 
@@ -175,33 +188,33 @@ public class Coments extends javax.swing.JFrame {
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
         jTextArea1.setRows(5);
-        jTextArea1.setText("la forma adecuada de realizar un comentario de línea seria usar el simbolo \";;\" para poder hacer\nun comentario de linea, por ejemplo:\n\n                               ;;Este es un comentario de una sola linea hecho en Lisp.");
+        jTextArea1.setText("(READ-LINE)\n   La  funcion  (read-line)  sirve  para leer y almacenar\n   en  una  variable  textos largos que no contengan un\n   salto de linea, sirve para obtener frases con espacios\n   como lo seria:\n                              \"Hola mundo\" \n                \"En el mundo hay luz y oscuridad\"\n\nEjemplo:\n           (setq frase (read-line))");
         jTextArea1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jTextArea1.setFocusable(false);
         jTextArea1.setOpaque(false);
         jPanel17.add(jTextArea1);
-        jTextArea1.setBounds(70, 490, 700, 140);
+        jTextArea1.setBounds(470, 490, 400, 270);
 
         jLabel3.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
-        jLabel3.setText("Comentarios");
+        jLabel3.setText("lectura y Escritura");
         jPanel17.add(jLabel3);
-        jLabel3.setBounds(390, 40, 150, 30);
+        jLabel3.setBounds(350, 40, 210, 30);
 
         jTextArea2.setEditable(false);
         jTextArea2.setColumns(20);
         jTextArea2.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
         jTextArea2.setRows(5);
-        jTextArea2.setText("Un  comentario   es una anotación o nota que puede \ndejar  el  programador  en  el  código,  bien sea para  \nrecordar  una instrucción o algoritmo implementado,\no  también  sirve  para  dar a conocer puntos  claves \ndel  código  a programadores diferentes que quieran \nhacer modificación al mismo con el fin  de  mejora o \ncambio.  Como  en  todo  los  lenguajes Lisp no es la \nexcepción,  cuenta  con dos  formas  diferentes para \nrealizar  comentarios, bien sea ya de una sola línea o\nde  varias  líneas.");
+        jTextArea2.setText("Lectura\nLa  operación  de  lectura,  significa que una variable \ntomará  un  valor  que  será ingresado por el usuario \na   través   de   un   dispositivo  externo  de  entrada, \ngeneralmente   un   teclado.\n\nEscritura\nLa   operación   de   escritura,  a  su  vez  expresa  la \nnecesidad   de   visualizar   el   valor   que  tiene  una \nvariable  a  través  de un dispositivo de salida, ya sea \nuna pantalla en la mayoría de casos, o una impresora.");
         jTextArea2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jTextArea2.setFocusable(false);
         jTextArea2.setOpaque(false);
         jPanel17.add(jTextArea2);
-        jTextArea2.setBounds(70, 130, 390, 270);
+        jTextArea2.setBounds(490, 150, 390, 270);
 
         jLabel4.setFont(new java.awt.Font("Sylfaen", 1, 17)); // NOI18N
         jLabel4.setText("Comentarios de linea multiple");
         jPanel17.add(jLabel4);
-        jLabel4.setBounds(70, 640, 270, 30);
+        jLabel4.setBounds(60, 760, 270, 30);
 
         jTextArea3.setEditable(false);
         jTextArea3.setColumns(20);
@@ -212,23 +225,35 @@ public class Coments extends javax.swing.JFrame {
         jTextArea3.setFocusable(false);
         jTextArea3.setOpaque(false);
         jPanel17.add(jTextArea3);
-        jTextArea3.setBounds(70, 680, 700, 240);
+        jTextArea3.setBounds(60, 800, 700, 240);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Menu Documentacion/Comentarios/comentarios.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Menu Documentacion/Lectura/lisp.png"))); // NOI18N
         jPanel17.add(jLabel5);
-        jLabel5.setBounds(490, 120, 330, 320);
+        jLabel5.setBounds(0, 110, 490, 320);
+
+        jTextArea4.setEditable(false);
+        jTextArea4.setColumns(20);
+        jTextArea4.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
+        jTextArea4.setRows(5);
+        jTextArea4.setText("(READ)\n   La funcion o palabra reservada del sistema conocida\n   como  (read)  cumple  el  proposito  de  capturar las\n   teclas  preciondadas  desde  un periferico de entrada \n   de  texto,  como  lo  es el  teclado o dispositivos que \n   controlen   el   ordenador. Generalmente utilizada\n   para lectura de numeros y palabras\n\nEjemplo:\n           (setq palabra (read))");
+        jTextArea4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTextArea4.setFocusable(false);
+        jTextArea4.setOpaque(false);
+        jPanel17.add(jTextArea4);
+        jTextArea4.setBounds(30, 490, 400, 270);
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
         jPanel15Layout.setHorizontalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, 877, Short.MAX_VALUE)
+            .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, 894, Short.MAX_VALUE)
             .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
-                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, 885, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap()
+                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, 984, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0))
@@ -312,21 +337,20 @@ public class Coments extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Coments.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Lectura.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Coments.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Lectura.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Coments.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Lectura.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Coments.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Lectura.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Coments().setVisible(true);
+                new Lectura().setVisible(true);
             }
         });
     }
@@ -335,6 +359,7 @@ public class Coments extends javax.swing.JFrame {
     public javax.swing.JButton Inicio;
     private javax.swing.JButton Manual;
     public javax.swing.JButton Menu;
+    private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -353,5 +378,6 @@ public class Coments extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
+    private javax.swing.JTextArea jTextArea4;
     // End of variables declaration//GEN-END:variables
 }

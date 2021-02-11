@@ -1106,15 +1106,59 @@ public class JavaAlgorithms {
     }
     
     public String a60(List<String> reads){
-        return "";
+        String datos = "";
+        int rand = (int) Math.floor(Math.random()*11);
+        int rand2 = (int) Math.floor(Math.random()*11);
+        int rand3 = (int) Math.floor(Math.random()*11);
+        int rand4 = (int) Math.floor(Math.random()*11);
+        int rand5 = (int) Math.floor(Math.random()*11);
+        datos = "Vector: "+rand+" "+rand2+" "+rand3+" "+rand4+" "+rand5;
+        datos += "Suma datos Vector: \n"+(rand+rand2+rand3+rand4+rand5);
+        return datos;
     }
     
     public String a61(List<String> reads){
-        return "";
+        String datos = "";
+        int rand = (int) Math.floor(Math.random()*11);
+        int rand2 = (int) Math.floor(Math.random()*11);
+        int rand3 = (int) Math.floor(Math.random()*11);
+        int rand4 = (int) Math.floor(Math.random()*11);
+        int rand5 = (int) Math.floor(Math.random()*11);
+        datos = "Vector: "+rand+" "+rand2+" "+rand3+" "+rand4+" "+rand5;
+        datos += "Vector invertido: "+rand5+" "+rand4+" "+rand3+" "+rand2+" "+rand;
+        return datos;
     }
     
     public String a62(List<String> reads){
-        return "";
+        
+        int p1 = 0, p2 = 0, p3 = 0;
+        String respuesta = "";
+        try{
+            p1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            p2 = Integer.parseInt(reads.get(1));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+
+        try{
+            p3 = Integer.parseInt(reads.get(2));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        if((p1 < p2) && (p1 < p3)){
+            respuesta = "Menor valor vector: "+p1;
+        }
+        if((p2 < p1) && (p2 < p3)){
+            respuesta = "Menor valor vector: "+p2;
+        }
+        if((p3 < p2) && (p3 < p1)){
+            respuesta = "Menor valor vector: "+p3;
+        }
+        return respuesta;
     }
     
     public String a63(List<String> reads){

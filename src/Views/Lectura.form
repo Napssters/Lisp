@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Container class="javax.swing.JFrame" name="jFrame1">
+      <Properties>
+        <Property name="defaultCloseOperation" type="int" value="3"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
+  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+    </Property>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -23,8 +44,8 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel2" max="32767" attributes="0"/>
-          <Component id="jScrollPane5" max="32767" attributes="0"/>
+          <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
+          <Component id="jScrollPane5" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -187,14 +208,15 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jPanel16" alignment="0" pref="877" max="32767" attributes="0"/>
+                  <Component id="jPanel16" alignment="0" pref="894" max="32767" attributes="0"/>
                   <Component id="jPanel17" alignment="0" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <Component id="jPanel17" min="-2" pref="885" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jPanel17" min="-2" pref="984" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                       <Component id="jPanel16" min="-2" pref="124" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
@@ -263,7 +285,7 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Sylfaen" size="17" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Comentarios de una sola linea"/>
+                    <Property name="text" type="java.lang.String" value="Funciones de Lectura"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -279,7 +301,7 @@
                       <Font name="Sylfaen" size="18" style="0"/>
                     </Property>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="la forma adecuada de realizar un comentario de l&#xed;nea seria usar el simbolo &quot;;;&quot; para poder hacer&#xa;un comentario de linea, por ejemplo:&#xa;&#xa;                               ;;Este es un comentario de una sola linea hecho en Lisp."/>
+                    <Property name="text" type="java.lang.String" value="(READ-LINE)&#xa;   La  funcion  (read-line)  sirve  para leer y almacenar&#xa;   en  una  variable  textos largos que no contengan un&#xa;   salto de linea, sirve para obtener frases con espacios&#xa;   como lo seria:&#xa;                              &quot;Hola mundo&quot; &#xa;                &quot;En el mundo hay luz y oscuridad&quot;&#xa;&#xa;Ejemplo:&#xa;           (setq frase (read-line))"/>
                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                       <Color id="Cursor Por defecto"/>
                     </Property>
@@ -288,7 +310,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="70" y="490" width="700" height="140"/>
+                      <AbsoluteConstraints x="470" y="490" width="400" height="270"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -297,11 +319,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Sylfaen" size="24" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Comentarios"/>
+                    <Property name="text" type="java.lang.String" value="lectura y Escritura"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="390" y="40" width="150" height="30"/>
+                      <AbsoluteConstraints x="350" y="40" width="210" height="30"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -313,7 +335,7 @@
                       <Font name="Sylfaen" size="18" style="0"/>
                     </Property>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="Un  comentario   es una anotaci&#xf3;n o nota que puede &#xa;dejar  el  programador  en  el  c&#xf3;digo,  bien sea para  &#xa;recordar  una instrucci&#xf3;n o algoritmo implementado,&#xa;o  tambi&#xe9;n  sirve  para  dar a conocer puntos  claves &#xa;del  c&#xf3;digo  a programadores diferentes que quieran &#xa;hacer modificaci&#xf3;n al mismo con el fin  de  mejora o &#xa;cambio.  Como  en  todo  los  lenguajes Lisp no es la &#xa;excepci&#xf3;n,  cuenta  con dos  formas  diferentes para &#xa;realizar  comentarios, bien sea ya de una sola l&#xed;nea o&#xa;de  varias  l&#xed;neas."/>
+                    <Property name="text" type="java.lang.String" value="Lectura&#xa;La  operaci&#xf3;n  de  lectura,  significa que una variable &#xa;tomar&#xe1;  un  valor  que  ser&#xe1; ingresado por el usuario &#xa;a   trav&#xe9;s   de   un   dispositivo  externo  de  entrada, &#xa;generalmente   un   teclado.&#xa;&#xa;Escritura&#xa;La   operaci&#xf3;n   de   escritura,  a  su  vez  expresa  la &#xa;necesidad   de   visualizar   el   valor   que  tiene  una &#xa;variable  a  trav&#xe9;s  de un dispositivo de salida, ya sea &#xa;una pantalla en la mayor&#xed;a de casos, o una impresora."/>
                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                       <Color id="Cursor Por defecto"/>
                     </Property>
@@ -322,7 +344,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="70" y="130" width="390" height="270"/>
+                      <AbsoluteConstraints x="490" y="150" width="390" height="270"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -335,7 +357,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="70" y="640" width="270" height="30"/>
+                      <AbsoluteConstraints x="60" y="760" width="270" height="30"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -356,19 +378,40 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="70" y="680" width="700" height="240"/>
+                      <AbsoluteConstraints x="60" y="800" width="700" height="240"/>
                     </Constraint>
                   </Constraints>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel5">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Images/Menu Documentacion/Comentarios/comentarios.png"/>
+                      <Image iconType="3" name="/Images/Menu Documentacion/Lectura/lisp.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="490" y="120" width="330" height="320"/>
+                      <AbsoluteConstraints x="0" y="110" width="490" height="320"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+                <Component class="javax.swing.JTextArea" name="jTextArea4">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Sylfaen" size="18" style="0"/>
+                    </Property>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="text" type="java.lang.String" value="(READ)&#xa;   La funcion o palabra reservada del sistema conocida&#xa;   como  (read)  cumple  el  proposito  de  capturar las&#xa;   teclas  preciondadas  desde  un periferico de entrada &#xa;   de  texto,  como  lo  es el  teclado o dispositivos que &#xa;   controlen   el   ordenador. Generalmente utilizada&#xa;   para lectura de numeros y palabras&#xa;&#xa;Ejemplo:&#xa;           (setq palabra (read))"/>
+                    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                      <Color id="Cursor Por defecto"/>
+                    </Property>
+                    <Property name="focusable" type="boolean" value="false"/>
+                    <Property name="opaque" type="boolean" value="false"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="30" y="490" width="400" height="270"/>
                     </Constraint>
                   </Constraints>
                 </Component>

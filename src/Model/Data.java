@@ -14,11 +14,13 @@ import java.util.*;
  */
 public class Data {
     private final List<List<String>> algoritmos;
-    private final List<List<List<String>>> pasos;  
+    private final List<List<List<String>>> pasos;
+    private final List<List<List<String>>> pasos2; 
     
     public Data() {
         this.algoritmos = new ArrayList<>();
         this.pasos = new ArrayList<>();
+        this.pasos2 = new ArrayList<>();
         CreateList();
     }
     
@@ -28,6 +30,10 @@ public class Data {
             this.pasos.add(new ArrayList<>());
             this.pasos.get(i).add(new ArrayList<>());
             this.pasos.get(i).add(new ArrayList<>());
+            
+            this.pasos2.add(new ArrayList<>());
+            this.pasos2.get(i).add(new ArrayList<>());
+            this.pasos2.get(i).add(new ArrayList<>());
         }
         this.algoritmos.get(0).add("#|\nConstruir un algoritmo en Lisp que calcule\nla  suma  de  la  resta  de  (a – b)  y (c -d),\ndonde a, b, c y d son  iguales  a  3, 7, 1, 9.\n|#");
         this.algoritmos.get(0).add("definir a = 3\ndefinir b = 7\ndefinir c = 1\ndefinir d = 9\ndefinir suma = (a - b) + (c - d)\n");
@@ -582,9 +588,6 @@ public class Data {
         this.pasos.get(20).get(0).add("for");
         this.pasos.get(20).get(0).add("do");
         this.pasos.get(20).get(0).add("Actualizar");
-        this.pasos.get(20).get(0).add("for");
-        this.pasos.get(20).get(0).add("do");
-        this.pasos.get(20).get(0).add("Actualizar");
         this.pasos.get(20).get(0).add("Impresión");
         /////////////////////////////////
         this.pasos.get(20).get(1).add("(Multiplicacion_Sumas)");
@@ -594,9 +597,6 @@ public class Data {
         this.pasos.get(20).get(1).add("(print \"Ingrese el segundo numero: \")");
         this.pasos.get(20).get(1).add("(setq num2 (read))");
         this.pasos.get(20).get(1).add("(setq resultado 0)");
-        this.pasos.get(20).get(1).add("(loop for i from 1 to num2");
-        this.pasos.get(20).get(1).add("do(");
-        this.pasos.get(20).get(1).add("(set resultado (+ resultado num1))");
         this.pasos.get(20).get(1).add("(loop for i from 1 to num2");
         this.pasos.get(20).get(1).add("do(");
         this.pasos.get(20).get(1).add("(set resultado (+ resultado num1))");
@@ -970,11 +970,6 @@ public class Data {
         this.pasos.get(29).get(0).add("Condicional");
         this.pasos.get(29).get(0).add("Impresión");
         this.pasos.get(29).get(0).add("Vacio");
-        this.pasos.get(29).get(0).add("for");
-        this.pasos.get(29).get(0).add("do");
-        this.pasos.get(29).get(0).add("Condicional");
-        this.pasos.get(29).get(0).add("Impresión");
-        this.pasos.get(29).get(0).add("Vacio");
         /////////////////////////////////
         this.pasos.get(29).get(1).add("(intervalo)");
         this.pasos.get(29).get(1).add("(defun intervalo()");
@@ -984,11 +979,6 @@ public class Data {
         this.pasos.get(29).get(1).add("(setq a (read))");
         this.pasos.get(29).get(1).add("(print \"Ingrese un numero c: \")");
         this.pasos.get(29).get(1).add("(setq a (read))");
-        this.pasos.get(29).get(1).add("(loop for i from a to b");
-        this.pasos.get(29).get(1).add("do(");
-        this.pasos.get(29).get(1).add("(if (= c i)");
-        this.pasos.get(29).get(1).add("(print \"Numero existente\")");
-        this.pasos.get(29).get(1).add("(void)");
         this.pasos.get(29).get(1).add("(loop for i from a to b");
         this.pasos.get(29).get(1).add("do(");
         this.pasos.get(29).get(1).add("(if (= c i)");
@@ -1444,9 +1434,6 @@ public class Data {
         this.pasos.get(43).get(0).add("for");
         this.pasos.get(43).get(0).add("do");
         this.pasos.get(43).get(0).add("asignarcad");
-        this.pasos.get(43).get(0).add("for");
-        this.pasos.get(43).get(0).add("do");
-        this.pasos.get(43).get(0).add("asignarcad");
         this.pasos.get(43).get(0).add("Impresión");
         /////////////////////////////////
         this.pasos.get(43).get(1).add("(InviertirPalabra)");
@@ -1456,9 +1443,6 @@ public class Data {
         this.pasos.get(43).get(1).add("(setq pos (length palabra))");
         this.pasos.get(43).get(1).add("(length palabra))");
         this.pasos.get(43).get(1).add("(make-string palabra2 palabra)");
-        this.pasos.get(43).get(1).add("(loop for i from 0 to pos");
-        this.pasos.get(43).get(1).add("do(");
-        this.pasos.get(43).get(1).add("(setf palabra2 (char palabra i) ");
         this.pasos.get(43).get(1).add("(loop for i from 0 to pos");
         this.pasos.get(43).get(1).add("do(");
         this.pasos.get(43).get(1).add("(setf palabra2 (char palabra i) ");
@@ -1484,9 +1468,6 @@ public class Data {
         this.pasos.get(44).get(0).add("for");
         this.pasos.get(44).get(0).add("do");
         this.pasos.get(44).get(0).add("asignarcad");
-        this.pasos.get(44).get(0).add("for");
-        this.pasos.get(44).get(0).add("do");
-        this.pasos.get(44).get(0).add("asignarcad");
         this.pasos.get(44).get(0).add("Condicional");
         this.pasos.get(44).get(0).add("Impresión");
         this.pasos.get(44).get(0).add("Impresión");
@@ -1498,9 +1479,6 @@ public class Data {
         this.pasos.get(44).get(1).add("(setq pos (length palabra))");
         this.pasos.get(44).get(1).add("(length palabra))");
         this.pasos.get(44).get(1).add("(make-string palabra2 palabra)");
-        this.pasos.get(44).get(1).add("(loop for i from 0 to pos");
-        this.pasos.get(44).get(1).add("do(");
-        this.pasos.get(44).get(1).add("(setf palabra2 (char palabra i) ");
         this.pasos.get(44).get(1).add("(loop for i from 0 to pos");
         this.pasos.get(44).get(1).add("do(");
         this.pasos.get(44).get(1).add("(setf palabra2 (char palabra i) ");
@@ -1612,28 +1590,12 @@ public class Data {
         this.pasos.get(47).get(0).add("Impresión");
         this.pasos.get(47).get(0).add("saltolinea");
         this.pasos.get(47).get(0).add("Actualizar");
-        this.pasos.get(47).get(0).add("for");
-        this.pasos.get(47).get(0).add("for");
-        this.pasos.get(47).get(0).add("do");
-        this.pasos.get(47).get(0).add("Condicional");
-        this.pasos.get(47).get(0).add("Actualizar");
-        this.pasos.get(47).get(0).add("Impresión");
-        this.pasos.get(47).get(0).add("saltolinea");
-        this.pasos.get(47).get(0).add("Actualizar");
         /////////////////////////////////
         this.pasos.get(47).get(1).add("(LetraRepetida)");
         this.pasos.get(47).get(1).add("(defun LetraRepetida()");
         this.pasos.get(47).get(1).add("(print \"Ingrese una palabra: \")");
         this.pasos.get(47).get(1).add("(setq palabra (read))");
         this.pasos.get(47).get(1).add("(setq rep 0)");
-        this.pasos.get(47).get(1).add("(loop for i from 0 to (length palabra)");
-        this.pasos.get(47).get(1).add("do(loop for j from 0 to (length palabra)");
-        this.pasos.get(47).get(1).add("do(");
-        this.pasos.get(47).get(1).add("(if (char= (char palabra i) ");
-        this.pasos.get(47).get(1).add("(set rep (+ rep 1))");
-        this.pasos.get(47).get(1).add("do(print \"~c = ~d\" (char palabra i) rep)");
-        this.pasos.get(47).get(1).add("do(terpri)");
-        this.pasos.get(47).get(1).add("do(set rep 0)");
         this.pasos.get(47).get(1).add("(loop for i from 0 to (length palabra)");
         this.pasos.get(47).get(1).add("do(loop for j from 0 to (length palabra)");
         this.pasos.get(47).get(1).add("do(");
@@ -1991,489 +1953,707 @@ public class Data {
         this.pasos.get(59).get(1).add("(setq lista (make-list 5 (random 10)))");
         this.pasos.get(59).get(1).add("(print \"Elementos de la lista: ~d\" lista)");
         this.pasos.get(59).get(1).add("(list lista2 (vl-sort lista '<))");
-        this.pasos.get(59).get(1).add("(print \"lista ordenados: ~d\" lista2)");/*
+        this.pasos.get(59).get(1).add("(print \"lista ordenados: ~d\" lista2)");
         ////////////////   61    /////////////////
-        this.algoritmos.get(60).add("");
-        this.algoritmos.get(60).add("");
-        this.algoritmos.get(60).add("");
+        this.algoritmos.get(60).add("#|\nConstruir un algoritmo en Lisp que dado un \nvector  con solo  números,  realizar la suma \nde sus elementos \n|#");
+        this.algoritmos.get(60).add("Funcion SumarVector\n    inicializar numeros = hacer-vector  (5, aleatorio(10))\n    inicializar suma = 0\n    imprimir \"Vector: \", numeros\n    desde i = 0 hasta tamaño(numeros) hacer:\n        suma = suma + numeros[i]\n    imprimir \"Suma datos Vector: \", suma\n	\nllamar Funcion SumarVector");
+        this.algoritmos.get(60).add("(defun SumarVector()\n    (setq numeros (make-vector 5 (random 10)))\n    (setq suma 0)\n    (print \"Vector: ~d\" numeros)\n    (loop for i from 0 to (length numeros)\n        (set suma (+ suma (vector-ref numeros i)))\n    )\n    (print \"Suma datos Vector: ~d\" suma)\n)\n\n\n(SumarVector)");
         this.algoritmos.get(60).add("60");
-        this.pasos.get(60).get(0).add("");
-        this.pasos.get(60).get(0).add("");
-        this.pasos.get(60).get(0).add("");
+        this.pasos.get(60).get(0).add("Llamado");
+        this.pasos.get(60).get(0).add("Funcion");
+        this.pasos.get(60).get(0).add("Asignación");
+        this.pasos.get(60).get(0).add("Asignación");
+        this.pasos.get(60).get(0).add("Impresión");
+        this.pasos.get(60).get(0).add("for");
+        this.pasos.get(60).get(0).add("Actualizar");
+        this.pasos.get(60).get(0).add("for");
+        this.pasos.get(60).get(0).add("Actualizar");
+        this.pasos.get(60).get(0).add("for");
+        this.pasos.get(60).get(0).add("Actualizar");
+        this.pasos.get(60).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(60).get(1).add("");
-        this.pasos.get(60).get(1).add("");
-        this.pasos.get(60).get(1).add("")
+        this.pasos.get(60).get(1).add("(SumarVector)");
+        this.pasos.get(60).get(1).add("(defun SumarVector()");
+        this.pasos.get(60).get(1).add("(setq numeros (make-vector 5 (random 10)))");
+        this.pasos.get(60).get(1).add("(setq suma 0)");
+        this.pasos.get(60).get(1).add("(print \"Vector: ~d\" numeros)");
+        this.pasos.get(60).get(1).add("(loop for i from 0 to (length numeros)");
+        this.pasos.get(60).get(1).add("(set suma (+ suma (vector-ref numeros i)))");
+        this.pasos.get(60).get(1).add("(print \"Suma datos Vector: ~d\" suma)")
         ;////////////////   62    /////////////////
-        this.algoritmos.get(61).add("");
-        this.algoritmos.get(61).add("");
-        this.algoritmos.get(61).add("");
+        this.algoritmos.get(61).add("#|\nConstruir un algoritmo en Lisp que dado un \nvector, hacer un programa que  invierta sus \ndatos y devuelva el vector invertido. \n|#");
+        this.algoritmos.get(61).add("Funcion InvertirVector\n    inicializar numeros = hacer-vector  (5, aleatorio(10))\n    inicializar suma = 0\n    imprimir \"Vector: \", numeros\n    imprimir \"Vector invertido: \", invertir(numeros)\n	\nllamar Funcion InvertirVector");
+        this.algoritmos.get(61).add("(defun InvertirVector()\n    (setq numeros (make-vector 5 (random 10)))\n    (print \"Vector: ~d\" numeros)\n    (print \"Vector invertido: ~d\"(reverse numeros))\n)\n\n(InvertirVector)");
         this.algoritmos.get(61).add("61");
-        this.pasos.get(61).get(0).add("");
-        this.pasos.get(61).get(0).add("");
-        this.pasos.get(61).get(0).add("");
+        this.pasos.get(61).get(0).add("Llamado");
+        this.pasos.get(61).get(0).add("Funcion");
+        this.pasos.get(61).get(0).add("Asignación");
+        this.pasos.get(61).get(0).add("Impresión");
+        this.pasos.get(61).get(0).add("invertir");
+        this.pasos.get(61).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(61).get(1).add("");
-        this.pasos.get(61).get(1).add("");
-        this.pasos.get(61).get(1).add("")
-        ;////////////////   63    /////////////////
-        this.algoritmos.get(62).add("");
-        this.algoritmos.get(62).add("");
-        this.algoritmos.get(62).add("");
+        this.pasos.get(61).get(1).add("(InvertirVector)");
+        this.pasos.get(61).get(1).add("(defun InvertirVector()");
+        this.pasos.get(61).get(1).add("(setq numeros (make-vector 5 (random 10)))");
+        this.pasos.get(61).get(1).add("(print \"Vector: ~d\" numeros)");
+        this.pasos.get(61).get(1).add("(reverse numeros))");
+        this.pasos.get(61).get(1).add("(print \"Vector invertido: ~d\"(reverse numeros))");
+        ////////////////   63    /////////////////
+        this.algoritmos.get(62).add("#|\nConstruir un  algoritmo en Lisp que reciba \nun vector de enteros y devuelva el número \nmenor.\n|#");
+        this.algoritmos.get(62).add("Funcion Menordato\n    imprimir \"Ingrese datos para una vector: \"\n    inicializar numeros {\n        (valor por consola),\n        (valor por consola),\n        (valor por consola)\n    }\n    vector numeros2 = Ordenar(numeros)\n    imprimir \"Menor valor vector: \"\n    numeros[1]\n\nllamar Funcion Menordato");
+        this.algoritmos.get(62).add("(defun Menordato()\n    (print \"Ingrese datos para una vector: \")\n    (setq numeros \n        (vector (read) (read) (read))\n    )\n    (vector nuermos2 (vl-sort numeros '<))\n    (print \"Menor valor vector: ~d\" \n    (first nuermos2))\n)\n\n(Menordato)");
         this.algoritmos.get(62).add("62");
-        this.pasos.get(62).get(0).add("");
-        this.pasos.get(62).get(0).add("");
-        this.pasos.get(62).get(0).add("");
+        this.pasos.get(62).get(0).add("Llamado");
+        this.pasos.get(62).get(0).add("Funcion");
+        this.pasos.get(62).get(0).add("Impresión");
+        this.pasos.get(62).get(0).add("Asignación");
+        this.pasos.get(62).get(0).add("Lectura");
+        this.pasos.get(62).get(0).add("Lectura");
+        this.pasos.get(62).get(0).add("Lectura");
+        this.pasos.get(62).get(0).add("vector");
+        this.pasos.get(62).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(62).get(1).add("");
-        this.pasos.get(62).get(1).add("");
-        this.pasos.get(62).get(1).add("")
-        ;////////////////   64    /////////////////
-        this.algoritmos.get(63).add("");
-        this.algoritmos.get(63).add("");
-        this.algoritmos.get(63).add("");
+        this.pasos.get(62).get(1).add("(Menordato)");
+        this.pasos.get(62).get(1).add("(defun Menordato()");
+        this.pasos.get(62).get(1).add("(print \"Ingrese datos para una vector: \")");
+        this.pasos.get(62).get(1).add("(setq numeros ");
+        this.pasos.get(62).get(1).add("(vector (read)");
+        this.pasos.get(62).get(1).add("(vector (read) (read)");
+        this.pasos.get(62).get(1).add("(vector (read) (read) (read))");
+        this.pasos.get(62).get(1).add("(vector nuermos2 (vl-sort numeros '<))");
+        this.pasos.get(62).get(1).add("(print \"Menor valor vector: ~d\" ");
+        ////////////////   64    /////////////////
+        this.algoritmos.get(63).add("#|\nConstruir un algoritmo en Lisp que dados \ndos  vectores  con elementos ya incluidos,\ndevolver    un    tercer    vector    con   la \nconcatenación de los dos vectores dados.\n|#");
+        this.algoritmos.get(63).add("Funcion tercerVector\n    inicializar numeros = hacer-vector  (5, aleatorio(10))\n    inicializar numeros2 = hacer-vector  (5, aleatorio(10))\n    inicializar vector = numeros, numeros2\n    imprimir \"El Vector es: \", numeros3\n	\nllamar Funcion tercerVector");
+        this.algoritmos.get(63).add("(defun tercerVector()\n    (setq numeros (make-vector 5 (random 10)))\n    (setq numeros2 (make-vector 5 (random 10)))\n    (setq numeros3 (vector numeros numeros2))\n    (print \"El Vector es: ~d\" numeros3)\n)\n\n(tercerVector)");
         this.algoritmos.get(63).add("63");
-        this.pasos.get(63).get(0).add("");
-        this.pasos.get(63).get(0).add("");
-        this.pasos.get(63).get(0).add("");
+        this.pasos.get(63).get(0).add("Llamado");
+        this.pasos.get(63).get(0).add("Funcion");
+        this.pasos.get(63).get(0).add("Asignación");
+        this.pasos.get(63).get(0).add("Asignación");
+        this.pasos.get(63).get(0).add("Asignación");
+        this.pasos.get(63).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(63).get(1).add("");
-        this.pasos.get(63).get(1).add("");
-        this.pasos.get(63).get(1).add("")
-        ;////////////////   65    /////////////////
-        this.algoritmos.get(64).add("");
-        this.algoritmos.get(64).add("");
-        this.algoritmos.get(64).add("");
+        this.pasos.get(63).get(1).add("(tercerVector)");
+        this.pasos.get(63).get(1).add("(defun tercerVector()");
+        this.pasos.get(63).get(1).add("(setq numeros (make-vector 5 (random 10)))");
+        this.pasos.get(63).get(1).add("(setq numeros2 (make-vector 5 (random 10)))");
+        this.pasos.get(63).get(1).add("(setq numeros3 (vector numeros numeros2))");
+        this.pasos.get(63).get(1).add("(print \"El Vector es: ~d\" numeros3)");
+        ////////////////   65    /////////////////
+        this.algoritmos.get(64).add("#|\nConstruir un algoritmo en Lisp  que dado un\nvector con elementos ya incluidos, ordenarlo\nde forma ascendentemente.\n|#");
+        this.algoritmos.get(64).add("Funcion OrdenarVector\n    inicializar numeros = hacer-vector  (7, 5, 13, 1, 8)\n    vector numeros2 = Ordenar(numeros)\n    imprimir \"Vector ordenado: \"\n    nuermos2\n\nllamar Funcion OrdenarVector");
+        this.algoritmos.get(64).add("(defun OrdenarVector()\n    (setq numeros (make-vector  (7 5 13 1 8)))\n    (vector nuermos2 (vl-sort nuermos '<))\n    (print \"Vector ordenado: ~d\" \n    (nuermos2))\n)\n\n(OrdenarVector)");
         this.algoritmos.get(64).add("64");
-        this.pasos.get(64).get(0).add("");
-        this.pasos.get(64).get(0).add("");
-        this.pasos.get(64).get(0).add("");
+        this.pasos.get(64).get(0).add("Llamado");
+        this.pasos.get(64).get(0).add("Funcion");
+        this.pasos.get(64).get(0).add("Asignación");
+        this.pasos.get(64).get(0).add("vector");
+        this.pasos.get(64).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(64).get(1).add("");
-        this.pasos.get(64).get(1).add("");
-        this.pasos.get(64).get(1).add("")
-        ;////////////////   66    /////////////////
-        this.algoritmos.get(65).add("");
-        this.algoritmos.get(65).add("");
-        this.algoritmos.get(65).add("");
+        this.pasos.get(64).get(1).add("(OrdenarVector)");
+        this.pasos.get(64).get(1).add("(defun OrdenarVector()");
+        this.pasos.get(64).get(1).add("(setq numeros (make-vector  (7 5 13 1 8)))");
+        this.pasos.get(64).get(1).add("(vector nuermos2 (vl-sort nuermos '<))");
+        this.pasos.get(64).get(1).add("(print \"Vector ordenado: ~d\" ");
+        ////////////////   66    /////////////////
+        this.algoritmos.get(65).add("#|\nConstruir un algoritmo en Lisp que dado un \nvector  con  elementos ya incluidos, indique \nsi esta ordenado de forma ascendentemente.\n|#");
+        this.algoritmos.get(65).add("Funcion vecotrOrdenado\n    inicializar numeros = hacer-vector  (5, 1, 0, 9, 8)\n    vector numeros2 = Ordenar(numeros)\n    si (numeros = numeros2)\n        imprimir \"Vector ordenado ascendentemente\"\n    sino:\n        imprimir \"Vector no ordenado ascendentemente\"\n\nllamar Funcion vecotrOrdenado");
+        this.algoritmos.get(65).add("(defun vecotrOrdenado()\n    (setq numeros (make-vector  (5 1 0 9 8)))\n    (vector nuermos2 (vl-sort nuermos '<))\n    (if (= nuermos numeros2)\n       (print \"Vector ordenado ascendentemente\")\n       (print \"Vector mo ordenado ascendentemente\")\n    )\n    \n)\n\n(vecotrOrdenado)");
         this.algoritmos.get(65).add("65");
-        this.pasos.get(65).get(0).add("");
-        this.pasos.get(65).get(0).add("");
-        this.pasos.get(65).get(0).add("");
+        this.pasos.get(65).get(0).add("Llamado");
+        this.pasos.get(65).get(0).add("Funcion");
+        this.pasos.get(65).get(0).add("Asignación");
+        this.pasos.get(65).get(0).add("vector");
+        this.pasos.get(65).get(0).add("Condicional");
+        this.pasos.get(65).get(0).add("Impresión");
+        this.pasos.get(65).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(65).get(1).add("");
-        this.pasos.get(65).get(1).add("");
-        this.pasos.get(65).get(1).add("")
-        ;////////////////   67    /////////////////
-        this.algoritmos.get(66).add("");
-        this.algoritmos.get(66).add("");
-        this.algoritmos.get(66).add("");
+        this.pasos.get(65).get(1).add("(vecotrOrdenado)");
+        this.pasos.get(65).get(1).add("(defun vecotrOrdenado()");
+        this.pasos.get(65).get(1).add("(setq numeros (make-vector  (5 1 0 9 8)))");
+        this.pasos.get(65).get(1).add("(vector nuermos2 (vl-sort nuermos '<))");
+        this.pasos.get(65).get(1).add("(if (= nuermos numeros2)");
+        this.pasos.get(65).get(1).add("(print \"Vector ordenado ascendentemente\")");
+        this.pasos.get(65).get(1).add("(print \"Vector mo ordenado ascendentemente\")");
+        ////////////////   67    /////////////////
+        this.algoritmos.get(66).add("#|\nConstruir un algoritmo en Lisp que dado un \nvector     con     elementos     ya    incluidos,\nordenarlo   de   forma   descendente.\n|#");
+        this.algoritmos.get(66).add("Funcion OrdenarDescendente\n    inicializar numeros = hacer-vector  (7, 5, 13, 1, 8)\n    vector numeros2 = OrdenarMayor(numeros)\n    imprimir \"Vector ordenado: \"\n    nuermos2\n\nllamar Funcion OrdenarDescendente");
+        this.algoritmos.get(66).add("(defun OrdenarDescendente()\n    (setq numeros (make-vector  (7 5 13 1 8)))\n    (vector nuermos2 (vl-sort nuermos '>))\n    (print \"Vector ordenado descendentemente: ~d\" \n    (nuermos2))\n)\n\n(OrdenarDescendente)");
         this.algoritmos.get(66).add("66");
-        this.pasos.get(66).get(0).add("");
-        this.pasos.get(66).get(0).add("");
-        this.pasos.get(66).get(0).add("");
+        this.pasos.get(66).get(0).add("Llamado");
+        this.pasos.get(66).get(0).add("Funcion");
+        this.pasos.get(66).get(0).add("Asignación");
+        this.pasos.get(66).get(0).add("vector");
+        this.pasos.get(66).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(66).get(1).add("");
-        this.pasos.get(66).get(1).add("");
-        this.pasos.get(66).get(1).add("")
-        ;////////////////   68    /////////////////
-        this.algoritmos.get(67).add("");
-        this.algoritmos.get(67).add("");
-        this.algoritmos.get(67).add("");
+        this.pasos.get(66).get(1).add("(OrdenarDescendente)");
+        this.pasos.get(66).get(1).add("(defun OrdenarDescendente()");
+        this.pasos.get(66).get(1).add("(setq numeros (make-vector  (7 5 13 1 8)))");
+        this.pasos.get(66).get(1).add("(vector nuermos2 (vl-sort nuermos '>))");
+        this.pasos.get(66).get(1).add("(print \"Vector ordenado descendentemente: ~d\" ");
+        ////////////////   68    /////////////////
+        this.algoritmos.get(67).add("#|\nConstruir un algoritmo en Lisp que llene un \nvector con números pares desde 1 hasta n.  \n#(2 4 6 8……). \n|#");
+        this.algoritmos.get(67).add("Funcion vectorPares\n    imprimir \"Ingrese un tope: \"\n    inicializar tope = (valor por consola)\n    inicializar numeros = hacer-vector (tope, 0)\n    inicializar datos = 0\n    desde i = 0 hasta tope hacer:\n        datos = datos + 2\n        numeros[i] = datos\n    imprimir \"Vector: \", numeros\n    \nllamar Funcion vectorPares");
+        this.algoritmos.get(67).add("(defun vectorPares()\n    (print \"Ingrese un tope: \")\n    (setq tope (read))\n    (setq nuermos (make-vector tope 0))\n    (setq datos 0)\n    (loop for i from 0 to tope\n        do(set datos (+ datos 2))\n        do(vector-set nuermos i datos)\n    )\n    (print \"Vector: ~d\" (nuermos2))\n)\n\n(vectorPares)");
         this.algoritmos.get(67).add("67");
-        this.pasos.get(67).get(0).add("");
-        this.pasos.get(67).get(0).add("");
-        this.pasos.get(67).get(0).add("");
+        this.pasos.get(67).get(0).add("Llamado");
+        this.pasos.get(67).get(0).add("Funcion");
+        this.pasos.get(67).get(0).add("Impresión");
+        this.pasos.get(67).get(0).add("Lectura");
+        this.pasos.get(67).get(0).add("Asignación");
+        this.pasos.get(67).get(0).add("Asignación");
+        this.pasos.get(67).get(0).add("for");
+        this.pasos.get(67).get(0).add("Actualizar");
+        this.pasos.get(67).get(0).add("Actualizarvector");
+        this.pasos.get(67).get(0).add("for");
+        this.pasos.get(67).get(0).add("Actualizar");
+        this.pasos.get(67).get(0).add("Actualizarvector");
+        this.pasos.get(67).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(67).get(1).add("");
-        this.pasos.get(67).get(1).add("");
-        this.pasos.get(67).get(1).add("")
+        this.pasos.get(67).get(1).add("(vectorPares)");
+        this.pasos.get(67).get(1).add("(defun vectorPares()");
+        this.pasos.get(67).get(1).add("(print \"Ingrese un tope: \")");
+        this.pasos.get(67).get(1).add("(setq tope (read))");
+        this.pasos.get(67).get(1).add("(setq nuermos (make-vector tope 0))");
+        this.pasos.get(67).get(1).add("(setq datos 0)");
+        this.pasos.get(67).get(1).add("(loop for i from 0 to tope");
+        this.pasos.get(67).get(1).add("do(set datos (+ datos 2))");
+        this.pasos.get(67).get(1).add("do(vector-set nuermos i datos)");
+        this.pasos.get(67).get(1).add("(loop for i from 0 to tope");
+        this.pasos.get(67).get(1).add("do(set datos (+ datos 2))");
+        this.pasos.get(67).get(1).add("do(vector-set nuermos i datos)");
+        this.pasos.get(67).get(1).add("(print \"Vector: ~d\" (nuermos2))")
         ;////////////////   69    /////////////////
-        this.algoritmos.get(68).add("");
-        this.algoritmos.get(68).add("");
-        this.algoritmos.get(68).add("");
+        this.algoritmos.get(68).add("#|\nConstruir un algoritmo en Lisp que dado 4 \nnúmeros  ingresados,  indicar  cuantos son \nmayores  a  cero  y cuantos son menores a \ncero. \n|#");
+        this.algoritmos.get(68).add("Funcion Menordato\n    imprimir \"Ingrese datos para una vector: \"\n    inicializar numeros {\n        (valor por consola),\n        (valor por consola),\n        (valor por consola),\n        (valor por consola)\n    }\n    inicializar contador = 0\n    desde i = 0 hasta tamaño(numero) hacer:\n        si (nuermos[i] > 0)\n            contador = contador + 1\n    imprimir \"Numeros mayores a cero: \", contador\n\nllamar Funcion Menordato");
+        this.algoritmos.get(68).add("(defun Menordato()\n    (print \"Ingrese datos para una vector: \")\n    (setq numeros \n        (vector (read) (read) (read) (read))\n    )\n    (setq contador 0)\n    (loop for i from 0 to (length nuermos)\n        do(if (> (vector-ref numeros2 i) 0)\n             (set contador (+ contador 1))\n        )\n    )\n    (print \"Numeros mayores a cero: ~d\" contador)\n)\n\n(Menordato)");
         this.algoritmos.get(68).add("68");
-        this.pasos.get(68).get(0).add("");
-        this.pasos.get(68).get(0).add("");
-        this.pasos.get(68).get(0).add("");
+        this.pasos.get(68).get(0).add("Llamado");
+        this.pasos.get(68).get(0).add("Funcion");
+        this.pasos.get(68).get(0).add("Impresión");
+        this.pasos.get(68).get(0).add("Asignación");
+        this.pasos.get(68).get(0).add("Lectura");
+        this.pasos.get(68).get(0).add("Lectura");
+        this.pasos.get(68).get(0).add("Lectura");
+        this.pasos.get(68).get(0).add("Lectura");
+        this.pasos.get(68).get(0).add("Asignación");
+        this.pasos.get(68).get(0).add("for");
+        this.pasos.get(68).get(0).add("Condicional");
+        this.pasos.get(68).get(0).add("Actualizar");
+        this.pasos.get(68).get(0).add("for");
+        this.pasos.get(68).get(0).add("Condicional");
+        this.pasos.get(68).get(0).add("Actualizar");
+        this.pasos.get(68).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(68).get(1).add("");
-        this.pasos.get(68).get(1).add("");
-        this.pasos.get(68).get(1).add("")
-        ;////////////////   70    /////////////////
-        this.algoritmos.get(69).add("");
-        this.algoritmos.get(69).add("");
-        this.algoritmos.get(69).add("");
+        this.pasos.get(68).get(1).add("(Menordato)");
+        this.pasos.get(68).get(1).add("(defun Menordato()");
+        this.pasos.get(68).get(1).add("(print \"Ingrese datos para una vector: \")");
+        this.pasos.get(68).get(1).add("(setq numeros ");
+        this.pasos.get(68).get(1).add("(vector (read)");
+        this.pasos.get(68).get(1).add("(vector (read) (read)");
+        this.pasos.get(68).get(1).add(" (vector (read) (read) (read)");
+        this.pasos.get(68).get(1).add("(vector (read) (read) (read) (read))");
+        this.pasos.get(68).get(1).add("(setq contador 0)");
+        this.pasos.get(68).get(1).add("(loop for i from 0 to (length nuermos)");
+        this.pasos.get(68).get(1).add("do(if (> (vector-ref numeros2 i) 0)");
+        this.pasos.get(68).get(1).add("(set contador (+ contador 1))");
+        this.pasos.get(68).get(1).add("(loop for i from 0 to (length nuermos)");
+        this.pasos.get(68).get(1).add("do(if (> (vector-ref numeros2 i) 0)");
+        this.pasos.get(68).get(1).add("(set contador (+ contador 1))");
+        this.pasos.get(68).get(1).add("(print \"Numeros mayores a cero: ~d\" contador)");
+        ////////////////   70    /////////////////
+        this.algoritmos.get(69).add("#|\nConstruir  un  algoritmo  e n Lisp que nos \npermita  introducir un número por teclado\ny si es par lo ingrese al vector par si impar \nlo ingrese al vector impar. \n|#");
+        this.algoritmos.get(69).add("Funcion ParImpar\n    imprimir \"Ingrese un nuemro: \"\n    inicializar numero = (valor por consola)\n    inicializar pares = hacer-vector 1\n    inicializar impares = hacer-vector 1\n    si(modulo(numero, 2) = 0)\n        pares.agregar(numero) \n        imprimir \"Agregado a vector par\"\n    sino\n        impares.agregar(numero)\n        imprimir \"Agregado a vector impar\"\n    \n    \nllamar Funcion ParImpar");
+        this.algoritmos.get(69).add("(defun ParImpar()\n    (print \"Ingrese un nuemro: \")\n    (setq nuemro (read))\n    (setq pares (make-vector 1))\n    (setq impares (make-vector 1))\n    (if (= remainder(nuemro 2) 0)\n        (begin\n            (append pares nuemro)\n            (print \"Agregado a vector par\")\n        )\n        (begin\n            (append impares nuemro)\n            (print \"Agregado a vector impar\")\n        )\n    )\n)\n\n(ParImpar)");
         this.algoritmos.get(69).add("69");
-        this.pasos.get(69).get(0).add("");
-        this.pasos.get(69).get(0).add("");
-        this.pasos.get(69).get(0).add("");
+        this.pasos.get(69).get(0).add("Llamado");
+        this.pasos.get(69).get(0).add("Funcion");
+        this.pasos.get(69).get(0).add("Impresión");
+        this.pasos.get(69).get(0).add("Lectura");
+        this.pasos.get(69).get(0).add("Asignación");
+        this.pasos.get(69).get(0).add("Asignación");
+        this.pasos.get(69).get(0).add("Asignación");
+        this.pasos.get(69).get(0).add("Condicional");
+        this.pasos.get(69).get(0).add("agrupacion");
+        this.pasos.get(69).get(0).add("añadir");
+        this.pasos.get(69).get(0).add("Impresión");
+        this.pasos.get(69).get(0).add("agrupacion");
+        this.pasos.get(69).get(0).add("añadir");
+        this.pasos.get(69).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(69).get(1).add("");
-        this.pasos.get(69).get(1).add("");
-        this.pasos.get(69).get(1).add("")
-        ;////////////////   71    /////////////////
-        this.algoritmos.get(70).add("");
-        this.algoritmos.get(70).add("");
-        this.algoritmos.get(70).add("");
+        this.pasos.get(69).get(1).add("(ParImpar)");
+        this.pasos.get(69).get(1).add("(defun ParImpar()");
+        this.pasos.get(69).get(1).add("(print \"Ingrese un nuemro: \")");
+        this.pasos.get(69).get(1).add("(setq nuemro (read))");
+        this.pasos.get(69).get(1).add("(setq pares (make-vector 1))");
+        this.pasos.get(69).get(1).add("(setq impares (make-vector 1))");
+        this.pasos.get(69).get(1).add("(if (= remainder(nuemro 2) 0)");
+        this.pasos.get(69).get(1).add("(begin");
+        this.pasos.get(69).get(1).add("(append pares nuemro)");
+        this.pasos.get(69).get(1).add("(print \"Agregado a vector par\")");
+        this.pasos.get(69).get(1).add("(begin");
+        this.pasos.get(69).get(1).add("(append impares nuemro)");
+        this.pasos.get(69).get(1).add("(print \"Agregado a vector impar\")");
+        
+        
+        
+        
+        
+        
+        
+        ////////////////   71    /////////////////
+        this.algoritmos.get(70).add("#|\nConstruir un algoritmo en Lisp que cree en \nun  vector  los números primos entre el 1 y \nel 20.\n|#");
+        this.algoritmos.get(70).add("Funcion NumerosPrimos\n    inicializar nuemros = hacer-vector(20)\n    inicializar count = 0\n    desde i = 1 hasta 20 hacer:\n        desde j = 1 hasta 20 hacer:\n            si (modulo(i, j) != 0)\n                count = count + 1\n                numeros[count] = i\n    imprimir \"Vector primos: \", nuemros\n\nllamar Funcion NumerosPrimos");
+        this.algoritmos.get(70).add("(defun NumerosPrimos()\n    (setq nuemros (make-vector 20))\n    (setq count 0)\n    (loop for i from 1 to 20\n        do(loop for j from 1 to 20\n            do(if (!= remainder(i j) 0)\n                (begin\n                    (set count (+ count 1))\n                    (vector-set nuemros count i)\n                )\n            )\n        )\n    )\n    (print \"Vector primos: ~d\" nuemros)\n)\n\n(NumerosPrimos)");
         this.algoritmos.get(70).add("70");
-        this.pasos.get(70).get(0).add("");
-        this.pasos.get(70).get(0).add("");
-        this.pasos.get(70).get(0).add("");
+        this.pasos.get(70).get(0).add("Llamado");
+        this.pasos.get(70).get(0).add("Funcion");
+        this.pasos.get(70).get(0).add("Asignación");
+        this.pasos.get(70).get(0).add("Asignación");
+        this.pasos.get(70).get(0).add("for");
+        this.pasos.get(70).get(0).add("for");
+        this.pasos.get(70).get(0).add("Condicional");
+        this.pasos.get(70).get(0).add("agrupacion");
+        this.pasos.get(70).get(0).add("Actualizar");
+        this.pasos.get(70).get(0).add("Actualizarvector");
+        this.pasos.get(70).get(0).add("for");
+        this.pasos.get(70).get(0).add("for");
+        this.pasos.get(70).get(0).add("Condicional");
+        this.pasos.get(70).get(0).add("agrupacion");
+        this.pasos.get(70).get(0).add("Actualizar");
+        this.pasos.get(70).get(0).add("Actualizarvector");
+        this.pasos.get(70).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(70).get(1).add("");
-        this.pasos.get(70).get(1).add("");
-        this.pasos.get(70).get(1).add("")
+        this.pasos.get(70).get(1).add("(NumerosPrimos)");
+        this.pasos.get(70).get(1).add("(defun NumerosPrimos()");
+        this.pasos.get(70).get(1).add("(setq nuemros (make-vector 20))");
+        this.pasos.get(70).get(1).add("(setq count 0)");
+        this.pasos.get(70).get(1).add("(loop for i from 1 to 20");
+        this.pasos.get(70).get(1).add("do(loop for j from 1 to 20");
+        this.pasos.get(70).get(1).add("do(if (!= remainder(i j) 0)");
+        this.pasos.get(70).get(1).add("(begin");
+        this.pasos.get(70).get(1).add("(set count (+ count 1))");
+        this.pasos.get(70).get(1).add("(vector-set nuemros count i)");
+        this.pasos.get(70).get(1).add("(loop for i from 1 to 20");
+        this.pasos.get(70).get(1).add("do(loop for j from 1 to 20");
+        this.pasos.get(70).get(1).add("do(if (!= remainder(i j) 0)");
+        this.pasos.get(70).get(1).add("(begin");
+        this.pasos.get(70).get(1).add("(set count (+ count 1))");
+        this.pasos.get(70).get(1).add("(vector-set nuemros count i)");
+        this.pasos.get(70).get(1).add("(print \"Vector primos: ~d\" nuemros)")
         ;////////////////   72    /////////////////
-        this.algoritmos.get(71).add("");
-        this.algoritmos.get(71).add("");
-        this.algoritmos.get(71).add("");
+        this.algoritmos.get(71).add("#|\nConstruir un algoritmo en Lisp que ingrese \nen  un  vector  los  números del 1 al 8 y los \neleve al cuadrado en otro vector. \n|#");
+        this.algoritmos.get(71).add("Funcion vectorCuadrado\n    inicializar numeros = hacer-vector(1, 2, 3, 4, 5, 6, 7, 8)\n    inicializar cuadrado = hacer-vector(8)\n    inicializar count = 0\n    desde i = 1 hasta 8 hacer:\n        cuadrado[i] = Exponente(numeros[i], 2)\n    imprimir \"Vector al cuadrado: \", cuadrado\n\nllamar Funcion vectorCuadrado");
+        this.algoritmos.get(71).add("(defun vectorCuadrado()\n    (setq nuemros \n       (make-vector (1 2 3 4 5 6 7 8))\n    )\n    (setq cuadrado (make-vector 8))\n    (setq count 0)\n    (loop for i from 1 to 8\n        do(vector-set cuadrado i \n            (expt (vector-ref numeros i) 2)\n        )\n    )\n    (print \"Vector al cuadrado: ~d\" cuadrado)\n)\n\n(vectorCuadrado)");
         this.algoritmos.get(71).add("71");
-        this.pasos.get(71).get(0).add("");
-        this.pasos.get(71).get(0).add("");
-        this.pasos.get(71).get(0).add("");
+        this.pasos.get(71).get(0).add("Llamado");
+        this.pasos.get(71).get(0).add("Funcion");
+        this.pasos.get(71).get(0).add("Asignación");
+        this.pasos.get(71).get(0).add("hacervector");
+        this.pasos.get(71).get(0).add("Asignación");
+        this.pasos.get(71).get(0).add("Asignación");
+        this.pasos.get(71).get(0).add("for");
+        this.pasos.get(71).get(0).add("Actualizarvector");
+        this.pasos.get(71).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(71).get(1).add("");
-        this.pasos.get(71).get(1).add("");
-        this.pasos.get(71).get(1).add("")
-        ;////////////////   73    /////////////////
-        this.algoritmos.get(72).add("");
-        this.algoritmos.get(72).add("");
-        this.algoritmos.get(72).add("");
+        this.pasos.get(71).get(1).add("(vectorCuadrado)");
+        this.pasos.get(71).get(1).add("(defun vectorCuadrado()");
+        this.pasos.get(71).get(1).add("(setq nuemros ");
+        this.pasos.get(71).get(1).add("(make-vector (1 2 3 4 5 6 7 8))");
+        this.pasos.get(71).get(1).add("(setq count 0)");
+        this.pasos.get(71).get(1).add("(loop for i from 1 to 8");
+        this.pasos.get(71).get(1).add("do(vector-set cuadrado i ");
+        this.pasos.get(71).get(1).add("(print \"Vector al cuadrado: ~d\" cuadrado)");
+        ////////////////   73    /////////////////
+        this.algoritmos.get(72).add("#|\nConstruir un algoritmo en Lisp que imprima \nlos  números  del  10  al 0 y almacenarlos en \nun vector.\n|#");
+        this.algoritmos.get(72).add("Funcion NumerosDecrecientes\n    inicializar numeros = hacer-vector(10)\n    inicializar count = 10\n    desde i = 0 hasta 10 hacer:\n        imprimir count\n        numeros[i] = count\n        count = count - 1\n\nllamar Funcion NumerosDecrecientes");
+        this.algoritmos.get(72).add("(defun NumerosDecrecientes()\n    (setq nuemros (make-vector 10))\n    (setq count 0)\n    (loop for i from 1 to 10\n        do(print count)\n        do(vector-set nuemros i count)\n        do(set count (- count 1))\n    )\n)\n\n(NumerosDecrecientes)");
         this.algoritmos.get(72).add("72");
-        this.pasos.get(72).get(0).add("");
-        this.pasos.get(72).get(0).add("");
-        this.pasos.get(72).get(0).add("");
+        this.pasos.get(72).get(0).add("Llamado");
+        this.pasos.get(72).get(0).add("Funcion");
+        this.pasos.get(72).get(0).add("Asignación");
+        this.pasos.get(72).get(0).add("Asignación");
+        this.pasos.get(72).get(0).add("for");
+        this.pasos.get(72).get(0).add("Impresión");
+        this.pasos.get(72).get(0).add("Actualizarvector");
+        this.pasos.get(72).get(0).add("Actualizar");
         /////////////////////////////////
-        this.pasos.get(72).get(1).add("");
-        this.pasos.get(72).get(1).add("");
-        this.pasos.get(72).get(1).add("")
-        ;////////////////   74    /////////////////
-        this.algoritmos.get(73).add("");
-        this.algoritmos.get(73).add("");
-        this.algoritmos.get(73).add("");
+        this.pasos.get(72).get(1).add("(NumerosDecrecientes)");
+        this.pasos.get(72).get(1).add("(defun NumerosDecrecientes()");
+        this.pasos.get(72).get(1).add("(setq nuemros (make-vector 10))");
+        this.pasos.get(72).get(1).add("(setq count 0)");
+        this.pasos.get(72).get(1).add("(loop for i from 1 to 10");
+        this.pasos.get(72).get(1).add("do(print count)");
+        this.pasos.get(72).get(1).add("do(vector-set nuemros i count)");
+        this.pasos.get(72).get(1).add("do(set count (- count 1))");
+        ////////////////   74    /////////////////
+        this.algoritmos.get(73).add("#|\nConstruir un algoritmo en Lisp que imprima \ny  sume  la  serie  de  números 3,6,9,12,15...\nen un vector.\n|#");
+        this.algoritmos.get(73).add("Funcion SerieTres\n    inicializar numeros = hacer-vector(20)\n    inicializar count = 3\n    desde i = 0 hasta 20 hacer:\n        imprimir count\n        numeros[i] = count\n        count = count + 3\n\nllamar Funcion SerieTres");
+        this.algoritmos.get(73).add("(defun SerieTres()\n    (setq nuemros (make-vector 20))\n    (setq count 3)\n    (loop for i from 1 to 20\n        do(print count)\n        do(vector-set nuemros i count)\n        do(set count (+ count 3))\n    )\n)\n\n(SerieTres)");
         this.algoritmos.get(73).add("73");
-        this.pasos.get(73).get(0).add("");
-        this.pasos.get(73).get(0).add("");
-        this.pasos.get(73).get(0).add("");
+        this.pasos.get(73).get(0).add("Llamado");
+        this.pasos.get(73).get(0).add("Funcion");
+        this.pasos.get(73).get(0).add("Asignación");
+        this.pasos.get(73).get(0).add("Asignación");
+        this.pasos.get(73).get(0).add("for");
+        this.pasos.get(73).get(0).add("Impresión");
+        this.pasos.get(73).get(0).add("Actualizarvector");
+        this.pasos.get(73).get(0).add("Actualizar");
         /////////////////////////////////
-        this.pasos.get(73).get(1).add("");
-        this.pasos.get(73).get(1).add("");
-        this.pasos.get(73).get(1).add("")
-        ;////////////////   75    /////////////////
-        this.algoritmos.get(74).add("");
-        this.algoritmos.get(74).add("");
-        this.algoritmos.get(74).add("");
+        this.pasos.get(73).get(1).add("(defun SerieTres()");
+        this.pasos.get(73).get(1).add("(setq nuemros (make-vector 20))");
+        this.pasos.get(73).get(1).add("(setq count 3)");
+        this.pasos.get(73).get(1).add("(loop for i from 1 to 20");
+        this.pasos.get(73).get(1).add("do(print count)");
+        this.pasos.get(73).get(1).add("do(vector-set nuemros i count)");
+        this.pasos.get(73).get(1).add("do(set count (+ count 3))");
+        this.pasos.get(73).get(1).add("(SerieTres)");
+        ////////////////   75    /////////////////
+        this.algoritmos.get(74).add("#|\nConstruir un algoritmo en Lisp que almacene\nlos múltiplos de 2 y de 3 comprendidos entre\n0 y 20 en dos vectores. \n|#");
+        this.algoritmos.get(74).add("Funcion Multiplos\n    inicializar numeros1 = hacer-vector(10)\n    inicializar numeros2 = hacer-vector(10)\n    inicializar count = 0\n    inicializar count2 = 0\n    desde i = 0 hasta 20 hacer:\n        si (modulo(2, i) = 0)\n            numeros[i] = i\n            count = count + 1\n        si (modulo(3, i) = 0)\n            numeros1[count2] = i\n            count2 = count2 + 1\n    imprimir \"Los multiplos del 2 son: \", numeros1\n    imprimir \"Los multiplos del 3 son: \", numeros2\n\nllamar Funcion Multiplos");
+        this.algoritmos.get(74).add("(defun Multiplos()\n    (setq nuemros1 (make-vector 10))\n    (setq nuemros2 (make-vector 10))\n    (setq count 0)\n    (setq count2 0)\n    (loop for i from 1 to 20\n        do(if (= remainder(2 i) 0)\n            (begin\n                (vector-set nuemros1 count i)\n                (set count (+ count 1))\n            ) \n        )\n        do(if (= remainder(3 i) 0)\n            (begin\n                (vector-set nuemros2 count i)\n                (set count (+ count2 1))\n            ) \n        )\n    )\n    (print \"Los multiplos del 2 son: ~d\" numeros1)\n    (print \"Los multiplos del 3 son: ~d\" numeros2)\n)\n\n(Multiplos)");
         this.algoritmos.get(74).add("74");
-        this.pasos.get(74).get(0).add("");
-        this.pasos.get(74).get(0).add("");
-        this.pasos.get(74).get(0).add("");
+        this.pasos.get(74).get(0).add("Llamado");
+        this.pasos.get(74).get(0).add("Funcion");
+        this.pasos.get(74).get(0).add("Asignación");
+        this.pasos.get(74).get(0).add("Asignación");
+        this.pasos.get(74).get(0).add("Asignación");
+        this.pasos.get(74).get(0).add("Asignación");
+        this.pasos.get(74).get(0).add("for");
+        this.pasos.get(74).get(0).add("Condicional");
+        this.pasos.get(74).get(0).add("agrupacion");
+        this.pasos.get(74).get(0).add("Actualizarvector");
+        this.pasos.get(74).get(0).add("Actualizar");
+        this.pasos.get(74).get(0).add("Condicional");
+        this.pasos.get(74).get(0).add("agrupacion");
+        this.pasos.get(74).get(0).add("Actualizarvector");
+        this.pasos.get(74).get(0).add("Actualizar");
+        this.pasos.get(74).get(0).add("Impresión");
+        this.pasos.get(74).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(74).get(1).add("");
-        this.pasos.get(74).get(1).add("");
-        this.pasos.get(74).get(1).add("");
+        this.pasos.get(74).get(1).add("(Multiplos)");
+        this.pasos.get(74).get(1).add("(defun Multiplos()");
+        this.pasos.get(74).get(1).add("(setq nuemros1 (make-vector 10))");
+        this.pasos.get(74).get(1).add("(setq nuemros2 (make-vector 10))");
+        this.pasos.get(74).get(1).add("(setq count 0)");
+        this.pasos.get(74).get(1).add("(setq count2 0)");
+        this.pasos.get(74).get(1).add("(loop for i from 1 to 20");
+        this.pasos.get(74).get(1).add("do(if (= remainder(2 i) 0)");
+        this.pasos.get(74).get(1).add("(begin");
+        this.pasos.get(74).get(1).add("(vector-set nuemros1 count i)");
+        this.pasos.get(74).get(1).add("(set count (+ count 1))");
+        this.pasos.get(74).get(1).add("do(if (= remainder(3 i) 0)");
+        this.pasos.get(74).get(1).add("(begin");
+        this.pasos.get(74).get(1).add("(vector-set nuemros2 count i)");
+        this.pasos.get(74).get(1).add("(set count (+ count2 1))");
+        this.pasos.get(74).get(1).add("(print \"Los multiplos del 2 son: ~d\" numeros1)");
+        this.pasos.get(74).get(1).add("(print \"Los multiplos del 3 son: ~d\" numeros2)");
+        
         
         
         ////////////////   76    /////////////////
-        this.algoritmos.get(75).add("");
-        this.algoritmos.get(75).add("");
-        this.algoritmos.get(75).add("");
+        this.algoritmos.get(75).add("#|\nConstruir un algoritmo en Lisp que almacene\nla seria de fibonacci en un vector. \n|#");
+        this.algoritmos.get(75).add("Funcion FibonacciVector\n    inicializar numeros = hacer-vector 1 (0)\n    inicializar n1 = 0\n    inicializar n2 = 1\n    inicializar n3 = 0\n    agregar(nuemro, n2)\n    desde i = 0 hasta 10 hacer:\n           n3 = n1 + n2\n           agregar(nuemro, n3)\n           imprimir n3\n           n1 = n2\n           n2 = n3\n    imprimir \"El vector es: \", nuemros\n    \nllamar Funcion FibonacciVector");
+        this.algoritmos.get(75).add("(defun FibonacciVector()\n    (setq nuemros (make-vector 1 (0)))\n    (setq n1 0)\n    (setq n2 1)\n    (setq n3 0)\n    (append numeros n2)\n    (println n2)\n    (loop for i from 0 to 10\n        do(set n3 (+ n1 n2))\n        do(append numeros n3)\n        do(set n1 n2)\n        do(set n2 n3)\n	)\n    (print \"El vector es: ~d\" nuemros)\n)\n\n(FibonacciVector)");
         this.algoritmos.get(75).add("75");
-        this.pasos.get(75).get(0).add("");
-        this.pasos.get(75).get(0).add("");
-        this.pasos.get(75).get(0).add("");
+        this.pasos2.get(1).get(0).add("Llamado");
+        this.pasos2.get(1).get(1).add("mundo");
+        /*this.pasos2.get(1).get(0).add("");
+        this.pasos2.get(1).get(0).add("");
+        this.pasos2.get(1).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(75).get(1).add("");
-        this.pasos.get(75).get(1).add("");
-        this.pasos.get(75).get(1).add("")
+        this.pasos2.get(1).get(1).add("");
+        this.pasos2.get(1).get(1).add("");
+        this.pasos2.get(1).get(1).add("")
         ;////////////////   77    /////////////////
-        this.algoritmos.get(76).add("");
-        this.algoritmos.get(76).add("");
-        this.algoritmos.get(76).add("");
+        this.algoritmos.get(76).add("#|\nConstruir un algoritmo en Lisp que sume\ntodos  los  números primos  de un vector\npreviamente  llenado  con   numeros   del \n1 al 10.\n|#");
+        this.algoritmos.get(76).add("Funcion SumaPrimosVector\n    inicializar nuemros = hacer-vector(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)\n    inicializar sum = 0\n    desde i = 1 hasta 10 hacer:\n        desde j = 1 hasta 10 hacer:\n            si (modulo(nuemros[i], j) != 0)\n                sum = sum + nuemros[i]\n    imprimir \"Suma primos: \", sum\n\nllamar Funcion SumaPrimosVector");
+        this.algoritmos.get(76).add("(defun SumaPrimosVector()\n (setq nuemros \n    (1 2 3 4 5 6 7 8 9 10)\n  )\n  (setq sum 0)\n  (loop for i from 1 to 10\n    do(loop for j from 1 to 10\n      do(if(!= remainder((vector-ref nuemros i)j)0)\n          (set sum (+ sum (vector-ref nuemros i)))\n        )\n     )\n   )\n   (print \"Suma primos: ~d\" sum)\n)\n\n(SumaPrimosVector)");
         this.algoritmos.get(76).add("76");
-        this.pasos.get(76).get(0).add("");
-        this.pasos.get(76).get(0).add("");
-        this.pasos.get(76).get(0).add("");
+        this.pasos2.get(2).get(0).add("");
+        this.pasos2.get(2).get(0).add("");
+        this.pasos2.get(2).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(76).get(1).add("");
-        this.pasos.get(76).get(1).add("");
-        this.pasos.get(76).get(1).add("")
+        this.pasos2.get(2).get(1).add("");
+        this.pasos2.get(2).get(1).add("");
+        this.pasos2.get(2).get(1).add("")
         ;////////////////   78    /////////////////
-        this.algoritmos.get(77).add("");
-        this.algoritmos.get(77).add("");
-        this.algoritmos.get(77).add("");
+        this.algoritmos.get(77).add("#|\nConstruir un algoritmo en Lisp que almacene\nen  un  vecotr  secundario los numeros pares\ncontenidos en un vector de 10 elementos.\n|#");
+        this.algoritmos.get(77).add("Funcion ParesVector\n    inicializar nuemros = hacer-vector(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)\n    inicializar pares = hacer-vector()\n    desde i = 1 hasta 10 hacer:\n        si (modulo(nuemros[i], 2) = 0)\n            agregar(pares, nuemros[i])\n    imprimir \"Vector pares: \", pares\n\nllamar Funcion ParesVector");
+        this.algoritmos.get(77).add("(defun ParesVector()\n  (setq nuemros \n     (1 2 3 4 5 6 7 8 9 10)\n  )\n  (setq pares (make-vector))\n  (loop for i from 1 to 10\n    do(loop for j from 1 to 10\n      do(if (= remainder((vector-ref nuemros i)2)0)\n            (append pares (vector-ref nuemros i))\n        )\n     )\n   )\n   (print \"Vector pares: ~d\" pares)\n)\n\n(ParesVector)");
         this.algoritmos.get(77).add("77");
-        this.pasos.get(77).get(0).add("");
-        this.pasos.get(77).get(0).add("");
-        this.pasos.get(77).get(0).add("");
+        this.pasos2.get(77).get(0).add("");
+        this.pasos2.get(77).get(0).add("");
+        this.pasos2.get(77).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(77).get(1).add("");
-        this.pasos.get(77).get(1).add("");
-        this.pasos.get(77).get(1).add("")
+        this.pasos2.get(77).get(1).add("");
+        this.pasos2.get(77).get(1).add("");
+        this.pasos2.get(77).get(1).add("")
         ;////////////////   79    /////////////////
-        this.algoritmos.get(78).add("");
-        this.algoritmos.get(78).add("");
-        this.algoritmos.get(78).add("");
+        this.algoritmos.get(78).add("#|\nConstruir  un  algoritmo  en Lisp donde se\nalmacenen   datos  en  un vector de fomra\naleatoria , y reciba un número X y escriba \nen  la  pantalla   todos  los  índices  de  las \nposiciones   del   arreglo   donde   está  X. \nPor    ejemplo,   si   el  arreglo  e s el  que \naparece   enseguida   y   X   es   2:\n             a. 1-2-3-100-23-2-2-1\n        b. escribir: 1 5 6 (INDICES).\n|#");
+        this.algoritmos.get(78).add("Funcion Indices\n    inicializar numeros = hacer-vector 10 (random(5))\n    desde i = 0 hasta 10 hacer:\n        si(numeros[i] = num)\n            imprimir i\n    imprimir \" INDICES\"\n\nllamar Funcion Indices");
+        this.algoritmos.get(78).add("(defun Indices()\n    (print \"Ingrese un numero: \")\n    (setq num (read))\n    (setq nuemros (make-vector 10 (random 5)))\n    (loop for i from 1 to 10\n        do(if(= (vector-ref numeros i) num)\n             (print i)\n        )\n    )\n    (print \" INDICES\")\n)\n\n(Indices)");
         this.algoritmos.get(78).add("78");
-        this.pasos.get(78).get(0).add("");
-        this.pasos.get(78).get(0).add("");
-        this.pasos.get(78).get(0).add("");
+        this.pasos2.get(78).get(0).add("");
+        this.pasos2.get(78).get(0).add("");
+        this.pasos2.get(78).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(78).get(1).add("");
-        this.pasos.get(78).get(1).add("");
-        this.pasos.get(78).get(1).add("")
+        this.pasos2.get(78).get(1).add("");
+        this.pasos2.get(78).get(1).add("");
+        this.pasos2.get(78).get(1).add("")
         ;////////////////   80    /////////////////
-        this.algoritmos.get(79).add("");
-        this.algoritmos.get(79).add("");
-        this.algoritmos.get(79).add("");
+        this.algoritmos.get(79).add("#|\nConstruir un algoritmo en Lisp que Sume de\nun   vector   todos   los   números negativos\npares. \n|#");
+        this.algoritmos.get(79).add("Funcion SumaNegativos\n    inicializar nuemros = hacer-vector(3, -2, 6, 5, -4, -8, 2, -1)\n    inicializar pares = hacer-vector()\n    suma = 0\n    desde i = 1 hasta 10 hacer:\n        si(nuemros[i] < 0)\n            si(modulo(nuemros[i], 2) = 0)\n                suma = suma + nuemros[i]\n    imprimir \"La suma es: \", suma\n\nllamar Funcion SumaNegativos");
+        this.algoritmos.get(79).add("(defun SumaNegativos()\n (setq nuemros \n   (3 -2 6 5 -4 -8 2 -1)\n )\n (setq suma 0)\n (loop for i from 1 to 10\n  do(loop for j from 1 to 10\n    do(if(< (vector-ref nuemros i) 0)\n        (if (= remainder((vector-ref nuemros i)2)0)\n           (set suma(+ suma(vector-ref nuemros i)))\n         )\n      )\n    )\n  )\n  (print \"La suma es:  ~d\" suma)\n)\n\n(SumaNegativos)");
         this.algoritmos.get(79).add("79");
-        this.pasos.get(79).get(0).add("");
-        this.pasos.get(79).get(0).add("");
-        this.pasos.get(79).get(0).add("");
+        this.pasos2.get(79).get(0).add("");
+        this.pasos2.get(79).get(0).add("");
+        this.pasos2.get(79).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(79).get(1).add("");
-        this.pasos.get(79).get(1).add("");
-        this.pasos.get(79).get(1).add("")
-        ;////////////////   81    /////////////////
+        this.pasos2.get(79).get(1).add("");
+        this.pasos2.get(79).get(1).add("");
+        this.pasos2.get(79).get(1).add("");
+        ////////////////   81    /////////////////
         this.algoritmos.get(80).add("");
         this.algoritmos.get(80).add("");
         this.algoritmos.get(80).add("");
         this.algoritmos.get(80).add("80");
-        this.pasos.get(80).get(0).add("");
-        this.pasos.get(80).get(0).add("");
-        this.pasos.get(80).get(0).add("");
+        this.pasos2.get(80).get(0).add("");
+        this.pasos2.get(80).get(0).add("");
+        this.pasos2.get(80).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(80).get(1).add("");
-        this.pasos.get(80).get(1).add("");
-        this.pasos.get(80).get(1).add("")
+        this.pasos2.get(80).get(1).add("");
+        this.pasos2.get(80).get(1).add("");
+        this.pasos2.get(80).get(1).add("")
         ;////////////////   82    /////////////////
         this.algoritmos.get(81).add("");
         this.algoritmos.get(81).add("");
         this.algoritmos.get(81).add("");
         this.algoritmos.get(81).add("81");
-        this.pasos.get(81).get(0).add("");
-        this.pasos.get(81).get(0).add("");
-        this.pasos.get(81).get(0).add("");
+        this.pasos2.get(81).get(0).add("");
+        this.pasos2.get(81).get(0).add("");
+        this.pasos2.get(81).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(81).get(1).add("");
-        this.pasos.get(81).get(1).add("");
-        this.pasos.get(81).get(1).add("")
+        this.pasos2.get(81).get(1).add("");
+        this.pasos2.get(81).get(1).add("");
+        this.pasos2.get(81).get(1).add("")
         ;////////////////   83    /////////////////
         this.algoritmos.get(82).add("");
         this.algoritmos.get(82).add("");
         this.algoritmos.get(82).add("");
         this.algoritmos.get(82).add("82");
-        this.pasos.get(82).get(0).add("");
-        this.pasos.get(82).get(0).add("");
-        this.pasos.get(82).get(0).add("");
+        this.pasos2.get(82).get(0).add("");
+        this.pasos2.get(82).get(0).add("");
+        this.pasos2.get(82).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(82).get(1).add("");
-        this.pasos.get(82).get(1).add("");
-        this.pasos.get(82).get(1).add("")
+        this.pasos2.get(82).get(1).add("");
+        this.pasos2.get(82).get(1).add("");
+        this.pasos2.get(82).get(1).add("")
         ;////////////////   84    /////////////////
         this.algoritmos.get(83).add("");
         this.algoritmos.get(83).add("");
         this.algoritmos.get(83).add("");
         this.algoritmos.get(83).add("83");
-        this.pasos.get(83).get(0).add("");
-        this.pasos.get(83).get(0).add("");
-        this.pasos.get(83).get(0).add("");
+        this.pasos2.get(83).get(0).add("");
+        this.pasos2.get(83).get(0).add("");
+        this.pasos2.get(83).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(83).get(1).add("");
-        this.pasos.get(83).get(1).add("");
-        this.pasos.get(83).get(1).add("")
+        this.pasos2.get(83).get(1).add("");
+        this.pasos2.get(83).get(1).add("");
+        this.pasos2.get(83).get(1).add("")
         ;////////////////   85    /////////////////
         this.algoritmos.get(84).add("");
         this.algoritmos.get(84).add("");
         this.algoritmos.get(84).add("");
         this.algoritmos.get(84).add("84");
-        this.pasos.get(84).get(0).add("");
-        this.pasos.get(84).get(0).add("");
-        this.pasos.get(84).get(0).add("");
+        this.pasos2.get(84).get(0).add("");
+        this.pasos2.get(84).get(0).add("");
+        this.pasos2.get(84).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(84).get(1).add("");
-        this.pasos.get(84).get(1).add("");
-        this.pasos.get(84).get(1).add("")
+        this.pasos2.get(84).get(1).add("");
+        this.pasos2.get(84).get(1).add("");
+        this.pasos2.get(84).get(1).add("")
         ;////////////////   86    /////////////////
         this.algoritmos.get(85).add("");
         this.algoritmos.get(85).add("");
         this.algoritmos.get(85).add("");
         this.algoritmos.get(85).add("85");
-        this.pasos.get(85).get(0).add("");
-        this.pasos.get(85).get(0).add("");
-        this.pasos.get(85).get(0).add("");
+        this.pasos2.get(85).get(0).add("");
+        this.pasos2.get(85).get(0).add("");
+        this.pasos2.get(85).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(85).get(1).add("");
-        this.pasos.get(85).get(1).add("");
-        this.pasos.get(85).get(1).add("")
+        this.pasos2.get(85).get(1).add("");
+        this.pasos2.get(85).get(1).add("");
+        this.pasos2.get(85).get(1).add("")
         ;////////////////   87    /////////////////
         this.algoritmos.get(86).add("");
         this.algoritmos.get(86).add("");
         this.algoritmos.get(86).add("");
         this.algoritmos.get(86).add("86");
-        this.pasos.get(86).get(0).add("");
-        this.pasos.get(86).get(0).add("");
-        this.pasos.get(86).get(0).add("");
+        this.pasos2.get(86).get(0).add("");
+        this.pasos2.get(86).get(0).add("");
+        this.pasos2.get(86).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(86).get(1).add("");
-        this.pasos.get(86).get(1).add("");
-        this.pasos.get(86).get(1).add("")
+        this.pasos2.get(86).get(1).add("");
+        this.pasos2.get(86).get(1).add("");
+        this.pasos2.get(86).get(1).add("")
         ;////////////////   88    /////////////////
         this.algoritmos.get(87).add("");
         this.algoritmos.get(87).add("");
         this.algoritmos.get(87).add("");
         this.algoritmos.get(87).add("87");
-        this.pasos.get(87).get(0).add("");
-        this.pasos.get(87).get(0).add("");
-        this.pasos.get(87).get(0).add("");
+        this.pasos2.get(87).get(0).add("");
+        this.pasos2.get(87).get(0).add("");
+        this.pasos2.get(87).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(87).get(1).add("");
-        this.pasos.get(87).get(1).add("");
-        this.pasos.get(87).get(1).add("")
+        this.pasos2.get(87).get(1).add("");
+        this.pasos2.get(87).get(1).add("");
+        this.pasos2.get(87).get(1).add("")
         ;////////////////   89    /////////////////
         this.algoritmos.get(88).add("");
         this.algoritmos.get(88).add("");
         this.algoritmos.get(88).add("");
         this.algoritmos.get(88).add("88");
-        this.pasos.get(88).get(0).add("");
-        this.pasos.get(88).get(0).add("");
-        this.pasos.get(88).get(0).add("");
+        this.pasos2.get(88).get(0).add("");
+        this.pasos2.get(88).get(0).add("");
+        this.pasos2.get(88).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(88).get(1).add("");
-        this.pasos.get(88).get(1).add("");
-        this.pasos.get(88).get(1).add("")
+        this.pasos2.get(88).get(1).add("");
+        this.pasos2.get(88).get(1).add("");
+        this.pasos2.get(88).get(1).add("")
         ;////////////////   90    /////////////////
         this.algoritmos.get(89).add("");
         this.algoritmos.get(89).add("");
         this.algoritmos.get(89).add("");
         this.algoritmos.get(89).add("89");
-        this.pasos.get(89).get(0).add("");
-        this.pasos.get(89).get(0).add("");
-        this.pasos.get(89).get(0).add("");
+        this.pasos2.get(89).get(0).add("");
+        this.pasos2.get(89).get(0).add("");
+        this.pasos2.get(89).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(89).get(1).add("");
-        this.pasos.get(89).get(1).add("");
-        this.pasos.get(89).get(1).add("")
+        this.pasos2.get(89).get(1).add("");
+        this.pasos2.get(89).get(1).add("");
+        this.pasos2.get(89).get(1).add("")
         ;////////////////   91    /////////////////
         this.algoritmos.get(90).add("");
         this.algoritmos.get(90).add("");
         this.algoritmos.get(90).add("");
         this.algoritmos.get(90).add("90");
-        this.pasos.get(90).get(0).add("");
-        this.pasos.get(90).get(0).add("");
-        this.pasos.get(90).get(0).add("");
+        this.pasos2.get(90).get(0).add("");
+        this.pasos2.get(90).get(0).add("");
+        this.pasos2.get(90).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(90).get(1).add("");
-        this.pasos.get(90).get(1).add("");
-        this.pasos.get(90).get(1).add("")
+        this.pasos2.get(90).get(1).add("");
+        this.pasos2.get(90).get(1).add("");
+        this.pasos2.get(90).get(1).add("")
         ;////////////////   92    /////////////////
         this.algoritmos.get(91).add("");
         this.algoritmos.get(91).add("");
         this.algoritmos.get(91).add("");
         this.algoritmos.get(91).add("91");
-        this.pasos.get(91).get(0).add("");
-        this.pasos.get(91).get(0).add("");
-        this.pasos.get(91).get(0).add("");
+        this.pasos2.get(91).get(0).add("");
+        this.pasos2.get(91).get(0).add("");
+        this.pasos2.get(91).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(91).get(1).add("");
-        this.pasos.get(91).get(1).add("");
-        this.pasos.get(91).get(1).add("")
+        this.pasos2.get(91).get(1).add("");
+        this.pasos2.get(91).get(1).add("");
+        this.pasos2.get(91).get(1).add("")
         ;////////////////   93    /////////////////
         this.algoritmos.get(92).add("");
         this.algoritmos.get(92).add("");
         this.algoritmos.get(92).add("");
         this.algoritmos.get(92).add("92");
-        this.pasos.get(92).get(0).add("");
-        this.pasos.get(92).get(0).add("");
-        this.pasos.get(92).get(0).add("");
+        this.pasos2.get(92).get(0).add("");
+        this.pasos2.get(92).get(0).add("");
+        this.pasos2.get(92).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(92).get(1).add("");
-        this.pasos.get(92).get(1).add("");
-        this.pasos.get(92).get(1).add("")
+        this.pasos2.get(92).get(1).add("");
+        this.pasos2.get(92).get(1).add("");
+        this.pasos2.get(92).get(1).add("")
         ;////////////////   94    /////////////////
         this.algoritmos.get(93).add("");
         this.algoritmos.get(93).add("");
         this.algoritmos.get(93).add("");
         this.algoritmos.get(93).add("93");
-        this.pasos.get(93).get(0).add("");
-        this.pasos.get(93).get(0).add("");
-        this.pasos.get(93).get(0).add("");
+        this.pasos2.get(93).get(0).add("");
+        this.pasos2.get(93).get(0).add("");
+        this.pasos2.get(93).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(93).get(1).add("");
-        this.pasos.get(93).get(1).add("");
-        this.pasos.get(93).get(1).add("")
+        this.pasos2.get(93).get(1).add("");
+        this.pasos2.get(93).get(1).add("");
+        this.pasos2.get(93).get(1).add("")
         ;////////////////   95    /////////////////
         this.algoritmos.get(94).add("");
         this.algoritmos.get(94).add("");
         this.algoritmos.get(94).add("");
         this.algoritmos.get(94).add("94");
-        this.pasos.get(94).get(0).add("");
-        this.pasos.get(94).get(0).add("");
-        this.pasos.get(94).get(0).add("");
+        this.pasos2.get(94).get(0).add("");
+        this.pasos2.get(94).get(0).add("");
+        this.pasos2.get(94).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(94).get(1).add("");
-        this.pasos.get(94).get(1).add("");
-        this.pasos.get(94).get(1).add("")
+        this.pasos2.get(94).get(1).add("");
+        this.pasos2.get(94).get(1).add("");
+        this.pasos2.get(94).get(1).add("")
         ;////////////////   96    /////////////////
         this.algoritmos.get(95).add("");
         this.algoritmos.get(95).add("");
         this.algoritmos.get(95).add("");
         this.algoritmos.get(95).add("95");
-        this.pasos.get(95).get(0).add("");
-        this.pasos.get(95).get(0).add("");
-        this.pasos.get(95).get(0).add("");
+        this.pasos2.get(95).get(0).add("");
+        this.pasos2.get(95).get(0).add("");
+        this.pasos2.get(95).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(95).get(1).add("");
-        this.pasos.get(95).get(1).add("");
-        this.pasos.get(95).get(1).add("")
+        this.pasos2.get(95).get(1).add("");
+        this.pasos2.get(95).get(1).add("");
+        this.pasos2.get(95).get(1).add("")
         ;////////////////   97    /////////////////
         this.algoritmos.get(96).add("");
         this.algoritmos.get(96).add("");
         this.algoritmos.get(96).add("");
         this.algoritmos.get(96).add("96");
-        this.pasos.get(96).get(0).add("");
-        this.pasos.get(96).get(0).add("");
-        this.pasos.get(96).get(0).add("");
+        this.pasos2.get(96).get(0).add("");
+        this.pasos2.get(96).get(0).add("");
+        this.pasos2.get(96).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(96).get(1).add("");
-        this.pasos.get(96).get(1).add("");
-        this.pasos.get(96).get(1).add("")
+        this.pasos2.get(96).get(1).add("");
+        this.pasos2.get(96).get(1).add("");
+        this.pasos2.get(96).get(1).add("")
         ;////////////////   98    /////////////////
         this.algoritmos.get(97).add("");
         this.algoritmos.get(97).add("");
         this.algoritmos.get(97).add("");
         this.algoritmos.get(97).add("97");
-        this.pasos.get(97).get(0).add("");
-        this.pasos.get(97).get(0).add("");
-        this.pasos.get(97).get(0).add("");
+        this.pasos2.get(97).get(0).add("");
+        this.pasos2.get(97).get(0).add("");
+        this.pasos2.get(97).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(97).get(1).add("");
-        this.pasos.get(97).get(1).add("");
-        this.pasos.get(97).get(1).add("")
+        this.pasos2.get(97).get(1).add("");
+        this.pasos2.get(97).get(1).add("");
+        this.pasos2.get(97).get(1).add("")
         ;////////////////   99    /////////////////
         this.algoritmos.get(98).add("");
         this.algoritmos.get(98).add("");
         this.algoritmos.get(98).add("");
         this.algoritmos.get(98).add("98");
-        this.pasos.get(98).get(0).add("");
-        this.pasos.get(98).get(0).add("");
-        this.pasos.get(98).get(0).add("");
+        this.pasos2.get(98).get(0).add("");
+        this.pasos2.get(98).get(0).add("");
+        this.pasos2.get(98).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(98).get(1).add("");
-        this.pasos.get(98).get(1).add("");
-        this.pasos.get(98).get(1).add("")
+        this.pasos2.get(98).get(1).add("");
+        this.pasos2.get(98).get(1).add("");
+        this.pasos2.get(98).get(1).add("")
         ;////////////////   100    /////////////////
         this.algoritmos.get(99).add("");
         this.algoritmos.get(99).add("");
         this.algoritmos.get(99).add("");
         this.algoritmos.get(99).add("99");
-        this.pasos.get(99).get(0).add("");
-        this.pasos.get(99).get(0).add("");
-        this.pasos.get(99).get(0).add("");
+        this.pasos2.get(99).get(0).add("");
+        this.pasos2.get(99).get(0).add("");
+        this.pasos2.get(99).get(0).add("");
         /////////////////////////////////
-        this.pasos.get(99).get(1).add("");
-        this.pasos.get(99).get(1).add("");
-        this.pasos.get(99).get(1).add("");
+        this.pasos2.get(99).get(1).add("");
+        this.pasos2.get(99).get(1).add("");
+        this.pasos2.get(99).get(1).add("");
         /*
         ////////////////   N    /////////////////
         this.algoritmos.get(posn).add("");
@@ -2494,7 +2674,13 @@ public class Data {
         return algoritmos;
     }
 
-    public List<List<List<String>>> getPasos() {
-        return pasos;
+    public List<List<List<String>>> getPasos(int a) {
+        List<List<List<String>>> lista;
+        if(a == 0){
+            lista = pasos;
+        }else{
+            lista = pasos2;
+        }
+        return lista;
     }
 }
