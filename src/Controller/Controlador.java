@@ -31,6 +31,7 @@ public class Controlador {
     private Matematicas Mates;
     private Funciones Func;
     private Ciclos Cicl;
+    private Meta101 Meta;
     private int count;
     private CuadroTexto ChangeColor;
     private Enunciados Enun;
@@ -41,6 +42,7 @@ public class Controlador {
         this.home = home;
         this.Enun = new Enunciados();
         this.data = new Data();
+        this.Meta = new Meta101();
         this.Comentario = new Coments();
         this.Mates = new Matematicas();
         this.condis = new condicionales();
@@ -604,8 +606,23 @@ public class Controlador {
         });
         this.Algot.b101.addActionListener((ActionEvent e) -> {
             Algot.setVisible(false);
-            Pcode.setVisible(true);
-            this.Pcodes(101);
+            Meta.setVisible(true);
+            this.meta();
+        });
+    }
+    
+    public void meta(){
+        this.Meta.setTitle("MEta 101 Lisp");
+        this.Meta.setLocationRelativeTo(null);
+        this.Meta.Inicio.addActionListener((ActionEvent e) -> {
+            Meta.setVisible(false);
+            home.setVisible(true);
+            this.iniciar();
+        });
+        this.Meta.Menu.addActionListener((ActionEvent e) -> {
+            Meta.setVisible(false);
+            menu.setVisible(true);
+            this.Menus();
         });
     }
     

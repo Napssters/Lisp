@@ -340,7 +340,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel12">
                   <Properties>
                     <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                      <Connection code="&quot;&lt;html&gt; &#xa9; 2020 - Universidad Tecnol&#xf3;gica de Pereira&lt;br&gt;Carrera 27 #10-02 Barrio Alamos - Risaralda - Colombia - AA: 97&lt;br&gt;C&#xf3;digo postal: 660003 - CERES - PBX: +57 6 3137300 - Fax: +57 6 3213206&lt;br&gt;L&#xed;nea gratuita de Quejas y Reclamos: 018000966781 - contactenos@utp.edu.co&lt;html&gt;&quot;" type="code"/>
+                      <Connection code="&quot;&lt;html&gt; &#xa9; 2020 - Universidad Tecnol&#xf3;gica de Pereira&lt;br&gt;Carrera 27 #10-02 Barrio Alamos - Risaralda - Colombia - AA: 97&lt;html&gt;&quot;" type="code"/>
                     </Property>
                   </Properties>
                   <Constraints>

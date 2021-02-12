@@ -6,6 +6,9 @@
 package Views;
 
 import java.awt.Color;
+import java.awt.Desktop;
+import java.io.File;
+import java.io.IOException;
 import javax.swing.ImageIcon;
 
 /**
@@ -43,8 +46,8 @@ public class Ciclos extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
@@ -149,13 +152,13 @@ public class Ciclos extends javax.swing.JFrame {
 
         jPanel4.setLayout(null);
 
+        jLabel12.setText("<html> © 2020 - Universidad Tecnológica de Pereira<br>Carrera 27 #10-02 Barrio Alamos - Risaralda - Colombia - AA: 97<html>");
+        jPanel4.add(jLabel12);
+        jLabel12.setBounds(10, 0, 530, 120);
+
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/marca_UTP.png"))); // NOI18N
         jPanel4.add(jLabel8);
         jLabel8.setBounds(590, 10, 234, 113);
-
-        jLabel12.setText("<html> © 2020 - Universidad Tecnológica de Pereira<br>Carrera 27 #10-02 Barrio Alamos - Risaralda - Colombia - AA: 97<br>Código postal: 660003 - CERES - PBX: +57 6 3137300 - Fax: +57 6 3213206<br>Línea gratuita de Quejas y Reclamos: 018000966781 - contactenos@utp.edu.co<html>");
-        jPanel4.add(jLabel12);
-        jLabel12.setBounds(10, 0, 530, 120);
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/gradiente-azul-azul.png"))); // NOI18N
         jPanel4.add(jLabel9);
@@ -243,12 +246,12 @@ public class Ciclos extends javax.swing.JFrame {
     }//GEN-LAST:event_ManualMouseExited
 
     private void ManualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ManualActionPerformed
-        /*try {
-            File path = new File ("src/View/Manual.pdf");
+        try {
+            File path = new File ("src/Manuales/Manual.pdf");
             Desktop.getDesktop().open(path);
         }catch (IOException ex) {
             ex.printStackTrace();
-        }*/
+        }
     }//GEN-LAST:event_ManualActionPerformed
 
     private void MenuMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MenuMouseEntered

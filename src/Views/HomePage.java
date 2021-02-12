@@ -206,7 +206,7 @@ public class HomePage extends javax.swing.JFrame {
         jPanel4.add(jLabel8);
         jLabel8.setBounds(620, 10, 234, 113);
 
-        jLabel12.setText("<html> © 2020 - Universidad Tecnológica de Pereira<br>Carrera 27 #10-02 Barrio Alamos - Risaralda - Colombia - AA: 97<br>Código postal: 660003 - CERES - PBX: +57 6 3137300 - Fax: +57 6 3213206<br>Línea gratuita de Quejas y Reclamos: 018000966781 - contactenos@utp.edu.co<html>");
+        jLabel12.setText("<html> © 2020 - Universidad Tecnológica de Pereira<br>Carrera 27 #10-02 Barrio Alamos - Risaralda - Colombia - AA: 97<html>");
         jPanel4.add(jLabel12);
         jLabel12.setBounds(10, 0, 530, 120);
 
@@ -277,12 +277,12 @@ public class HomePage extends javax.swing.JFrame {
     }//GEN-LAST:event_MenuActionPerformed
 
     private void ManualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ManualActionPerformed
-        /*try {
-            File path = new File ("src/View/Manual.pdf");
+        try {
+            File path = new File ("src/Manuales/Manual.pdf");
             Desktop.getDesktop().open(path);
         }catch (IOException ex) {
              ex.printStackTrace();
-        }*/
+        }
     }//GEN-LAST:event_ManualActionPerformed
 
     private void InicioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InicioMouseEntered

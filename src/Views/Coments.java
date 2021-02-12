@@ -6,6 +6,9 @@
 package Views;
 
 import java.awt.Color;
+import java.awt.Desktop;
+import java.io.File;
+import java.io.IOException;
 import javax.swing.ImageIcon;
 
 /**
@@ -44,7 +47,7 @@ public class Coments extends javax.swing.JFrame {
         jPanel15 = new javax.swing.JPanel();
         jPanel16 = new javax.swing.JPanel();
         jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jPanel17 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -155,9 +158,9 @@ public class Coments extends javax.swing.JFrame {
         jPanel16.add(jLabel22);
         jLabel22.setBounds(620, 10, 234, 113);
 
-        jLabel23.setText("<html> © 2020 - Universidad Tecnológica de Pereira<br>Carrera 27 #10-02 Barrio Alamos - Risaralda - Colombia - AA: 97<br>Código postal: 660003 - CERES - PBX: +57 6 3137300 - Fax: +57 6 3213206<br>Línea gratuita de Quejas y Reclamos: 018000966781 - contactenos@utp.edu.co<html>");
-        jPanel16.add(jLabel23);
-        jLabel23.setBounds(10, 0, 530, 120);
+        jLabel12.setText("<html> © 2020 - Universidad Tecnológica de Pereira<br>Carrera 27 #10-02 Barrio Alamos - Risaralda - Colombia - AA: 97<html>");
+        jPanel16.add(jLabel12);
+        jLabel12.setBounds(10, 0, 530, 120);
 
         jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/gradiente-azul-azul.png"))); // NOI18N
         jPanel16.add(jLabel24);
@@ -263,12 +266,12 @@ public class Coments extends javax.swing.JFrame {
     }//GEN-LAST:event_ManualMouseExited
 
     private void ManualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ManualActionPerformed
-        /*try {
-            File path = new File ("src/View/Manual.pdf");
+        try {
+            File path = new File ("src/Manuales/Manual.pdf");
             Desktop.getDesktop().open(path);
         }catch (IOException ex) {
             ex.printStackTrace();
-        }*/
+        }
     }//GEN-LAST:event_ManualActionPerformed
 
     private void MenuMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MenuMouseEntered
@@ -338,9 +341,9 @@ public class Coments extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
