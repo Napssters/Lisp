@@ -6,7 +6,6 @@
 package Views;
 
 import java.awt.Color;
-import javax.swing.ImageIcon;
 
 /**
  *
@@ -20,7 +19,7 @@ public class Menu extends javax.swing.JFrame {
     public Menu() {
         setResizable(false);
         initComponents();
-        this.setIconImage(new ImageIcon(getClass().getResource("/Images/Logo_Lambda.png")).getImage());
+        this.setIconImage(new javax.swing.ImageIcon(getClass().getResource("/Images/Logo_Lambda.png")).getImage());
     }
 
     /**
