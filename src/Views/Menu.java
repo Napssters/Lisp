@@ -200,7 +200,7 @@ public class Menu extends javax.swing.JFrame {
         jTextArea2.setColumns(20);
         jTextArea2.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
         jTextArea2.setRows(5);
-        jTextArea2.setText("En  esta  sección  encontraras una guía de\nfunciones primitivas básicas en Lisp donde \nse   mostrara   el   funcionamiento  de  las \nfunciones mas necesarias.");
+        jTextArea2.setText("En esta  sección encontraras una guía básica\ndel  lenguaje  Lisp,  en  donde se muestra de\nforma  sencilla  como  implementar  algunas\nfunciones  primitivas  del  lenguaje.");
         jTextArea2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jTextArea2.setFocusable(false);
         jTextArea2.setOpaque(false);
