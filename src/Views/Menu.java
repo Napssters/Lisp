@@ -189,7 +189,7 @@ public class Menu extends javax.swing.JFrame {
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
         jTextArea1.setRows(5);
-        jTextArea1.setText("En esta seccion encontraras 101 algoritmos\ndesarrolados  en   lisp,   con   una  serie  de \nejercicios   que    iran    incrementando  su \ndificultad,   en    los   cuales   se   enseñara \ncomo  programar  en  este  lenguaje");
+        jTextArea1.setText("En esta  sección  encontraras 101 algoritmos\ndesarrollados  en   Lisp,   con   una  serie  de \nejercicios    que     irán     incrementando  su \ndificultad,    en     los   cuales    se   enseñará \ncámo  programar  en  este  lenguaje\n");
         jTextArea1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jTextArea1.setFocusable(false);
         jTextArea1.setOpaque(false);
@@ -200,7 +200,7 @@ public class Menu extends javax.swing.JFrame {
         jTextArea2.setColumns(20);
         jTextArea2.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
         jTextArea2.setRows(5);
-        jTextArea2.setText("En esta seccion encontraras 101 algoritmos\ndesarrolados  en   lisp,   con   una  sere  de \nejercicios   que    iran    incrementando  su \ndificultad,  con   los   cuales   se   enseñara \ncomo  programar  en  este  lenguaje");
+        jTextArea2.setText("En  esta  sección  encontraras una guía de\nfunciones primitivas básicas en Lisp donde \nse   mostrara   el   funcionamiento  de  las \nfunciones mas necesarias.");
         jTextArea2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jTextArea2.setFocusable(false);
         jTextArea2.setOpaque(false);

@@ -263,7 +263,7 @@
                   <Font name="Sylfaen" size="18" style="0"/>
                 </Property>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="En esta seccion encontraras 101 algoritmos&#xa;desarrolados  en   lisp,   con   una  serie  de &#xa;ejercicios   que    iran    incrementando  su &#xa;dificultad,   en    los   cuales   se   ense&#xf1;ara &#xa;como  programar  en  este  lenguaje"/>
+                <Property name="text" type="java.lang.String" value="En esta  secci&#xf3;n  encontraras 101 algoritmos&#xa;desarrollados  en   Lisp,   con   una  serie  de &#xa;ejercicios    que     ir&#xe1;n     incrementando  su &#xa;dificultad,    en     los   cuales    se   ense&#xf1;ar&#xe1; &#xa;c&#xe1;mo  programar  en  este  lenguaje&#xa;"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                   <Color id="Cursor Por defecto"/>
                 </Property>
@@ -284,7 +284,7 @@
                   <Font name="Sylfaen" size="18" style="0"/>
                 </Property>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="En esta seccion encontraras 101 algoritmos&#xa;desarrolados  en   lisp,   con   una  sere  de &#xa;ejercicios   que    iran    incrementando  su &#xa;dificultad,  con   los   cuales   se   ense&#xf1;ara &#xa;como  programar  en  este  lenguaje"/>
+                <Property name="text" type="java.lang.String" value="En  esta  secci&#xf3;n  encontraras una gu&#xed;a de&#xa;funciones primitivas b&#xe1;sicas en Lisp donde &#xa;se   mostrara   el   funcionamiento  de  las &#xa;funciones mas necesarias."/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                   <Color id="Cursor Por defecto"/>
                 </Property>
