@@ -255,7 +255,7 @@ public class Codigos extends javax.swing.JFrame {
         jPanel17.add(jScrollPane3);
         jScrollPane3.setBounds(510, 400, 330, 130);
 
-        Run.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/botones/Run.png"))); // NOI18N
+        Run.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/Run.png"))); // NOI18N
         Run.setBorderPainted(false);
         Run.setContentAreaFilled(false);
         Run.setDefaultCapable(false);
@@ -283,7 +283,7 @@ public class Codigos extends javax.swing.JFrame {
         jPanel17.add(Run);
         Run.setBounds(160, 540, 70, 40);
 
-        Siguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/botones/Explain.png"))); // NOI18N
+        Siguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/Explain.png"))); // NOI18N
         Siguiente.setBorderPainted(false);
         Siguiente.setContentAreaFilled(false);
         Siguiente.setDefaultCapable(false);

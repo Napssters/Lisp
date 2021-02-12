@@ -417,7 +417,7 @@
                     <Component class="javax.swing.JButton" name="Run">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Images/botones/Run.png"/>
+                          <Image iconType="3" name="/Images/Botones/Run.png"/>
                         </Property>
                         <Property name="borderPainted" type="boolean" value="false"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
@@ -442,7 +442,7 @@
                     <Component class="javax.swing.JButton" name="Siguiente">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Images/botones/Explain.png"/>
+                          <Image iconType="3" name="/Images/Botones/Explain.png"/>
                         </Property>
                         <Property name="borderPainted" type="boolean" value="false"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>

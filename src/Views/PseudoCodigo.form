@@ -289,7 +289,7 @@
             <Component class="javax.swing.JButton" name="GoCode">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Images/botones/GoCode.png"/>
+                  <Image iconType="3" name="/Images/Botones/GoCode.png"/>
                 </Property>
                 <Property name="borderPainted" type="boolean" value="false"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>

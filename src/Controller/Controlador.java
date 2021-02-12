@@ -12,6 +12,7 @@ import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JTextPane;
+import org.w3c.dom.events.EventException;
 
 /**
  *
@@ -47,10 +48,14 @@ public class Controlador {
         this.Cicl = new Ciclos();
         this.count = 0;
         this.home.Menu1.addActionListener((ActionEvent e) -> {
-            home.setVisible(false);
-            this.menu = new Menu();
-            menu.setVisible(true);
-            this.Menus();
+            try{
+                 home.setVisible(false);
+                this.menu = new Menu();
+                menu.setVisible(true);
+                this.Menus();
+            }catch(EventException z){
+                
+            }
         });
         this.home.Menu.addActionListener((ActionEvent e) -> {
             home.setVisible(false);

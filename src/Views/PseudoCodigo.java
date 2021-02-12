@@ -189,7 +189,7 @@ public class PseudoCodigo extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setLayout(null);
 
-        GoCode.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/botones/GoCode.png"))); // NOI18N
+        GoCode.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/GoCode.png"))); // NOI18N
         GoCode.setBorderPainted(false);
         GoCode.setContentAreaFilled(false);
         GoCode.setDefaultCapable(false);

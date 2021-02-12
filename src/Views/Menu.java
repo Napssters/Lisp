@@ -148,7 +148,7 @@ public class Menu extends javax.swing.JFrame {
         jPanel3.setLayout(null);
 
         LispDocs.setBackground(new java.awt.Color(255, 255, 255));
-        LispDocs.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/botones/lispDocs.png"))); // NOI18N
+        LispDocs.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/lispDocs.png"))); // NOI18N
         LispDocs.setBorder(null);
         LispDocs.setBorderPainted(false);
         LispDocs.setContentAreaFilled(false);
@@ -169,7 +169,7 @@ public class Menu extends javax.swing.JFrame {
         LispDocs.setBounds(620, 350, 100, 50);
 
         Algoritmos.setBackground(new java.awt.Color(255, 255, 255));
-        Algoritmos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/botones/Algoritmos.png"))); // NOI18N
+        Algoritmos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Botones/Algoritmos.png"))); // NOI18N
         Algoritmos.setBorder(null);
         Algoritmos.setBorderPainted(false);
         Algoritmos.setContentAreaFilled(false);
