@@ -6,7 +6,6 @@
 package Controller;
 
 import Model.*;
-import Model.Data;
 import Views.*;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -26,7 +25,11 @@ public class Controlador {
     private PseudoCodigo Pcode;
     private Codigos Codes;
     private Data data;
+    private condicionales condis;
     private Coments Comentario;
+    private Matematicas Mates;
+    private Funciones Func;
+    private Ciclos Cicl;
     private int count;
     private CuadroTexto ChangeColor;
     private Enunciados Enun;
@@ -38,6 +41,10 @@ public class Controlador {
         this.Enun = new Enunciados();
         this.data = new Data();
         this.Comentario = new Coments();
+        this.Mates = new Matematicas();
+        this.condis = new condicionales();
+        this.Func = new Funciones();
+        this.Cicl = new Ciclos();
         this.count = 0;
         this.home.Menu1.addActionListener((ActionEvent e) -> {
             home.setVisible(false);
@@ -709,29 +716,26 @@ public class Controlador {
             Comentario.setVisible(true);
             this.Comentarios();
         });
-        this.Docs.lectura.addActionListener((ActionEvent e) -> {
-            
-            
-        });
         this.Docs.matematicas.addActionListener((ActionEvent e) -> {
-            
-            
+            Docs.setVisible(false);
+            Mates.setVisible(true);
+            this.Matematica();
         });
         this.Docs.logicas.addActionListener((ActionEvent e) -> {
-            
+            Docs.setVisible(false);
+            condis.setVisible(true);
+            this.Condicionales();
             
         });
         this.Docs.funciones.addActionListener((ActionEvent e) -> {
-            
-            
+            Docs.setVisible(false);
+            Func.setVisible(true);
+            this.Functions();
         });
         this.Docs.control.addActionListener((ActionEvent e) -> {
-            
-            
-        });
-        this.Docs.listas.addActionListener((ActionEvent e) -> {
-            
-            
+            Docs.setVisible(false);
+            Cicl.setVisible(true);
+            Ciclo();
         });
     }
     
@@ -745,6 +749,66 @@ public class Controlador {
         });
         this.Comentario.Menu.addActionListener((ActionEvent e) -> {
             Comentario.setVisible(false);
+            menu.setVisible(true);
+            this.Menus();
+        });
+    }
+    
+    public void Matematica(){
+        this.Mates.setTitle("Matematicas Lisp");
+        this.Mates.setLocationRelativeTo(null);
+        this.Mates.Inicio.addActionListener((ActionEvent e) -> {
+            Mates.setVisible(false);
+            home.setVisible(true);
+            this.iniciar();
+        });
+        this.Mates.Menu.addActionListener((ActionEvent e) -> {
+            Mates.setVisible(false);
+            menu.setVisible(true);
+            this.Menus();
+        });
+    }
+    
+    public void Condicionales(){
+        this.condis.setTitle("Condicionales Lisp");
+        this.condis.setLocationRelativeTo(null);
+        this.condis.Inicio.addActionListener((ActionEvent e) -> {
+            condis.setVisible(false);
+            home.setVisible(true);
+            this.iniciar();
+        });
+        this.condis.Menu.addActionListener((ActionEvent e) -> {
+            condis.setVisible(false);
+            menu.setVisible(true);
+            this.Menus();
+        });
+    }
+    
+    public void Functions(){
+        this.Func.setTitle("Funciones Lisp");
+        this.Func.setLocationRelativeTo(null);
+        this.Func.Inicio.addActionListener((ActionEvent e) -> {
+            Func .setVisible(false);
+            home.setVisible(true);
+            this.iniciar();
+        });
+        this.Func.Menu.addActionListener((ActionEvent e) -> {
+            Func.setVisible(false);
+            menu.setVisible(true);
+            this.Menus();
+        });
+    }
+    
+    public void Ciclo(){
+        this.Cicl.setTitle("Ciclos Lisp");
+        this.Cicl.setLocationRelativeTo(null);
+        this.Cicl.Inicio.addActionListener((ActionEvent e) -> {
+            Cicl .setVisible(false);
+            home.setVisible(true);
+            this.iniciar();
+        });
+        this.Cicl.Menu.addActionListener((ActionEvent e) -> {
+            Cicl.setVisible(false);
             menu.setVisible(true);
             this.Menus();
         });
@@ -817,6 +881,11 @@ public class Controlador {
                                         i = (i++ < str.length())? i++ : i;
                                 }
                                 if(str.charAt(d) == 'a'){                                      
+                                        ChangeColor.append(new Color(0, 128, 0), Character.toString(str.charAt(d)));
+                                        d = (d++ < str.length())? d++ : d;
+                                        i = (i++ < str.length())? i++ : i;
+                                }
+                                if(str.charAt(d) == 'c'){                                      
                                         ChangeColor.append(new Color(0, 128, 0), Character.toString(str.charAt(d)));
                                         d = (d++ < str.length())? d++ : d;
                                         i = (i++ < str.length())? i++ : i;

@@ -12,15 +12,16 @@ import javax.swing.ImageIcon;
  *
  * @author Nico
  */
-public class Lectura extends javax.swing.JFrame {
+public class condicionales extends javax.swing.JFrame {
 
     /**
-     * Creates new form Lectura
+     * Creates new form condicionales
      */
-    public Lectura() {
+    public condicionales() {
         setResizable(false);
         initComponents();
         this.setIconImage(new ImageIcon(getClass().getResource("/Images/Logo_Lambda.png")).getImage());
+        jScrollPane1.getVerticalScrollBar().setUnitIncrement(16);
     }
 
     /**
@@ -32,7 +33,6 @@ public class Lectura extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jFrame1 = new javax.swing.JFrame();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         Manual = new javax.swing.JButton();
@@ -40,35 +40,20 @@ public class Lectura extends javax.swing.JFrame {
         Inicio = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        jPanel15 = new javax.swing.JPanel();
-        jPanel16 = new javax.swing.JPanel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jPanel17 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jTextArea1 = new javax.swing.JTextArea();
-        jLabel3 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
         jTextArea2 = new javax.swing.JTextArea();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jTextArea3 = new javax.swing.JTextArea();
-        jLabel5 = new javax.swing.JLabel();
-        jTextArea4 = new javax.swing.JTextArea();
-
-        jFrame1.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
-        jFrame1.getContentPane().setLayout(jFrame1Layout);
-        jFrame1Layout.setHorizontalGroup(
-            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-        );
-        jFrame1Layout.setVerticalGroup(
-            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-        );
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(255, 255, 255));
 
         jPanel2.setLayout(null);
 
@@ -158,122 +143,92 @@ public class Lectura extends javax.swing.JFrame {
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/gradiente-azul-azul.png"))); // NOI18N
         jPanel2.add(jLabel11);
-        jLabel11.setBounds(0, 0, 880, 60);
+        jLabel11.setBounds(0, 0, 890, 60);
 
-        jScrollPane5.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
-        jPanel16.setLayout(null);
+        jPanel4.setLayout(null);
 
-        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/marca_UTP.png"))); // NOI18N
-        jPanel16.add(jLabel22);
-        jLabel22.setBounds(620, 10, 234, 113);
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/marca_UTP.png"))); // NOI18N
+        jPanel4.add(jLabel8);
+        jLabel8.setBounds(590, 10, 234, 113);
 
-        jLabel23.setText("<html> © 2020 - Universidad Tecnológica de Pereira<br>Carrera 27 #10-02 Barrio Alamos - Risaralda - Colombia - AA: 97<br>Código postal: 660003 - CERES - PBX: +57 6 3137300 - Fax: +57 6 3213206<br>Línea gratuita de Quejas y Reclamos: 018000966781 - contactenos@utp.edu.co<html>");
-        jPanel16.add(jLabel23);
-        jLabel23.setBounds(10, 0, 530, 120);
+        jLabel12.setText("<html> © 2020 - Universidad Tecnológica de Pereira<br>Carrera 27 #10-02 Barrio Alamos - Risaralda - Colombia - AA: 97<br>Código postal: 660003 - CERES - PBX: +57 6 3137300 - Fax: +57 6 3213206<br>Línea gratuita de Quejas y Reclamos: 018000966781 - contactenos@utp.edu.co<html>");
+        jPanel4.add(jLabel12);
+        jLabel12.setBounds(10, 0, 530, 120);
 
-        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/gradiente-azul-azul.png"))); // NOI18N
-        jPanel16.add(jLabel24);
-        jLabel24.setBounds(0, 0, 900, 130);
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/gradiente-azul-azul.png"))); // NOI18N
+        jPanel4.add(jLabel9);
+        jLabel9.setBounds(0, 0, 900, 130);
 
-        jPanel17.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel17.setLayout(null);
-
-        jLabel2.setFont(new java.awt.Font("Sylfaen", 1, 17)); // NOI18N
-        jLabel2.setText("Funciones de Lectura");
-        jPanel17.add(jLabel2);
-        jLabel2.setBounds(70, 450, 270, 30);
-
-        jTextArea1.setEditable(false);
-        jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
-        jTextArea1.setRows(5);
-        jTextArea1.setText("(READ-LINE)\n   La  funcion  (read-line)  sirve  para leer y almacenar\n   en  una  variable  textos largos que no contengan un\n   salto de linea, sirve para obtener frases con espacios\n   como lo seria:\n                              \"Hola mundo\" \n                \"En el mundo hay luz y oscuridad\"\n\nEjemplo:\n           (setq frase (read-line))");
-        jTextArea1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jTextArea1.setFocusable(false);
-        jTextArea1.setOpaque(false);
-        jPanel17.add(jTextArea1);
-        jTextArea1.setBounds(470, 490, 400, 270);
-
-        jLabel3.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
-        jLabel3.setText("lectura y Escritura");
-        jPanel17.add(jLabel3);
-        jLabel3.setBounds(350, 40, 210, 30);
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setLayout(null);
 
         jTextArea2.setEditable(false);
         jTextArea2.setColumns(20);
         jTextArea2.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
         jTextArea2.setRows(5);
-        jTextArea2.setText("Lectura\nLa  operación  de  lectura,  significa que una variable \ntomará  un  valor  que  será ingresado por el usuario \na   través   de   un   dispositivo  externo  de  entrada, \ngeneralmente   un   teclado.\n\nEscritura\nLa   operación   de   escritura,  a  su  vez  expresa  la \nnecesidad   de   visualizar   el   valor   que  tiene  una \nvariable  a  través  de un dispositivo de salida, ya sea \nuna pantalla en la mayoría de casos, o una impresora.");
+        jTextArea2.setText("(IF)\n    La función reservada  (if)  sirve como condicional\n    para evaluar una opción.\n\n    En el caaso especifico de Lisp el condicional tiene \n    parte falsa alternativa.\n\nEjemplo\n    (if (< 2 4)\n          (print 2)\n     )\n\n    Ahora con parte negativa\n    (if (< 2 4)\n          (print 2)\n          (print 4) ;else - sino\n     )");
         jTextArea2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jTextArea2.setFocusable(false);
         jTextArea2.setOpaque(false);
-        jPanel17.add(jTextArea2);
-        jTextArea2.setBounds(490, 150, 390, 270);
+        jPanel3.add(jTextArea2);
+        jTextArea2.setBounds(450, 450, 410, 470);
 
-        jLabel4.setFont(new java.awt.Font("Sylfaen", 1, 17)); // NOI18N
-        jLabel4.setText("Comentarios de linea multiple");
-        jPanel17.add(jLabel4);
-        jLabel4.setBounds(60, 760, 270, 30);
+        jLabel3.setFont(new java.awt.Font("Sylfaen", 1, 24)); // NOI18N
+        jLabel3.setText("Estructuras Lógicas");
+        jPanel3.add(jLabel3);
+        jLabel3.setBounds(330, 60, 230, 33);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Menu Documentacion/Condicionales/if-else.png"))); // NOI18N
+        jPanel3.add(jLabel2);
+        jLabel2.setBounds(510, 140, 300, 280);
 
         jTextArea3.setEditable(false);
         jTextArea3.setColumns(20);
         jTextArea3.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
         jTextArea3.setRows(5);
-        jTextArea3.setText("la forma adecuada de realizar un comentario de línea multiple seria usar el simbolo \";;\" para \npoder hacer un comentario de linea multiple, por ejemplo:\n\n                                 #| \n                                      Este es un comentario de linea multiple hecho en Lisp. \n                                 |#");
+        jTextArea3.setText("En programación,  una sentencia condicional es una\ninstrucción o  grupo de instrucciones que se pueden \nejecutar o no en función del valor de una condición. \nLos tipos más conocidos de sentencias condicionales \nson el SI.. ENTONCES");
         jTextArea3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jTextArea3.setFocusable(false);
         jTextArea3.setOpaque(false);
-        jPanel17.add(jTextArea3);
-        jTextArea3.setBounds(60, 800, 700, 240);
+        jPanel3.add(jTextArea3);
+        jTextArea3.setBounds(30, 210, 410, 160);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Menu Documentacion/Lectura/lisp.png"))); // NOI18N
-        jPanel17.add(jLabel5);
-        jLabel5.setBounds(0, 110, 490, 320);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Menu Documentacion/Condicionales/desicion.png"))); // NOI18N
+        jPanel3.add(jLabel4);
+        jLabel4.setBounds(90, 480, 250, 290);
 
-        jTextArea4.setEditable(false);
-        jTextArea4.setColumns(20);
-        jTextArea4.setFont(new java.awt.Font("Sylfaen", 0, 18)); // NOI18N
-        jTextArea4.setRows(5);
-        jTextArea4.setText("(READ)\n   La funcion o palabra reservada del sistema conocida\n   como  (read)  cumple  el  proposito  de  capturar las\n   teclas  preciondadas  desde  un periferico de entrada \n   de  texto,  como  lo  es el  teclado o dispositivos que \n   controlen   el   ordenador. Generalmente utilizada\n   para lectura de numeros y palabras\n\nEjemplo:\n           (setq palabra (read))");
-        jTextArea4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jTextArea4.setFocusable(false);
-        jTextArea4.setOpaque(false);
-        jPanel17.add(jTextArea4);
-        jTextArea4.setBounds(30, 490, 400, 270);
-
-        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
-        jPanel15.setLayout(jPanel15Layout);
-        jPanel15Layout.setHorizontalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, 894, Short.MAX_VALUE)
-            .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 880, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        jPanel15Layout.setVerticalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, 984, javax.swing.GroupLayout.PREFERRED_SIZE)
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 885, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
-                .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0))
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jScrollPane5.setViewportView(jPanel15);
+        jScrollPane1.setViewportView(jPanel1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jScrollPane5)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 879, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 535, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 529, Short.MAX_VALUE))
         );
 
         pack();
@@ -337,20 +292,20 @@ public class Lectura extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Lectura.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(condicionales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Lectura.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(condicionales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Lectura.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(condicionales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Lectura.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(condicionales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Lectura().setVisible(true);
+                new condicionales().setVisible(true);
             }
         });
     }
@@ -359,25 +314,21 @@ public class Lectura extends javax.swing.JFrame {
     public javax.swing.JButton Inicio;
     private javax.swing.JButton Manual;
     public javax.swing.JButton Menu;
-    private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel16;
-    private javax.swing.JPanel jPanel17;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
-    private javax.swing.JTextArea jTextArea4;
     // End of variables declaration//GEN-END:variables
 }

@@ -50,27 +50,21 @@ public class Documentatation extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jTextArea1 = new javax.swing.JTextArea();
-        jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jTextArea3 = new javax.swing.JTextArea();
-        jTextArea4 = new javax.swing.JTextArea();
         jTextArea5 = new javax.swing.JTextArea();
         jTextArea6 = new javax.swing.JTextArea();
         jTextArea7 = new javax.swing.JTextArea();
         jTextArea8 = new javax.swing.JTextArea();
         jLabel19 = new javax.swing.JLabel();
-        jTextArea9 = new javax.swing.JTextArea();
-        jLabel21 = new javax.swing.JLabel();
         comentarios = new javax.swing.JButton();
         control = new javax.swing.JButton();
         logicas = new javax.swing.JButton();
         matematicas = new javax.swing.JButton();
         funciones = new javax.swing.JButton();
-        listas = new javax.swing.JButton();
-        lectura = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -199,35 +193,29 @@ public class Documentatation extends javax.swing.JFrame {
         jPanel5.add(jTextArea1);
         jTextArea1.setBounds(100, 130, 690, 80);
 
-        jLabel4.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Lectura y Escritura");
-        jPanel5.add(jLabel4);
-        jLabel4.setBounds(60, 650, 230, 40);
-
         jLabel6.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Expresiones Matematicas");
         jPanel5.add(jLabel6);
-        jLabel6.setBounds(600, 650, 220, 40);
+        jLabel6.setBounds(550, 480, 220, 40);
 
         jLabel14.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel14.setText("Definición de Funciones");
         jPanel5.add(jLabel14);
-        jLabel14.setBounds(60, 1090, 230, 40);
+        jLabel14.setBounds(90, 1020, 230, 40);
 
         jLabel16.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel16.setText("Estructuras Lógicas");
         jPanel5.add(jLabel16);
-        jLabel16.setBounds(320, 870, 230, 40);
+        jLabel16.setBounds(320, 750, 230, 40);
 
         jLabel17.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel17.setText("Comentarios");
         jPanel5.add(jLabel17);
-        jLabel17.setBounds(330, 450, 210, 40);
+        jLabel17.setBounds(100, 480, 210, 40);
 
         jTextArea3.setEditable(false);
         jTextArea3.setColumns(20);
@@ -238,18 +226,7 @@ public class Documentatation extends javax.swing.JFrame {
         jTextArea3.setFocusable(false);
         jTextArea3.setOpaque(false);
         jPanel5.add(jTextArea3);
-        jTextArea3.setBounds(60, 1120, 240, 70);
-
-        jTextArea4.setEditable(false);
-        jTextArea4.setColumns(20);
-        jTextArea4.setFont(new java.awt.Font("Sylfaen", 0, 14)); // NOI18N
-        jTextArea4.setRows(5);
-        jTextArea4.setText("En  esta  sección  se explicará la forma\ncorrecta  y  adecuada de como mostrar\ninformación por pantalla, así mismo de\n   como leer información por teclado\n");
-        jTextArea4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jTextArea4.setFocusable(false);
-        jTextArea4.setOpaque(false);
-        jPanel5.add(jTextArea4);
-        jTextArea4.setBounds(60, 680, 250, 90);
+        jTextArea3.setBounds(90, 1050, 240, 70);
 
         jTextArea5.setEditable(false);
         jTextArea5.setColumns(20);
@@ -260,7 +237,7 @@ public class Documentatation extends javax.swing.JFrame {
         jTextArea5.setFocusable(false);
         jTextArea5.setOpaque(false);
         jPanel5.add(jTextArea5);
-        jTextArea5.setBounds(320, 480, 240, 50);
+        jTextArea5.setBounds(90, 510, 240, 50);
 
         jTextArea6.setEditable(false);
         jTextArea6.setColumns(20);
@@ -271,7 +248,7 @@ public class Documentatation extends javax.swing.JFrame {
         jTextArea6.setFocusable(false);
         jTextArea6.setOpaque(false);
         jPanel5.add(jTextArea6);
-        jTextArea6.setBounds(590, 680, 250, 70);
+        jTextArea6.setBounds(540, 510, 250, 70);
 
         jTextArea7.setEditable(false);
         jTextArea7.setColumns(20);
@@ -282,7 +259,7 @@ public class Documentatation extends javax.swing.JFrame {
         jTextArea7.setFocusable(false);
         jTextArea7.setOpaque(false);
         jPanel5.add(jTextArea7);
-        jTextArea7.setBounds(320, 900, 246, 90);
+        jTextArea7.setBounds(320, 780, 246, 90);
 
         jTextArea8.setEditable(false);
         jTextArea8.setColumns(20);
@@ -293,54 +270,42 @@ public class Documentatation extends javax.swing.JFrame {
         jTextArea8.setFocusable(false);
         jTextArea8.setOpaque(false);
         jPanel5.add(jTextArea8);
-        jTextArea8.setBounds(600, 1120, 240, 70);
+        jTextArea8.setBounds(560, 1040, 240, 70);
 
         jLabel19.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
         jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel19.setText("Estructuras de Control");
         jPanel5.add(jLabel19);
-        jLabel19.setBounds(600, 1090, 220, 40);
-
-        jTextArea9.setEditable(false);
-        jTextArea9.setColumns(20);
-        jTextArea9.setFont(new java.awt.Font("Sylfaen", 0, 14)); // NOI18N
-        jTextArea9.setRows(5);
-        jTextArea9.setText("En  esta  sección  se  explicará de forma\nfacil e  ilustrativa que  y como funcionan \n                 las listas en Lisp");
-        jTextArea9.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jTextArea9.setFocusable(false);
-        jTextArea9.setOpaque(false);
-        jPanel5.add(jTextArea9);
-        jTextArea9.setBounds(330, 1360, 240, 80);
-
-        jLabel21.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
-        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel21.setText("Listas");
-        jPanel5.add(jLabel21);
-        jLabel21.setBounds(330, 1330, 220, 40);
+        jLabel19.setBounds(560, 1010, 220, 40);
 
         comentarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Menu Documentacion/Comentarios.png"))); // NOI18N
         comentarios.setBorderPainted(false);
         comentarios.setContentAreaFilled(false);
         jPanel5.add(comentarios);
-        comentarios.setBounds(330, 240, 220, 223);
+        comentarios.setBounds(100, 270, 220, 223);
 
         control.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Menu Documentacion/estructuras de control.png"))); // NOI18N
         control.setBorderPainted(false);
         control.setContentAreaFilled(false);
+        control.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                controlActionPerformed(evt);
+            }
+        });
         jPanel5.add(control);
-        control.setBounds(600, 880, 220, 220);
+        control.setBounds(560, 800, 220, 220);
 
         logicas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Menu Documentacion/logicas.png"))); // NOI18N
         logicas.setBorderPainted(false);
         logicas.setContentAreaFilled(false);
         jPanel5.add(logicas);
-        logicas.setBounds(330, 660, 220, 220);
+        logicas.setBounds(330, 540, 220, 220);
 
         matematicas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Menu Documentacion/matematicas.png"))); // NOI18N
         matematicas.setBorderPainted(false);
         matematicas.setContentAreaFilled(false);
         jPanel5.add(matematicas);
-        matematicas.setBounds(600, 440, 220, 220);
+        matematicas.setBounds(550, 270, 220, 220);
 
         funciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Menu Documentacion/funciones.png"))); // NOI18N
         funciones.setBorderPainted(false);
@@ -351,32 +316,20 @@ public class Documentatation extends javax.swing.JFrame {
             }
         });
         jPanel5.add(funciones);
-        funciones.setBounds(60, 880, 220, 223);
-
-        listas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Menu Documentacion/Listas.png"))); // NOI18N
-        listas.setBorderPainted(false);
-        listas.setContentAreaFilled(false);
-        jPanel5.add(listas);
-        listas.setBounds(330, 1120, 220, 220);
-
-        lectura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Menu Documentacion/lectura.png"))); // NOI18N
-        lectura.setBorderPainted(false);
-        lectura.setContentAreaFilled(false);
-        jPanel5.add(lectura);
-        lectura.setBounds(60, 440, 220, 220);
+        funciones.setBounds(100, 800, 220, 223);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 860, Short.MAX_VALUE)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 877, Short.MAX_VALUE)
             .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 1467, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 1162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0))
         );
@@ -457,6 +410,10 @@ public class Documentatation extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_funcionesActionPerformed
 
+    private void controlActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_controlActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_controlActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -509,8 +466,6 @@ public class Documentatation extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
@@ -522,14 +477,10 @@ public class Documentatation extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea3;
-    private javax.swing.JTextArea jTextArea4;
     private javax.swing.JTextArea jTextArea5;
     private javax.swing.JTextArea jTextArea6;
     private javax.swing.JTextArea jTextArea7;
     private javax.swing.JTextArea jTextArea8;
-    private javax.swing.JTextArea jTextArea9;
-    public javax.swing.JButton lectura;
-    public javax.swing.JButton listas;
     public javax.swing.JButton logicas;
     public javax.swing.JButton matematicas;
     // End of variables declaration//GEN-END:variables
