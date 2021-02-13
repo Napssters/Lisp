@@ -26,6 +26,7 @@ public class Controlador {
     private PseudoCodigo Pcode;
     private Codigos Codes;
     private Data data;
+    private Data2 data2;
     private condicionales condis;
     private Coments Comentario;
     private Matematicas Mates;
@@ -42,6 +43,7 @@ public class Controlador {
         this.home = home;
         this.Enun = new Enunciados();
         this.data = new Data();
+        this.data2 = new Data2();
         this.Meta = new Meta101();
         this.Comentario = new Coments();
         this.Mates = new Matematicas();
@@ -629,8 +631,18 @@ public class Controlador {
     public void Pcodes(int vent){
         this.Pcode.setTitle("Enunciado Lisp");
         this.Pcode.setLocationRelativeTo(null);
-        this.Pcode.Enunciado.setText(data.getAlgoritmos().get(vent - 1).get(0));
-        this.Pcode.PsCode.setText(data.getAlgoritmos().get(vent - 1).get(1));
+        String Enuns = "";
+        String Pcods = "";
+        int num = vent - 1;
+        if(vent <= 75){
+            Enuns = data.getAlgoritmos().get(vent - 1).get(0);
+            Pcods = data.getAlgoritmos().get(vent - 1).get(1);
+        }else{
+            Enuns = data2.getAlgoritmos().get(num - 74).get(0);
+            Pcods = data2.getAlgoritmos().get(num - 74).get(1);
+        }
+        this.Pcode.Enunciado.setText(Enuns);
+        this.Pcode.PsCode.setText(Pcods);
         this.Pcode.Inicio.addActionListener((ActionEvent e) -> {
             Pcode.setVisible(false);
             home.setVisible(true);
@@ -662,7 +674,15 @@ public class Controlador {
         this.Codes.setTitle("Codigos Lisp");
         this.Codes.setLocationRelativeTo(null);
         this.javaAlg = new JavaAlgorithms();
-        int pos2 = Integer.parseInt(data.getAlgoritmos().get(vent).get(3));
+        int pos2 = 0;
+        String codigoLista = "";
+        if(vent <= 74){
+            pos2 = Integer.parseInt(data.getAlgoritmos().get(vent).get(3));
+            codigoLista = data.getAlgoritmos().get(vent).get(2);
+        }else{
+            pos2 = Integer.parseInt(data2.getAlgoritmos().get(vent-74).get(3));
+            codigoLista = data2.getAlgoritmos().get(vent-74).get(2);
+        }
         pos = pos2;
         if(pos > 74){
             pos = pos - 74;
@@ -673,7 +693,7 @@ public class Controlador {
         }
         int tam = data.getPasos(opc).get(pos).get(1).size();
         Codes.CodigoFuente.setText("");
-        PonerColor(Codes.CodigoFuente, data.getAlgoritmos().get(vent).get(2));
+        PonerColor(Codes.CodigoFuente, codigoLista);
         Codes.numero.setText((vent+1)+"");
         this.Codes.Inicio.addActionListener((ActionEvent e) -> {
             Codes.dispose();
