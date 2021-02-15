@@ -101,6 +101,10 @@ public class Enunciados {
                  break;
             case "hacervector" : respuesta = "(MAKE-VECTOR) \n La   función   (make-vector)  se usa para crear vectores \nde cualquier tipo de dato de forma recursiva.\n\nEjemplo:\nhacer-vector (5, (1))  -}>  (1, 1, 1, 1, 1)\n\nEn Lisp Tendríamos\n(make-vector 5 (1))   -}>  (1 1 1 1 1)"; 
                  break;
+            case "recursion" : respuesta = "¿Recursión?\nLa     recursión     o   recursividad   es   un   proceso   en   la \nprogramación que consiste en que una función se ejecute \na   sí   misma    un    número     determinado     de      veces \ncontrolando mediante condicionales "; 
+                 break;
+            case "retorno" : respuesta = "¿Retorno?\nun retorno de una función es hacer que la función tome un\nvalor  como  s i fuera  una  variable para así poder usar los\nvalores en otras funciones \n"; 
+                 break;
             case "otros" : respuesta = "asd"; 
                  break;
         }

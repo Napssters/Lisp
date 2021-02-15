@@ -2060,8 +2060,8 @@ public class Data {
         this.pasos.get(64).get(1).add("(print \"Vector ordenado: ~d\" ");
         ////////////////   66    /////////////////
         this.algoritmos.get(65).add("#|\nConstruir un algoritmo en Lisp que dado un \nvector  con  elementos ya incluidos, indique \nsi esta ordenado de forma ascendentemente.\n|#");
-        this.algoritmos.get(65).add("Funcion vecotrOrdenado\n    inicializar numeros = hacer-vector  (5, 1, 0, 9, 8)\n    vector numeros2 = Ordenar(numeros)\n    si (numeros = numeros2)\n        imprimir \"Vector ordenado ascendentemente\"\n    sino:\n        imprimir \"Vector no ordenado ascendentemente\"\n\nllamar Funcion vecotrOrdenado");
-        this.algoritmos.get(65).add("(defun vecotrOrdenado()\n    (setq numeros (make-vector  (5 1 0 9 8)))\n    (vector nuermos2 (vl-sort nuermos '<))\n    (if (= nuermos numeros2)\n       (print \"Vector ordenado ascendentemente\")\n       (print \"Vector mo ordenado ascendentemente\")\n    )\n    \n)\n\n(vecotrOrdenado)");
+        this.algoritmos.get(65).add("Funcion vectorOrdenado\n    inicializar numeros = hacer-vector  (5, 1, 0, 9, 8)\n    vector numeros2 = Ordenar(numeros)\n    si (numeros = numeros2)\n        imprimir \"Vector ordenado ascendentemente\"\n    sino:\n        imprimir \"Vector no ordenado ascendentemente\"\n\nllamar Funcion vectorOrdenado");
+        this.algoritmos.get(65).add("(defun vectorOrdenado()\n    (setq numeros (make-vector  (5 1 0 9 8)))\n    (vector nuermos2 (vl-sort nuermos '<))\n    (if (= nuermos numeros2)\n       (print \"Vector ordenado ascendentemente\")\n       (print \"Vector mo ordenado ascendentemente\")\n    )\n    \n)\n\n(vectorOrdenado)");
         this.algoritmos.get(65).add("65");
         this.pasos.get(65).get(0).add("Llamado");
         this.pasos.get(65).get(0).add("Funcion");
@@ -2071,8 +2071,8 @@ public class Data {
         this.pasos.get(65).get(0).add("Impresión");
         this.pasos.get(65).get(0).add("Impresión");
         /////////////////////////////////
-        this.pasos.get(65).get(1).add("(vecotrOrdenado)");
-        this.pasos.get(65).get(1).add("(defun vecotrOrdenado()");
+        this.pasos.get(65).get(1).add("(vectorOrdenado)");
+        this.pasos.get(65).get(1).add("(defun vectorOrdenado()");
         this.pasos.get(65).get(1).add("(setq numeros (make-vector  (5 1 0 9 8)))");
         this.pasos.get(65).get(1).add("(vector nuermos2 (vl-sort nuermos '<))");
         this.pasos.get(65).get(1).add("(if (= nuermos numeros2)");

@@ -806,7 +806,7 @@ public class Algoritmos extends javax.swing.JFrame {
 
         b98.setFont(new java.awt.Font("Sylfaen", 1, 18)); // NOI18N
         b98.setForeground(new java.awt.Color(255, 255, 255));
-        b98.setText("89");
+        b98.setText("98");
         b98.setBorder(null);
         b98.setBorderPainted(false);
         b98.setContentAreaFilled(false);
