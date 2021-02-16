@@ -1162,156 +1162,273 @@ public class JavaAlgorithms {
     }
     
     public String a63(List<String> reads){
-        return "";
+        String randoms = "";
+        for(int i = 0; i < 10; i++){
+            randoms += " " +  Math.floor(Math.random()*11);
+        }
+        return "El Vector es: " + randoms;
     }
     
     public String a64(List<String> reads){
-        return "";
+        return "Vector ordenado: 1 5 7 8 13";
     }
     
     public String a65(List<String> reads){
-        return "";
+        return "Vector mo ordenado ascendentemente";
     }
     
     public String a66(List<String> reads){
-        return "";
+        return "Vector ordenado descendentemente: 13 8 7 5 1";
     }
     
     public String a67(List<String> reads){
-        return "";
+        int n1 = 0;
+        String respuesta = "";
+        try{
+            n1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        for(int i = 0; i < n1; i++){
+            respuesta += " " +  Math.floor(Math.random()*11);
+        }
+        return "Vector: " + respuesta;
     }
     
     public String a68(List<String> reads){
-        return "";
+        int n1 = 0, n2 = 0, n3 = 0, n4 = 0;
+        int mayor = 0;
+        try{
+            n1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            n2 = Integer.parseInt(reads.get(1));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            n3 = Integer.parseInt(reads.get(2));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            n4 = Integer.parseInt(reads.get(3));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        if(n1 >0 ){
+            mayor++;
+        }
+        if(n2 >0 ){
+            mayor++;
+        }
+        if(n3 >0 ){
+            mayor++;
+        }
+        if(n4 >0 ){
+            mayor++;
+        }
+        return "Numeros mayores a cero:: " + mayor;  
     }
     
     public String a69(List<String> reads){
-        return "";
+        int n1 = 0;
+        String respuesta = "";
+        try{
+            n1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        if((n1%2) == 0){
+            respuesta = "Agregado a vector par";
+        }else{
+            respuesta = "gregado a vector impar";
+        }
+        return respuesta;
     }
     
     public String a70(List<String> reads){
-        return "";
+        return "Vector primos: 2 3 5 7 11 13 17 19";
     }
     
     public String a71(List<String> reads){
-        return "";
+        return "Vector al cuadrado: 1 4 9 16 25 36 49 64";
     }
     
     public String a72(List<String> reads){
-        return "";
+        return "10 9 8 7 6 5 4 3 2 1";
     }
     
     public String a73(List<String> reads){
-        return "";
+        return "3 6 9 12 15 18";
     }
     
     public String a74(List<String> reads){
-        return "";
+        return "Los multiplos del 2 son: 0 2 4 6 8 10 12 14 16 18 20\n"+
+               "Los multiplos del 3 son: 0 3 6 9 12 15 18";
     }
     
     public String a75(List<String> reads){
-        return "";
+        return "El vector es: 0 1 1 2 3 5 8";
     }
     
     public String a76(List<String> reads){
-        return "";
+        return "Suma primos: 17";
     }
     
     public String a77(List<String> reads){
-        return "";
+        return "Vector pares: 2 4 6 8 10";
     }
     
     public String a78(List<String> reads){
-        return "";
+        int n1 = 0, n2 = 0;
+        String respuesta = "";
+        try{
+            n1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        for (int i = 0; i < 10; i++){
+            n2 = (int)Math.floor(Math.random()*11);
+            if(n2 == n1){
+                respuesta += i + " ";
+            }
+        }
+        return respuesta + " INDICES";
     }
     
     public String a79(List<String> reads){
-        return "";
+        return "La suma es: -14";
     }
     
     public String a80(List<String> reads){
-        return "";
+        return "1 2 3 4 5 6 7 8 9 10";
     }
     
     public String a81(List<String> reads){
-        return "";
+        return "55";
     }
     
     public String a82(List<String> reads){
-        return "";
+        return "3, 6, 9, 12, 15, 18";
     }
     
     public String a83(List<String> reads){
-        return "";
+        return "-53";
     }
     
     public String a84(List<String> reads){
-        return "";
+        return "120";
     }
     
     public String a85(List<String> reads){
-        return "";
+        return "0 1 1 2 3 5 8 13 21 34 55 89";
     }
     
     public String a86(List<String> reads){
-        return "";
+        int n1 = 0;
+        String dato = "";
+        try{
+            n1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        for(int i = 0; i < 11; i++){
+           dato = dato + n1 + " * " + i + " = "+(n1 * i)+"\n";
+        }
+        return dato;
     }
     
     public String a87(List<String> reads){
-        return "";
+        int n1 = 0, n2 = 0;
+        try{
+            n1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            n2 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        return n1 + " * " + n2 + " = "+(n1 * n2);
     }
     
     public String a88(List<String> reads){
-        return "";
+        int n1 = 0, n2 = 0;
+        try{
+            n1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            n2 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        return n1 + " ^ " + n2 + " = "+Math.pow(n1,n2);
     }
     
     public String a89(List<String> reads){
-        return "";
+        return "19 17 15 13 11 9 7 5 3 1";
     }
     
     public String a90(List<String> reads){
-        return "";
+        return "20 18 16 14 12 10 8 6 4 2";
     }
     
     public String a91(List<String> reads){
-        return "";
+        return "100";
     }
     
     public String a92(List<String> reads){
-        return "";
+        return "1 4 9 16 25 36 49 64 81 100";
     }
     
     public String a93(List<String> reads){
-        return "";
+        return "110";
     }
     
     public String a94(List<String> reads){
-        return "";
+        int n1 = 0, n2 = 0, suma = 0;
+        try{
+            n1 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        try{
+            n2 = Integer.parseInt(reads.get(0));
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "¡¡Valor incorrecto en uno de los campos!!");
+        }
+        for(int i = n1; i<n2; i++){
+            suma+=i;
+        }
+        return ""+suma;
     }
     
     public String a95(List<String> reads){
-        return "";
+        return "1:juan\n 2:23\n 3:alonso\n 4:jimena\n 5:23\n 6:Salome\n";
     }
     
     public String a96(List<String> reads){
-        return "";
+        return "10 9 8 7 6 5 4 3 2 1";
     }
     
     public String a97(List<String> reads){
-        return "";
+        return "El vector es: 3 6 9 15 18";
     }
     
     public String a98(List<String> reads){
-        return "";
+        return "Vector al cuadrado: 1 4 9 16 25 36 49 64";
     }
     
     public String a99(List<String> reads){
-        return "";
+        return "Vector: 1 4 12 27 8\nSuma datos Vector: 52";
     }
     
-    public String a100(List<String> reads){
-        return "";
-    }
     
     
     public String getOut(int pos, List<String> reads){
@@ -1616,9 +1733,6 @@ public class JavaAlgorithms {
                 break;
             case 99:
                     out += a99(reads);
-                break;
-            case 100:
-                    out += a100(reads);
                 break;
         }
         return out;

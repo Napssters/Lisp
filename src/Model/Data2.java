@@ -582,7 +582,7 @@ public class Data2 {
         ////////////////   89    /////////////////
         this.algoritmos.get(14).add("#|\nConstruir un algoritmo en Lisp que permita\ncalcular  la  potencia  de  un   número  dado \nusando recursividad.\n|#");
         this.algoritmos.get(14).add("Funcion Potenicas(z, n, m, r)\n    si(n > 11)\n        imprimir n, \" * \", z, \" = \", r\n    sino:\n        Potenicas((z + 1), n, m, (n * r))\n\nllamar Funcion Potenicas(1, (lectura), (lectura), 1)");
-        this.algoritmos.get(14).add("(defun Potenicas(z n m r)\n    (if(> z m)\n        (print \"~d * ~d = ~d: \" n m r)\n        (begin\n            (Potenicas (+ z 1) n m (* n r))\n        )\n    )\n    \n)\n\n(Potenicas 1 (read) (read) 1)");
+        this.algoritmos.get(14).add("(defun Potenicas(z n m r)\n    (if(> z m)\n        (print \"~d ^ ~d = ~d: \" n m r)\n        (begin\n            (Potenicas (+ z 1) n m (* n r))\n        )\n    )\n    \n)\n\n(Potenicas 1 (read) (read) 1)");
         this.algoritmos.get(14).add("88");
         this.pasos.get(14).get(0).add("Llamado");
         this.pasos.get(14).get(0).add("Lectura");
@@ -976,7 +976,7 @@ public class Data2 {
         ////////////////   97    /////////////////
         this.algoritmos.get(22).add("#|\nConstruir un algoritmo en Lisp que invierta \nlos datos de una lista usando recursividad.\n|#");
         this.algoritmos.get(22).add("global invertida = hacer-lista(10)\n\nFuncion Invertir(a, tam, lista)\n     si(tam = 0)\n        imprimir \"Lista invertida: \", invertida\n    sino:\n        invertida[a] = lista[tam] \n        Invertir((+ a 1), (- tam 1), lista)\n\n\nFuncion mainLista\n    inicializar lista {1,2,3,4,5,6,7,8,9,10}\n	inicializar tam = tamaño(lista)\n    Invertir(0, tam, lista)\n\n\nllamar Funcion mainLista");
-        this.algoritmos.get(22).add("(defvar invertida (make-lista (10)))\n\n(defun Invertir(a tam lista)\n    (if (> count 20)\n        (print \"Lista invertida: \" invertida)\n        (begin\n            (setf invertida a \n                (list-ref lista tam)\n            )\n            (Invertir (+ a 1) (- tam 1) lista)\n        )\n    )\n)\n\n(defun mainLista()\n    (setq lista (list 1 2 3 4 5 6 7 8 9 10))\n    (setq tam (length lista))\n    (Invertir(0 tam lista))\n)\n\n(mainLista)");
+        this.algoritmos.get(22).add("(defvar invertida (make-lista (10)))\n\n(defun Invertir(a tam lista)\n    (if (= tam 0)\n        (print \"Lista invertida: \" invertida)\n        (begin\n            (setf invertida a \n                (list-ref lista tam)\n            )\n            (Invertir (+ a 1) (- tam 1) lista)\n        )\n    )\n)\n\n(defun mainLista()\n    (setq lista (list 1 2 3 4 5 6 7 8 9 10))\n    (setq tam (length lista))\n    (Invertir(0 tam lista))\n)\n\n(mainLista)");
         this.algoritmos.get(22).add("96");
         this.pasos.get(22).get(0).add("Defvar");
         this.pasos.get(22).get(0).add("Llamado");
