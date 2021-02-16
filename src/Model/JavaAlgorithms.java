@@ -135,7 +135,6 @@ public class JavaAlgorithms {
     public String a9(List<String> reads){
         int sum = 0;
         for(int i = 0; i < 3; i++){ 
-            System.out.println(Integer.parseInt(reads.get(i)));
             try{
                 if(Integer.parseInt(reads.get(i)) < 0){
                     sum++;

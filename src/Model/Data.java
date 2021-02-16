@@ -249,6 +249,7 @@ public class Data {
         this.pasos.get(9).get(0).add("Condicional");
         this.pasos.get(9).get(0).add("Actualizar");
         this.pasos.get(9).get(0).add("Vacio");
+        this.pasos.get(9).get(0).add("Impresión");
         /////////////////////////////////
         this.pasos.get(9).get(1).add("(Negativos)");
         this.pasos.get(9).get(1).add("(setq sum 0)");
@@ -267,6 +268,7 @@ public class Data {
         this.pasos.get(9).get(1).add("(if (n3 < 0)");
         this.pasos.get(9).get(1).add("(set sum (+ sum 1))");
         this.pasos.get(9).get(1).add("Vacio");
+        this.pasos.get(9).get(1).add("(print \"Numeros negativos: ~a\" sum)");
         ////////////////   11     /////////////////
         this.algoritmos.get(10).add("#|\nCrear  un  algoritmo  en  Lisp  que reciba un \nnúmero dentro del rango 1 a 12 y de acuerdo\nal  número  imprima  el mes correspondiente.\n|#");
         this.algoritmos.get(10).add("Funcion Mes\n    imprimir  \"numero entre el 1 y el 12: \"\n    inicializar mes = (valor por consola)\n    evaluar mes\n       (mes = 1)(imprimir \"mes Enero\")\n       (mes = 2)(imprimir \"mes Febrero\")\n       .\n       .\n       .\n       (mes = 12)(imprimir \"mes Diciembre\")\n        \nllamar Funcion Mes");

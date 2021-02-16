@@ -715,12 +715,14 @@ public class Controlador {
             this.reads = new ArrayList<>();
             Codes.Explicacion.setText(Enun.getEnunciado(data.getPasos(opc).get(pos).get(0).get(this.count)));
             Codes.Variables.setText(data.getPasos(opc).get(pos).get(1).get(this.count));
+            Codes.Resaltador(data.getPasos(opc).get(pos).get(1).get(this.count));
             Codes.Siguiente.setEnabled(true);
         });
         this.Codes.Siguiente.addActionListener((ActionEvent e) -> {
             setCount();
             if(this.count < tam){
                 Codes.Explicacion.setText(Enun.getEnunciado(data.getPasos(opc).get(pos).get(0).get(this.count)));
+                Codes.Resaltador(data.getPasos(opc).get(pos).get(1).get(this.count));
                 Codes.Variables.setText(data.getPasos(opc).get(pos).get(1).get(this.count));
                 if(data.getPasos(opc).get(pos).get(0).get(this.count).equals("Lectura")){
                     Codes.input.setEnabled(true);

@@ -10,6 +10,10 @@ import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 import javax.swing.ImageIcon;
+import javax.swing.JTextPane;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.DefaultHighlighter;
+import javax.swing.text.Highlighter;
 
 /**
  *
@@ -21,16 +25,35 @@ public class Codigos extends javax.swing.JFrame {
      * Creates new form Codigos
      */
     NumeroLinea numerolinea;
+    Highlighter hilit;
+    Highlighter.HighlightPainter painter;
     
     public int count = 0;
     
     public Codigos() {
+        hilit = new DefaultHighlighter();
+        painter = new DefaultHighlighter.DefaultHighlightPainter(new Color(34,191,255,200));
         setResizable(false);
         initComponents();
         this.setIconImage(new ImageIcon(getClass().getResource("/Images/Logo_Lambda.png")).getImage());
         jScrollPane5.getVerticalScrollBar().setUnitIncrement(16);
         numerolinea = new NumeroLinea(CodigoFuente);
         jScrollPane6.setRowHeaderView(numerolinea);
+        CodigoFuente.setHighlighter(hilit);
+    }
+    
+    public void Resaltador(String txtFind){
+        hilit.removeAllHighlights();
+        String contenido = CodigoFuente.getText();
+        int index = contenido.indexOf(txtFind, 0);
+        int end = index + txtFind.length();
+        if(index >= 0){
+            try{
+                hilit.addHighlight(index, end, painter);
+            }catch (BadLocationException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     /**
